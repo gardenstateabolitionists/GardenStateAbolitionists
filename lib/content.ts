@@ -49,12 +49,18 @@ export const statisticsSource =
  * dropped visitors into a private chat that is not theirs.
  */
 export const socialLinks = {
-  // Facebook and the Signal group are intentionally still blank — no accounts
-  // have been provided. Each blank hides its own icon/section rather than
-  // rendering a dead link, so they can be filled in later with no code change.
-  facebook: '',
+  // Canonical profile URL. The Page has no vanity username yet, so this is the
+  // numeric-ID form that Facebook itself resolves to — the /share/ link the
+  // Page owner copies is a redirect wrapper carrying a per-share tracking
+  // token, which would rot and leaks referral data into our markup.
+  // If a username is claimed later, switch this to facebook.com/<username>.
+  facebook: 'https://www.facebook.com/people/Garden-State-Abolitionists/61591639320588/',
   x: 'https://x.com/abolitionnj',
+  // The app's share sheet appends ?igsh=...&utm_source=qr; those are
+  // session/QR attribution parameters and are deliberately stripped.
   instagram: 'https://www.instagram.com/newjerseyabolition',
+  // No Signal group yet. Blank hides the entire invite card on /contact
+  // rather than rendering a dead link.
   signalGroup: '',
 };
 
