@@ -1,5 +1,5 @@
 /**
- * Typed access to the master Michigan abortion-provider list.
+ * Typed access to the master New Jersey abortion-provider list.
  *
  * Data source: data/abortion-mills.json — hand-curated, one row per
  * physical location. `city` is the join key with the city landing
@@ -57,7 +57,7 @@ export function getAllMills(): AbortionMill[] {
 
 /** Only the still-serving facilities. Used for "total active" counts
  * on /abortion-mills and city pages so a closure doesn't silently
- * overstate the abortion infrastructure in Michigan. */
+ * overstate the abortion infrastructure in New Jersey. */
 export function getActiveMills(): AbortionMill[] {
   return DATA.mills.filter((m) => !m.closed);
 }

@@ -45,6 +45,7 @@ const navItems = [
       { label: 'Media', href: '/media' },
       { label: 'Allied Groups', href: '/partners' },
       { label: 'The Norman Statement', href: '/norman-statement' },
+      { label: 'Abortion Facilities', href: '/abortion-mills' },
     ],
   },
   { label: 'CONTACT US', href: '/contact' },

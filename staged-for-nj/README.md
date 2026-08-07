@@ -1,5 +1,16 @@
 # Staged for New Jersey
 
+> **`/abortion-mills` has been RESTORED and is live** (2026-08-07) with 22 New
+> Jersey facilities. Everything below still applies to the remaining routes.
+>
+> Lesson from that restore, worth reading before doing another: these files were
+> moved here *before* the Michigan→New Jersey rename swept the codebase, so they
+> still contain the original Michigan content. Restoring one is not just a file
+> move — it needs the rename applied, the map projection re-derived for New
+> Jersey (SVG bbox via `getBBox()`, geographic bbox, viewport frame **and** the
+> absolute pin/stroke sizes, all of which were tuned to Michigan's much larger
+> frame), and the nav/footer/sitemap entries added.
+
 Everything here was part of the Michigan site and could not be carried over by
 renaming. It is excluded from the build (`tsconfig.json` → `exclude`), so
 nothing in this folder compiles, routes, or ships.

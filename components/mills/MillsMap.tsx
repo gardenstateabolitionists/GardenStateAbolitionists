@@ -4,27 +4,28 @@ import { useEffect, useRef, useState } from 'react';
 import type { AbortionMill } from '@/lib/data/abortion-mills';
 import { US_STATE_PATHS } from '@/lib/data/us-map-paths';
 
-// MI-only zoom + pan map with a pin per abortion facility. Projection
-// constants are calibrated to the same MI path bbox × MI geographic
+// NJ-only zoom + pan map with a pin per abortion facility. Projection
+// constants are calibrated to the same NJ path bbox × NJ geographic
 // bbox that CitiesMap uses, so pins land in the same spots.
 
-const MI_BBOX_SVG = { x: 852.2, y: 83.7, w: 134.9, h: 140.6 };
-const MI_BBOX_GEO = { minLat: 41.7, maxLat: 48.3, minLng: -90.5, maxLng: -82.4 };
-const DEFAULT_VIEW = { x: 848, y: 80, w: 143, h: 149 };
-const MIN_W = 20;
-const MAX_W = 400;
+const NJ_BBOX_SVG = { x: 1114.4, y: 199.4, w: 23.6, h: 53.1 };
+const NJ_BBOX_GEO = { minLat: 38.93, maxLat: 41.36, minLng: -75.56, maxLng: -73.89 };
+// Framed on the NJ bbox (x 1114.4-1138.0, y 199.4-252.5) with margin.
+const DEFAULT_VIEW = { x: 1110.2, y: 194.0, w: 32, h: 64 };
+const MIN_W = 4;   // NJ is ~24 units wide, so 20 was barely any zoom at all
+const MAX_W = 80;  // enough to pull back and show NJ in regional context
 
 function project(lat: number, lng: number): { x: number; y: number } {
   const x =
-    MI_BBOX_SVG.x +
-    ((lng - MI_BBOX_GEO.minLng) / (MI_BBOX_GEO.maxLng - MI_BBOX_GEO.minLng)) * MI_BBOX_SVG.w;
+    NJ_BBOX_SVG.x +
+    ((lng - NJ_BBOX_GEO.minLng) / (NJ_BBOX_GEO.maxLng - NJ_BBOX_GEO.minLng)) * NJ_BBOX_SVG.w;
   const y =
-    MI_BBOX_SVG.y +
-    ((MI_BBOX_GEO.maxLat - lat) / (MI_BBOX_GEO.maxLat - MI_BBOX_GEO.minLat)) * MI_BBOX_SVG.h;
+    NJ_BBOX_SVG.y +
+    ((NJ_BBOX_GEO.maxLat - lat) / (NJ_BBOX_GEO.maxLat - NJ_BBOX_GEO.minLat)) * NJ_BBOX_SVG.h;
   return { x, y };
 }
 
-const MI_PATH = US_STATE_PATHS.find((s) => s.id === 'MI');
+const NJ_PATH = US_STATE_PATHS.find((s) => s.id === 'NJ');
 
 export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -127,7 +128,7 @@ export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
     };
   }, [view.w, view.h]);
 
-  if (!MI_PATH) return null;
+  if (!NJ_PATH) return null;
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4 overflow-hidden">
@@ -137,19 +138,22 @@ export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
           viewBox={`${view.x} ${view.y} ${view.w} ${view.h}`}
           className="w-full h-auto max-h-[600px] touch-none select-none cursor-grab active:cursor-grabbing"
           role="img"
-          aria-label="Map of Michigan with pins marking every abortion facility"
+          aria-label="Map of New Jersey with pins marking every abortion facility"
         >
           <path
-            d={MI_PATH.d}
+            d={NJ_PATH.d}
             fill="#e5e7eb"
             stroke="#374151"
-            strokeWidth={Math.max(0.3, (view.w / DEFAULT_VIEW.w) * 0.6)}
+            strokeWidth={Math.max(0.07, (view.w / DEFAULT_VIEW.w) * 0.14)}
           />
 
           {mills.map((m) => {
             const { x, y } = project(m.latitude, m.longitude);
             const zoomFactor = view.w / DEFAULT_VIEW.w;
-            const r = Math.max(2.6, 4.2 * Math.min(1, zoomFactor));
+            // Radii are absolute SVG units, so they must be scaled to the
+            // viewport: values tuned for Michigan's 143-wide frame render
+            // ~4.5x oversized in New Jersey's 32-wide frame.
+            const r = Math.max(0.6, 0.95 * Math.min(1, zoomFactor));
             // Closed facilities: hollow gray pin, no fill. Still shown so
             // the historical footprint stays visible.
             return (
@@ -160,7 +164,7 @@ export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
                   r={r}
                   fill={m.closed ? '#ffffff' : '#dc2626'}
                   stroke={m.closed ? '#6b7280' : '#ffffff'}
-                  strokeWidth={Math.max(0.35, (m.closed ? 1.2 : 1) * Math.min(1, zoomFactor))}
+                  strokeWidth={Math.max(0.08, (m.closed ? 0.27 : 0.22) * Math.min(1, zoomFactor))}
                   strokeDasharray={m.closed ? '1 1' : undefined}
                 >
                   <title>{`${m.name}${m.closed ? ' (CLOSED)' : ''} — ${m.address}`}</title>
@@ -200,7 +204,7 @@ export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
       </div>
 
       <p className="text-xs text-gray-500 mt-3 text-center">
-        Zoom with buttons, scroll wheel, or pinch. Every red pin is a currently-operating Michigan
+        Zoom with buttons, scroll wheel, or pinch. Every red pin is a currently-operating New Jersey
         abortion facility.
       </p>
     </div>

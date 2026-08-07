@@ -8,13 +8,13 @@ import { getAllMills, getActiveMills } from '@/lib/data/abortion-mills';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.abolishabortionmichigan.com';
 
 export const metadata: Metadata = {
-  title: 'Every Abortion Facility in Michigan — Statewide Map',
+  title: 'Every Abortion Facility in New Jersey — Statewide Map',
   description:
-    'A statewide map and directory of every currently-operating abortion facility in Michigan. For prayer, education, and lawful peaceful presence.',
+    'A statewide map and directory of every currently-operating abortion facility in New Jersey — locations that dispense abortion pills or perform abortion procedures. For prayer, education, and lawful peaceful presence.',
   alternates: { canonical: '/abortion-mills' },
   openGraph: {
-    title: 'Every Abortion Facility in Michigan',
-    description: 'Statewide map of MI abortion providers, grouped by operator.',
+    title: 'Every Abortion Facility in New Jersey',
+    description: 'Statewide map of New Jersey abortion providers, grouped by operator.',
     type: 'website',
     url: `${BASE_URL}/abortion-mills`,
   },
@@ -25,35 +25,25 @@ export default function AbortionMillsPage() {
   const active = getActiveMills();
   const closed = all.filter((m) => m.closed);
 
-  // Group by operator so the list reads as "these five networks account
-  // for every provider in Michigan," not as an undifferentiated list of
-  // twenty addresses. Detection is by name-prefix.
+  // Group by operator so the list reads as "these operators account for every
+  // provider in New Jersey" rather than an undifferentiated list of addresses.
+  // Detection is by name-prefix. Planned Parenthood runs two separate New
+  // Jersey affiliates, but they are shown as one group because the split is
+  // administrative and means nothing to a reader looking for their own town.
   const groups: { label: string; blurb: string; mills: typeof all }[] = [];
   const buckets: Record<string, typeof all> = {
-    'Planned Parenthood of Michigan': [],
-    'Northland Family Planning': [],
-    "Women's Center of Michigan": [],
-    "Women's Center (unaffiliated)": [],
-    'Other providers': [],
+    'Planned Parenthood': [],
+    'Independent providers': [],
   };
   for (const m of all) {
-    if (m.name.startsWith('Planned Parenthood')) buckets['Planned Parenthood of Michigan'].push(m);
-    else if (m.name.startsWith('Northland Family Planning')) buckets['Northland Family Planning'].push(m);
-    else if (m.name.startsWith("Women's Center of Michigan")) buckets["Women's Center of Michigan"].push(m);
-    else if (m.name.startsWith("Women's Center of")) buckets["Women's Center (unaffiliated)"].push(m);
-    else buckets['Other providers'].push(m);
+    if (m.name.startsWith('Planned Parenthood')) buckets['Planned Parenthood'].push(m);
+    else buckets['Independent providers'].push(m);
   }
   const groupBlurbs: Record<string, string> = {
-    'Planned Parenthood of Michigan':
-      'The single-largest abortion operator in the state — eight locations across the Lower Peninsula.',
-    'Northland Family Planning':
-      'Three metro-Detroit locations. Southfield is the largest single-provider abortion facility in Michigan.',
-    "Women's Center of Michigan":
-      'A three-location network in Wayne, Macomb, and Oakland counties.',
-    "Women's Center (unaffiliated)":
-      'Standalone "Women’s Center" facilities in Flint and Saginaw serving mid-Michigan.',
-    'Other providers':
-      'Independent providers, including Detroit’s Summit and Scotsdale Women’s Centers.',
+    'Planned Parenthood':
+      'By far the largest abortion operator in the state, across two affiliates — Planned Parenthood of Northern, Central and Southern New Jersey, and Planned Parenthood of Metropolitan New Jersey.',
+    'Independent providers':
+      'Standalone clinics. Several perform abortions far later in pregnancy than the Planned Parenthood centres — Pilgrim Medical Center in Montclair to 24.6 weeks, and Cherry Hill Women’s Center to 28 weeks, which it states is the latest available anywhere in New Jersey.',
   };
   for (const label of Object.keys(buckets)) {
     const ms = buckets[label];
@@ -70,9 +60,9 @@ export default function AbortionMillsPage() {
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Every Abortion Facility in Michigan',
+    name: 'Every Abortion Facility in New Jersey',
     url: `${BASE_URL}/abortion-mills`,
-    about: { '@type': 'Place', name: 'Michigan' },
+    about: { '@type': 'Place', name: 'New Jersey' },
   };
   // ItemList schema — only ACTIVE facilities. Closed clinics are still
   // rendered in the visible list (with a Closed badge) but shouldn't be
@@ -94,7 +84,7 @@ export default function AbortionMillsPage() {
           latitude: m.latitude,
           longitude: m.longitude,
         },
-        areaServed: { '@type': 'State', name: 'Michigan' },
+        areaServed: { '@type': 'State', name: 'New Jersey' },
       },
     })),
   };
@@ -124,12 +114,12 @@ export default function AbortionMillsPage() {
             Statewide directory
           </p>
           <h1 className="text-4xl md:text-6xl font-black mb-6">
-            Every Abortion Facility in Michigan
+            Every Abortion Facility in New Jersey
           </h1>
           <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
           <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
             {active.length} currently-operating abortion facilities across {cityCount}{' '}
-            Michigan cities. For prayer, education, and lawful, peaceful presence.
+            New Jersey cities. For prayer, education, and lawful, peaceful presence.
           </p>
           {closed.length > 0 && (
             <p className="text-sm text-gray-400 max-w-2xl mx-auto mt-3">
@@ -140,7 +130,7 @@ export default function AbortionMillsPage() {
         </div>
       </section>
 
-      <Breadcrumbs items={[{ label: 'Abortion Facilities in Michigan' }]} />
+      <Breadcrumbs items={[{ label: 'Abortion Facilities in New Jersey' }]} />
 
       <section className="bg-white pt-8 pb-4">
         <div className="max-w-4xl mx-auto px-4">
@@ -149,11 +139,11 @@ export default function AbortionMillsPage() {
             <StatBox label="Cities served" value={cityCount} />
             <StatBox
               label="PPMI locations"
-              value={buckets['Planned Parenthood of Michigan'].filter((m) => !m.closed).length}
+              value={buckets['Planned Parenthood'].filter((m) => !m.closed).length}
             />
             <StatBox
               label="Non-PP providers"
-              value={active.length - buckets['Planned Parenthood of Michigan'].filter((m) => !m.closed).length}
+              value={active.length - buckets['Planned Parenthood'].filter((m) => !m.closed).length}
             />
           </div>
         </div>
@@ -171,7 +161,7 @@ export default function AbortionMillsPage() {
             Grouped by provider network
           </h2>
           <p className="text-sm text-gray-600 mb-8">
-            Every abortion facility currently operating in Michigan, grouped by
+            Every abortion facility currently operating in New Jersey, grouped by
             the operator behind it. Click a city name to see that city&apos;s
             legislators, its Prop 3 vote, its historic abolition context, and
             the local action steps to take.
@@ -274,7 +264,7 @@ export default function AbortionMillsPage() {
             Peaceful, lawful presence — always
           </h2>
           <p className="text-gray-800 mb-4">
-            Abolish Abortion Michigan is committed to nonviolence and to lawful
+            Garden State Abolitionists is committed to nonviolence and to lawful
             conduct at every facility. Presence at an abortion mill is a
             ministry of prayer, education, and offered help — never coercion,
             never property damage, never confrontation with staff or clients
