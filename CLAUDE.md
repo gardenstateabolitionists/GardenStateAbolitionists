@@ -63,6 +63,25 @@ exists — do not introduce `package-lock.json`. `pnpm-workspace.yaml` resolves
 `allowBuilds` explicitly; Prisma, sharp, `@sentry/cli`, and `unrs-resolver` all
 need their install scripts or the build fails.
 
+## Prisma client generation — do not move this back to postinstall
+
+`package.json` runs `prisma generate` as part of **`build`**, not only in
+`postinstall`. That is deliberate and load-bearing.
+
+`prisma generate` writes to `lib/generated/prisma`, which is outside
+`node_modules` and gitignored. Vercel caches `node_modules` between builds, so
+on a cache hit pnpm reports everything up to date and skips install entirely —
+taking `postinstall` with it. The generated client is then missing from the
+project directory and the build dies with:
+
+```
+Module not found: Can't resolve '@/lib/generated/prisma'
+```
+
+The symptom is confusing because the *first* deploy of a project succeeds (cold
+cache, install really runs) and the *second* fails with no relevant code change.
+This happened on 2026-08-06. Keep `prisma generate` in the build script.
+
 ## Vercel environment variables
 
 `NEXT_PUBLIC_*` variables must be added with `--no-sensitive`. Production
