@@ -5,8 +5,12 @@ import { orgInfo } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'Financial Transparency',
+  // Deliberately makes no tax-status claim. Metadata is not gated by
+  // orgInfo the way the page body is, so asserting 501(c)(3) here would put
+  // an unverified legal claim into search results and social previews even
+  // while the page itself correctly reports the status as unconfirmed.
   description:
-    'Garden State Abolitionists is a New Jersey 501(c)(3) nonprofit. See our Federal Tax ID (EIN), mailing address, financial disclosures, and how donations are stewarded.',
+    'Financial transparency at Garden State Abolitionists — our legal status, mailing address, financial disclosures, and how donations are stewarded.',
   alternates: { canonical: '/financial-transparency' },
 };
 

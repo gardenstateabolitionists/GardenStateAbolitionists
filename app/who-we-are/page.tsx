@@ -100,8 +100,13 @@ export default function WhoWeArePage() {
             </p>
             {orgInfo.ein ? (
               <p className="text-gray-700">
-                Federal Tax ID (EIN): <span className="font-mono">{orgInfo.ein}</span>. Contributions
-                are tax-deductible to the fullest extent allowed by law.{' '}
+                Federal Tax ID (EIN): <span className="font-mono">{orgInfo.ein}</span>.{' '}
+                {/* An EIN alone does not imply charitable status — the IRS
+                    issues one to any entity — so deductibility still requires
+                    confirmed tax status. */}
+                {orgInfo.taxStatus
+                  ? 'Contributions are tax-deductible to the fullest extent allowed by law. '
+                  : ''}
                 <Link
                   href="/financial-transparency"
                   className="text-red-700 underline hover:no-underline"
@@ -112,7 +117,13 @@ export default function WhoWeArePage() {
               </p>
             ) : (
               <p className="text-gray-700">
-                Contributions are tax-deductible to the fullest extent allowed by law. See our{' '}
+                {/* Tax-deductibility is asserted only when tax status is
+                    confirmed — without it this sentence would make a legal
+                    claim the organization cannot yet support. */}
+                {orgInfo.taxStatus
+                  ? 'Contributions are tax-deductible to the fullest extent allowed by law. '
+                  : ''}
+                See our{' '}
                 <Link
                   href="/financial-transparency"
                   className="text-red-700 underline hover:no-underline"
