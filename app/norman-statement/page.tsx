@@ -49,7 +49,26 @@ export default function NormanStatementPage() {
 
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6">What It Is</h2>
+          <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
+            <h3 className="text-xl font-bold mb-2">Read the full statement</h3>
+            <p className="text-gray-700 mb-4">
+              The Norman Statement is hosted and maintained by Abolitionists Rising. We link to it
+              rather than reproducing it here, so you always read the current text.
+            </p>
+            <a
+              href={SOURCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
+            >
+              Read The Norman Statement &rarr;
+            </a>
+            <p className="text-gray-500 text-sm mt-3">
+              abolitionistsrising.com &mdash; opens in a new tab
+            </p>
+          </div>
+
+          <h2 className="text-2xl font-bold mb-6 mt-12">What It Is</h2>
           <p className="text-gray-700 mb-6">
             The Norman Statement on the Abolition of Abortion is, in its own words, a summary of the
             theological and strategic distinctives of the abolitionist movement. It was drafted by 28
@@ -79,24 +98,6 @@ export default function NormanStatementPage() {
             ))}
           </ol>
 
-          <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
-            <h3 className="text-xl font-bold mb-2">Read the full statement</h3>
-            <p className="text-gray-700 mb-4">
-              The Norman Statement is hosted and maintained by Abolitionists Rising. We link to it
-              rather than reproducing it here, so you always read the current text.
-            </p>
-            <a
-              href={SOURCE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
-            >
-              Read The Norman Statement &rarr;
-            </a>
-            <p className="text-gray-500 text-sm mt-3">
-              abolitionistsrising.com &mdash; opens in a new tab
-            </p>
-          </div>
         </div>
       </section>
 
