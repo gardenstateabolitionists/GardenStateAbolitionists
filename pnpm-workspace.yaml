@@ -1,0 +1,24 @@
+# Which dependencies are permitted to run install scripts. pnpm blocks all
+# postinstall scripts by default; anything needing a native binary or a
+# generated client has to be opted in explicitly here or the build fails.
+allowBuilds:
+  # Prisma generates the typed client into lib/generated/prisma and needs
+  # its query engine binary — the build cannot succeed without these.
+  '@prisma/client': true
+  '@prisma/engines': true
+  prisma: true
+  # Native image codecs behind next/image optimization.
+  sharp: true
+  # Source-map upload to Sentry during production builds.
+  '@sentry/cli': true
+  # Native resolver used by the ESLint/oxc toolchain.
+  unrs-resolver: true
+  # Postinstall is only a funding notice; no build artifact is produced.
+  core-js: false
+  # Ships prebuilt; the script is not needed for our usage.
+  protobufjs: false
+minimumReleaseAgeExclude:
+  - '@posthog/core@1.43.1'
+  - '@posthog/types@1.397.0'
+  - posthog-js@1.404.0
+  - posthog-node@5.45.2

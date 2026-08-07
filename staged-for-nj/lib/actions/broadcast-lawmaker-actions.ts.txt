@@ -1,0 +1,87 @@
+'use server';
+
+import { getAuthToken, verifyToken } from './auth-actions';
+import { getLegislators, chamberLabel, grade, partyLabel, type Grade, type Chamber } from '@/lib/data/legislators';
+import { getBroadcastablePartners } from '@/lib/data/partners';
+import {
+  sendLawmakerBroadcast,
+  sendPartnerBroadcast,
+  sendOfficialBroadcastNotification,
+} from '@/lib/email';
+import { sanitizeHtml } from '@/lib/sanitize';
+
+async function requireAdmin(): Promise<boolean> {
+  const token = await getAuthToken();
+  if (!token) return false;
+  const result = await verifyToken(token);
+  return result.authorized && result.user?.role === 'admin';
+}
+
+// -------- LAWMAKERS ------------------------------------------------
+
+export interface LawmakerFilter {
+  chamber: 'All' | Chamber;
+  party: 'All' | 'R' | 'D';
+  grade: 'All' | Grade;
+}
+
+/**
+ * Return count only, for the pre-send preview. We deliberately hide
+ * the email addresses from the admin UI — they're on file publicly at
+ * mi.gov anyway, but there's no reason to render 148 addresses in the
+ * browser DOM.
+ */
+export async function countLawmakerRecipients(filter: LawmakerFilter): Promise<number | { error: string }> {
+  const admin = await requireAdmin();
+  if (!admin) return { error: 'Authentication required' };
+  return filterLegislators(filter).length;
+}
+
+function filterLegislators(filter: LawmakerFilter) {
+  const all = getLegislators();
+  return all.filter((l) => {
+    if (filter.chamber !== 'All' && l.chamber !== filter.chamber) return false;
+    if (filter.party !== 'All' && l.party !== filter.party) return false;
+    if (filter.grade !== 'All' && grade(l) !== filter.grade) return false;
+    if (!l.email || !l.email.trim()) return false;
+    return true;
+  });
+}
+
+export async function sendLawmakerBroadcastAction(data: {
+  subject: string;
+  body: string;
+  filter: LawmakerFilter;
+}): Promise<{ sent: number; failed: number } | { error: string }> {
+  try {
+    const admin = await requireAdmin();
+    if (!admin) return { error: 'Authentication required' };
+
+    if (!data.subject.trim() || !data.body.trim()) {
+      return { error: 'Subject and body are required' };
+    }
+    if (data.subject.length > 200) {
+      return { error: 'Subject must be 200 characters or less' };
+    }
+
+    const legislators = filterLegislators(data.filter);
+    if (legislators.length === 0) {
+      return { error: 'No lawmakers match the selected filters (or they have no email on file).' };
+    }
+
+    const recipients = legislators.map((l) => ({
+      name: l.name,
+      email: l.email!,
+      meta: `${chamberLabel(l.chamber)} · District ${l.district} · ${partyLabel(l.party)[0]}`,
+    }));
+
+    const safeBody = sanitizeHtml(data.body);
+    const result = await sendLawmakerBroadcast(data.subject.trim(), safeBody, recipients);
+    await sendOfficialBroadcastNotification('lawmaker', data.subject.trim(), result.sent, result.failed);
+    return result;
+  } catch (error) {
+    console.error('Lawmaker broadcast error:', error instanceof Error ? error.message : 'Unknown error');
+    return { error: 'Failed to send lawmaker broadcast' };
+  }
+}
+

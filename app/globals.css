@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary-dark: #1a1a1a;
+  --accent-red: #dc2626;
+  --muted: #9ca3af;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent-red: var(--accent-red);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for FAQ sidebar */
+.faq-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.faq-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.faq-sidebar::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 2px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* News card hover effect */
+.news-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-card {
+    transition: none;
+  }
+  .news-card:hover {
+    transform: none;
+  }
+}
+
+/* Red text highlight class */
+.text-highlight {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Dropdown animation */
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
+
+.dropdown-content.dropdown-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Global focus indicator for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+/* Dropdown reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .dropdown-content {
+    transition: none;
+  }
+}
+
+/* FAQ section anchor offset for sticky header */
+.faq-section {
+  scroll-margin-top: 100px;
+}
+
+/* Hide public header/footer on admin pages */
+body:has(#admin-area) > header,
+body:has(#admin-area) > footer {
+  display: none !important;
+}
+
+body:has(#admin-area) > main {
+  flex: none !important;
+}

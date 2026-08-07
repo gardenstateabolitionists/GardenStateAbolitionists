@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "source": "Michigan Historical Society; National Park Service Network to Freedom; Erastus Hussey papers (Bentley Historical Library); Michigan History magazine",
+    "note": "Region-specific Underground Railroad and early-abolition history keyed to county name. Used to weave regional continuity into city-page history sections — Michigan's freedom-corridor legacy is the direct line to today's work.",
+    "refreshedOn": "July 25, 2026"
+  },
+  "counties": {
+    "Calhoun": {
+      "headline": "The Battle Creek station on the freedom corridor",
+      "paragraph": "Battle Creek was the busiest Underground Railroad station on Michigan's east-west freedom corridor. Between the 1840s and 1860s, Quaker abolitionist Erastus Hussey and his wife Sarah sheltered more than 2,000 escaping freedom seekers in their home on Van Buren Street, feeding them and moving them east toward Marshall, then Ann Arbor, then Detroit and Canada. Hussey published the Michigan Liberty Press, the state's leading anti-slavery newspaper, and helped organize the Republican Party at Jackson in 1854 as an explicitly anti-slavery party. The moral line the Husseys drew — that no just law could compel a person to be complicit in another's captivity — is the same line abolitionists draw today between civil authority and the personhood of preborn children."
+    },
+    "Lenawee": {
+      "headline": "Michigan's first anti-slavery society was organized here",
+      "paragraph": "Lenawee County is the birthplace of organized abolition in Michigan. In 1832, Quaker poet and editor Elizabeth Margaret Chandler founded the Logan Female Anti-Slavery Society near Adrian — the first anti-slavery society of any kind in the state. Laura Smith Haviland then built the Raisin Institute on that same abolitionist soil: an interracial, coeducational school that also served as a major Underground Railroad station, sheltering hundreds of freedom seekers moving north. Haviland personally traveled into slave states to bring families out. Michigan's abolition movement did not begin in Detroit; it began in Adrian, and it began with people who refused to grant the pro-slavery consensus the moral legitimacy it demanded."
+    },
+    "Washtenaw": {
+      "headline": "The Ann Arbor node of the Michigan Anti-Slavery Society",
+      "paragraph": "The Michigan Anti-Slavery Society was organized in 1836 at Ann Arbor's First Presbyterian Church on East Huron Street. From that founding, Washtenaw County became a major waypoint on the freedom corridor running Battle Creek → Marshall → Jackson → Grass Lake → Ann Arbor → Plymouth → Detroit. Local Quakers, Baptists, and Methodists sheltered escaping freedom seekers in barns, cellars, and church basements. That same Christian anti-slavery witness — the insistence that no human being can be treated as property by any legal fiction — is what today's abolitionist movement recovers when it insists that no child can be treated as disposable by any court ruling or state constitutional amendment."
+    },
+    "Cass": {
+      "headline": "The Kentucky Raid and the Quaker settlement at Vandalia",
+      "paragraph": "Cass County was one of the most active free-Black and Quaker abolitionist communities in the antebellum Midwest. The Quaker settlement around Vandalia and Cassopolis sheltered so many escaping freedom seekers that in August 1847, thirteen armed Kentucky slavecatchers rode north to seize them by force. Local abolitionists — Black and white together — surrounded the raiders, arrested them under Michigan law, and freed everyone they had captured. The 'Kentucky Raid' became a national scandal that helped push Congress toward the harsher Fugitive Slave Act of 1850, which only radicalized Northern conscience further. The lesson Cass County left is that quiet, principled communities can and do disrupt an entire national injustice when they refuse to hand people over."
+    },
+    "Wayne": {
+      "headline": "Detroit — 'Midnight,' the last stop before freedom",
+      "paragraph": "Detroit's Underground Railroad codename was 'Midnight,' the final station on the freedom corridor before the crossing to Canada at 'Dawn' (Windsor and Amherstburg). Second Baptist Church on Monroe Street, founded by escaped freedom seekers themselves, sheltered an estimated 5,000 people between 1836 and the Civil War. George DeBaptiste, William Lambert, and the Colored Vigilant Committee ran a highly organized escape network from the Detroit riverfront. When federal marshals came to enforce the Fugitive Slave Act, Detroit abolitionists physically prevented seizures in the streets. That corridor of moral resistance is preserved in Detroit's own memory, and today's abolitionist work in Wayne County stands squarely in it."
+    },
+    "Jackson": {
+      "headline": "Where the Republican Party was founded as an anti-slavery party",
+      "paragraph": "On July 6, 1854, at 'Morgan's Forty' in what is now downtown Jackson, disaffected Whigs, Free Soilers, and anti-slavery Democrats met 'Under the Oaks' to found the Republican Party as an explicitly anti-slavery political party. Erastus Hussey of Battle Creek was on the resolutions committee. Their founding platform pledged to oppose the extension of slavery into any new territory and to work for its ultimate abolition. Jackson County therefore holds a particular civic memory: that a new political vehicle can be built in a single generation when the existing parties refuse to draw a moral line. Michigan abolitionists today draw the same lesson."
+    }
+  }
+}

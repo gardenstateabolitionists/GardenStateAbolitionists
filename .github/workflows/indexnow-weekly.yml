@@ -1,0 +1,30 @@
+name: IndexNow weekly bulk ping
+
+# Runs at 07:00 UTC every Monday (~3 AM Eastern). Pushes every URL in the
+# live sitemap to Bing / Yandex / DuckDuckGo / Naver in one API call so
+# freshly-published content gets discovered quickly across non-Google
+# engines. Also re-notifies existing URLs, which nudges some engines to
+# re-crawl.
+#
+# Manual re-run via the "Run workflow" button in the Actions tab.
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run IndexNow bulk ping
+        run: node scripts/search-console/indexnow-bulk.mjs

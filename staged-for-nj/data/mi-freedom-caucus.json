@@ -1,0 +1,11 @@
+{
+  "url": "https://freedomcaucusmi.com/",
+  "note": "Members scraped from https://freedomcaucusmi.com/membership/ — update when the caucus roster changes. Match legislators by (chamber, district) to survive nickname mismatches.",
+  "members": [
+    { "chamber": "House", "district": 36, "role": "Chairman", "name": "Steve Carra" },
+    { "chamber": "House", "district": 51, "role": "Vice-Chairman", "name": "Matt Maddock" },
+    { "chamber": "House", "district": 107, "role": "Secretary", "name": "Neil Friske" },
+    { "chamber": "House", "district": 66, "role": "Parliamentarian", "name": "Josh Schriver" },
+    { "chamber": "House", "district": 29, "role": "Member", "name": "Jim DeSana" }
+  ]
+}

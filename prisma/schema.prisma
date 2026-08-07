@@ -1,0 +1,78 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../lib/generated/prisma"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String    @id @default(uuid())
+  email            String    @unique
+  password         String
+  name             String?
+  // Default role is "member" so a future user-creation flow doesn't
+  // silently mint admins. The single admin account is bootstrapped via
+  // ADMIN_EMAIL / ADMIN_PASSWORD_HASH env vars, not through this table.
+  role             String    @default("member")
+  resetToken       String?
+  resetTokenExpiry DateTime?
+  created_at       DateTime  @default(now())
+  updated_at       DateTime  @default(now()) @updatedAt
+}
+
+model Inquiry {
+  id         String   @id @default(uuid())
+  name       String
+  email      String
+  subject    String?
+  message    String
+  status     String   @default("pending")
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt
+}
+
+model NewsArticle {
+  id                   String   @id @default(uuid())
+  title                String
+  slug                 String   @unique
+  excerpt              String
+  content              String
+  image                String?
+  published            Boolean  @default(false)
+  // When true, publishing this article auto-posts to Facebook + Instagram
+  // via lib/social/post-to-social.ts. Defaults to true so existing behavior
+  // is unchanged; uncheck the box in the editor to publish silently.
+  auto_post_to_social  Boolean  @default(true)
+  created_at           DateTime @default(now())
+  updated_at           DateTime @default(now()) @updatedAt
+}
+
+model PetitionSignature {
+  id         String   @id @default(uuid())
+  name       String
+  email      String   @unique
+  city       String?
+  state      String?
+  zipcode    String?
+  subscribed Boolean  @default(false)
+  created_at DateTime @default(now())
+}
+
+model GalleryPhoto {
+  id         String   @id @default(uuid())
+  url        String
+  caption    String?
+  sortOrder  Int      @default(0)
+  created_at DateTime @default(now())
+}
+
+model Subscriber {
+  id         String   @id @default(uuid())
+  email      String   @unique
+  subscribed Boolean  @default(true)
+  created_at DateTime @default(now())
+}
