@@ -12,7 +12,19 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     // connect-src includes both self (for the PostHog /ingest rewrite) and
     // Sentry's ingest hosts. script/img/font retain their previous scope.
-    value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' data:; connect-src 'self' https: https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://www.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net; frame-src 'self' https://www.youtube.com https://www.zeffy.com https://td.doubleclick.net; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+    //
+    // challenges.cloudflare.com appears in BOTH script-src and frame-src, and
+    // both are required for Turnstile: the widget injects a script from that
+    // host and then renders the challenge inside an iframe.
+    //
+    // Getting this wrong takes the forms down rather than merely weakening
+    // them. If the CSP blocks the widget it never renders, so the browser
+    // submits no token — and verifyTurnstile() only fails OPEN when the secret
+    // is unset. With the secret present and no token it returns false, so
+    // every newsletter signup and petition submission from a real visitor is
+    // rejected. The page shows nothing but a console CSP violation, which
+    // makes it a genuinely hard failure to diagnose from user reports.
+    value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' data:; connect-src 'self' https: https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://www.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net; frame-src 'self' https://www.youtube.com https://www.zeffy.com https://td.doubleclick.net https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
   },
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
   { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' },
