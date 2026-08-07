@@ -40,9 +40,15 @@ function slugify(s: string): string {
 }
 
 function colorFor(state: { id: string; name: string }, partner: Partner | undefined): string {
-  if (state.name === 'New Jersey') return '#15803d'; // green-700 — us
+  // These three fills must stay far apart in LIGHTNESS, not just hue: the
+  // previous pair (green-700 vs green-600) were adjacent Tailwind shades at a
+  // 1.52:1 luminance ratio, effectively indistinguishable side by side and
+  // invisible to anyone with a green colour deficiency. The current values are
+  // 4.52:1 apart, with every pair — including each against the gray — above
+  // 2.6:1. Keep the legend swatches below in sync with these.
+  if (state.name === 'New Jersey') return '#052e16'; // green-950 — us
   if (partner) return '#16a34a'; // green-600 — active partner
-  return '#d1d5db'; // gray-300 — no partner
+  return '#e5e7eb'; // gray-200 — no partner
 }
 
 export default function UsStatesMap({
@@ -132,13 +138,13 @@ export default function UsStatesMap({
 
       <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-gray-600">
         <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 bg-green-700 rounded" /> Garden State Abolitionists
+          <span className="inline-block w-3 h-3 bg-green-950 rounded" /> Garden State Abolitionists
         </span>
         <span className="flex items-center gap-1">
           <span className="inline-block w-3 h-3 bg-green-600 rounded" /> Active partner coalition
         </span>
         <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 bg-gray-300 rounded" /> No partner yet
+          <span className="inline-block w-3 h-3 bg-gray-200 rounded" /> No partner yet
         </span>
       </div>
     </div>

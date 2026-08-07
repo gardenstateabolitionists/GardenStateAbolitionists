@@ -34,11 +34,18 @@
   ],
   "states": [
     {
+      "state": "Michigan",
+      "name": "Abolish Abortion Michigan",
+      "url": "https://www.abolishabortionmichigan.com",
+      "email": null,
+      "blurb": "Christian abolitionists working for the immediate and total abolition of abortion in Michigan. This site is derived from theirs, with their permission."
+    },
+    {
       "state": "North Carolina",
       "name": "Abolish Abortion North Carolina",
       "url": "https://abolishabortionnc.com/",
       "email": null,
-      "blurb": "The template for state abolition orgs — AAM's own site is derived from theirs. Model outreach, biblical framing, and legislative work."
+      "blurb": "The template for state abolition orgs — this site's lineage traces back to theirs by way of Abolish Abortion Michigan. Model outreach, biblical framing, and legislative work."
     },
     {
       "state": "Ohio",

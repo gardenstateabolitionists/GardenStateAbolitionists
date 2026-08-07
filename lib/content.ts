@@ -59,6 +59,10 @@ export const socialLinks = {
   // The app's share sheet appends ?igsh=...&utm_source=qr; those are
   // session/QR attribution parameters and are deliberately stripped.
   instagram: 'https://www.instagram.com/newjerseyabolition',
+  // Share links arrive with ?si=... (YouTube share attribution) — stripped for
+  // the same reason, and the canonical www host is used since the bare
+  // youtube.com form 301s.
+  youtube: 'https://www.youtube.com/@newjerseyabolition',
   // Verified as a distinct group from the source organisation's — that invite
   // shipped in the copied code and would have dropped visitors into a private
   // chat belonging to someone else.

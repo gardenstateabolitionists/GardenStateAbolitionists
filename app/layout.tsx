@@ -90,6 +90,7 @@ export default function RootLayout({
         {socialLinks.facebook && <link rel="me" href={socialLinks.facebook} />}
         {socialLinks.x && <link rel="me" href={socialLinks.x} />}
         {socialLinks.instagram && <link rel="me" href={socialLinks.instagram} />}
+        {socialLinks.youtube && <link rel="me" href={socialLinks.youtube} />}
       </head>
       <body className={`${montserrat.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <PostHogProvider>

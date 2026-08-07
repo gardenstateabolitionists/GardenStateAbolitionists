@@ -19,6 +19,9 @@ export default function SecureLoginPage() {
   const [accessCode, setAccessCode] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [accessError, setAccessError] = useState(false);
+  // Holds the server's own explanation (e.g. rate limiting) so a throttled
+  // or degraded attempt isn't misreported as a wrong code.
+  const [accessErrorMsg, setAccessErrorMsg] = useState('');
   const [isVerifyingCode, setIsVerifyingCode] = useState(false);
 
   // Login form
@@ -57,6 +60,7 @@ export default function SecureLoginPage() {
     e.preventDefault();
     setIsVerifyingCode(true);
     setAccessError(false);
+    setAccessErrorMsg('');
 
     try {
       const result = await verifyAccessCode(accessCode);
@@ -64,9 +68,14 @@ export default function SecureLoginPage() {
         setIsUnlocked(true);
       } else {
         setAccessError(true);
+        // verifyAccessCode returns a message when the attempt was throttled
+        // rather than wrong. Showing it prevents an infrastructure problem
+        // from looking like a credential problem.
+        setAccessErrorMsg('error' in result && result.error ? result.error : '');
       }
     } catch {
       setAccessError(true);
+      setAccessErrorMsg('');
     } finally {
       setIsVerifyingCode(false);
     }
@@ -133,7 +142,7 @@ export default function SecureLoginPage() {
               {accessError && (
                 <Alert variant="destructive" className="mb-4">
                   <AlertTriangle className="h-4 w-4" />
-                  <AlertDescription>Invalid access code.</AlertDescription>
+                  <AlertDescription>{accessErrorMsg || 'Invalid access code.'}</AlertDescription>
                 </Alert>
               )}
 

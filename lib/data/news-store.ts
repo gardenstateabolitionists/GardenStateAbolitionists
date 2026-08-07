@@ -7,19 +7,18 @@ import prisma, { isDatabaseConnected } from '@/lib/prisma';
 export type NewsArticleData = NewsArticle;
 
 // In-memory fallback store with default article
-const memoryStore: NewsArticleData[] = [
-  {
-    id: '1',
-    title: 'Abolitionists of New Jersey Launch a Website',
-    slug: 'abolitionists-of-new-jersey-launch-a-website',
-    excerpt: 'Garden State Abolitionists is proud to announce the launch of our website. Hooray, and congrats! We hope to continue improving the website and adding content for many years from now.',
-    content: '<p>Garden State Abolitionists is proud to announce the launch of our website. Hooray, and congrats!</p><p>We hope to continue improving the website and adding content for many years from now. Hopefully this will help outsiders understand who we are, and help insiders in some other way.</p><p>Thanks to Abolish Abortion North Carolina for the hard work they put into their website, which we were able to derive much of our content and design from.</p>',
-    image: '',
-    published: true,
-    created_at: '2024-11-09T00:00:00.000Z',
-    updated_at: '2024-11-09T00:00:00.000Z',
-  },
-];
+/**
+ * In-memory fallback used only when DATABASE_URL is unset (local development
+ * without a database). Deliberately EMPTY.
+ *
+ * It previously carried a seeded launch announcement inherited from the site
+ * this was derived from: dated November 2024, written in this organisation's
+ * voice, and crediting a third organisation. If the database env var were ever
+ * missing in production, the site would have published a news article this
+ * organisation never wrote, predating its existence. An empty news list is the
+ * honest failure mode.
+ */
+const memoryStore: NewsArticleData[] = [];
 
 export async function getAllNewsArticles(publishedOnly = false): Promise<NewsArticleData[]> {
   if (isDatabaseConnected) {
