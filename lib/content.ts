@@ -1,25 +1,42 @@
 /**
  * Abortion statistics shown on the homepage counter row.
  *
- * DELIBERATELY EMPTY. The values that were here belonged to Michigan and are
- * not transferable — New Jersey's abortion volume is among the highest in the
- * country and its legal regime is entirely different, so reusing the old
- * numbers would have published false figures under a New Jersey banner.
+ * These are New Jersey figures from the Guttmacher Institute's 2024 data
+ * release. The counter set was reshaped from the Michigan original because
+ * New Jersey's data situation is different in two ways that matter:
  *
- * Fill each field with a figure the client can attribute to a named source
- * (NJ DOH vital statistics, Guttmacher's state profile, or the CDC abortion
- * surveillance report) and record that source in `statisticsSource` so the
- * homepage can cite it. Any field left blank is hidden rather than rendered.
+ * 1. New Jersey does not report abortion data to the CDC. State-reported
+ *    counts run roughly half of Guttmacher's estimates (~23k vs ~59k a year),
+ *    so a cumulative "total since 1973" would swing by over a million
+ *    depending on which series you pick. It is not publishable as a single
+ *    number and has been dropped rather than guessed at.
+ * 2. Guttmacher's Abortion Provider Census ran every three years through 2020
+ *    and annually only from 2023, so 2021 and 2022 have no figure. That makes
+ *    an "abortions since the 2022 Freedom of Reproductive Choice Act" total
+ *    uncomputable, so that counter was dropped too.
+ *
+ * What replaced them are figures that are directly sourced and, for New
+ * Jersey, more striking anyway: the state's abortion rate is more than double
+ * the national one.
+ *
+ * VERIFY BEFORE LAUNCH: confirm these against the Guttmacher release with the
+ * client, and refresh when the next annual figures publish. Any field left
+ * blank is hidden rather than rendered.
  */
 export const statistics = {
-  totalAbortions: '',
-  yearlyAbortions: '',
-  dailyAbortions: '',
-  sinceRoeOverturned: '',
+  /** Abortions provided in New Jersey in 2024 (includes out-of-state patients). */
+  annualAbortions: '59,830',
+  /** 59,830 / 366 days. Rounded down. */
+  dailyAbortions: '163',
+  /** Per 1,000 women aged 15-44. National rate the same year was 15.5. */
+  abortionRate: '32.9',
+  /** Share of New Jersey pregnancies ending in abortion, 2024. */
+  shareOfPregnancies: '37%',
 };
 
 /** Attribution line rendered beneath the counters when stats are populated. */
-export const statisticsSource = '';
+export const statisticsSource =
+  'Guttmacher Institute, 2024 abortion provision estimates. New Jersey does not report abortion data to the CDC.';
 
 /**
  * Social links — single source of truth referenced by Footer, Contact, and

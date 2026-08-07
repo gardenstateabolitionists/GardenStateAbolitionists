@@ -20,19 +20,17 @@ export const revalidate = 86400;
 
 /**
  * Homepage counters, in display order. Each entry is dropped when its figure
- * is blank, so the grid only ever shows numbers that have a real source
- * behind them. Labels are New Jersey specific — do not reintroduce the
- * Michigan "Proposal 3" framing here.
+ * is blank, so the grid only ever shows numbers with a real source behind
+ * them (see `statistics` in lib/content.ts for why this set differs from the
+ * Michigan original). Do not reintroduce a cumulative "since 1973" total or a
+ * "Proposal 3" framing — neither is supportable for New Jersey.
  */
 function buildStatCounters() {
   return [
-    { value: statistics.totalAbortions, label: 'Total Abortions Since 1973' },
-    { value: statistics.yearlyAbortions, label: 'Abortions Per Year' },
-    { value: statistics.dailyAbortions, label: 'Abortions Per Day' },
-    {
-      value: statistics.sinceRoeOverturned,
-      label: 'Since the Freedom of Reproductive Choice Act (2022)',
-    },
+    { value: statistics.annualAbortions, label: 'Abortions in New Jersey in 2024' },
+    { value: statistics.dailyAbortions, label: 'Every single day' },
+    { value: statistics.abortionRate, label: 'Abortion rate per 1,000 women — more than double the national 15.5' },
+    { value: statistics.shareOfPregnancies, label: 'Of New Jersey pregnancies end in abortion' },
   ].filter((s) => s.value);
 }
 
