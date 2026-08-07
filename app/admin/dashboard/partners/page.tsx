@@ -69,7 +69,7 @@ export default function PartnerBroadcastPage() {
         <div
           className={`rounded-lg p-4 flex items-start gap-3 ${
             result.error
-              ? 'bg-green-50 border border-green-200 text-green-800'
+              ? 'bg-red-50 border border-red-200 text-red-700'
               : 'bg-green-50 border border-green-200 text-green-700'
           }`}
         >

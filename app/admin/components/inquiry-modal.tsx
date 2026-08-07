@@ -244,7 +244,7 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
             variant="outline"
             onClick={handleDelete}
             disabled={isSubmitting}
-            className="text-green-700 hover:bg-green-50"
+            className="text-red-600 hover:bg-red-50"
           >
             {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Trash className="h-4 w-4 mr-2" />}
             Delete

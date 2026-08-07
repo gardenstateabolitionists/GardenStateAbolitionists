@@ -213,7 +213,7 @@ export default function SubscribersPage() {
       </div>
 
       {error && (
-        <div className="bg-green-50 border border-green-200 text-green-700 rounded-lg p-4">
+        <div className="bg-red-50 border border-red-200 text-red-600 rounded-lg p-4">
           <p>Error fetching subscribers. Please try again.</p>
           <Button variant="outline" className="mt-2" onClick={loadSubscribers}>
             Retry
@@ -241,15 +241,15 @@ export default function SubscribersPage() {
         <>
           {/* Bulk action bar */}
           {selectedIds.size > 0 && (
-            <div className="flex items-center justify-between bg-green-50 border border-green-200 rounded-lg px-4 py-3">
-              <span className="text-sm font-medium text-green-800">
+            <div className="flex items-center justify-between bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+              <span className="text-sm font-medium text-red-700">
                 {selectedIds.size} selected
               </span>
               <Button
                 size="sm"
                 onClick={handleBulkUnsubscribe}
                 disabled={bulkDeleting}
-                className="bg-green-700 hover:bg-green-800 text-white"
+                className="bg-red-600 hover:bg-red-700 text-white"
               >
                 {bulkDeleting ? (
                   <><Loader2 className="h-4 w-4 animate-spin mr-2" />Unsubscribing...</>
@@ -283,7 +283,7 @@ export default function SubscribersPage() {
                 </thead>
                 <tbody>
                   {paginatedSubscribers.map((sub) => (
-                    <tr key={sub.id} className={`border-b hover:bg-gray-50 ${selectedIds.has(sub.id) ? 'bg-green-50/50' : ''}`}>
+                    <tr key={sub.id} className={`border-b hover:bg-gray-50 ${selectedIds.has(sub.id) ? 'bg-red-50/50' : ''}`}>
                       <td className="p-4 w-10">
                         <input
                           type="checkbox"
@@ -321,7 +321,7 @@ export default function SubscribersPage() {
                             variant="outline"
                             size="sm"
                             onClick={() => handleDelete(sub.id)}
-                            className="text-green-700 hover:bg-green-50"
+                            className="text-red-600 hover:bg-red-50"
                             title="Delete entirely"
                           >
                             <Trash className="h-4 w-4" />
@@ -338,7 +338,7 @@ export default function SubscribersPage() {
           {/* Mobile card layout */}
           <div className="sm:hidden space-y-3">
             {paginatedSubscribers.map((sub) => (
-              <div key={sub.id} className={`bg-white rounded-lg border p-4 space-y-2 ${selectedIds.has(sub.id) ? 'ring-2 ring-green-200 bg-green-50/50' : ''}`}>
+              <div key={sub.id} className={`bg-white rounded-lg border p-4 space-y-2 ${selectedIds.has(sub.id) ? 'ring-2 ring-red-200 bg-red-50/50' : ''}`}>
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex items-start gap-3 min-w-0">
                     <input
@@ -365,7 +365,7 @@ export default function SubscribersPage() {
                       variant="outline"
                       size="sm"
                       onClick={() => handleDelete(sub.id)}
-                      className="text-green-700 hover:bg-green-50"
+                      className="text-red-600 hover:bg-red-50"
                       title="Delete"
                     >
                       <Trash className="h-4 w-4" />

@@ -16,6 +16,7 @@ import { Loader2, AlertTriangle } from 'lucide-react';
 import { PinDialog } from '@/components/ui/pin-dialog';
 import { createGalleryPhoto, updateGalleryPhoto } from '@/lib/actions/gallery-actions';
 import { GalleryPhoto } from '@/types';
+import ImageUpload from '@/components/admin/ImageUpload';
 
 interface GalleryModalProps {
   open: boolean;
@@ -102,16 +103,25 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
 
         <div className="space-y-4">
           <div>
-            <Label htmlFor="gallery-url">Image URL *</Label>
+            <Label htmlFor="gallery-url">Image *</Label>
+            <ImageUpload
+              folder="gallery"
+              label="Upload from your computer"
+              className="mt-2"
+              onUploaded={(url) => {
+                setFormUrl(url);
+                setErrorMessage('');
+              }}
+            />
             <Input
               id="gallery-url"
               value={formUrl}
               onChange={(e) => setFormUrl(e.target.value)}
               placeholder="https://example.com/photo.jpg"
-              className="mt-1"
+              className="mt-2"
             />
             <p className="text-xs text-gray-500 mt-1">
-              Enter the full URL of the image.
+              Upload a file, or paste an image URL directly.
             </p>
           </div>
 
@@ -158,7 +168,7 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
         </div>
 
         {errorMessage && (
-          <div className="flex items-center gap-2 p-3 bg-green-50 border border-green-200 rounded-md text-green-800 text-sm">
+          <div className="flex items-center gap-2 p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm">
             <AlertTriangle className="h-4 w-4 flex-shrink-0" />
             {errorMessage}
           </div>

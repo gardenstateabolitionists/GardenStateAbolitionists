@@ -191,7 +191,7 @@ export default function DashboardPage() {
       </div>
 
       {error && (
-        <div className="bg-green-50 border border-green-200 text-green-700 rounded-lg p-4 flex items-center justify-between">
+        <div className="bg-red-50 border border-red-200 text-red-600 rounded-lg p-4 flex items-center justify-between">
           <p>Error fetching dashboard data. Please try again.</p>
           <Button variant="outline" size="sm" onClick={fetchData}>
             Retry

@@ -457,7 +457,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
         )}
 
         {errorMessage && (
-          <div className="flex items-center gap-2 p-3 bg-green-50 border border-green-200 rounded-md text-green-800 text-sm">
+          <div className="flex items-center gap-2 p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm">
             <AlertTriangle className="h-4 w-4 flex-shrink-0" />
             {errorMessage}
           </div>
