@@ -44,6 +44,7 @@ const navItems = [
       { label: 'FAQ', href: '/faq' },
       { label: 'Media', href: '/media' },
       { label: 'Allied Groups', href: '/partners' },
+      { label: 'The Norman Statement', href: '/norman-statement' },
     ],
   },
   { label: 'CONTACT US', href: '/contact' },

@@ -35,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/what-we-believe/no-exceptions`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.5 },
     // Allied abolition groups directory — backlink hub
     { url: `${BASE_URL}/partners`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/norman-statement`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.5 },
   ];
 
   // NOTE: legislator, city, abortion-facility and abolition-bill URLs are

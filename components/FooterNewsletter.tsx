@@ -1,24 +1,11 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { subscribeToNewsletter } from '@/lib/actions/petition-actions';
 import { capture } from '@/lib/analytics';
 import { fireAdsConversion } from '@/lib/google-ads';
+import TurnstileWidget, { TURNSTILE_SITE_KEY } from '@/components/TurnstileWidget';
 
-// Cloudflare Turnstile browser API (loaded on demand). Minimal typing.
-type TurnstileAPI = {
-  render: (el: HTMLElement, opts: Record<string, unknown>) => string;
-  remove: (id: string) => void;
-  reset: (id?: string) => void;
-};
-declare global {
-  interface Window {
-    turnstile?: TurnstileAPI;
-  }
-}
-
-const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-const TURNSTILE_SCRIPT_ID = 'cf-turnstile-api';
 
 // Footer newsletter opt-in. Guarded by:
 //   1. honeypot ("website" field, hidden off-screen)
@@ -34,60 +21,16 @@ export default function FooterNewsletter() {
   const [errorMsg, setErrorMsg] = useState('');
   const [token, setToken] = useState('');
   const [showWidget, setShowWidget] = useState(false);
+  const [widgetKey, setWidgetKey] = useState(0);
 
-  const widgetRef = useRef<HTMLDivElement>(null);
-  const widgetIdRef = useRef<string | null>(null);
 
-  useEffect(() => {
-    if (!SITE_KEY || !showWidget) return;
 
-    const render = () => {
-      if (!window.turnstile || !widgetRef.current || widgetIdRef.current) return;
-      widgetIdRef.current = window.turnstile.render(widgetRef.current, {
-        sitekey: SITE_KEY,
-        callback: (t: string) => setToken(t),
-        'error-callback': () => setToken(''),
-        'expired-callback': () => setToken(''),
-        'timeout-callback': () => setToken(''),
-        appearance: 'interaction-only', // invisible unless a challenge is needed
-        theme: 'dark', // footer is #1a1a1a
-      });
-    };
-
-    let poll: ReturnType<typeof setInterval> | undefined;
-    if (window.turnstile) {
-      render();
-    } else if (!document.getElementById(TURNSTILE_SCRIPT_ID)) {
-      const s = document.createElement('script');
-      s.id = TURNSTILE_SCRIPT_ID;
-      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
-      s.async = true;
-      s.defer = true;
-      s.onload = render;
-      document.head.appendChild(s);
-    } else {
-      poll = setInterval(() => {
-        if (window.turnstile) {
-          if (poll) clearInterval(poll);
-          render();
-        }
-      }, 150);
-    }
-
-    return () => {
-      if (poll) clearInterval(poll);
-      if (widgetIdRef.current && window.turnstile) {
-        window.turnstile.remove(widgetIdRef.current);
-        widgetIdRef.current = null;
-      }
-    };
-  }, [showWidget]);
-
+  // Remounting the widget (via key) is the cleanest reset: it discards the
+  // spent challenge and issues a fresh one, without this component needing to
+  // reach into Turnstile's imperative API.
   const resetWidget = () => {
-    if (widgetIdRef.current && window.turnstile) {
-      window.turnstile.reset(widgetIdRef.current);
-    }
     setToken('');
+    setWidgetKey((k) => k + 1);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -96,10 +39,16 @@ export default function FooterNewsletter() {
 
     // If Turnstile is configured but hasn't produced a token yet, surface the
     // widget and ask the visitor to complete it.
-    if (SITE_KEY && !token) {
+    if (TURNSTILE_SITE_KEY && !token) {
       setShowWidget(true);
       setStatus('error');
-      setErrorMsg('Please complete the quick verification below, then submit again.');
+      setErrorMsg(
+        // Deliberately does NOT say "complete the verification below": if the
+        // Cloudflare widget is configured in Invisible mode there is nothing
+        // on screen to complete, and that wording leaves the visitor stuck
+        // with no possible next step.
+        'Verification is still running. Give it a moment and press Subscribe again.'
+      );
       return;
     }
 
@@ -178,7 +127,9 @@ export default function FooterNewsletter() {
           {/* Turnstile mounts here (invisible for legit visitors; shows a
               challenge only if one is required). Nothing renders until the
               site key is set. */}
-          {SITE_KEY && showWidget && <div ref={widgetRef} className="mt-2" />}
+          {showWidget && (
+            <TurnstileWidget key={widgetKey} onToken={setToken} className="mt-3 flex justify-center" />
+          )}
         </form>
       )}
     </div>
