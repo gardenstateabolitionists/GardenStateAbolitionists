@@ -279,23 +279,11 @@ export default async function HomePage() {
       {/* Scorecard CTA — sits between "What is Abolition" and Latest News
           so visitors who just learned the definition can immediately see
           how it plays out in the current NJ Legislature. */}
-      <section className="bg-white py-10 border-t border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
-            See where your legislators stand
-          </h2>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Every New Jersey legislator&apos;s record on abortion — voting, sponsorships,
-            endorsements, and campaign finance. Look up your representative and senator.
-          </p>
-          <Link
-            href="/legislators"
-            className="inline-block px-8 py-3 bg-[#1a1a1a] text-white font-bold hover:bg-black transition-colors"
-          >
-            OPEN THE LEGISLATOR SCORECARD &rarr;
-          </Link>
-        </div>
-      </section>
+      {/* Legislator-scorecard CTA removed: /legislators is parked in
+          staged-for-nj/ until a New Jersey roster exists. Restore this block in
+          the same change that restores the route. Note the old copy promised
+          voting records on abolition bills — New Jersey has none, so the copy
+          needs rewriting, not just relinking. */}
 
       {/* Latest News */}
       <section className="bg-gray-100 py-16">

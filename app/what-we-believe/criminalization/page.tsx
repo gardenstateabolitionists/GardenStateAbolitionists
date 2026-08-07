@@ -173,14 +173,8 @@ export default function CriminalizationPage() {
               </p>
             </div>
 
-            <div className="my-10">
-              <Link
-                href="/abolition-bills/components"
-                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
-              >
-                Read More &#10148; COMPONENTS OF AN ABOLITION BILL
-              </Link>
-            </div>
+            {/* "Components of an abolition bill" button removed with the
+                /abolition-bills route (staged-for-nj/). */}
 
             <p className="text-sm text-gray-500 italic">
               This content was originally published by <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, and is used by permission. Garden State Abolitionists is not formally affiliated with <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, but shares its abolitionist mission and principles.

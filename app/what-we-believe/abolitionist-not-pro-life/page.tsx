@@ -118,21 +118,9 @@ export default function AbolitionistNotProLifePage() {
               </Link>
             </div>
 
-            <div className="my-10 border-l-4 border-green-700 bg-gray-50 p-5 rounded-r not-prose">
-              <p className="text-gray-800 mb-2">
-                <strong>Wondering which New Jersey legislators actually sponsor abolition bills?</strong>
-              </p>
-              <p className="text-gray-700 text-sm mb-3">
-                Our Legislator Scorecard shows every state house and senate member&apos;s voting
-                record, bills sponsored, endorsements, and campaign finance related to abortion.
-              </p>
-              <Link
-                href="/legislators"
-                className="inline-block text-green-800 font-semibold underline hover:no-underline"
-              >
-                See which legislators sponsor abolition bills &rarr;
-              </Link>
-            </div>
+            {/* Scorecard callout removed with the /legislators route
+                (staged-for-nj/). Its premise — "which New Jersey legislators
+                sponsor abolition bills" — is not currently true of New Jersey. */}
 
             <p className="text-sm text-gray-500 italic">
               This content was originally published by <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, and is used by permission. Garden State Abolitionists is not formally affiliated with <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, but shares its abolitionist mission and principles.
