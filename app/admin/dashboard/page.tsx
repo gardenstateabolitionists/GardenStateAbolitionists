@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Newspaper, FileText, ImageIcon, RefreshCw, ArrowUpRight, Users, Download } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -89,7 +89,7 @@ export default function DashboardPage() {
     },
   ];
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true);
     setError(false);
     try {
@@ -104,7 +104,7 @@ export default function DashboardPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   const handleExportAll = async () => {
     setExporting(true);
@@ -170,8 +170,26 @@ export default function DashboardPage() {
     }
   };
 
+  // Mount fetch, inline rather than calling fetchData: every setState here runs
+  // after an await so it cannot cascade renders synchronously, and `cancelled`
+  // stops a slow response writing state after unmount.
   useEffect(() => {
-    fetchData();
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await getDashboardStats();
+        if (cancelled) return;
+        if ('error' in res) setError(true);
+        else setData(res);
+      } catch {
+        if (!cancelled) setError(true);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return (

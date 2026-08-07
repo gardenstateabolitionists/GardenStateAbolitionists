@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -39,7 +39,13 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
   const [showPinDialog, setShowPinDialog] = useState(false);
   const [confirmDialog, setConfirmDialog] = useState<{ open: boolean; title: string; description: string; onConfirm: () => void }>({ open: false, title: '', description: '', onConfirm: () => {} });
 
-  useEffect(() => {
+  // Reset the form when a different inquiry is opened. Adjusted during render
+  // rather than in an effect (the same derived-state pattern used in
+  // components/Header.tsx): an effect renders one frame showing the previous
+  // inquiry's reply state before correcting it.
+  const [prevInquiry, setPrevInquiry] = useState(inquiry);
+  if (prevInquiry !== inquiry) {
+    setPrevInquiry(inquiry);
     if (inquiry) {
       setStatus(inquiry.status);
       setShowReply(false);
@@ -47,7 +53,7 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
       setReplySent(false);
       setReplyError('');
     }
-  }, [inquiry]);
+  }
 
   const handleStatusUpdate = async () => {
     if (!inquiry) return;

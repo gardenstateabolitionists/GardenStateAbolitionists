@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -34,7 +34,13 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
   const [showPinDialog, setShowPinDialog] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
+  // Reset the form when the modal opens or targets a different photo. Adjusted
+  // during render rather than in an effect (see components/Header.tsx for the
+  // same pattern) so the fields never show the previous photo's values for a
+  // frame. Comparing by reference preserves the original effect's semantics.
+  const [prevDeps, setPrevDeps] = useState({ photo, isCreating, open });
+  if (prevDeps.photo !== photo || prevDeps.isCreating !== isCreating || prevDeps.open !== open) {
+    setPrevDeps({ photo, isCreating, open });
     if (photo && !isCreating) {
       setFormUrl(photo.url);
       setFormCaption(photo.caption || '');
@@ -45,7 +51,7 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
       setFormOrder('0');
     }
     setErrorMessage('');
-  }, [photo, isCreating, open]);
+  }
 
   const handleSubmitClick = () => {
     setErrorMessage('');

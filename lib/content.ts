@@ -59,9 +59,10 @@ export const socialLinks = {
   // The app's share sheet appends ?igsh=...&utm_source=qr; those are
   // session/QR attribution parameters and are deliberately stripped.
   instagram: 'https://www.instagram.com/newjerseyabolition',
-  // No Signal group yet. Blank hides the entire invite card on /contact
-  // rather than rendering a dead link.
-  signalGroup: '',
+  // Verified as a distinct group from the source organisation's — that invite
+  // shipped in the copied code and would have dropped visitors into a private
+  // chat belonging to someone else.
+  signalGroup: 'https://signal.group/#CjQKIPkATnxKY3ezcE6vaORnxnMTZxIgOwLlUlffnLmfwu68EhBMQyB9ATptNaFHG1Tw1czz',
 };
 
 /**

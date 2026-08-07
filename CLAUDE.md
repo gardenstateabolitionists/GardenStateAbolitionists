@@ -89,6 +89,34 @@ defaults to `--sensitive`, which stops the value being inlined into the client
 bundle — it becomes `undefined` in the browser with no build error. Push an
 empty commit afterward to force a fresh build.
 
+## Local dev: escape `$` in .env.local
+
+Next.js runs `.env` values through **dotenv-expand**, so an unescaped `$` is
+read as a variable reference and silently mangles the value. Two values here
+are full of them:
+
+- `ADMIN_PASSWORD_HASH` — bcrypt hashes are `$2b$10$...`
+- `ADMIN_ACCESS_CODE` — if the code contains `$`
+
+Write them as `\$` in `.env.local`. The symptom is a correct password or access
+code being rejected with no useful error.
+
+**Vercel is unaffected** — it injects variables into the runtime rather than
+parsing a file, so this is a local-development-only trap. Do not "fix" it by
+changing the value stored in Vercel.
+
+## The admin rate limiter fails CLOSED
+
+`checkRateLimitStrict` (used by the access-code gate, login, and PIN
+confirmation) fails **closed**, unlike `checkRateLimit` on the public forms
+which fails open. If Upstash is unreachable or its credentials are wrong,
+**admin login is impossible** — and the UI reports it as "Invalid access code",
+which sends you hunting for a credential problem that does not exist.
+
+Check the server log for `Rate limit check failed (fail-closed)` before
+debugging credentials. Local development therefore needs the `KV_REST_API_*`
+variables in `.env.local`, not just the admin ones.
+
 ## JSX text spacing
 
 Text like `{count} counties` broken across lines collapses to `83counties`, and

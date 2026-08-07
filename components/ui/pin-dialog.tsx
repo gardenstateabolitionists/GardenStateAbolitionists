@@ -29,17 +29,29 @@ export function PinDialog({ open, onOpenChange, title, description, onVerified, 
   const [verifying, setVerifying] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Clear state when dialog opens/closes
-  useEffect(() => {
+  // Clearing the form is derived state, so it is adjusted during render rather
+  // than in an effect. That also means the previously typed PIN is never
+  // briefly present in the input when the dialog is reopened.
+  const [prevOpen, setPrevOpen] = useState(open);
+  if (prevOpen !== open) {
+    setPrevOpen(open);
     if (open) {
       setPin('');
       setError('');
       setVerifying(false);
-      // Auto-focus the input after dialog renders
-      requestAnimationFrame(() => {
-        inputRef.current?.focus();
-      });
     }
+  }
+
+  // Focus genuinely belongs in an effect: it drives the DOM, which is what
+  // effects are for. rAF waits until the dialog has been painted, and the
+  // cleanup cancels it so a close during that frame can't focus a torn-down
+  // input.
+  useEffect(() => {
+    if (!open) return;
+    const frame = requestAnimationFrame(() => {
+      inputRef.current?.focus();
+    });
+    return () => cancelAnimationFrame(frame);
   }, [open]);
 
   const handleSubmit = async (e: React.FormEvent) => {

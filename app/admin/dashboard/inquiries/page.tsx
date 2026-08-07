@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -32,7 +32,7 @@ export default function InquiriesPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const itemsPerPage = 25;
 
-  const loadInquiries = async () => {
+  const loadInquiries = useCallback(async () => {
     setLoading(true);
     setError(false);
     try {
@@ -47,10 +47,28 @@ export default function InquiriesPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
+  // Mount fetch, inline rather than calling loadInquiries: every setState here
+  // runs after an await so it cannot cascade renders synchronously, and
+  // `cancelled` stops a slow response writing state after unmount.
   useEffect(() => {
-    loadInquiries();
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetchInquiries();
+        if (cancelled) return;
+        if ('error' in res) setError(true);
+        else setInquiries(res);
+      } catch {
+        if (!cancelled) setError(true);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const handleView = (inquiry: Inquiry) => {
@@ -157,12 +175,13 @@ export default function InquiriesPage() {
   });
 
   const totalPages = Math.max(1, Math.ceil(filteredInquiries.length / itemsPerPage));
-  useEffect(() => {
-    if (currentPage > totalPages) setCurrentPage(totalPages);
-  }, [currentPage, totalPages]);
+  // Clamped during render instead of corrected by an effect: the old
+  // version rendered an out-of-range page for one frame after a deletion
+  // shrank the list, then snapped back.
+  const page = Math.min(currentPage, totalPages);
   const paginatedInquiries = filteredInquiries.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    (page - 1) * itemsPerPage,
+    page * itemsPerPage
   );
 
   return (
@@ -360,18 +379,18 @@ export default function InquiriesPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => { setCurrentPage((p) => Math.max(1, p - 1)); setSelectedIds(new Set()); const el = document.querySelector("[data-admin-scroll]"); if (el) el.scrollTop = 0; }}
-                disabled={currentPage === 1}
+                disabled={page === 1}
               >
                 Previous
               </Button>
               <span className="text-sm text-gray-600">
-                Page {currentPage} of {totalPages} ({filteredInquiries.length} total)
+                Page {page} of {totalPages} ({filteredInquiries.length} total)
               </span>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => { setCurrentPage((p) => Math.min(totalPages, p + 1)); setSelectedIds(new Set()); const el = document.querySelector("[data-admin-scroll]"); if (el) el.scrollTop = 0; }}
-                disabled={currentPage === totalPages}
+                disabled={page === totalPages}
               >
                 Next
               </Button>

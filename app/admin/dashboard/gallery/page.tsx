@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { ConfirmDialog } from '@/components/ui/confirm-dialog';
 import { PinDialog } from '@/components/ui/pin-dialog';
@@ -28,31 +28,51 @@ export default function GalleryManagementPage() {
   const [isCreating, setIsCreating] = useState(false);
   const itemsPerPage = 24;
 
-  // Clamp currentPage when photos are deleted
-  useEffect(() => {
-    const maxPage = Math.max(1, Math.ceil(photos.length / itemsPerPage));
-    if (currentPage > maxPage) setCurrentPage(maxPage);
-  }, [photos.length, currentPage]);
+  // Page bounds are DERIVED during render rather than corrected by an effect.
+  // The old effect clamped currentPage after the fact, which meant deleting
+  // the last item on the final page rendered an empty page for one frame
+  // before snapping back. Deriving it removes both the flash and the extra
+  // render pass.
+  const totalPages = Math.max(1, Math.ceil(photos.length / itemsPerPage));
+  const page = Math.min(currentPage, totalPages);
 
-  const loadPhotos = async () => {
+  // Manual refresh / retry. Separate from the mount path below because these
+  // indicators genuinely need resetting when the user re-triggers a load,
+  // whereas on mount they already hold the right values.
+  const loadPhotos = useCallback(async () => {
     setLoading(true);
     setError(false);
     try {
       const res = await fetchGalleryPhotos();
-      if ('error' in res) {
-        setError(true);
-      } else {
-        setPhotos(res);
-      }
+      if ('error' in res) setError(true);
+      else setPhotos(res);
     } catch {
       setError(true);
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
+  // Mount fetch, written inline rather than calling loadPhotos: every setState
+  // here happens after an await, so it cannot cascade renders synchronously.
+  // `cancelled` also stops a slow response writing state after unmount.
   useEffect(() => {
-    loadPhotos();
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetchGalleryPhotos();
+        if (cancelled) return;
+        if ('error' in res) setError(true);
+        else setPhotos(res);
+      } catch {
+        if (!cancelled) setError(true);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const handleAdd = () => {
@@ -211,7 +231,7 @@ export default function GalleryManagementPage() {
         )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-          {photos.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((photo) => (
+          {photos.slice((page - 1) * itemsPerPage, page * itemsPerPage).map((photo) => (
             <div key={photo.id} className={`bg-white rounded-lg border overflow-hidden group ${selectedIds.has(photo.id) ? 'ring-2 ring-red-300' : ''}`}>
               <div className="relative aspect-square bg-gray-100">
                 <div className="absolute top-2 left-2 z-10">
@@ -284,24 +304,24 @@ export default function GalleryManagementPage() {
         </div>
 
         {/* Pagination */}
-        {Math.ceil(photos.length / itemsPerPage) > 1 && (
+        {totalPages > 1 && (
           <div className="flex items-center justify-between bg-white rounded-lg border px-4 py-3">
             <Button
               variant="outline"
               size="sm"
-              onClick={() => { setCurrentPage((p) => Math.max(1, p - 1)); setSelectedIds(new Set()); const el = document.querySelector('[data-admin-scroll]'); if (el) el.scrollTop = 0; }}
-              disabled={currentPage === 1}
+              onClick={() => { setCurrentPage(Math.max(1, page - 1)); setSelectedIds(new Set()); const el = document.querySelector('[data-admin-scroll]'); if (el) el.scrollTop = 0; }}
+              disabled={page === 1}
             >
               Previous
             </Button>
             <span className="text-sm text-gray-600">
-              Page {currentPage} of {Math.ceil(photos.length / itemsPerPage)} ({photos.length} total)
+              Page {page} of {totalPages} ({photos.length} total)
             </span>
             <Button
               variant="outline"
               size="sm"
-              onClick={() => { setCurrentPage((p) => Math.min(Math.ceil(photos.length / itemsPerPage), p + 1)); setSelectedIds(new Set()); const el = document.querySelector('[data-admin-scroll]'); if (el) el.scrollTop = 0; }}
-              disabled={currentPage === Math.ceil(photos.length / itemsPerPage)}
+              onClick={() => { setCurrentPage(Math.min(totalPages, page + 1)); setSelectedIds(new Set()); const el = document.querySelector('[data-admin-scroll]'); if (el) el.scrollTop = 0; }}
+              disabled={page === totalPages}
             >
               Next
             </Button>

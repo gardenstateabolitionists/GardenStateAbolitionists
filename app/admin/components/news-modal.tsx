@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -69,7 +69,15 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
   const [activeTab, setActiveTab] = useState<'compose' | 'preview'>('compose');
   const contentRef = useRef<HTMLTextAreaElement>(null);
 
-  useEffect(() => {
+  // Reset the editor when the modal opens or targets a different article.
+  // Adjusted during render rather than in an effect (see components/Header.tsx
+  // for the same pattern) so the editor never shows the previous article's
+  // content for a frame — which on a publish screen risks the wrong body being
+  // seen or, worse, saved. Reference comparison preserves the effect's
+  // original semantics.
+  const [prevDeps, setPrevDeps] = useState({ article, isCreating, open });
+  if (prevDeps.article !== article || prevDeps.isCreating !== isCreating || prevDeps.open !== open) {
+    setPrevDeps({ article, isCreating, open });
     if (article && !isCreating) {
       setFormData({
         title: article.title || '',
@@ -92,7 +100,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
       });
     }
     setActiveTab('compose');
-  }, [article, isCreating, open]);
+  }
 
   const handleTitleChange = (value: string) => {
     setFormData((prev) => ({
