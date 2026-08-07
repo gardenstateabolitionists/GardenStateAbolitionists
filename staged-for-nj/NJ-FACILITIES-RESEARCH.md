@@ -33,7 +33,7 @@ Englewood, so the two may be being conflated.
 | **Garden State Gynecology** | Offices in Morristown and Princeton. **Not yet confirmed whether they provide abortion** — appears in clinic searches but presents as a general gynaecology practice. Verify before listing. |
 | **Luminosas Wellness Collective** | Hudson County, reported as opening 2026 as an all-trimester facility. **Not yet open** — if listed at all, must be flagged as pending, not operating. |
 
-## Planned Parenthood — unresolved, needs a decision
+## Planned Parenthood — RESOLVED
 
 New Jersey has **two separate PP affiliates**:
 - Planned Parenthood of Metropolitan New Jersey (East Orange, Montclair, Newark ×2, Paterson)
@@ -76,3 +76,50 @@ or a phone/records check.
 4. Decide the Planned Parenthood scope (see above).
 5. Geocode every confirmed address to lat/lng for the map.
 6. Cross-check each entry against a second independent source before publishing.
+
+
+---
+
+# UPDATE — 22 facilities written to staged-for-nj/data/abortion-mills.json
+
+**Scope decided:** anything that dispenses abortion pills *or* performs
+procedures. Both are abortion, so both are listed.
+
+That decision also resolved the Planned Parenthood question. AbortionFinder
+publishes per-location service data (client-side rendered, so it needs a real
+browser to read) and shows **medication abortion at every New Jersey PP centre
+it lists** — so under this scope they all qualify and the earlier
+"which ones actually provide it" problem falls away.
+
+**Written: 19 Planned Parenthood centres + Metropolitan Medical Associates,
+Cherry Hill Women's Center and Pilgrim Medical Center.**
+
+Each row carries a `sourced` field recording which sources agreed:
+`af` AbortionFinder · `pp` Planned Parenthood's own directory ·
+`njaaf` NJ Abortion Access Fund · `own` the operator's own website.
+Cherry Hill's address was confirmed independently by three of them.
+
+**Deliberately excluded:** the ~19 national mail-order/telehealth services that
+ship into New Jersey (Hey Jane, Aid Access, carafem, Abortion on Demand and
+similar). They dispense pills to New Jersey residents, so they meet the scope
+test, but they have no New Jersey premises and cannot be placed on a map. If
+they should appear, they need a separate list rather than map pins.
+
+## Coordinates
+
+20 of 22 geocoded to the building. Two — **PP Flemington** and **PP Franklin
+Township** — fall back to the town centroid because the street address does not
+geocode (both are in plazas with suite/building lines). Flagged in `notes`;
+refine before anyone relies on those two pins.
+
+## Still outstanding
+
+- **Women's Choice Medical Center** — phone confirmed (201) 489-2266, but the
+  Hackensack/Englewood conflict is unresolved and their site blocks automated
+  fetches. Needs a manual look.
+- **Jersey GYN** — Union (908) 686-2563 and Jersey City (201) 332-2002; street
+  addresses are not published on their site.
+- **Garden State Gynecology** (Morristown, Princeton) — still unconfirmed
+  whether they provide abortion at all. Do not list until verified.
+- **Luminosas Wellness Collective** (Hudson County) — reported to open 2026 as
+  all-trimester. Not operating; list only when it is.
