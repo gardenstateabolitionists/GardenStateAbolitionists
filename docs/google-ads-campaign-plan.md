@@ -17,7 +17,7 @@ The $10k/mo credit is total across all three; Google distributes based on which 
 ## Ad Grants compliance rules (must maintain)
 
 - **≥ 5% CTR** account-wide, monthly average — under it two months in a row = account suspended
-- **No single-word keywords** except brand ("abolish", "new-jersey" alone will fail review)
+- **No single-word keywords** except brand ("abolish", "new jersey" alone will fail review)
 - **No overly generic keywords** ("abortion" alone will be rejected)
 - **Every keyword needs Quality Score ≥ 3** — check monthly and pause anything below
 - **≥ 1 conversion tracked per month** — the Google-Ads conversion events in `lib/google-ads.ts` cover this
@@ -34,39 +34,39 @@ The $10k/mo credit is total across all three; Google distributes based on which 
 Match types: `[exact]`, `"phrase"`, `broad`
 
 ```
-[abolish abortion new-jersey]
-"abolish abortion new-jersey"
+[abolish abortion new jersey]
+"abolish abortion new jersey"
 [aam petition]
-"abolition of abortion new-jersey"
-"new-jersey abolitionist petition"
-"end abortion new-jersey petition"
-"abolish abortion new-jersey sign"
-"aam new-jersey"
+"abolition of abortion new jersey"
+"new jersey abolitionist petition"
+"end abortion new jersey petition"
+"abolish abortion new jersey sign"
+"aam new jersey"
 ```
 
 ### Ad Group 1B — Sign petition (action intent)
 
 ```
-"sign abortion petition new-jersey"
-"new-jersey pro life petition"
-"sign petition end abortion new-jersey"
+"sign abortion petition new jersey"
+"new jersey pro life petition"
+"sign petition end abortion new jersey"
 "abortion abolition petition"
 "petition to abolish abortion"
-"anti abortion petition new-jersey"
+"anti abortion petition new jersey"
 [sign petition abolish abortion]
-"stop abortion petition new-jersey"
+"stop abortion petition new jersey"
 ```
 
 ### Ad Group 1C — End abortion New Jersey (outcome intent)
 
 ```
-"how to end abortion in new-jersey"
-"stop abortion in new-jersey"
-"new-jersey abortion ban"
-"end abortion new-jersey"
-"outlaw abortion new-jersey"
-"criminalize abortion new-jersey"
-[end abortion in new-jersey]
+"how to end abortion in new jersey"
+"stop abortion in new jersey"
+"new jersey abortion ban"
+"end abortion new jersey"
+"outlaw abortion new jersey"
+"criminalize abortion new jersey"
+[end abortion in new jersey]
 ```
 
 **Responsive Search Ad — AG 1A/1B/1C (rotate all three)**
@@ -82,19 +82,19 @@ Add Your Name — New Jersey
 For Justice, For the Preborn
 Made in God's Image
 No Compromise. No Delay.
-Stand for the Preborn in MI
+Stand for the Preborn in NJ
 Sign the AAM Petition
 New Jersey: Abolish Abortion
 Immediate, Not Gradual
 Join the Movement
-Christian Abolition in MI
+Christian Abolition in NJ
 ```
 
 Descriptions (≤90 chars each):
 ```
 Add your name to the petition calling on New Jersey to abolish abortion completely.
 Every preborn human bears God's image and deserves equal protection under the law.
-Not regulation. Not reduction. The immediate and total abolition of abortion in MI.
+Not regulation. Not reduction. The immediate and total abolition of abortion in NJ.
 Join New Jersey abolitionists calling on the Legislature to criminalize abortion now.
 ```
 
@@ -133,14 +133,13 @@ Landing: `/what-we-believe/abolitionist-not-pro-life`
 Landing: `/abolition-bills` or `/what-we-believe/ignore-roe`
 
 ```
-"new-jersey abortion law 2026"
-"new-jersey abortion law after dobbs"
-"new-jersey proposal 3 abortion"
-"is abortion legal in new-jersey"
-"new-jersey abortion legislation"
-"new-jersey abortion bill"
-"who is my new-jersey state rep"
-"new-jersey legislature abortion"
+"new jersey abortion law 2026"
+"new jersey abortion law after dobbs"
+"is abortion legal in new jersey"
+"new jersey abortion legislation"
+"new jersey abortion bill"
+"who is my new jersey state rep"
+"new jersey legislature abortion"
 ```
 
 ### Ad Group 2C — Christian abolition (religious framing)
@@ -211,22 +210,22 @@ Sitelinks:
 ### Ad Group 3A — Donate to pro-life / abolition
 
 ```
-"donate pro life new-jersey"
+"donate pro life new jersey"
 "support abortion abolition"
 "give to end abortion"
 "christian pro life donation"
-"support pro life nonprofit new-jersey"
+"support pro life nonprofit new jersey"
 "donate abolish abortion"
-[support abolition new-jersey]
+[support abolition new jersey]
 ```
 
 ### Ad Group 3B — New Jersey advocacy support
 
 ```
-"new-jersey pro life organization donate"
-"give to new-jersey abolition"
-"support the preborn new-jersey"
-"pro life 501c3 donate new-jersey"
+"new jersey pro life organization donate"
+"give to new jersey abolition"
+"support the preborn new jersey"
+"pro life 501c3 donate new jersey"
 ```
 
 **Responsive Search Ad — Donations**

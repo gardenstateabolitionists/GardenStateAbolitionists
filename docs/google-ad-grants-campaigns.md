@@ -38,7 +38,13 @@ Already live. Skip.
 
 ---
 
-### Ad Group 2: Legislator Scorecard
+### Ad Group 2: Legislator Scorecard — ⚠️ BLOCKED
+
+**Do not run yet.** This group sends traffic to `/legislators`, which is parked
+in `staged-for-nj/` pending a New Jersey roster and would 404 on a paid click.
+The copy also promises voting records on abolition bills; New Jersey has none,
+so the copy needs rewriting, not just relinking.
+
 
 **Landing:** `/legislators`
 
@@ -64,7 +70,7 @@ who voted for abortion New Jersey
 New Jersey house abortion vote
 New Jersey senate abortion vote
 contact New Jersey legislator abortion
-New Jersey Reproductive Health Act votes
+New Jersey Freedom of Reproductive Choice Act
 ```
 
 **Headlines (30 chars max each):**
@@ -74,11 +80,11 @@ Who Voted How on Abortion
 New Jersey Pro-Life Scorecard
 Find Your Representative
 New Jersey Senate Records
-See How MI Reps Voted
+See How NJ Reps Voted
 Contact Your Legislator
 149 Legislators Ranked
-MI Lawmaker Accountability
-Search Every MI Legislator
+NJ Lawmaker Accountability
+Search Every NJ Legislator
 Free Public Scorecard
 New Jersey Voting Records
 ```
@@ -87,7 +93,7 @@ New Jersey Voting Records
 ```
 Every New Jersey legislator's record on abortion — voting, sponsorships, endorsements.
 Free public scorecard. Search all 149 New Jersey state house and senate members.
-See who voted for the Reproductive Health Act. Contact your rep in one click.
+See how your legislators vote on preborn equal protection. Contact them in one click.
 Independent research. Voting records, PAC donations, committee assignments.
 ```
 
@@ -189,53 +195,34 @@ Compassion + truth: how abolitionists respond to hard-case questions.
 
 ---
 
-### Ad Group 5: MI Legislation
+### Ad Group 5: State Legislation — ⚠️ DO NOT RUN AS WRITTEN, REBUILD FOR NEW JERSEY
 
-**Landing:** `/abolition-bills`
+**This ad group was inherited from the Michigan campaign and every keyword and
+headline in it was false for New Jersey. It has been emptied on purpose rather
+than translated, because a find-and-replace cannot make it true.**
 
-**Keywords — Track 2 (paste first):**
-```
-New Jersey Proposal 3
-New Jersey pro-life law
-New Jersey preborn protection bill
-New Jersey equal protection act
-Justice for Babies in the Womb Act
-New Jersey pro-life legislation
-```
+What was here and why it had to go:
 
-**Keywords — Track 1 (may need exception):**
-```
-New Jersey Proposal 3 abortion
-New Jersey abortion law
-New Jersey Reproductive Health Act
-New Jersey abortion legislation
-New Jersey abortion bills 2025
-New Jersey HB 4671
-```
+- **"Proposal 3"** — a Michigan ballot measure. New Jersey has never held a
+  comparable abortion ballot measure, so the search intent does not exist.
+- **A description reading "NJ Prop 3 passed. Here's how abolitionists are
+  responding legislatively."** — flatly false. Running it would be false
+  advertising paid for with Ad Grants money.
+- **"HB 4671"** — Michigan bill numbering. New Jersey uses `A####` for Assembly
+  bills and `S####` for Senate bills; there are no "HB" numbers here.
+- **"Reproductive Health Act"** — Michigan's statute. New Jersey's analogous law
+  is the **Freedom of Reproductive Choice Act**, signed January 2022.
+- **"Justice for Babies in the Womb Act"** — not New Jersey legislation.
+- **"See which lawmakers sponsor real abolition bills"** — no New Jersey
+  legislator sponsors an abolition bill, because no such bill exists.
 
-**Headlines:**
-```
-New Jersey Proposal 3
-New Jersey Pro-Life Bills
-Justice for Babies Act
-New Jersey HB 4671
-Equal Protection Bill MI
-Track New Jersey Legislation
-What Real Abolition Looks Like
-New Jersey Preborn Protection
-Pro-Life New Jersey Laws
-MI Reproductive Health Act
-```
+Before rebuilding this ad group, someone has to establish what New Jersey
+legislative reality actually supports. The honest angle is likely education
+about the Freedom of Reproductive Choice Act and what equal protection would
+require, **not** a bill tracker — there is nothing to track.
 
-**Descriptions:**
-```
-Track abolition legislation in New Jersey. What separates true abolition from compromise.
-Read about the Justice for Babies in the Womb Act and other New Jersey legislation.
-New Jersey Prop 3 passed. Here's how abolitionists are responding legislatively.
-See which New Jersey lawmakers sponsor real abolition bills, not incremental ones.
-```
-
----
+Landing page also needs resolving: the original pointed at `/abolition-bills`,
+which is parked in `staged-for-nj/` and would 404 on a paid click.
 
 ### Ad Group 6: Faith / Gospel
 
@@ -313,7 +300,7 @@ New Jersey Preborn Petition
 Join the Movement
 Take Action Now
 Add Your Name Today
-Help End Abortion MI
+Help End Abortion NJ
 Christian Advocacy Petition
 New Jersey Abolition Petition
 Stand Up for the Preborn
@@ -321,7 +308,7 @@ Stand Up for the Preborn
 
 **Descriptions:**
 ```
-Add your name to New Jersey's abolitionist petition. Send a message to Lansing today.
+Add your name to New Jersey's abolitionist petition. Send a message to Trenton today.
 Join thousands of New Jersey Christians calling for immediate abolition. Sign now.
 Sign the petition. Contact your legislators. Volunteer. New Jersey needs abolitionists.
 New Jersey constituents standing for the preborn. Sign in under 30 seconds.
@@ -343,7 +330,7 @@ New Jersey constituents standing for the preborn. Sign in under 30 seconds.
 Sitelink descriptions (35 chars per line, 2 lines each) for the top 4:
 
 - **Legislator Scorecard**
-  - Line 1: `See every MI legislator's record`
+  - Line 1: `See every NJ legislator's record`
   - Line 2: `Free public scorecard tool`
 - **Sign the Petition**
   - Line 1: `Add your name in 30 seconds`

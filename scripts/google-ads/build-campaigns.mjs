@@ -150,7 +150,7 @@ async function main() {
       summary.budgets++;
     }
 
-    // 3b) Campaign (paused, MI-only, manual CPC, search-only)
+    // 3b) Campaign (paused, NJ-only, manual CPC, search-only)
     let campaignResource;
     if (DRY_RUN) {
       log('   (dry-run) would create campaign (PAUSED, Search, Manual CPC)');

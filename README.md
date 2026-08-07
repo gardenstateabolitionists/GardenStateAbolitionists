@@ -26,19 +26,15 @@ In `lib/content.ts`:
 
 | Field | Gates | Notes |
 |---|---|---|
-| `socialLinks` | Footer / contact / media icons, JSON-LD `sameAs` | Facebook, X, Instagram, Signal group |
+| `socialLinks` | Footer / contact / media icons, JSON-LD `sameAs` | X and Instagram are wired. **Facebook and the Signal group are still blank** — each hides its own icon until set. |
 | `orgInfo.contactEmail` | `/contact`, structured data | Or set `NEXT_PUBLIC_CONTACT_EMAIL` |
 | `orgInfo.mailingAddress` | "Mail a Check" on `/donate`, postal address in JSON-LD | **Do not guess.** This tells donors where to send money. |
 | `orgInfo.taxStatus` | Every 501(c)(3) and tax-deductibility claim sitewide | Leave blank until the IRS determination letter exists |
 | `orgInfo.founded` | `/financial-transparency` | |
-| `statistics` + `statisticsSource` | Homepage counter row | New Jersey figures with a citable source |
+| ~~`statistics`~~ | ~~Homepage counter row~~ | **Done** — populated from Guttmacher 2024; see `docs/nj-statistics-sources.md`. Confirm with client and refresh annually. |
 
 Also required:
 
-- **Logo.** `public/images/aa-logo.webp` and `.png` are still the source
-  organization's mark and must be replaced with the client's before launch.
-  Referenced from the header, mobile nav, footer, homepage hero, and both
-  OpenGraph image routes.
 - **`NEXT_PUBLIC_ZEFFY_URL`** — the donation form slug is assigned by Zeffy and
   cannot be guessed. Donate CTAs stay inert until it is set.
 - **Domain** — `NEXT_PUBLIC_SITE_URL`, the apex→www redirect in
