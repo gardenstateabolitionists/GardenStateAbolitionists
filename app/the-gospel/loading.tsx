@@ -5,7 +5,7 @@ export default function Loading() {
       <section className="bg-[#1a1a1a] text-white py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="h-12 w-64 bg-gray-700 rounded mx-auto mb-6 animate-pulse" />
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <div className="h-4 w-56 bg-gray-700 rounded mx-auto animate-pulse" />
         </div>
       </section>

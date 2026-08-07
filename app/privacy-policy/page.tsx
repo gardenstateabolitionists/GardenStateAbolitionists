@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
             <span className="font-light">Privacy</span>{' '}
             <span className="font-black">POLICY</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Last Updated: February 2026</p>
         </div>
       </section>
@@ -88,11 +88,11 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p>
             To request data deletion, please visit our{' '}
-            <Link href="/delete-my-data" className="text-red-600 no-underline hover:underline">
+            <Link href="/delete-my-data" className="text-green-700 no-underline hover:underline">
               data deletion request page
             </Link>
             . For all other requests, please{' '}
-            <Link href="/contact" className="text-red-600 no-underline hover:underline">
+            <Link href="/contact" className="text-green-700 no-underline hover:underline">
               contact us
             </Link>
             . We will respond within 30 days.
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
           <h2>Contact</h2>
           <p>
             If you have questions about this privacy policy or how we handle your data, please{' '}
-            <Link href="/contact" className="text-red-600 no-underline hover:underline">
+            <Link href="/contact" className="text-green-700 no-underline hover:underline">
               contact us
             </Link>
             .

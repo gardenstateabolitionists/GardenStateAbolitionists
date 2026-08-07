@@ -28,11 +28,11 @@ export default function Footer() {
           <div className="text-center flex flex-col items-center justify-center">
             <h2 className="text-lg font-bold tracking-wider mb-6">GARDEN STATE ABOLITIONISTS</h2>
             <Image
-              src="/images/aa-logo.webp"
+              src="/images/gsa-logo.webp"
               alt="Garden State Abolitionists Logo"
               width={120}
               height={120}
-              className="invert"
+              className=""
             />
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
               {orgInfo.taxStatus && (
                 <p className="mb-2">
                   Contributions are tax-deductible to the fullest extent allowed by law.{' '}
-                  <Link href="/financial-transparency" className="text-red-500 hover:text-red-400 underline">
+                  <Link href="/financial-transparency" className="text-green-500 hover:text-green-400 underline">
                     See our financial disclosures
                   </Link>
                 </p>
@@ -104,33 +104,33 @@ export default function Footer() {
             </p>
             <p className="text-sm text-gray-300 mb-4">
               Credit to{' '}
-              <Link href="https://abolishabortionnc.com" className="text-red-500 hover:text-red-400 underline transition-colors">
+              <Link href="https://abolishabortionnc.com" className="text-green-500 hover:text-green-400 underline transition-colors">
                 Abolish Abortion NC
               </Link>{' '}
               for allowing us to derive their work onto this website.
             </p>
             <p className="text-sm text-gray-300 mb-6">
-              <Link href="/who-we-are" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/who-we-are" className="text-green-500 hover:text-green-400 transition-colors">
                 About
               </Link>
               {' '}&bull;{' '}
-              <Link href="/partners" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/partners" className="text-green-500 hover:text-green-400 transition-colors">
                 Allied Groups
               </Link>
               {' '}&bull;{' '}
-              <Link href="/financial-transparency" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/financial-transparency" className="text-green-500 hover:text-green-400 transition-colors">
                 Financial Transparency
               </Link>
               {' '}&bull;{' '}
-              <Link href="/non-violence-statement" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/non-violence-statement" className="text-green-500 hover:text-green-400 transition-colors">
                 Non-Violence Statement
               </Link>
               {' '}&bull;{' '}
-              <Link href="/privacy-policy" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/privacy-policy" className="text-green-500 hover:text-green-400 transition-colors">
                 Privacy Policy
               </Link>
               {' '}&bull;{' '}
-              <Link href="/delete-my-data" className="text-red-500 hover:text-red-400 transition-colors">
+              <Link href="/delete-my-data" className="text-green-500 hover:text-green-400 transition-colors">
                 Delete My Data
               </Link>
             </p>

@@ -19,7 +19,7 @@ export default function ImmediateNotGradualPage() {
             <span className="font-light">Immediate,</span>{' '}
             <span className="font-black">NOT GRADUAL</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Abortion Cannot Be Abolished by Allowing it All Along the Way</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function ImmediateNotGradualPage() {
               <span className="font-black">IMMEDIATISTS</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">The Time for Justice is Always Now</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               Beneath the differences in legislative strategies pursued by abolitionists and pro-lifers is a difference in our ultimate allegiances. Abolitionists submit to God as our Ultimate authority while pro-lifers submitted to the Supreme Court as their Ultimate authority for 50 years. Thus the abolitionist response to a court opining that child sacrifice should be legal is defiance. The pro-life response to a court opining that child sacrifice should be legal was and is submission.
@@ -65,7 +65,7 @@ export default function ImmediateNotGradualPage() {
               Some pro-lifers claim to support both regulation and abolition, but immediatism and incrementalism cannot be embraced simultaneously. They are diametrically opposed to one another, with incrementalism fatally undermining attempts at immediate abolition. This principle was perhaps best articulated by slavery Abolitionist Elizabeth Heyrick:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 The enemies of slavery have hitherto ruined [the abolitionist] cause by the senseless cry of gradual emancipation. It is marvelous that the wise and the good should have suffered themselves to have been imposed upon by this wily artifice of the slave holder, for with him must the project of gradual emancipation have first originated.
               </p>
@@ -110,7 +110,7 @@ export default function ImmediateNotGradualPage() {
             <div className="my-10">
               <Link
                 href="/what-we-believe/no-exceptions"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; NO EXCEPTIONS FOR ABORTION
               </Link>
@@ -123,10 +123,10 @@ export default function ImmediateNotGradualPage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-            <Link href="/what-we-believe/biblical-not-secular" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/biblical-not-secular" className="text-green-700 font-semibold hover:underline">
               &larr; Biblical, Not Secular
             </Link>
-            <Link href="/what-we-believe/no-exceptions" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/no-exceptions" className="text-green-700 font-semibold hover:underline">
               No Exceptions &rarr;
             </Link>
           </div>

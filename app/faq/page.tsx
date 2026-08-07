@@ -43,7 +43,7 @@ export default function FAQPage() {
             <span className="font-light">Frequently Asked</span>{' '}
             <span className="font-black">QUESTIONS</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
         </div>
       </section>
 
@@ -55,7 +55,7 @@ export default function FAQPage() {
           </h2>
           <p className="text-gray-700 mb-4">
             Abortion is the murder, the sacrifice, of tiny neighbors who have not yet been born.{' '}
-            <span className="text-red-600 font-semibold">This is the definition.</span> This great atrocity must be abolished.
+            <span className="text-green-700 font-semibold">This is the definition.</span> This great atrocity must be abolished.
           </p>
           <p className="text-gray-700 mb-4">
             Below are common pro-choice objections that we have run across. If you are opposed to the abolition of human abortion, find your pet issue below and deal with the arguments against it.

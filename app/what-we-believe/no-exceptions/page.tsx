@@ -19,7 +19,7 @@ export default function NoExceptionsPage() {
             <span className="font-light">No</span>{' '}
             <span className="font-black">EXCEPTIONS</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Abortion is Murder | Always &amp; Everywhere Murder</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function NoExceptionsPage() {
               <span className="font-black">ACCEPTABLE</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">And neither is any law that creates exceptions for it</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               For the same reasons that we demand abortion&apos;s immediate abolition, we demand abortion&apos;s total abolition. That means no exceptions. No exceptions which allow for murdering babies because of the circumstances in which they were conceived. No exceptions that allow for murdering babies because they have a disease or disorder. No exceptions whatsoever. If abortion is murder, and we all know it is, it must be abolished entirely.
@@ -45,7 +45,7 @@ export default function NoExceptionsPage() {
               Not only are exceptions morally repugnant, they are devastating to the cause pragmatically. To compromise on an issue like child sacrifice is to fatally weaken the foundation of the moral argument. Elizabeth Heyrick, a British abolitionist of slavery had this to say on the matter:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 On this great questions, the spirit of accommodation and conciliation has been a spirit of delusion. The abolitionists have lost, rather than gained ground by it; their cause has been weakened, instead of strengthened. The great interests of truth and justice are betrayed, rather than supported, by all softening qualifying concessions. Every iota which is yielded of their rightful claims, impairs the conviction of their rectitude, and, consequently, weakens their success.
               </p>
@@ -59,7 +59,7 @@ export default function NoExceptionsPage() {
             <h3 className="text-xl font-bold mt-8 mb-4">The Child Conceived in Rape</h3>
 
             <p>
-              Abolitionism could be described as upholding justice for the fatherless. No one is more fatherless than the child conceived in rape. This is probably the most vulnerable group of human beings on the planet. A law which allows for abortion in this situation is a thoroughly iniquitous decree which makes the fatherless prey (See <a href="https://biblia.com/bible/esv/isaiah/1/16-17" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Isaiah 1:16-17</a>; <a href="https://biblia.com/bible/esv/isaiah/10/1-2" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">10:1-2</a>). The law must prohibit the execution of the child for the crime of his or her father.
+              Abolitionism could be described as upholding justice for the fatherless. No one is more fatherless than the child conceived in rape. This is probably the most vulnerable group of human beings on the planet. A law which allows for abortion in this situation is a thoroughly iniquitous decree which makes the fatherless prey (See <a href="https://biblia.com/bible/esv/isaiah/1/16-17" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Isaiah 1:16-17</a>; <a href="https://biblia.com/bible/esv/isaiah/10/1-2" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">10:1-2</a>). The law must prohibit the execution of the child for the crime of his or her father.
             </p>
 
             <h3 className="text-xl font-bold mt-8 mb-4">The Child With a Disability</h3>
@@ -87,7 +87,7 @@ export default function NoExceptionsPage() {
             <div className="my-10">
               <Link
                 href="/what-we-believe/ignore-roe"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; WE ARE NULLIFICATIONISTS
               </Link>
@@ -100,10 +100,10 @@ export default function NoExceptionsPage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-            <Link href="/what-we-believe/immediate-not-gradual" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/immediate-not-gradual" className="text-green-700 font-semibold hover:underline">
               &larr; Immediate, Not Gradual
             </Link>
-            <Link href="/what-we-believe/ignore-roe" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/ignore-roe" className="text-green-700 font-semibold hover:underline">
               Ignore Roe &rarr;
             </Link>
           </div>

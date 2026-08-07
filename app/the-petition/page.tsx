@@ -20,7 +20,7 @@ export default function ThePetitionPage() {
             <span className="font-light">The</span>{' '}
             <span className="font-black">PETITION</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Call for the abolition of abortion in New Jersey</p>
           <SignatureCount />
         </div>
@@ -74,19 +74,19 @@ export default function ThePetitionPage() {
             <h3 className="text-2xl font-bold mb-6">Why Sign?</h3>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start">
-                <span className="text-red-700 mr-3 mt-1" aria-hidden="true">&#10003;</span>
+                <span className="text-green-800 mr-3 mt-1" aria-hidden="true">&#10003;</span>
                 <span>Show your elected officials that the people of New Jersey demand equal protection for the preborn</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-700 mr-3 mt-1" aria-hidden="true">&#10003;</span>
+                <span className="text-green-800 mr-3 mt-1" aria-hidden="true">&#10003;</span>
                 <span>Join a growing movement calling for immediate abolition, not more regulation</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-700 mr-3 mt-1" aria-hidden="true">&#10003;</span>
+                <span className="text-green-800 mr-3 mt-1" aria-hidden="true">&#10003;</span>
                 <span>Take a public stand for the right to life of every human being</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-700 mr-3 mt-1" aria-hidden="true">&#10003;</span>
+                <span className="text-green-800 mr-3 mt-1" aria-hidden="true">&#10003;</span>
                 <span>Receive updates on abolition efforts in New Jersey</span>
               </li>
             </ul>

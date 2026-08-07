@@ -17,7 +17,7 @@ export default function WhatWeBelievePage() {
             <span className="font-light">What We</span>{' '}
             <span className="font-black">BELIEVE</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Our convictions about God, life, and justice</p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function WhatWeBelievePage() {
 
           <div className="space-y-4 text-gray-700">
             <p>
-              <span className="text-red-700 font-semibold">We believe abortion is the intentional killing of an innocent human being</span> and is therefore murder, a grave sin against God and humanity.
+              <span className="text-green-800 font-semibold">We believe abortion is the intentional killing of an innocent human being</span> and is therefore murder, a grave sin against God and humanity.
             </p>
             <p>
               We believe human life begins at fertilization, when a new human being with unique DNA comes into existence. From that moment, every human being bears the image of God and has inherent dignity and worth.
@@ -95,7 +95,7 @@ export default function WhatWeBelievePage() {
 
           <div className="space-y-4 text-gray-700">
             <p>
-              <span className="text-red-700 font-semibold">We believe abortion must be abolished immediately and totally</span>, not merely regulated or reduced.
+              <span className="text-green-800 font-semibold">We believe abortion must be abolished immediately and totally</span>, not merely regulated or reduced.
             </p>
             <p>
               We oppose incremental legislation that permits some abortions to continue. Such legislation treats some children as less worthy of protection than others and perpetuates the lie that some abortions are acceptable.

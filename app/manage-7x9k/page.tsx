@@ -108,7 +108,7 @@ export default function SecureLoginPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center space-y-4">
-          <Loader2 className="h-8 w-8 animate-spin mx-auto text-red-600" />
+          <Loader2 className="h-8 w-8 animate-spin mx-auto text-green-700" />
           <p className="text-gray-500">Checking authentication...</p>
         </div>
       </div>
@@ -169,7 +169,7 @@ export default function SecureLoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50">
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-600 mb-3">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-700 mb-3">
             <span className="text-2xl font-bold text-white">A</span>
           </div>
           <h1 className="text-3xl font-bold tracking-tight">Admin Login</h1>

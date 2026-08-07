@@ -326,7 +326,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
                 onChange={(e) => setFormData((prev) => ({ ...prev, excerpt: e.target.value }))}
                 placeholder="Brief summary of the article"
                 rows={2}
-                className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm"
+                className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               />
             </div>
 
@@ -355,7 +355,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
                 onChange={(e) => setContent(e.target.value)}
                 placeholder="Full article content (HTML supported)"
                 rows={14}
-                className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent font-mono text-sm"
+                className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent font-mono text-sm"
               />
             </div>
 
@@ -376,7 +376,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
                 id="published"
                 checked={formData.published}
                 onChange={(e) => setFormData((prev) => ({ ...prev, published: e.target.checked }))}
-                className="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-500"
+                className="h-4 w-4 rounded border-gray-300 text-green-700 focus:ring-green-500"
               />
               <Label htmlFor="published" className="font-normal">
                 Publish immediately
@@ -392,7 +392,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
                   setFormData((prev) => ({ ...prev, auto_post_to_social: e.target.checked }))
                 }
                 disabled={!formData.published && (!article || !article.published)}
-                className="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-500 mt-0.5 disabled:opacity-50"
+                className="h-4 w-4 rounded border-gray-300 text-green-700 focus:ring-green-500 mt-0.5 disabled:opacity-50"
               />
               <div>
                 <Label htmlFor="auto_post_to_social" className="font-normal">
@@ -435,7 +435,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
               <div className="px-6 py-6">
                 {formData.content ? (
                   <article
-                    className="prose prose-sm max-w-none prose-headings:text-[#1a1a1a] prose-a:text-red-600 prose-a:no-underline hover:prose-a:underline prose-img:max-w-full prose-img:h-auto prose-img:rounded-lg"
+                    className="prose prose-sm max-w-none prose-headings:text-[#1a1a1a] prose-a:text-green-700 prose-a:no-underline hover:prose-a:underline prose-img:max-w-full prose-img:h-auto prose-img:rounded-lg"
                     dangerouslySetInnerHTML={{ __html: sanitizeHtml(formData.content) }}
                   />
                 ) : (
@@ -457,7 +457,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
         )}
 
         {errorMessage && (
-          <div className="flex items-center gap-2 p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm">
+          <div className="flex items-center gap-2 p-3 bg-green-50 border border-green-200 rounded-md text-green-800 text-sm">
             <AlertTriangle className="h-4 w-4 flex-shrink-0" />
             {errorMessage}
           </div>
@@ -516,7 +516,7 @@ export default function NewsModal({ open, onClose, article, isCreating, onSave }
               </Button>
               <Button
                 onClick={handlePublishConfirm}
-                className="bg-red-600 hover:bg-red-700 text-white"
+                className="bg-green-700 hover:bg-green-800 text-white"
               >
                 Publish & Notify Subscribers
               </Button>

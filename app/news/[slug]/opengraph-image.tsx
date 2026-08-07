@@ -21,7 +21,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
       })
     : '';
 
-  const logoData = await readFile(join(process.cwd(), 'public/images/aa-logo.png'));
+  const logoData = await readFile(join(process.cwd(), 'public/images/gsa-logo.png'));
   const logoBase64 = `data:image/png;base64,${logoData.toString('base64')}`;
 
   return new ImageResponse(
@@ -47,7 +47,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
             left: 0,
             right: 0,
             height: '5px',
-            background: '#dc2626',
+            background: '#15803d',
             display: 'flex',
           }}
         />
@@ -58,9 +58,8 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoBase64}
-            width={36}
+            width={44}
             height={44}
-            style={{ filter: 'invert(1)' }}
             alt=""
           />
           <span
@@ -109,7 +108,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
           <span style={{ color: '#9ca3af', fontSize: '20px' }}>{date}</span>
           <span
             style={{
-              color: '#dc2626',
+              color: '#15803d',
               fontSize: '18px',
               fontWeight: 700,
               letterSpacing: '0.15em',

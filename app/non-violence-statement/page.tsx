@@ -17,7 +17,7 @@ export default function NonViolenceStatementPage() {
             <span className="font-light">Non-Violence</span>{' '}
             <span className="font-black">STATEMENT</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Our commitment to peaceful activism</p>
         </div>
       </section>
@@ -29,7 +29,7 @@ export default function NonViolenceStatementPage() {
             <h2 className="text-2xl font-bold mb-6">Our Position on Violence</h2>
 
             <p className="text-gray-700 mb-6">
-              <span className="text-red-600 font-bold">Garden State Abolitionists unequivocally condemns all violence against any person, including those who perform or procure abortions.</span>
+              <span className="text-green-700 font-bold">Garden State Abolitionists unequivocally condemns all violence against any person, including those who perform or procure abortions.</span>
             </p>
 
             <p className="text-gray-700 mb-6">
@@ -82,7 +82,7 @@ export default function NonViolenceStatementPage() {
 
             <h3 className="text-xl font-bold mt-8 mb-4">A Word to Those Considering Violence</h3>
             <p className="text-gray-700 mb-6">
-              If you are considering any act of violence in the name of opposing abortion, we urge you in the strongest possible terms: <span className="text-red-600 font-bold">Do not do it.</span>
+              If you are considering any act of violence in the name of opposing abortion, we urge you in the strongest possible terms: <span className="text-green-700 font-bold">Do not do it.</span>
             </p>
             <p className="text-gray-700 mb-6">
               Violence against persons is murder. It is sin against God. It will not save a single child. It will only bring harm to yourself, to others, and to the cause of abolition.
@@ -91,7 +91,7 @@ export default function NonViolenceStatementPage() {
               Instead, we call you to trust in God, to use the means He has appointed, and to leave vengeance to Him (Romans 12:19).
             </p>
 
-            <div className="bg-red-50 border-l-4 border-red-600 p-6 my-8">
+            <div className="bg-green-50 border-l-4 border-green-700 p-6 my-8">
               <p className="text-lg font-semibold text-[#1a1a1a]">
                 &ldquo;Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, &apos;Vengeance is mine, I will repay, says the Lord.&apos;&rdquo;
               </p>

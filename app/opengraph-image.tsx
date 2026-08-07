@@ -8,7 +8,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 export default async function Image() {
-  const logoData = await readFile(join(process.cwd(), 'public/images/aa-logo.png'));
+  const logoData = await readFile(join(process.cwd(), 'public/images/gsa-logo.png'));
   const logoBase64 = `data:image/png;base64,${logoData.toString('base64')}`;
 
   return new ImageResponse(
@@ -44,7 +44,7 @@ export default async function Image() {
             left: 0,
             right: 0,
             height: '5px',
-            background: '#dc2626',
+            background: '#15803d',
             display: 'flex',
           }}
         />
@@ -73,9 +73,8 @@ export default async function Image() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={logoBase64}
-              width={180}
-              height={222}
-              style={{ filter: 'invert(1)' }}
+              width={200}
+              height={200}
               alt=""
             />
           </div>
@@ -113,7 +112,7 @@ export default async function Image() {
             </div>
             <div
               style={{
-                color: '#dc2626',
+                color: '#15803d',
                 fontSize: '56px',
                 fontWeight: 900,
                 lineHeight: 1.05,
@@ -127,7 +126,7 @@ export default async function Image() {
               style={{
                 width: '60px',
                 height: '3px',
-                background: '#dc2626',
+                background: '#15803d',
                 marginTop: '8px',
               }}
             />

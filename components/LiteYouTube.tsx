@@ -51,7 +51,7 @@ export default function LiteYouTube({ videoId, title, className = '' }: LiteYouT
       />
       {/* Play button overlay */}
       <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/10">
-        <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600 shadow-lg transition-transform group-hover:scale-110">
+        <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-green-700 shadow-lg transition-transform group-hover:scale-110">
           <svg
             className="w-8 h-8 md:w-10 md:h-10 text-white translate-x-0.5"
             fill="currentColor"

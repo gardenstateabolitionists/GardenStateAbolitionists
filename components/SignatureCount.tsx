@@ -14,7 +14,7 @@ export default function SignatureCount() {
 
   return (
     <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 mx-auto w-fit mt-8">
-      <span className="text-3xl md:text-4xl font-bold text-red-500">
+      <span className="text-3xl md:text-4xl font-bold text-green-500">
         {count.toLocaleString()}
       </span>
       <span className="text-gray-300 text-sm md:text-base">

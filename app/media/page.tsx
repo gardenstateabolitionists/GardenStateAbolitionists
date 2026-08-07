@@ -26,7 +26,7 @@ export default async function MediaPage() {
             <span className="font-light">Our</span>{' '}
             <span className="font-black">MEDIA</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Photos, videos, and resources</p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default async function MediaPage() {
                 href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-red-600 transition-colors"
+                className="text-gray-600 hover:text-green-700 transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -78,7 +78,7 @@ export default async function MediaPage() {
                 href={socialLinks.x}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-red-600 transition-colors"
+                className="text-gray-600 hover:text-green-700 transition-colors"
                 aria-label="X (Twitter)"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -19,7 +19,7 @@ export default function WhoWeArePage() {
             <span className="font-light">Who We</span>{' '}
             <span className="font-black">ARE</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Christians working to abolish abortion in New Jersey</p>
         </div>
       </section>
@@ -41,25 +41,25 @@ export default function WhoWeArePage() {
           <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-red-600">Gospel-Centered</h3>
+              <h3 className="text-xl font-bold mb-3 text-green-700">Gospel-Centered</h3>
               <p className="text-gray-700">
                 We believe that true change comes through the transformation of hearts by the Gospel of Jesus Christ. While we work for legal abolition, we also share the good news that there is forgiveness for all sins—including abortion—through faith in Christ.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-red-600">Church-Focused</h3>
+              <h3 className="text-xl font-bold mb-3 text-green-700">Church-Focused</h3>
               <p className="text-gray-700">
                 We believe the Church must lead the way in calling for justice. We work to equip churches and pastors with resources and encouragement to speak out boldly for the preborn.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-red-600">Abolition, Not Regulation</h3>
+              <h3 className="text-xl font-bold mb-3 text-green-700">Abolition, Not Regulation</h3>
               <p className="text-gray-700">
                 We do not support incremental measures that regulate abortion while leaving it legal. We call for the immediate and total abolition of abortion as murder, with no exceptions.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-red-600">Peaceful & Lawful</h3>
+              <h3 className="text-xl font-bold mb-3 text-green-700">Peaceful & Lawful</h3>
               <p className="text-gray-700">
                 We are committed to peaceful, legal means of advocacy. We condemn all violence and seek to change hearts and laws through persuasion, education, and the political process.
               </p>
@@ -92,7 +92,7 @@ export default function WhoWeArePage() {
 
           {/* Nonprofit disclosure card — required for Google Ad Grants;
               the About page must state the org's nonprofit status + EIN. */}
-          <div className="mt-12 border-l-4 border-red-600 bg-gray-50 p-6 rounded-r">
+          <div className="mt-12 border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
             <p className="text-gray-800 font-semibold mb-2">
               {orgInfo.taxStatus
                 ? `${orgInfo.legalName} is a New Jersey ${orgInfo.taxStatus}.`
@@ -109,7 +109,7 @@ export default function WhoWeArePage() {
                   : ''}
                 <Link
                   href="/financial-transparency"
-                  className="text-red-700 underline hover:no-underline"
+                  className="text-green-800 underline hover:no-underline"
                 >
                   See our financial transparency page
                 </Link>
@@ -126,7 +126,7 @@ export default function WhoWeArePage() {
                 See our{' '}
                 <Link
                   href="/financial-transparency"
-                  className="text-red-700 underline hover:no-underline"
+                  className="text-green-800 underline hover:no-underline"
                 >
                   financial transparency page
                 </Link>{' '}

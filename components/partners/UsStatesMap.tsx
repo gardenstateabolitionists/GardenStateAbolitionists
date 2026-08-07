@@ -40,7 +40,7 @@ function slugify(s: string): string {
 }
 
 function colorFor(state: { id: string; name: string }, partner: Partner | undefined): string {
-  if (state.name === 'New Jersey') return '#dc2626'; // red-600 — us
+  if (state.name === 'New Jersey') return '#15803d'; // green-700 — us
   if (partner) return '#16a34a'; // green-600 — active partner
   return '#d1d5db'; // gray-300 — no partner
 }
@@ -132,7 +132,7 @@ export default function UsStatesMap({
 
       <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-gray-600">
         <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 bg-red-600 rounded" /> Garden State Abolitionists
+          <span className="inline-block w-3 h-3 bg-green-700 rounded" /> Garden State Abolitionists
         </span>
         <span className="flex items-center gap-1">
           <span className="inline-block w-3 h-3 bg-green-600 rounded" /> Active partner coalition

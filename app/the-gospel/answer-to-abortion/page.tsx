@@ -19,7 +19,7 @@ export default function AnswerToAbortionPage() {
             <span className="font-light">The Answer to</span>{' '}
             <span className="font-black">ABORTION</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Is the Gospel of the Lord Jesus Christ</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function AnswerToAbortionPage() {
               <span className="font-black">JESUS</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">Is the key to abolishing abortion</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               Yes, we believe that the going forth of the good news of Jesus Christ as King is the answer to abortion and the key to abolition.
@@ -58,7 +58,7 @@ export default function AnswerToAbortionPage() {
             </p>
 
             <p>
-              For instance, the protestant-led ecumenical pro-life think tank and training seminar provider &ldquo;Life Training Institute&rdquo; sums up the pro-life movement&apos;s views on the applicability of the gospel to abortion ministry in saying, &ldquo;We are called to personal holiness; our nation is not called to be subservient to God. It&apos;s significant that Jesus came to preach personal holiness, not to reform Roman society. In fact, they said &lsquo;render to Caesar the things that are Caesar&apos;s, and to God the things that are God&apos;s&rsquo; (<a href="https://biblia.com/bible/esv/matthew/22/21" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Matthew 22:21</a>, NASB). The Gospel is the antidote to sin in a believer&apos;s life; it is not the key to reformation of society. For that, we must work through the political process.&rdquo;
+              For instance, the protestant-led ecumenical pro-life think tank and training seminar provider &ldquo;Life Training Institute&rdquo; sums up the pro-life movement&apos;s views on the applicability of the gospel to abortion ministry in saying, &ldquo;We are called to personal holiness; our nation is not called to be subservient to God. It&apos;s significant that Jesus came to preach personal holiness, not to reform Roman society. In fact, they said &lsquo;render to Caesar the things that are Caesar&apos;s, and to God the things that are God&apos;s&rsquo; (<a href="https://biblia.com/bible/esv/matthew/22/21" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Matthew 22:21</a>, NASB). The Gospel is the antidote to sin in a believer&apos;s life; it is not the key to reformation of society. For that, we must work through the political process.&rdquo;
             </p>
 
             <div className="bg-gray-100 p-6 rounded-lg my-8">
@@ -77,7 +77,7 @@ export default function AnswerToAbortionPage() {
               We understand that a majority of the people in our nation believe that choosing to believe the Gospel is just a personal private matter and never think twice about what the Gospel has to do with the Nations of this fallen world, and we are fully aware that the Word of God states very clearly that those who embrace worldly wisdom over and above the principles and plan of God will call the Gospel foolish, but to see these views promoted by professing apologists of the Christian faith is deeply troubling. Its not that men like Clinton Wilcox (writer of the statement referenced above) reject the gospel or disbelieve in the Gospel, they just choose to put the Gospel of the Kingdom of Jesus Christ on the back-burner when it comes to grave national evils like child sacrifice because they think it is powerless to affect moral transformation, cultural renewal, revival, or national repentance.
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 When someone tells me, &lsquo;Yes, we need to have a high view of God and we need to preach the gospel this way&mdash;just like you said, it&apos;s biblical&mdash;but&hellip; that just won&apos;t work.&rsquo; What you need to realize is that it never would &lsquo;work!&rsquo; That is the mystery of the gospel! It is something that won&apos;t work&mdash;except that God has ordained it, and the Spirit of God is behind it!
               </p>
@@ -85,12 +85,12 @@ export default function AnswerToAbortionPage() {
             </blockquote>
 
             <p>
-              As a group of abolitionists <a href="https://web.archive.org/web/2026/https://abolishhumanabortion.com/declaration-of-sentiments/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">once wrote</a>:
+              As a group of abolitionists <a href="https://web.archive.org/web/2026/https://abolishhumanabortion.com/declaration-of-sentiments/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">once wrote</a>:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
-                Our trust for victory is solely in God. While we may be personally defeated and beaten down, our principles will never be, for they rest upon God&apos;s infallible Word. Truth, Justice, Reason, and Humanity must &ndash; and will &ndash; gloriously triumph over the evil of our age. &hellip;Under the guidance and by the help of Almighty God, we will do all that lies within us to abolish human abortion, to deliver our nation from its deadliest curse, and to secure to the pre-born all the rights and privileges that belong to them as image-bearers of God. By the blood of the lamb and the word of our witness, by the power of the Holy Spirit, in His Providence and in accordance with his plan, we shall crush the dragon abortion beneath our feet (<a href="https://biblia.com/bible/esv/revelation/12/1" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Rev. 12:1</a>, <a href="https://biblia.com/bible/esv/romans/16/20" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Rom. 16:20</a>). In the name and power of Jesus Christ, the Son of God and maker of man, who Himself became a human embryo within the womb of a young, unmarried, woman who had not chosen to be &ldquo;with child&rdquo; (<a href="https://biblia.com/bible/esv/matthew/1/18" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Matt. 1:18</a>), &ndash; we will destroy this work of darkness and effect the total abolition of human abortion. For to Christ belongs all authority in Heaven and on Earth. His dominion is an everlasting dominion, which shall not pass away, and His Kingdom one that shall not be destroyed (<a href="https://biblia.com/bible/esv/matthew/28/18" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Matt. 28:18</a>; <a href="https://biblia.com/bible/esv/daniel/7/14" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Dan. 7:14</a>). Of the increase of His government and of peace, there shall be no end (<a href="https://biblia.com/bible/esv/isaiah/9/7" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Is. 9:7</a>).
+                Our trust for victory is solely in God. While we may be personally defeated and beaten down, our principles will never be, for they rest upon God&apos;s infallible Word. Truth, Justice, Reason, and Humanity must &ndash; and will &ndash; gloriously triumph over the evil of our age. &hellip;Under the guidance and by the help of Almighty God, we will do all that lies within us to abolish human abortion, to deliver our nation from its deadliest curse, and to secure to the pre-born all the rights and privileges that belong to them as image-bearers of God. By the blood of the lamb and the word of our witness, by the power of the Holy Spirit, in His Providence and in accordance with his plan, we shall crush the dragon abortion beneath our feet (<a href="https://biblia.com/bible/esv/revelation/12/1" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Rev. 12:1</a>, <a href="https://biblia.com/bible/esv/romans/16/20" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Rom. 16:20</a>). In the name and power of Jesus Christ, the Son of God and maker of man, who Himself became a human embryo within the womb of a young, unmarried, woman who had not chosen to be &ldquo;with child&rdquo; (<a href="https://biblia.com/bible/esv/matthew/1/18" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Matt. 1:18</a>), &ndash; we will destroy this work of darkness and effect the total abolition of human abortion. For to Christ belongs all authority in Heaven and on Earth. His dominion is an everlasting dominion, which shall not pass away, and His Kingdom one that shall not be destroyed (<a href="https://biblia.com/bible/esv/matthew/28/18" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Matt. 28:18</a>; <a href="https://biblia.com/bible/esv/daniel/7/14" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Dan. 7:14</a>). Of the increase of His government and of peace, there shall be no end (<a href="https://biblia.com/bible/esv/isaiah/9/7" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Is. 9:7</a>).
               </p>
             </blockquote>
 
@@ -134,7 +134,7 @@ export default function AnswerToAbortionPage() {
               We carry HIS banner and trust in HIS Might. Of course we will win!
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shone. You have multiplied the nation; you have increased its joy; they rejoice before you as with joy at the harvest, as they are glad when they divide the spoil. For the yoke of his burden, and the staff for his shoulder, the rod of his oppressor, you have broken as on the day of Midian. For every boot of the tramping warrior in battle tumult and every garment rolled in blood will be burned as fuel for the fire. For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. Of the increase of his government and of peace there will be no end, on the throne of David and over his kingdom, to establish it and to uphold it with justice and with righteousness from this time forth and forevermore. The zeal of the Lord of hosts will do this.
               </p>
@@ -144,7 +144,7 @@ export default function AnswerToAbortionPage() {
             <div className="my-10">
               <Link
                 href="/the-gospel/incarnation"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; THE INCARNATION
               </Link>
@@ -157,10 +157,10 @@ export default function AnswerToAbortionPage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-            <Link href="/the-gospel/message-of-reconciliation" className="text-red-600 font-semibold hover:underline">
+            <Link href="/the-gospel/message-of-reconciliation" className="text-green-700 font-semibold hover:underline">
               &larr; Message of Reconciliation
             </Link>
-            <Link href="/the-gospel/incarnation" className="text-red-600 font-semibold hover:underline">
+            <Link href="/the-gospel/incarnation" className="text-green-700 font-semibold hover:underline">
               The Incarnation &rarr;
             </Link>
           </div>

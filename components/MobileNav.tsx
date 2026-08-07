@@ -78,7 +78,7 @@ export default function MobileNav({ isOpen, onClose, navItems }: MobileNavProps)
         <button
           ref={closeButtonRef}
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-white hover:text-red-500 z-10"
+          className="absolute top-4 right-4 p-2 text-white hover:text-green-500 z-10"
           aria-label="Close menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,11 +90,11 @@ export default function MobileNav({ isOpen, onClose, navItems }: MobileNavProps)
         <div className="px-6 py-4 border-b border-gray-800">
           <Link href="/" onClick={onClose} className="flex items-center gap-2">
             <Image
-              src="/images/aa-logo.webp"
+              src="/images/gsa-logo.webp"
               alt="Garden State Abolitionists logo"
               width={32}
               height={32}
-              className="h-8 w-auto invert"
+              className="h-8 w-auto"
             />
             <div className="leading-tight text-white">
               <div className="text-xs font-bold tracking-widest">GARDEN STATE</div>
@@ -114,7 +114,7 @@ export default function MobileNav({ isOpen, onClose, navItems }: MobileNavProps)
         <Link
           href="/donate"
           onClick={onClose}
-          className="block w-full px-6 py-4 bg-red-700 text-white font-semibold text-sm hover:bg-red-800 transition-colors"
+          className="block w-full px-6 py-4 bg-green-800 text-white font-semibold text-sm hover:bg-green-900 transition-colors"
         >
           Donate
         </Link>
@@ -150,7 +150,7 @@ export default function MobileNav({ isOpen, onClose, navItems }: MobileNavProps)
                           key={subItem.label}
                           href={subItem.href}
                           onClick={onClose}
-                          className="block px-10 py-3 text-sm text-gray-300 hover:text-red-500 transition-colors"
+                          className="block px-10 py-3 text-sm text-gray-300 hover:text-green-500 transition-colors"
                         >
                           {subItem.label}
                         </Link>

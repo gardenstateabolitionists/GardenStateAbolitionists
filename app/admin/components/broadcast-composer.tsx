@@ -178,7 +178,7 @@ export function BroadcastComposer({
               placeholder="Enter email subject..."
               maxLength={200}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
             <p className="text-xs text-gray-400 mt-1">{subject.length}/200</p>
           </div>
@@ -205,7 +205,7 @@ export function BroadcastComposer({
               placeholder="Write your message here..."
               rows={12}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent font-mono text-sm"
+              className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent font-mono text-sm"
             />
           </div>
           <div className="flex items-center justify-end gap-3 pt-2">
@@ -215,7 +215,7 @@ export function BroadcastComposer({
             <Button
               type="submit"
               disabled={disabled}
-              className="bg-red-600 hover:bg-red-700 text-white"
+              className="bg-green-700 hover:bg-green-800 text-white"
             >
               <Send size={16} className={`mr-2 ${sending ? 'animate-pulse' : ''}`} />
               {sending ? 'Sending…' : submitLabel}
@@ -252,7 +252,7 @@ export function BroadcastComposer({
               type="button"
               disabled={disabled}
               onClick={() => { if (!disabled) onSubmit(); }}
-              className="bg-red-600 hover:bg-red-700 text-white"
+              className="bg-green-700 hover:bg-green-800 text-white"
             >
               <Send size={16} className={`mr-2 ${sending ? 'animate-pulse' : ''}`} /> {sending ? 'Sending…' : submitLabel}
             </Button>

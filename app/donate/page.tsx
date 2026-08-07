@@ -27,7 +27,7 @@ export default function DonatePage() {
             <span className="font-light">Support the</span>{' '}
             <span className="font-black">CAUSE</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Support the abolition of abortion in New Jersey</p>
         </div>
       </section>
@@ -45,8 +45,8 @@ export default function DonatePage() {
           {/* How Donations Are Used */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
                 </svg>
               </div>
@@ -56,8 +56,8 @@ export default function DonatePage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
@@ -67,8 +67,8 @@ export default function DonatePage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
@@ -82,7 +82,7 @@ export default function DonatePage() {
           {/* Donation Options */}
           <div className="max-w-2xl mx-auto">
             {/* Main Donation Box */}
-            <div className="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-600 p-8 rounded-lg text-center mb-8">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-700 p-8 rounded-lg text-center mb-8">
               <h3 className="text-2xl font-bold mb-4">Make a Donation</h3>
               <p className="text-gray-700 mb-6">
                 Your generous gift helps us continue the fight for the abolition of abortion. 100% of donations go directly to our mission.
@@ -94,7 +94,7 @@ export default function DonatePage() {
                 variant="primary"
                 label="DONATE NOW"
                 source="main_button"
-                className="block w-full px-8 py-4 bg-red-600 text-white font-bold text-lg hover:bg-red-700 transition-colors rounded"
+                className="block w-full px-8 py-4 bg-green-700 text-white font-bold text-lg hover:bg-green-800 transition-colors rounded"
               />
 
               <p className="text-sm text-gray-500 mt-4">
@@ -141,7 +141,7 @@ export default function DonatePage() {
                   <h5 className="font-semibold mb-2">Other Options</h5>
                   <p className="text-sm text-gray-600">
                     For stock donations, corporate matching, or other giving options, please{' '}
-                    <Link href="/contact" className="text-red-700 underline hover:no-underline">
+                    <Link href="/contact" className="text-green-800 underline hover:no-underline">
                       contact us
                     </Link>.
                   </p>
@@ -180,7 +180,7 @@ export default function DonatePage() {
             </div>
             <p className="text-gray-600 mb-4">
               Have questions about donating?{' '}
-              <Link href="/contact" className="text-red-700 underline hover:no-underline">
+              <Link href="/contact" className="text-green-800 underline hover:no-underline">
                 Contact us
               </Link>.
             </p>
@@ -197,7 +197,7 @@ export default function DonatePage() {
                   . Contributions are tax-deductible to the fullest extent allowed by law.{' '}
                 </>
               ) : null}
-              <Link href="/financial-transparency" className="text-red-700 underline hover:no-underline">
+              <Link href="/financial-transparency" className="text-green-800 underline hover:no-underline">
                 Full financial transparency
               </Link>
               .

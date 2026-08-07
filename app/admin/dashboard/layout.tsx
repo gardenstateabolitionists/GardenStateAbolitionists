@@ -57,7 +57,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center space-y-4">
-          <Loader2 className="h-8 w-8 animate-spin mx-auto text-red-600" />
+          <Loader2 className="h-8 w-8 animate-spin mx-auto text-green-700" />
           <p className="text-gray-500">Checking authentication...</p>
         </div>
       </div>

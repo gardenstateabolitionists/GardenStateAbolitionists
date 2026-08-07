@@ -147,11 +147,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/images/aa-logo.webp"
+              src="/images/gsa-logo.webp"
               alt="Garden State Abolitionists logo"
               width={36}
               height={36}
-              className="h-9 w-auto invert"
+              className="h-9 w-auto"
             />
             <div className="leading-tight">
               <div className="text-sm font-bold tracking-widest">GARDEN STATE</div>
@@ -177,7 +177,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="px-3 py-4 text-[11px] font-semibold hover:text-red-500 transition-colors flex items-center tracking-wide whitespace-nowrap"
+                  className="px-3 py-4 text-[11px] font-semibold hover:text-green-500 transition-colors flex items-center tracking-wide whitespace-nowrap"
                   aria-haspopup={item.dropdown ? 'true' : undefined}
                   aria-expanded={item.dropdown ? activeDropdown === item.label : undefined}
                   aria-current={isCurrentPage(pathname, item.href) ? 'page' : undefined}
@@ -193,7 +193,7 @@ export default function Header() {
                 </Link>
                 {item.dropdown && (
                   <div
-                    className={`dropdown-content absolute left-0 top-full bg-[#1a1a1a] min-w-[220px] py-2 shadow-lg border-t border-red-600 ${activeDropdown === item.label ? 'dropdown-open' : ''}`}
+                    className={`dropdown-content absolute left-0 top-full bg-[#1a1a1a] min-w-[220px] py-2 shadow-lg border-t border-green-700 ${activeDropdown === item.label ? 'dropdown-open' : ''}`}
                     role="menu"
                     aria-label={`${item.label} submenu`}
                     onKeyDown={(e) => handleMenuKeyDown(e, item.label, item.dropdown!.length)}
@@ -202,7 +202,7 @@ export default function Header() {
                       <Link
                         key={subItem.label}
                         href={subItem.href}
-                        className="block px-4 py-2 text-xs hover:bg-[#2a2a2a] hover:text-red-500 transition-colors"
+                        className="block px-4 py-2 text-xs hover:bg-[#2a2a2a] hover:text-green-500 transition-colors"
                         role="menuitem"
                         ref={(el) => setMenuItemRef(item.label, index, el)}
                         onClick={handleLinkClick}
@@ -216,7 +216,7 @@ export default function Header() {
             ))}
             <Link
               href="/donate"
-              className="ml-2 px-6 py-4 bg-red-700 text-white text-xs font-bold hover:bg-red-800 transition-colors tracking-wide"
+              className="ml-2 px-6 py-4 bg-green-800 text-white text-xs font-bold hover:bg-green-900 transition-colors tracking-wide"
               aria-current={pathname === '/donate' ? 'page' : undefined}
             >
               DONATE

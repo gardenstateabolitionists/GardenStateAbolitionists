@@ -19,7 +19,7 @@ export default function AbolitionistNotProLifePage() {
             <span className="font-light">Abolitionist,</span>{' '}
             <span className="font-black">NOT PRO-LIFE</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Being pro-life is not the same as seeking to abolish abortion</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function AbolitionistNotProLifePage() {
               <span className="font-black">ABOLITIONISTS</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">We refuse to go with the multitude to do evil.</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               We, as an abolitionist organization, agree with the pro-life position that abortion is bad, but further, we believe abortion is murder and ought to be treated as such. While many who call themselves pro-life agree with us that abortion is murder, abortion has not been opposed by the pro-life political establishment in a manner consistent with its being murder. The manner in which abortion has been opposed by pro-life lobbyists and politicians has not only been inadequate and largely unfruitful, but cannot be fruitful for it betrays the very foundations of the case against Roe v Wade.
@@ -86,20 +86,20 @@ export default function AbolitionistNotProLifePage() {
             <h3 className="text-xl font-bold mt-8 mb-4">Two Examples</h3>
 
             <p>
-              <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Free the States</a>&apos; James Silberman met with the office of Ohio State Senator Andrew Brenner in April 2019. James explained to Brenner&apos;s aide the importance of introducing and passing a bill that nullifies Roe and treats abortion like murder from the moment of fertilization. At the end of James&apos; presentation, Brenner&apos;s aide said, &ldquo;This was very interesting, but it&apos;s Senator Brenner personal religious conviction that life begins at a heartbeat.&rdquo; Where did Senator Brenner learn that unbiblical, unscientific, dehumanizing nonsense? He learned it from the Heartbeat Bill which had just passed in Ohio a few months earlier.
+              <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Free the States</a>&apos; James Silberman met with the office of Ohio State Senator Andrew Brenner in April 2019. James explained to Brenner&apos;s aide the importance of introducing and passing a bill that nullifies Roe and treats abortion like murder from the moment of fertilization. At the end of James&apos; presentation, Brenner&apos;s aide said, &ldquo;This was very interesting, but it&apos;s Senator Brenner personal religious conviction that life begins at a heartbeat.&rdquo; Where did Senator Brenner learn that unbiblical, unscientific, dehumanizing nonsense? He learned it from the Heartbeat Bill which had just passed in Ohio a few months earlier.
             </p>
 
             <p>
-              <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Free the States</a>&apos; Russell Hunter was ministering outside an abortion facility in Norman, OK in 2016. A young mother who Russell was pleading with not to have the abortion told him, &ldquo;It&apos;s okay. My baby won&apos;t even feel any pain.&rdquo; Where did she learn that it&apos;s acceptable to murder your baby as long as he or she doesn&apos;t feel pain? From the pro-life movement and the Pain-Capable Unborn Child Protection Act which highlights pain as the reason abortion should be illegal.
+              <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Free the States</a>&apos; Russell Hunter was ministering outside an abortion facility in Norman, OK in 2016. A young mother who Russell was pleading with not to have the abortion told him, &ldquo;It&apos;s okay. My baby won&apos;t even feel any pain.&rdquo; Where did she learn that it&apos;s acceptable to murder your baby as long as he or she doesn&apos;t feel pain? From the pro-life movement and the Pain-Capable Unborn Child Protection Act which highlights pain as the reason abortion should be illegal.
             </p>
 
             <h3 className="text-xl font-bold mt-8 mb-4">Criminalization and the Gospel</h3>
 
             <p>
-              Abolitionists are not trying to make abortion safer for women, more rare, or a little less legal. Abolitionists are seeking to criminalize abortion because it is murder and the laws against murder should be applied equally to all people. At the same time we preach the Gospel of Jesus Christ declaring that there is forgiveness for the sin of abortion, and all repentant post-abortive mothers and fathers can be redeemed and restored in knowing Jesus Christ as Lord. This truth does not mean that there should be no punishment for choosing to murder your child, however. There is no conflict between preaching the Gospel and establishing justice in the courts (<a href="https://biblia.com/bible/esv/isaiah/1/16-17" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Isaiah 1:16-17</a>; <a href="https://biblia.com/bible/esv/amos/5/15" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Amos 5:15</a>; <a href="https://biblia.com/bible/esv/luke/11/42" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">Luke 11:42</a>).
+              Abolitionists are not trying to make abortion safer for women, more rare, or a little less legal. Abolitionists are seeking to criminalize abortion because it is murder and the laws against murder should be applied equally to all people. At the same time we preach the Gospel of Jesus Christ declaring that there is forgiveness for the sin of abortion, and all repentant post-abortive mothers and fathers can be redeemed and restored in knowing Jesus Christ as Lord. This truth does not mean that there should be no punishment for choosing to murder your child, however. There is no conflict between preaching the Gospel and establishing justice in the courts (<a href="https://biblia.com/bible/esv/isaiah/1/16-17" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Isaiah 1:16-17</a>; <a href="https://biblia.com/bible/esv/amos/5/15" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Amos 5:15</a>; <a href="https://biblia.com/bible/esv/luke/11/42" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">Luke 11:42</a>).
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 Simply put, abolitionism is nothing more or less than the practice of consistent biblical Christianity in a culture that practices child sacrifice. In our context, with abortion being the evil of our age, abolitionism is about the abolition of abortion in the name of, by the power of, and for the glory of Jesus Christ. We invite you to examine our views in the light of scripture and reason them out with us.
               </p>
@@ -112,13 +112,13 @@ export default function AbolitionistNotProLifePage() {
             <div className="my-10">
               <Link
                 href="/what-we-believe/biblical-not-secular"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; WE ARE BIBLICAL
               </Link>
             </div>
 
-            <div className="my-10 border-l-4 border-red-600 bg-gray-50 p-5 rounded-r not-prose">
+            <div className="my-10 border-l-4 border-green-700 bg-gray-50 p-5 rounded-r not-prose">
               <p className="text-gray-800 mb-2">
                 <strong>Wondering which New Jersey legislators actually sponsor abolition bills?</strong>
               </p>
@@ -128,7 +128,7 @@ export default function AbolitionistNotProLifePage() {
               </p>
               <Link
                 href="/legislators"
-                className="inline-block text-red-700 font-semibold underline hover:no-underline"
+                className="inline-block text-green-800 font-semibold underline hover:no-underline"
               >
                 See which legislators sponsor abolition bills &rarr;
               </Link>
@@ -141,7 +141,7 @@ export default function AbolitionistNotProLifePage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-end">
-            <Link href="/what-we-believe/biblical-not-secular" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/biblical-not-secular" className="text-green-700 font-semibold hover:underline">
               Biblical, Not Secular &rarr;
             </Link>
           </div>

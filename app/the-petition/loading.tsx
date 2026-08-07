@@ -8,7 +8,7 @@ export default function PetitionLoading() {
             <span className="font-light">The</span>{' '}
             <span className="font-black">PETITION</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Call for the abolition of abortion in New Jersey</p>
         </div>
       </section>
@@ -28,10 +28,10 @@ export default function PetitionLoading() {
           </div>
 
           {/* Form skeleton */}
-          <div className="bg-red-50 border-2 border-red-600 p-8 rounded-lg animate-pulse">
-            <div className="h-7 bg-red-200 rounded w-48 mx-auto mb-6" />
-            <div className="h-4 bg-red-100 rounded w-32 mx-auto mb-4" />
-            <div className="h-4 bg-red-100 rounded w-80 mx-auto mb-6" />
+          <div className="bg-green-50 border-2 border-green-700 p-8 rounded-lg animate-pulse">
+            <div className="h-7 bg-green-200 rounded w-48 mx-auto mb-6" />
+            <div className="h-4 bg-green-100 rounded w-32 mx-auto mb-4" />
+            <div className="h-4 bg-green-100 rounded w-80 mx-auto mb-6" />
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div className="h-10 bg-white rounded border border-gray-300" />
               <div className="h-10 bg-white rounded border border-gray-300" />
@@ -42,7 +42,7 @@ export default function PetitionLoading() {
               <div className="h-10 bg-white rounded border border-gray-300" />
             </div>
             <div className="h-12 bg-white rounded border border-gray-200 mb-4" />
-            <div className="h-14 bg-red-300 rounded w-56 mx-auto" />
+            <div className="h-14 bg-green-300 rounded w-56 mx-auto" />
           </div>
         </div>
       </section>

@@ -105,7 +105,7 @@ export default async function NewsArticlePage({ params }: Props) {
       url: BASE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/images/aa-logo.webp`,
+        url: `${BASE_URL}/images/gsa-logo.webp`,
         width: 176,
         height: 176,
       },
@@ -164,7 +164,7 @@ export default async function NewsArticlePage({ params }: Props) {
       <section className="bg-white py-12">
         <div className="max-w-3xl mx-auto px-4">
           <article
-            className="prose prose-lg max-w-none prose-headings:text-[#1a1a1a] prose-a:text-red-600 prose-a:no-underline hover:prose-a:underline prose-img:max-w-full prose-img:h-auto prose-img:rounded-lg"
+            className="prose prose-lg max-w-none prose-headings:text-[#1a1a1a] prose-a:text-green-700 prose-a:no-underline hover:prose-a:underline prose-img:max-w-full prose-img:h-auto prose-img:rounded-lg"
             dangerouslySetInnerHTML={{ __html: sanitizeHtml(article.content) }}
           />
 
@@ -172,7 +172,7 @@ export default async function NewsArticlePage({ params }: Props) {
           <div className="mt-12 pt-8 border-t border-gray-200 flex items-center justify-between flex-wrap gap-4">
             <Link
               href="/news"
-              className="text-red-600 font-semibold hover:text-red-700 transition-colors"
+              className="text-green-700 font-semibold hover:text-green-800 transition-colors"
             >
               &larr; Back to News
             </Link>

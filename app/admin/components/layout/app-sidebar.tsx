@@ -45,7 +45,7 @@ const NavItem = ({ href, icon: Icon, label, isCollapsed, onClick }: NavItemProps
       className={cn(
         'flex items-center gap-3 rounded-md px-3 py-2 font-medium transition-colors',
         isActive
-          ? 'bg-red-600 text-white'
+          ? 'bg-green-700 text-white'
           : 'text-gray-700 hover:bg-gray-200',
         isCollapsed && 'justify-center px-2'
       )}
@@ -85,7 +85,7 @@ export default function AppSidebar() {
       {/* Header */}
       <div className="flex h-14 items-center px-4 border-b">
         {!isCollapsed && (
-          <Link href="/admin/dashboard" className="font-bold text-lg text-red-600">
+          <Link href="/admin/dashboard" className="font-bold text-lg text-green-700">
             GSA Admin
           </Link>
         )}
@@ -118,7 +118,7 @@ export default function AppSidebar() {
         <button
           onClick={handleLogout}
           className={cn(
-            'flex items-center gap-3 rounded-md px-3 py-2 w-full font-medium text-gray-700 hover:bg-red-100 hover:text-red-600 transition-colors',
+            'flex items-center gap-3 rounded-md px-3 py-2 w-full font-medium text-gray-700 hover:bg-green-100 hover:text-green-700 transition-colors',
             isCollapsed && 'justify-center px-2'
           )}
         >

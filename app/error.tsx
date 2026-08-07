@@ -24,14 +24,14 @@ export default function Error({
     <section className="bg-[#1a1a1a] text-white min-h-[60vh] flex items-center justify-center">
       <div className="max-w-lg mx-auto px-4 text-center">
         <h1 className="text-5xl font-black text-red-600 mb-4">ERROR</h1>
-        <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+        <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
         <p className="text-gray-300 mb-8">
           Something went wrong. Please try again or return to the home page.
         </p>
         <div className="flex gap-4 justify-center">
           <button
             onClick={reset}
-            className="px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded transition-colors"
+            className="px-6 py-3 bg-green-800 hover:bg-green-900 text-white font-semibold rounded transition-colors"
           >
             Try Again
           </button>

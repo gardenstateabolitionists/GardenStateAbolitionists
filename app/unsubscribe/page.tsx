@@ -51,13 +51,13 @@ function UnsubscribeContent() {
         {status === 'invalid' && (
           <>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Invalid Link</h1>
-            <div className="w-12 h-[3px] bg-red-600 mx-auto mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mx-auto mb-8" />
             <p className="text-gray-300 text-lg mb-8">
               This unsubscribe link is invalid or has expired.
             </p>
             <Link
               href="/"
-              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+              className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-8 rounded transition-colors"
             >
               Return to Homepage
             </Link>
@@ -67,7 +67,7 @@ function UnsubscribeContent() {
         {status === 'confirm' && (
           <>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Unsubscribe</h1>
-            <div className="w-12 h-[3px] bg-red-600 mx-auto mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mx-auto mb-8" />
             <p className="text-gray-300 text-lg mb-4">
               Are you sure you want to unsubscribe from email communications?
             </p>
@@ -83,7 +83,7 @@ function UnsubscribeContent() {
               </Link>
               <button
                 onClick={handleUnsubscribe}
-                className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+                className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-8 rounded transition-colors"
               >
                 Yes, Unsubscribe
               </button>
@@ -94,7 +94,7 @@ function UnsubscribeContent() {
         {status === 'processing' && (
           <>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Unsubscribing...</h1>
-            <div className="w-12 h-[3px] bg-red-600 mx-auto mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mx-auto mb-8" />
             <p className="text-gray-300">Please wait...</p>
           </>
         )}
@@ -102,7 +102,7 @@ function UnsubscribeContent() {
         {status === 'success' && (
           <>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Unsubscribed</h1>
-            <div className="w-12 h-[3px] bg-red-600 mx-auto mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mx-auto mb-8" />
             <p className="text-gray-300 text-lg mb-4">
               You have been successfully unsubscribed from email communications from Garden State Abolitionists.
             </p>
@@ -111,7 +111,7 @@ function UnsubscribeContent() {
             </p>
             <Link
               href="/"
-              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+              className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-8 rounded transition-colors"
             >
               Return to Homepage
             </Link>
@@ -121,13 +121,13 @@ function UnsubscribeContent() {
         {status === 'error' && (
           <>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Error</h1>
-            <div className="w-12 h-[3px] bg-red-600 mx-auto mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mx-auto mb-8" />
             <p className="text-gray-300 text-lg mb-8">
               This unsubscribe link is invalid or has expired. Please try again from a recent email.
             </p>
             <Link
               href="/"
-              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+              className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-8 rounded transition-colors"
             >
               Return to Homepage
             </Link>

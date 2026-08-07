@@ -160,12 +160,12 @@ export default function FooterNewsletter() {
               required
               maxLength={254}
               autoComplete="email"
-              className="flex-1 min-w-0 px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500"
+              className="flex-1 min-w-0 px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500"
             />
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded transition-colors disabled:opacity-50"
+              className="px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-medium rounded transition-colors disabled:opacity-50"
             >
               {status === 'loading' ? '...' : 'Subscribe'}
             </button>

@@ -54,7 +54,7 @@ export default function FAQSection({ items }: FAQSectionProps) {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-3 py-2 text-sm rounded transition-colors ${
                   activeSection === item.id
-                    ? 'bg-red-600 text-white'
+                    ? 'bg-green-700 text-white'
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >

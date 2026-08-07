@@ -201,7 +201,7 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
                 placeholder="Type your reply..."
                 rows={5}
                 maxLength={5000}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-sm"
               />
               <p className="text-xs text-gray-400">{replyMessage.length}/5000</p>
               {replyError && (
@@ -220,7 +220,7 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
                   size="sm"
                   onClick={handleReplyClick}
                   disabled={replySending || !replyMessage.trim()}
-                  className="bg-red-600 hover:bg-red-700 text-white"
+                  className="bg-green-700 hover:bg-green-800 text-white"
                 >
                   {replySending ? (
                     <>
@@ -244,7 +244,7 @@ export default function InquiryModal({ open, onClose, inquiry, onUpdate }: Inqui
             variant="outline"
             onClick={handleDelete}
             disabled={isSubmitting}
-            className="text-red-600 hover:bg-red-50"
+            className="text-green-700 hover:bg-green-50"
           >
             {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Trash className="h-4 w-4 mr-2" />}
             Delete

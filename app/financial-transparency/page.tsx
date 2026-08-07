@@ -24,7 +24,7 @@ export default function FinancialTransparencyPage() {
             <span className="font-light">Financial</span>{' '}
             <span className="font-black">TRANSPARENCY</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">
             Honest stewardship of every dollar entrusted to us
           </p>
@@ -138,7 +138,7 @@ export default function FinancialTransparencyPage() {
               <li>
                 <Link
                   href={orgInfo.irsDeterminationLetterUrl}
-                  className="text-red-700 underline hover:no-underline"
+                  className="text-green-800 underline hover:no-underline"
                   target="_blank"
                   rel="noopener"
                 >
@@ -151,7 +151,7 @@ export default function FinancialTransparencyPage() {
               <li>
                 <Link
                   href={orgInfo.form990Url}
-                  className="text-red-700 underline hover:no-underline"
+                  className="text-green-800 underline hover:no-underline"
                   target="_blank"
                   rel="noopener"
                 >
@@ -163,7 +163,7 @@ export default function FinancialTransparencyPage() {
               <li>
                 <Link
                   href={orgInfo.annualReportUrl}
-                  className="text-red-700 underline hover:no-underline"
+                  className="text-green-800 underline hover:no-underline"
                   target="_blank"
                   rel="noopener"
                 >
@@ -177,7 +177,7 @@ export default function FinancialTransparencyPage() {
               As a young New Jersey nonprofit, our first annual report and Form 990 will be published
               here as soon as they are filed with the IRS. In the meantime, questions about our
               finances are welcome —{' '}
-              <Link href="/contact" className="text-red-700 underline hover:no-underline">
+              <Link href="/contact" className="text-green-800 underline hover:no-underline">
                 contact us directly
               </Link>{' '}
               and we will answer honestly and completely.
@@ -189,7 +189,7 @@ export default function FinancialTransparencyPage() {
             Online donations are processed through{' '}
             <Link
               href="https://www.zeffy.com/"
-              className="text-red-700 underline hover:no-underline"
+              className="text-green-800 underline hover:no-underline"
             >
               Zeffy
             </Link>
@@ -205,7 +205,7 @@ export default function FinancialTransparencyPage() {
           <p className="text-gray-700 mb-4">
             We welcome scrutiny of our financial stewardship. If you have questions about how
             donations are used, our tax status, or anything else related to our finances, please{' '}
-            <Link href="/contact" className="text-red-700 underline hover:no-underline">
+            <Link href="/contact" className="text-green-800 underline hover:no-underline">
               contact us
             </Link>
             . We will answer honestly and provide any documentation you reasonably request.

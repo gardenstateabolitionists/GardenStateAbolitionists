@@ -95,12 +95,12 @@ export default function PetitionForm() {
   }
 
   return (
-    <div className="bg-red-50 border-2 border-red-600 p-8 rounded-lg" id="sign">
+    <div className="bg-green-50 border-2 border-green-700 p-8 rounded-lg" id="sign">
       <h3 className="text-2xl font-bold mb-2 text-center">Sign the Petition</h3>
 
       {signatureCount > 0 && (
         <p className="text-center text-gray-600 mb-4">
-          <span className="font-semibold text-red-700">{signatureCount.toLocaleString()}</span> {signatureCount === 1 ? 'person has' : 'people have'} already signed
+          <span className="font-semibold text-green-800">{signatureCount.toLocaleString()}</span> {signatureCount === 1 ? 'person has' : 'people have'} already signed
         </p>
       )}
 
@@ -144,7 +144,7 @@ export default function PetitionForm() {
               required
               maxLength={100}
               autoComplete="name"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="Your full name"
             />
           </div>
@@ -161,7 +161,7 @@ export default function PetitionForm() {
               onChange={handleChange}
               required
               autoComplete="email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="your@email.com"
             />
           </div>
@@ -179,7 +179,7 @@ export default function PetitionForm() {
               value={formData.city}
               onChange={handleChange}
               autoComplete="address-level2"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="Your city"
             />
           </div>
@@ -193,7 +193,7 @@ export default function PetitionForm() {
               name="state"
               value={formData.state}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             >
               <option value="NJ">New Jersey</option>
               <option value="other">Other</option>
@@ -211,7 +211,7 @@ export default function PetitionForm() {
               value={formData.zipcode}
               onChange={handleChange}
               autoComplete="postal-code"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="12345"
               maxLength={10}
             />
@@ -226,7 +226,7 @@ export default function PetitionForm() {
             name="subscribed"
             checked={formData.subscribed}
             onChange={handleChange}
-            className="mt-1 h-5 w-5 rounded border-gray-300 text-red-600 focus:ring-red-500"
+            className="mt-1 h-5 w-5 rounded border-gray-300 text-green-700 focus:ring-green-500"
           />
           <label htmlFor="subscribed" className="text-gray-700">
             <span className="font-medium">Keep me updated!</span>
@@ -240,7 +240,7 @@ export default function PetitionForm() {
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="px-8 py-4 bg-red-600 text-white font-bold text-lg hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-8 py-4 bg-green-700 text-white font-bold text-lg hover:bg-green-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === 'submitting' ? 'SIGNING...' : 'SIGN THE PETITION'}
           </button>

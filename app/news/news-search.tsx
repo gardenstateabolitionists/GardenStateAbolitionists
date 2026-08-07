@@ -58,7 +58,7 @@ export default function NewsSearch({ articles }: { articles: Article[] }) {
             aria-label="Search news articles"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
+            className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900"
           />
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function NewsSearch({ articles }: { articles: Article[] }) {
           </p>
           <button
             onClick={() => setSearchTerm('')}
-            className="text-red-600 font-semibold hover:text-red-700 transition-colors"
+            className="text-green-700 font-semibold hover:text-green-800 transition-colors"
           >
             Clear Search
           </button>

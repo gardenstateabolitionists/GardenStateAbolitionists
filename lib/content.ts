@@ -32,9 +32,12 @@ export const statisticsSource = '';
  * dropped visitors into a private chat that is not theirs.
  */
 export const socialLinks = {
+  // Facebook and the Signal group are intentionally still blank — no accounts
+  // have been provided. Each blank hides its own icon/section rather than
+  // rendering a dead link, so they can be filled in later with no code change.
   facebook: '',
-  x: '',
-  instagram: '',
+  x: 'https://x.com/abolitionnj',
+  instagram: 'https://www.instagram.com/newjerseyabolition',
   signalGroup: '',
 };
 

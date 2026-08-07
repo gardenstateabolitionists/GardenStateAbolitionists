@@ -52,7 +52,7 @@ export default function PartnersPage() {
           <h1 className="text-3xl md:text-5xl font-black mb-4">
             Allied Abolition Groups Across America
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-gray-300 max-w-3xl mx-auto">
             Christian abolitionists in {coverage}{' '}states working alongside Abolish Abortion
             New Jersey for the immediate and total end of abortion in the United States. Find your
@@ -175,9 +175,9 @@ function PartnerCard({
     : null;
   const socials = partner.socials || [];
   return (
-    <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-red-600 transition-colors">
+    <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-green-700 transition-colors">
       {showState && partner.state && (
-        <p className="text-xs uppercase tracking-wide text-red-700 font-bold mb-1">
+        <p className="text-xs uppercase tracking-wide text-green-800 font-bold mb-1">
           {partner.state}
         </p>
       )}
@@ -187,7 +187,7 @@ function PartnerCard({
             href={partner.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-red-700 transition-colors"
+            className="hover:text-green-800 transition-colors"
           >
             {partner.name}
           </a>
@@ -208,7 +208,7 @@ function PartnerCard({
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-red-700 border border-red-200 rounded px-2 py-1 hover:bg-red-50 hover:no-underline"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-green-800 border border-green-200 rounded px-2 py-1 hover:bg-green-50 hover:no-underline"
             >
               {SOCIAL_LABEL[s.platform] || s.platform} &rarr;
             </a>

@@ -19,7 +19,7 @@ export default function IgnoreRoePage() {
             <span className="font-light">Ignore</span>{' '}
             <span className="font-black">ROE</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">The Supreme Court is not the supreme law of the land</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function IgnoreRoePage() {
               <span className="font-black">TYRANTS</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">Through Nullification and Interposition</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               As abolitionists, we believe that no government possesses the rightful authority to legalize child sacrifice. The moment Supreme Court Justice Harry Blackmun delivered the majority decision in Roe v Wade, the decision was legally null and void and should&apos;ve been treated as such. By complying with the Supreme Court&apos;s order to allow mass murder for 46 years, the states have made themselves complicit in the shedding of innocent blood.
@@ -58,14 +58,14 @@ export default function IgnoreRoePage() {
             </p>
 
             <p>
-              The Bible tells us to &ldquo;rescue those being led to slaughter&rdquo; (<a href="https://biblia.com/bible/esv/proverbs/24/10" target="_blank" rel="noopener noreferrer" className="text-red-700 underline hover:no-underline">Prv 24:10</a>), &ldquo;bring justice to the fatherless&rdquo; (<a href="https://biblia.com/bible/esv/isaiah/1/15" target="_blank" rel="noopener noreferrer" className="text-red-700 underline hover:no-underline">Is 1:15</a>), and love our neighbors as ourselves (<a href="https://biblia.com/bible/esv/matthew/22/39" target="_blank" rel="noopener noreferrer" className="text-red-700 underline hover:no-underline">Matt 22:39</a>). You can do these things or you can submit to Supreme Court opinions stating that murdering certain humans should be legal, but you cannot do both.
+              The Bible tells us to &ldquo;rescue those being led to slaughter&rdquo; (<a href="https://biblia.com/bible/esv/proverbs/24/10" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">Prv 24:10</a>), &ldquo;bring justice to the fatherless&rdquo; (<a href="https://biblia.com/bible/esv/isaiah/1/15" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">Is 1:15</a>), and love our neighbors as ourselves (<a href="https://biblia.com/bible/esv/matthew/22/39" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">Matt 22:39</a>). You can do these things or you can submit to Supreme Court opinions stating that murdering certain humans should be legal, but you cannot do both.
             </p>
 
             <p>
-              The 1973 Supreme Court knew just as well as today&apos;s abortion supporters of the scientific consensus that life begins at fertilization. Some admit the truth while others, like Roe author Justice Harry Blackmun, feign ignorance; but they all know of the preborn&apos;s humanity. Accordingly, the 14th amendment&apos;s equal protection clause provides the little human in the womb the same legal protections against murder as anyone else. State and federal governments have simply refused to enforce those protections because the Supreme Court opined that they shouldn&apos;t. Article VI of the Constitution specifies that <a href="https://tenthamendmentcenter.com/the-supremacy-clause/" target="_blank" rel="noopener noreferrer" className="text-red-700 underline hover:no-underline">only the Constitution and the laws made pursuant to it are legitimate laws</a>. Roe is neither a law nor in any way pursuant to the Constitution. As former dean of Stanford Law John Hart Ely put it, &ldquo;[Roe v Wade] is not constitutional law and gives almost no sense of an obligation to try to be.&rdquo; What Ely is saying is that in Roe, Blackmun hardly tried to make his decision appear legitimate. The decision amounts to nothing more than simple tyranny; a transparent power grab by a branch of government determined to become the engine of societal upheaval.
+              The 1973 Supreme Court knew just as well as today&apos;s abortion supporters of the scientific consensus that life begins at fertilization. Some admit the truth while others, like Roe author Justice Harry Blackmun, feign ignorance; but they all know of the preborn&apos;s humanity. Accordingly, the 14th amendment&apos;s equal protection clause provides the little human in the womb the same legal protections against murder as anyone else. State and federal governments have simply refused to enforce those protections because the Supreme Court opined that they shouldn&apos;t. Article VI of the Constitution specifies that <a href="https://tenthamendmentcenter.com/the-supremacy-clause/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">only the Constitution and the laws made pursuant to it are legitimate laws</a>. Roe is neither a law nor in any way pursuant to the Constitution. As former dean of Stanford Law John Hart Ely put it, &ldquo;[Roe v Wade] is not constitutional law and gives almost no sense of an obligation to try to be.&rdquo; What Ely is saying is that in Roe, Blackmun hardly tried to make his decision appear legitimate. The decision amounts to nothing more than simple tyranny; a transparent power grab by a branch of government determined to become the engine of societal upheaval.
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 &ldquo;You seem to consider the judges as the ultimate arbiters of all constitutional questions; a very dangerous doctrine indeed, and one which would place us under the despotism of an oligarchy. Our judges are as honest as other men, and not more so. They have, with others, the same passions for party, for power, and the privilege of their corps&hellip;. Their power [is] the more dangerous as they are in office for life, and not responsible, as the other functionaries are, to the elective control. The Constitution has erected no such single tribunal, knowing that to whatever hands confided, with the corruptions of time and party, its members would become despots. It has more wisely made all the departments co-equal and co-sovereign within themselves.&rdquo;
               </p>
@@ -102,7 +102,7 @@ export default function IgnoreRoePage() {
                 With Roe being morally execrable and legally null, state governors, legislators, and judges are morally and legally obligated to interpose &ndash; to put themselves between the tyrant and the victims who are being deprived of their God-given right to life.
               </p>
               <p className="mt-4">
-                State governments in Wisconsin, New Jersey, Vermont, New York, and Massachusetts interposed on behalf of the victims of slavery by <a href="https://freethestates.org/2019/03/are-nullifications-advocates-the-villains-of-american-history/" target="_blank" rel="noopener noreferrer" className="text-red-700 underline hover:no-underline">nullifying the federal Fugitive Slave Act of 1850</a> and the federal courts which demanded its enforcement. We are asking state governments to do the same today.
+                State governments in Wisconsin, New Jersey, Vermont, New York, and Massachusetts interposed on behalf of the victims of slavery by <a href="https://freethestates.org/2019/03/are-nullifications-advocates-the-villains-of-american-history/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">nullifying the federal Fugitive Slave Act of 1850</a> and the federal courts which demanded its enforcement. We are asking state governments to do the same today.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ export default function IgnoreRoePage() {
             <div className="my-10">
               <Link
                 href="/what-we-believe/criminalization"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; WE SEEK TO ESTABLISH JUSTICE
               </Link>
@@ -130,10 +130,10 @@ export default function IgnoreRoePage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-            <Link href="/what-we-believe/no-exceptions" className="text-red-700 font-semibold underline hover:no-underline">
+            <Link href="/what-we-believe/no-exceptions" className="text-green-800 font-semibold underline hover:no-underline">
               &larr; No Exceptions
             </Link>
-            <Link href="/what-we-believe/criminalization" className="text-red-700 font-semibold underline hover:no-underline">
+            <Link href="/what-we-believe/criminalization" className="text-green-800 font-semibold underline hover:no-underline">
               Criminalization &rarr;
             </Link>
           </div>

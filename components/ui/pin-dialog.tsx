@@ -74,7 +74,7 @@ export function PinDialog({ open, onOpenChange, title, description, onVerified, 
       <DialogContent className="max-w-sm">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-red-600" />
+            <ShieldCheck className="h-5 w-5 text-green-700" />
             {title}
           </DialogTitle>
           {description && <DialogDescription>{description}</DialogDescription>}
@@ -99,7 +99,7 @@ export function PinDialog({ open, onOpenChange, title, description, onVerified, 
               }}
               placeholder="••••"
               autoComplete="off"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-center text-2xl tracking-[0.5em] focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-center text-2xl tracking-[0.5em] focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
           </div>
 
@@ -119,7 +119,7 @@ export function PinDialog({ open, onOpenChange, title, description, onVerified, 
             <Button
               type="submit"
               disabled={pin.length !== 4 || verifying || loading}
-              className="bg-red-600 hover:bg-red-700 text-white"
+              className="bg-green-700 hover:bg-green-800 text-white"
             >
               {verifying || loading ? (
                 <>

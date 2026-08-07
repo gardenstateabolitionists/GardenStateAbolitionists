@@ -179,7 +179,7 @@ export default function EmailBroadcastPage() {
         <div
           className={`rounded-lg p-4 flex items-start gap-3 ${
             result.error
-              ? 'bg-red-50 border border-red-200 text-red-700'
+              ? 'bg-green-50 border border-green-200 text-green-800'
               : 'bg-green-50 border border-green-200 text-green-700'
           }`}
         >
@@ -251,7 +251,7 @@ export default function EmailBroadcastPage() {
                   placeholder="Enter email subject..."
                   maxLength={200}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
                 <p className="text-xs text-gray-400 mt-1">{subject.length}/200</p>
               </div>
@@ -284,7 +284,7 @@ export default function EmailBroadcastPage() {
                   placeholder="Write your message here..."
                   rows={12}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent font-mono text-sm"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-b-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent font-mono text-sm"
                 />
               </div>
 
@@ -292,7 +292,7 @@ export default function EmailBroadcastPage() {
                 <Button
                   type="submit"
                   disabled={sending || !subject.trim() || !body.trim()}
-                  className="bg-red-600 hover:bg-red-700 text-white"
+                  className="bg-green-700 hover:bg-green-800 text-white"
                 >
                   {sending ? (
                     <>
@@ -368,7 +368,7 @@ export default function EmailBroadcastPage() {
                   type="button"
                   disabled={sending || !subject.trim() || !body.trim()}
                   onClick={() => { if (subject.trim() && body.trim()) setShowConfirm(true); }}
-                  className="bg-red-600 hover:bg-red-700 text-white"
+                  className="bg-green-700 hover:bg-green-800 text-white"
                 >
                   <Send size={16} className="mr-2" />
                   Send to All Subscribers

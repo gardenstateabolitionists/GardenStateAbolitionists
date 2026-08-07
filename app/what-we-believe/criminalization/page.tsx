@@ -19,7 +19,7 @@ export default function CriminalizationPage() {
             <span className="font-light">Criminalizing</span>{' '}
             <span className="font-black">ABORTION</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Establishing justice for the preborn requires criminalization</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function CriminalizationPage() {
               <span className="font-black">MURDER</span>
             </h2>
             <p className="text-sm tracking-[0.2em] uppercase font-semibold text-gray-800 mt-0 mb-2">And it ought to be treated as such</p>
-            <div className="w-12 h-[3px] bg-red-600 mb-8" />
+            <div className="w-12 h-[3px] bg-green-700 mb-8" />
 
             <p>
               If abortion is murder, and we all know that it is, then it ought to be treated as such. Pro-lifers, attempting to put forward legislation more palatable to the public, are committed to a strategy of giving automatic immunity to the parents who have their child murdered in all cases. Rather than making political calculations, abolitionists simply proclaim the truth that abortion is murder and must be abolished without shying away from any of the perceived consequences of that position. We demand justice through equal protection of the law for all image bearers of God. Equal justice and the abolition of abortion are thwarted by the pro-life movement&apos;s refusal to fully criminalize abortion.
@@ -45,7 +45,7 @@ export default function CriminalizationPage() {
               When the abolitionists of slavery came on the scene, anti-slavery gradualists had long been attempting to end slavery by convincing the slave holders that releasing their slaves was in their own best interest. British abolitionist Elizabeth Heyrick rebuked them thusly:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 We are told &lsquo;you must go cautiously and gradually to work. A very powerful interest and a very powerful influence are against you. You must try to conciliate instead of provoke the West Indian planters;- to convince them that their own interest is concerned in the better treatment and gradual emancipation of their slaves, or your object will never be accomplished.&rsquo;
               </p>
@@ -53,7 +53,7 @@ export default function CriminalizationPage() {
             </blockquote>
 
             <p>
-              The pro-life movement has long fought against abortion by this strategy, arguing that women have been betrayed by abortion and are victims of it rather than accomplices to it. This was the primary argument pro-life Republican Jeff Leach made to justify his opposition to the Abolition of Abortion in Texas Act. Following the lead of the pro-life movement, Leach wanted to exempt parents from being prosecuted as accomplices in the murder of their aborted children. Leach&apos;s opposition to the abolition bill was <a href="https://christiannews.net/2019/04/11/former-sbc-president-jack-graham-praises-chairman-who-killed-bill-to-outlaw-abortion-as-courageous/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">endorsed</a> by his pastor and former Southern Baptist Convention President Jack Graham, current SBC President J.D. Greer, Abby Johnson, Brian Fisher of Human Coalition, and other pro-life leaders.
+              The pro-life movement has long fought against abortion by this strategy, arguing that women have been betrayed by abortion and are victims of it rather than accomplices to it. This was the primary argument pro-life Republican Jeff Leach made to justify his opposition to the Abolition of Abortion in Texas Act. Following the lead of the pro-life movement, Leach wanted to exempt parents from being prosecuted as accomplices in the murder of their aborted children. Leach&apos;s opposition to the abolition bill was <a href="https://christiannews.net/2019/04/11/former-sbc-president-jack-graham-praises-chairman-who-killed-bill-to-outlaw-abortion-as-courageous/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">endorsed</a> by his pastor and former Southern Baptist Convention President Jack Graham, current SBC President J.D. Greer, Abby Johnson, Brian Fisher of Human Coalition, and other pro-life leaders.
             </p>
 
             <p>
@@ -83,10 +83,10 @@ export default function CriminalizationPage() {
             <h3 className="text-xl font-bold mt-8 mb-4">1) Parental Exemptions Create a Right to DIY Abortions</h3>
 
             <p>
-              Providing automatic immunity in all cases to mothers and fathers who have their children murdered literally means that do-it-yourself abortions are legal. In fact, Cari Sietstra, a board member of the National Abortion Federation, published an <a href="https://www.nytimes.com/2019/05/11/opinion/abortion-pregnancy-misoprostol.html" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">article</a> in The New York Times in 2019 calling pro-life and pro-choice people to work together toward a do-it-yourself (DIY) abortion industry that is allowed under pro-life legislation:
+              Providing automatic immunity in all cases to mothers and fathers who have their children murdered literally means that do-it-yourself abortions are legal. In fact, Cari Sietstra, a board member of the National Abortion Federation, published an <a href="https://www.nytimes.com/2019/05/11/opinion/abortion-pregnancy-misoprostol.html" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">article</a> in The New York Times in 2019 calling pro-life and pro-choice people to work together toward a do-it-yourself (DIY) abortion industry that is allowed under pro-life legislation:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 &ldquo;We can work to fully decriminalize self-induced abortions. This is an area where all Americans, including pro-life Americans, can work together. The pro-life movement has insisted for decades that women should not be prosecuted for self-abortion&hellip; Working together to decriminalize self-managed abortion will curb these risks.&rdquo;
               </p>
@@ -123,7 +123,7 @@ export default function CriminalizationPage() {
               The penalties for people who steal don&apos;t completely get rid of theft, but they do deter many would-be thieves. One of the few things on which pro-choice and pro-life people agree is that abortion is often a difficult decision. While some commit murder without ever even considering keeping their baby, it&apos;s a close call for most. That call would no longer be a close one if homicide charges were added to one side of the scale. Jason Storms, a pastor and abolitionist, illustrated this from experience at a hearing for the Abolition of Abortion in Texas Act (HB 896) on April 8, 2019.
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 &ldquo;I was guilty as an accomplice in the murder of my own child, and I should have been prosecuted accordingly&hellip; Mothers and fathers &ndash; parents &ndash; right now in Texas can be charged with parental neglect, parental abuse, and even parental homicide when we see the tragedy of parents taking the lives of their own children. It&apos;s because mothers and fathers have a duty to love and protect their children. That responsibility doesn&apos;t start when they&apos;re born, but it starts when they&apos;re conceived.
               </p>
@@ -151,7 +151,7 @@ export default function CriminalizationPage() {
               In Roe, the State of Texas argued that the 14th Amendment&apos;s equal protection clause provided unborn human beings protection against murder, just like the law protected everyone else against murder. However, Texas&apos; pro-life laws gave full immunity to the parents who had their children murdered. Accordingly, Justice Harry Blackmun explained in footnote 54 of the Roe v. Wade decision that these immunities legally undercut the anti-abortion case:
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 my-8 italic">
+            <blockquote className="border-l-4 border-green-700 pl-6 my-8 italic">
               <p>
                 There are other inconsistencies between Fourteenth Amendment status and the typical abortion statute. It has already been pointed out that in Texas the woman is not a principal or an accomplice with respect to an abortion upon her. If the fetus is a person, why is the woman not a principal or an accomplice? Further, the penalty for criminal abortion specified by Art. 1195 is significantly less than the maximum penalty for murder prescribed by Art. 1257 of the Texas Penal Code. If the fetus is a person, may the penalties be different?
               </p>
@@ -176,7 +176,7 @@ export default function CriminalizationPage() {
             <div className="my-10">
               <Link
                 href="/abolition-bills/components"
-                className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-sm tracking-wide hover:bg-red-700 transition-colors no-underline"
+                className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-sm tracking-wide hover:bg-green-800 transition-colors no-underline"
               >
                 Read More &#10148; COMPONENTS OF AN ABOLITION BILL
               </Link>
@@ -189,10 +189,10 @@ export default function CriminalizationPage() {
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-            <Link href="/what-we-believe/ignore-roe" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe/ignore-roe" className="text-green-700 font-semibold hover:underline">
               &larr; Ignore Roe
             </Link>
-            <Link href="/what-we-believe" className="text-red-600 font-semibold hover:underline">
+            <Link href="/what-we-believe" className="text-green-700 font-semibold hover:underline">
               Back to What We Believe &rarr;
             </Link>
           </div>

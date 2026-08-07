@@ -6,7 +6,7 @@ export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = 'image/png';
 
 export async function generateOGImage(title: string, subtitle?: string) {
-  const logoData = await readFile(join(process.cwd(), 'public/images/aa-logo.png'));
+  const logoData = await readFile(join(process.cwd(), 'public/images/gsa-logo.png'));
   const logoBase64 = `data:image/png;base64,${logoData.toString('base64')}`;
 
   return new ImageResponse(
@@ -29,7 +29,7 @@ export async function generateOGImage(title: string, subtitle?: string) {
             left: 0,
             right: 0,
             height: '5px',
-            background: '#dc2626',
+            background: '#15803d',
             display: 'flex',
           }}
         />
@@ -51,9 +51,8 @@ export async function generateOGImage(title: string, subtitle?: string) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoBase64}
-            width={80}
-            height={99}
-            style={{ filter: 'invert(1)' }}
+            width={96}
+            height={96}
             alt=""
           />
 
@@ -91,7 +90,7 @@ export async function generateOGImage(title: string, subtitle?: string) {
             style={{
               width: '60px',
               height: '3px',
-              background: '#dc2626',
+              background: '#15803d',
               marginTop: '4px',
             }}
           />

@@ -56,7 +56,7 @@ export function ConfirmDialog({
             disabled={loading}
             className={
               variant === 'danger'
-                ? 'bg-red-600 hover:bg-red-700 text-white'
+                ? 'bg-green-700 hover:bg-green-800 text-white'
                 : 'bg-yellow-600 hover:bg-yellow-700 text-white'
             }
           >

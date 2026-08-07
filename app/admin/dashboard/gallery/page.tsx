@@ -161,7 +161,7 @@ export default function GalleryManagementPage() {
       </div>
 
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-600 rounded-lg p-4">
+        <div className="bg-green-50 border border-green-200 text-green-700 rounded-lg p-4">
           <p>Error fetching photos. Please try again.</p>
           <Button variant="outline" className="mt-2" onClick={loadPhotos}>
             Retry
@@ -191,15 +191,15 @@ export default function GalleryManagementPage() {
         <>
         {/* Bulk action bar */}
         {selectedIds.size > 0 && (
-          <div className="flex items-center justify-between bg-red-50 border border-red-200 rounded-lg px-4 py-3">
-            <span className="text-sm font-medium text-red-700">
+          <div className="flex items-center justify-between bg-green-50 border border-green-200 rounded-lg px-4 py-3">
+            <span className="text-sm font-medium text-green-800">
               {selectedIds.size} selected
             </span>
             <Button
               size="sm"
               onClick={handleBulkDelete}
               disabled={bulkDeleting}
-              className="bg-red-600 hover:bg-red-700 text-white"
+              className="bg-green-700 hover:bg-green-800 text-white"
             >
               {bulkDeleting ? (
                 <><Loader2 className="h-4 w-4 animate-spin mr-2" />Deleting...</>
@@ -212,7 +212,7 @@ export default function GalleryManagementPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {photos.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((photo) => (
-            <div key={photo.id} className={`bg-white rounded-lg border overflow-hidden group ${selectedIds.has(photo.id) ? 'ring-2 ring-red-300' : ''}`}>
+            <div key={photo.id} className={`bg-white rounded-lg border overflow-hidden group ${selectedIds.has(photo.id) ? 'ring-2 ring-green-300' : ''}`}>
               <div className="relative aspect-square bg-gray-100">
                 <div className="absolute top-2 left-2 z-10">
                   <input
@@ -249,7 +249,7 @@ export default function GalleryManagementPage() {
                     size="sm"
                     variant="secondary"
                     onClick={() => handleDelete(photo.id)}
-                    className="h-8 w-8 p-0 text-red-600"
+                    className="h-8 w-8 p-0 text-green-700"
                   >
                     <Trash className="h-4 w-4" />
                   </Button>
@@ -273,7 +273,7 @@ export default function GalleryManagementPage() {
                     size="sm"
                     variant="outline"
                     onClick={() => handleDelete(photo.id)}
-                    className="h-7 w-7 p-0 text-red-600"
+                    className="h-7 w-7 p-0 text-green-700"
                   >
                     <Trash className="h-3 w-3" />
                   </Button>

@@ -12,7 +12,7 @@ export default function AppHeader() {
         <span className="text-sm text-gray-500 hidden sm:inline truncate max-w-[200px]">
           {user?.email || 'Admin'}
         </span>
-        <div className="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center text-sm font-medium flex-shrink-0">
+        <div className="w-8 h-8 rounded-full bg-green-700 text-white flex items-center justify-center text-sm font-medium flex-shrink-0">
           {user?.name?.charAt(0) || user?.email?.charAt(0) || 'A'}
         </div>
       </div>

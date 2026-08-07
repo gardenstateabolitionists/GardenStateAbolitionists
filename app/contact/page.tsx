@@ -69,7 +69,7 @@ export default function ContactPage() {
             <span className="font-light">Contact</span>{' '}
             <span className="font-black">US</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Get in touch with Garden State Abolitionists</p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function ContactPage() {
           <span className="font-semibold text-gray-800">
             Contacting your legislators, not us?
           </span>{' '}
-          <a href="/legislators" className="text-red-700 underline hover:no-underline">
+          <a href="/legislators" className="text-green-800 underline hover:no-underline">
             Find your state representative and senator on our scorecard &rarr;
           </a>
         </div>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 {orgInfo.contactEmail && (
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <a href={`mailto:${orgInfo.contactEmail}`} className="text-red-600 hover:text-red-700">
+                    <a href={`mailto:${orgInfo.contactEmail}`} className="text-green-700 hover:text-green-800">
                       {orgInfo.contactEmail}
                     </a>
                   </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => capture('signal_group_clicked', { source: 'contact' })}
-                    className="text-gray-600 hover:text-red-600 transition-colors inline-block"
+                    className="text-gray-600 hover:text-green-700 transition-colors inline-block"
                     aria-label="Join our Signal group"
                   >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       href={socialLinks.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-red-600 transition-colors"
+                      className="text-gray-600 hover:text-green-700 transition-colors"
                       aria-label="Facebook"
                     >
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ export default function ContactPage() {
                       href={socialLinks.x}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-red-600 transition-colors"
+                      className="text-gray-600 hover:text-green-700 transition-colors"
                       aria-label="X (Twitter)"
                     >
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -194,7 +194,7 @@ export default function ContactPage() {
                     required
                     maxLength={100}
                     autoComplete="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
                 </div>
 
@@ -211,7 +211,7 @@ export default function ContactPage() {
                     required
                     maxLength={254}
                     autoComplete="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
                 </div>
 
@@ -224,7 +224,7 @@ export default function ContactPage() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -247,14 +247,14 @@ export default function ContactPage() {
                     required
                     rows={5}
                     maxLength={5000}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="w-full px-6 py-3 bg-red-600 text-white font-bold hover:bg-red-700 transition-colors disabled:opacity-50"
+                  className="w-full px-6 py-3 bg-green-700 text-white font-bold hover:bg-green-800 transition-colors disabled:opacity-50"
                 >
                   {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>

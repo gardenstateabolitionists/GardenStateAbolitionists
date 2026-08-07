@@ -18,7 +18,7 @@ export default function TheGospelPage() {
             <span className="font-light">The</span>{' '}
             <span className="font-black">GOSPEL</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">The good news of Jesus Christ</p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function TheGospelPage() {
               At the heart of our mission is not just a political cause, but the Gospel of Jesus Christ. We believe that true and lasting change comes only through the transformation of hearts by God&apos;s grace.
             </p>
 
-            <div className="bg-red-50 border-l-4 border-red-600 p-6 my-8">
+            <div className="bg-green-50 border-l-4 border-green-700 p-6 my-8">
               <p className="text-xl font-semibold text-[#1a1a1a]">
                 &ldquo;For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.&rdquo;
               </p>
@@ -80,28 +80,28 @@ export default function TheGospelPage() {
 
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-red-600 mb-2">1. Acknowledge Your Sin</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-2">1. Acknowledge Your Sin</h3>
                 <p>
                   Recognize that you have sinned against God and cannot save yourself. &ldquo;For all have sinned and fall short of the glory of God&rdquo; (Romans 3:23).
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-red-600 mb-2">2. Believe in Jesus Christ</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-2">2. Believe in Jesus Christ</h3>
                 <p>
                   Trust that Jesus died for your sins and rose again. &ldquo;Believe in the Lord Jesus, and you will be saved&rdquo; (Acts 16:31).
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-red-600 mb-2">3. Repent of Your Sins</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-2">3. Repent of Your Sins</h3>
                 <p>
                   Turn away from sin and turn to God. &ldquo;Repent therefore, and turn back, that your sins may be blotted out&rdquo; (Acts 3:19).
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-red-600 mb-2">4. Confess Jesus as Lord</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-2">4. Confess Jesus as Lord</h3>
                 <p>
                   Publicly acknowledge Jesus as your Lord and Savior. &ldquo;If you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved&rdquo; (Romans 10:9).
                 </p>
@@ -111,7 +111,7 @@ export default function TheGospelPage() {
             <div className="bg-[#1a1a1a] text-white p-8 rounded-lg mt-8">
               <h3 className="text-2xl font-bold mb-4">A Word to Those Who Have Had Abortions</h3>
               <p className="mb-4">
-                If you have been involved in abortion—whether as the mother, father, doctor, or in any other capacity—know this: <span className="text-red-500 font-semibold">there is forgiveness in Jesus Christ.</span>
+                If you have been involved in abortion—whether as the mother, father, doctor, or in any other capacity—know this: <span className="text-green-500 font-semibold">there is forgiveness in Jesus Christ.</span>
               </p>
               <p className="mb-4">
                 The same Gospel that calls abortion murder also offers complete forgiveness for all who repent and believe. No sin is too great for God&apos;s grace. Through faith in Christ, you can be washed clean and made new.
@@ -133,7 +133,7 @@ export default function TheGospelPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-red-600 text-white font-bold text-lg hover:bg-red-700 transition-colors"
+            className="inline-block px-8 py-4 bg-green-700 text-white font-bold text-lg hover:bg-green-800 transition-colors"
           >
             CONTACT US
           </Link>

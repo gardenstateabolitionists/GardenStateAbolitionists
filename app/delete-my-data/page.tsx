@@ -98,7 +98,7 @@ export default function DeleteMyDataPage() {
             <span className="font-light">Delete My</span>{' '}
             <span className="font-black">DATA</span>
           </h1>
-          <div className="w-12 h-[3px] bg-red-600 mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">
             Request removal of your personal information
           </p>
@@ -122,7 +122,7 @@ export default function DeleteMyDataPage() {
             </p>
             <p className="text-gray-700">
               For more information about how we handle your data, please see our{' '}
-              <Link href="/privacy-policy" className="text-red-700 underline hover:no-underline">
+              <Link href="/privacy-policy" className="text-green-800 underline hover:no-underline">
                 Privacy Policy
               </Link>
               .
@@ -168,7 +168,7 @@ export default function DeleteMyDataPage() {
                   onChange={handleChange}
                   required
                   maxLength={100}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
               </div>
 
@@ -187,7 +187,7 @@ export default function DeleteMyDataPage() {
                   onChange={handleChange}
                   required
                   maxLength={254}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
               </div>
 
@@ -202,7 +202,7 @@ export default function DeleteMyDataPage() {
                       name="petition"
                       checked={dataTypes.petition}
                       onChange={handleCheckbox}
-                      className="mt-0.5 h-4 w-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                      className="mt-0.5 h-4 w-4 text-green-700 border-gray-300 rounded focus:ring-green-500"
                     />
                     <div>
                       <span className="font-medium text-gray-900">Petition Signature</span>
@@ -215,7 +215,7 @@ export default function DeleteMyDataPage() {
                       name="inquiry"
                       checked={dataTypes.inquiry}
                       onChange={handleCheckbox}
-                      className="mt-0.5 h-4 w-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                      className="mt-0.5 h-4 w-4 text-green-700 border-gray-300 rounded focus:ring-green-500"
                     />
                     <div>
                       <span className="font-medium text-gray-900">Contact Inquiries</span>
@@ -228,7 +228,7 @@ export default function DeleteMyDataPage() {
                       name="subscription"
                       checked={dataTypes.subscription}
                       onChange={handleCheckbox}
-                      className="mt-0.5 h-4 w-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                      className="mt-0.5 h-4 w-4 text-green-700 border-gray-300 rounded focus:ring-green-500"
                     />
                     <div>
                       <span className="font-medium text-gray-900">Email Subscription</span>
@@ -250,14 +250,14 @@ export default function DeleteMyDataPage() {
                   rows={3}
                   maxLength={2000}
                   placeholder="Any additional context about your request..."
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="w-full px-6 py-3 bg-red-600 text-white font-bold hover:bg-red-700 transition-colors disabled:opacity-50"
+                className="w-full px-6 py-3 bg-green-700 text-white font-bold hover:bg-green-800 transition-colors disabled:opacity-50"
               >
                 {status === 'sending' ? 'Submitting...' : 'Submit Deletion Request'}
               </button>
