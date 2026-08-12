@@ -304,6 +304,24 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             this {city.kind === 'city' ? 'city' : 'municipality'} in Trenton.
           </p>
 
+          {/* Legislative District 8 is the one district in the state where not a
+              single sitting member has a recorded vote on the Act. Saying so is
+              more useful than hiding the block, and it is a fact about turnover,
+              not about them. */}
+          {!roll.hasAnyRecord && (
+            <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r mb-8">
+              <h3 className="text-sm uppercase tracking-[0.15em] font-bold text-green-800 mb-3">
+                No recorded vote on the {FRCA.title}
+              </h3>
+              <p className="text-gray-700">
+                None of the {roll.members.length} people who represent this district today was
+                serving when the Act was voted on in {formatVoteDate(FRCA.date)}. They have no
+                record on it either way, and we do not present an absence as a position. Ask them
+                where they stand &mdash; their contact details are on their pages below.
+              </p>
+            </div>
+          )}
+
           {roll.hasAnyRecord && (
             <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r mb-8">
               <h3 className="text-sm uppercase tracking-[0.15em] font-bold text-green-800 mb-3">

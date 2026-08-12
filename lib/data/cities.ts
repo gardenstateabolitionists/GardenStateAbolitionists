@@ -597,6 +597,909 @@ const CONTENT: Record<string, CityContent> = {
     ],
   },
 
+  'old-bridge': {
+    historyParagraphs: [
+      'Old Bridge is a large township in the east of Middlesex County, grown from 66,892 residents in 2020 to about 70,500 in 2024 — one of the faster-growing municipalities in the state.',
+      'Middlesex County counted 1,827 Black residents in the 1800 federal census and 1,564 of them were enslaved: more than five in six. New Jersey passed its Gradual Abolition Act four years later and freed none of them. The act applied only to children born afterwards, and only once they reached 21 if they were women or 25 if they were men. In 1846 a second act said to abolish slavery renamed those still held as "apprentices" bound to their present owners. Eighteen people were still held in this state in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Old Bridge Township.',
+    abortionLandscapeOutro:
+      'Old Bridge is in Legislative District 12. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Old Bridge in the New Jersey Legislature?',
+        a: 'Old Bridge is in Legislative District 12, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 abortions provided by clinicians in the state in 2025.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  middletown: {
+    historyParagraphs: [
+      'Middletown is the largest municipality in Monmouth County, spread along the Navesink and the bayshore in the north of the county.',
+      'Monmouth was one of the three counties — with Bergen and Somerset — where slaveholding in New Jersey was densest from 1737 until 1800. That is not a footnote to this township\'s history; it is the arrangement under which much of it was settled and farmed. New Jersey was the last northern state to free its slaves and did it by stages: no living person freed in 1804, the remaining enslaved renamed "apprentices" in 1846, eighteen still held in 1860, and a legislature that voted the Thirteenth Amendment down in March 1865 before ratifying it the following January, after it was already law.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Middletown Township. The nearest recorded one is in Shrewsbury, to the south.',
+    abortionLandscapeOutro:
+      'Middletown is in Legislative District 13. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Middletown in the New Jersey Legislature?',
+        a: 'Middletown is in Legislative District 13, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The nearest in our directory is the Planned Parenthood centre in Shrewsbury. All the facilities we know of in the state are mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  'union-city': {
+    historyParagraphs: [
+      'Union City is among the most densely populated municipalities in the United States: roughly 66,900 people living on 1.29 square miles of land, about 52,000 to the square mile. Nowhere in New Jersey are more lives packed more closely together.',
+      'None of this was Hudson County until 22 February 1840. Before that it was Bergen — the county that held more enslaved people than any other in New Jersey, 2,825 of them in the 1800 census, 18.6% of everyone living there. The state then took until 1865 to finish letting go, and only after the Legislature had voted the Thirteenth Amendment down once. The 1804 act freed nobody living; the 1846 act renamed the remaining enslaved as "apprentices" bound to their owners.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Union City.',
+    abortionLandscapeOutro:
+      'Union City is in Legislative District 33, which it shares with North Bergen and West New York. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Union City in the New Jersey Legislature?',
+        a: 'Union City is in Legislative District 33, shared with North Bergen and West New York. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is Union City the same as Union Township?',
+        a: 'No. Union City is in Hudson County, in Legislative District 33. Union Township is in Union County, in District 20, and has an abortion facility. They are different municipalities about twelve miles apart.',
+        links: [{ phrase: 'Union Township', href: '/cities/union' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count of its own. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  gloucester: {
+    historyParagraphs: [
+      'Gloucester Township is in Camden County — not, despite the name, in Gloucester County. It is one of the larger municipalities in South Jersey, with about 67,000 residents.',
+      'Camden County holds Lawnside, the only African-American community ever incorporated as a municipality in New Jersey. It began as Snow Hill, a settlement of free and self-freed Black families, and was a station on the Underground Railroad; the Reverend Peter Mott built a house there in 1845 and used it to shelter people escaping slavery. It still stands. What those families were escaping, this state was still practising — New Jersey freed nobody living in 1804, renamed the remaining enslaved "apprentices" in 1846, and still held eighteen people in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Gloucester Township. The nearest are in Cherry Hill and Camden.',
+    abortionLandscapeOutro:
+      'Gloucester Township is in Legislative District 4, which it shares with Washington Township. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Is Gloucester Township in Gloucester County?',
+        a: 'No. Gloucester Township is in Camden County, in Legislative District 4. Gloucester County is next door and contains a separate Washington Township, among others. New Jersey reuses place names heavily.',
+      },
+      {
+        q: 'Who represents Gloucester Township in the New Jersey Legislature?',
+        a: 'Gloucester Township is in Legislative District 4, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  union: {
+    historyParagraphs: [
+      'Union Township is in Union County — and is not Union City, which is in Hudson County twelve miles north. It has about 63,000 residents and grew nearly 6% between 2020 and 2024, among the fastest of New Jersey\'s fifty largest municipalities.',
+      'Union County is one of the state\'s youngest, set off from Essex County on 19 March 1857 — four years before the Civil War, and while people in New Jersey were still held as "apprentices for life" under the 1846 act. Essex had counted 1,521 enslaved residents in the 1800 census out of 1,719 Black residents. This township was inside that county for the whole of the slaveholding era.',
+    ],
+    abortionLandscapeIntro:
+      'One abortion facility operates in Union Township, an independent clinic on Stuyvesant Avenue:',
+    abortionLandscapeOutro:
+      'Union Township is in Legislative District 20, the same district as Elizabeth. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Is this Union City?',
+        a: 'No. Union Township is in Union County, in Legislative District 20. Union City is a separate municipality in Hudson County, in District 33, about twelve miles north.',
+        links: [{ phrase: 'Union City', href: '/cities/union-city' }],
+      },
+      {
+        q: 'Who represents Union Township in the New Jersey Legislature?',
+        a: 'Union Township is in Legislative District 20, which it shares with Elizabeth. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count and does not report to the CDC. Guttmacher estimates about 61,200 abortions provided by clinicians in the state in 2025.',
+      },
+    ],
+  },
+
+  piscataway: {
+    historyParagraphs: [
+      'Piscataway is a township of about 63,000 in Middlesex County, on the Raritan across from New Brunswick.',
+      'The 1800 census counted 1,827 Black residents of Middlesex County. Of them, 1,564 were enslaved — more than five in six. The Gradual Abolition Act of 1804 freed none of them; it reached only children born afterwards, and only after twenty-one or twenty-five years of unpaid service. The 1846 act that was supposed to finish the work renamed those still held as "apprentices" bound to their present owners. This is what it looks like when a legislature writes a law to be passed rather than to work.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Piscataway Township. The nearest is in Franklin Township, across the river.',
+    abortionLandscapeOutro:
+      'Piscataway is in Legislative District 17, which it shares with New Brunswick and Franklin Township. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Piscataway in the New Jersey Legislature?',
+        a: 'Piscataway is in Legislative District 17, which it shares with New Brunswick and Franklin Township. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The nearest in our directory is the Planned Parenthood Franklin Township Center, addressed to Somerset, across the Raritan in Somerset County.',
+        links: [{ phrase: 'Franklin Township', href: '/cities/franklin' }],
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'criminalised as homicide', href: '/what-we-believe/criminalization' },
+        ],
+      },
+    ],
+  },
+
+  vineland: {
+    historyParagraphs: [
+      'Vineland is the largest municipality in Cumberland County by population and one of the largest in New Jersey by land area, covering the south of the state well away from its cities.',
+      'Cumberland County holds Springtown, near Greenwich — one of a handful of South Jersey settlements where people who had freed themselves from slavery settled and were sheltered by their neighbours, alongside Marshalltown in Salem County, Snow Hill in Camden County and Timbuctoo in Burlington. They were sheltering people from a state that had not finished the job: New Jersey freed nobody living in 1804, renamed the enslaved "apprentices" in 1846, still held eighteen people in 1860, and voted the Thirteenth Amendment down in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Vineland.',
+    abortionLandscapeOutro:
+      'Vineland is in Legislative District 1, at the southern end of the state. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Vineland in the New Jersey Legislature?',
+        a: 'Vineland is in Legislative District 1, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'What is the Underground Railroad history in Cumberland County?',
+        a: 'Springtown, near Greenwich, was one of several South Jersey settlements where people escaping slavery were sheltered and settled — with Marshalltown in Salem County, Snow Hill (now Lawnside) in Camden County, and Timbuctoo in Burlington County.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  irvington: {
+    historyParagraphs: [
+      'Irvington is a township of about 62,000 on 2.91 square miles in Essex County, bordering Newark — roughly 21,000 people to the square mile, one of the densest municipalities in the state.',
+      'Essex County counted 1,719 Black residents in the 1800 federal census, and 1,521 of them were enslaved — nearly nine in ten. New Jersey then spent sixty years declining to finish what it started. The 1804 act freed nobody living. The 1846 act renamed the remaining enslaved as "apprentices" bound to their present owners. Eighteen people were still held in 1860, and the Legislature in Trenton voted against the Thirteenth Amendment in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Irvington. The nearest are in Newark and East Orange, both bordering.',
+    abortionLandscapeOutro:
+      'Irvington is in Legislative District 28, which it shares with part of Newark. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Irvington in the New Jersey Legislature?',
+        a: 'Irvington is in Legislative District 28, shared with part of Newark. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report it and publishes no count at any geography. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from the moment of fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  'north-bergen': {
+    historyParagraphs: [
+      'North Bergen is a township of about 62,000 on the Hudson County palisades. Its name is the older fact about it: this was Bergen County.',
+      'Hudson County was not created until 22 February 1840. Before that every one of these towns was in Bergen — the county that held more enslaved people than anywhere else in New Jersey, 2,825 of them in the 1800 census, 18.6% of its entire population. Slavery here was the ordinary arrangement of Dutch farm households, not a distant southern institution. The county line moved in 1840; the history did not.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside North Bergen.',
+    abortionLandscapeOutro:
+      'North Bergen is in Legislative District 33 with Union City and West New York. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents North Bergen in the New Jersey Legislature?',
+        a: 'North Bergen is in Legislative District 33, shared with Union City and West New York. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is North Bergen in Bergen County?',
+        a: 'No — it is in Hudson County, and has been since Hudson was created out of Bergen County in 1840. The name records what it used to be.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  jackson: {
+    historyParagraphs: [
+      'Jackson is a large, mostly wooded township in the north-west of Ocean County, with about 61,000 residents spread across it.',
+      'Ocean County was set off from Monmouth County in February 1850 — ten years before the last federal census to count enslaved people in New Jersey. Monmouth was one of the three counties, with Bergen and Somerset, where slaveholding in this state was densest from 1737 until 1800, and Jackson sat inside it for all of that. The state\'s abolition, when it came, came by degrees: nobody living freed in 1804, the remaining enslaved renamed "apprentices" in 1846, eighteen still held in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Jackson Township.',
+    abortionLandscapeOutro:
+      'Jackson is in Legislative District 12. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Jackson in the New Jersey Legislature?',
+        a: 'Jackson is in Legislative District 12, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation — not its reduction by degrees.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'reduction by degrees', href: '/what-we-believe/immediate-not-gradual' },
+        ],
+      },
+    ],
+  },
+
+  hoboken: {
+    historyParagraphs: [
+      'Hoboken is a square mile and a quarter of Hudson County facing Manhattan across the river, with about 59,000 people living on it — roughly 47,000 to the square mile, third densest of New Jersey\'s fifty largest municipalities.',
+      'It was Bergen County until 1840, and Bergen held more enslaved people than any other county in New Jersey: 2,825 in the 1800 census, 18.6% of its population. New Jersey was the last northern state to free its slaves. It freed nobody living in 1804, binding children born afterwards until 21 or 25; renamed the remaining enslaved as "apprentices" in 1846; still held eighteen people in 1860; and voted the Thirteenth Amendment down in Trenton in March 1865, ratifying it only in January 1866 after it was already law.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Hoboken.',
+    abortionLandscapeOutro:
+      'Hoboken is in Legislative District 32, which it shares with part of Jersey City. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Hoboken in the New Jersey Legislature?',
+        a: 'Hoboken is in Legislative District 32, shared with part of Jersey City. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Are there abolitionist churches in Hoboken?',
+        a: 'None that we know of. We read every New Jersey congregation in the church directory we work from and found one publicly abolitionist church in the entire state. If yours has taken a public position, tell us.',
+        links: [{ phrase: 'tell us', href: '/contact' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure. Guttmacher estimates about 61,200 abortions provided by clinicians in the state in 2025.',
+      },
+    ],
+  },
+
+  'new-brunswick': {
+    historyParagraphs: [
+      'New Brunswick sits on the Raritan in Middlesex County, a city of about 57,000 and the county seat.',
+      'Middlesex was among the heaviest slaveholding counties in New Jersey. The 1800 census counted 1,827 Black residents here and 1,564 of them enslaved — more than five in six. Four years later the state passed the act that was supposed to end it and freed nobody: the 1804 law reached only children born after that July, and only after they had served twenty-one or twenty-five years. In 1846 the remaining enslaved were renamed "apprentices" bound to their present owners. Eighteen people were still held in New Jersey in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside New Brunswick. The nearest is the Planned Parenthood Franklin Township Center, across the river in Somerset County.',
+    abortionLandscapeOutro:
+      'New Brunswick is in Legislative District 17 with Piscataway and Franklin Township. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents New Brunswick in the New Jersey Legislature?',
+        a: 'New Brunswick is in Legislative District 17, which it shares with Piscataway and Franklin Township. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood Franklin Township Center, addressed to Somerset, across the Raritan in Somerset County.',
+        links: [{ phrase: 'Franklin Township', href: '/cities/franklin' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  'perth-amboy': {
+    historyParagraphs: [
+      'Perth Amboy is a port city of about 57,000 at the mouth of the Raritan, at the eastern edge of Middlesex County.',
+      'The county around it held 1,564 people in slavery in 1800, out of 1,827 Black residents — more than five in six. New Jersey was the last northern state to free its slaves and chose to do it gradually: the 1804 act freed no one then living, the 1846 act renamed those still held as "apprentices" bound to their owners, eighteen remained enslaved in 1860, and the Legislature voted the Thirteenth Amendment down in March 1865. Each of those steps was defended in its day as the achievable one.',
+    ],
+    abortionLandscapeIntro:
+      'One abortion facility operates in Perth Amboy, a Planned Parenthood centre on Market Street:',
+    abortionLandscapeOutro:
+      'Perth Amboy is in Legislative District 19 with Woodbridge and Sayreville. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Perth Amboy in the New Jersey Legislature?',
+        a: 'Perth Amboy is in Legislative District 19, which it shares with Woodbridge and Sayreville. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and is one of four jurisdictions that declines to report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from the moment of fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  'parsippany-troy-hills': {
+    historyParagraphs: [
+      'Parsippany-Troy Hills is the largest municipality in Morris County, about 57,000 people in the hills west of Newark.',
+      'Morris County was formed in 1739 — more than sixty years before New Jersey passed its first abolition act, and more than a century before the state stopped holding people. That arithmetic is the point. Slavery in New Jersey was not a brief early episode the counties outgrew; it was the arrangement in place for most of the time these counties have existed. The 1804 act freed nobody living, the 1846 act renamed the enslaved as "apprentices" to their owners, and eighteen people were still held in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Parsippany-Troy Hills. The nearest recorded facilities are the two in Morristown, a few miles south.',
+    abortionLandscapeOutro:
+      'Parsippany-Troy Hills is in Legislative District 26. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Parsippany-Troy Hills in the New Jersey Legislature?',
+        a: 'Parsippany-Troy Hills is in Legislative District 26, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'Two are recorded in Morristown, the Morris County seat a few miles south. Both are mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  plainfield: {
+    historyParagraphs: [
+      'Plainfield is a city of about 57,000 in the west of Union County, on the Somerset border.',
+      'Union County is one of New Jersey\'s youngest, set off from Essex on 19 March 1857 — four years before the Civil War, and while people in this state were still held as "apprentices for life" under the 1846 act. Essex had counted 1,521 enslaved residents in 1800 out of 1,719 Black residents. Plainfield was inside that county for the whole of the slaveholding era, and inside a state that would vote against the Thirteenth Amendment in March 1865 before ratifying it the following January, after it was already law.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Plainfield.',
+    abortionLandscapeOutro:
+      'Plainfield is in Legislative District 22. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Plainfield in the New Jersey Legislature?',
+        a: 'Plainfield is in Legislative District 22, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count at any geography. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'criminalised as homicide', href: '/what-we-believe/criminalization' },
+        ],
+      },
+    ],
+  },
+
+  bloomfield: {
+    historyParagraphs: [
+      'Bloomfield is a township of about 55,000 in Essex County, between Newark and Montclair.',
+      'Essex counted 1,719 Black residents in the 1800 federal census and 1,521 of them were enslaved — nearly nine in ten. The county that became the commercial centre of New Jersey built that position while holding people as property, and the state took another six decades to stop. The 1804 act freed nobody living. The 1846 act renamed those still held as "apprentices" bound to their present owners. Eighteen people remained enslaved in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Bloomfield. Two are recorded in neighbouring Montclair.',
+    abortionLandscapeOutro:
+      'Bloomfield is in Legislative District 34, which it shares with East Orange. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Bloomfield in the New Jersey Legislature?',
+        a: 'Bloomfield is in Legislative District 34, shared with East Orange. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'Two are recorded in Montclair, which borders Bloomfield to the west. Both are mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  howell: {
+    historyParagraphs: [
+      'Howell is a large township in the south of Monmouth County, about 54,000 people across sixty square miles.',
+      'Monmouth was one of the three counties — with Bergen and Somerset — where slaveholding in New Jersey was densest from 1737 until 1800. New Jersey was the last northern state to free its slaves, and the manner of it is what this organisation exists to argue about: the 1804 act freed no living person and bound children born afterwards until 21 or 25; the 1846 act renamed those still held as "apprentices" to their present owners; eighteen people were still held in 1860; and the Legislature voted the Thirteenth Amendment down in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Howell Township. The nearest recorded one is in Shrewsbury.',
+    abortionLandscapeOutro:
+      'Howell is in Legislative District 30, which it shares with Lakewood. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Howell in the New Jersey Legislature?',
+        a: 'Howell is in Legislative District 30, which it shares with Lakewood. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  wayne: {
+    historyParagraphs: [
+      'Wayne is a township of about 54,000 in the north-west of Passaic County, along the Pompton and Passaic rivers.',
+      'Passaic County was created on 7 February 1837 out of parts of Bergen and Essex — in the 1800 census, the first and sixth counties in New Jersey by enslaved population. Bergen held 2,825 people, 18.6% of everyone living there; Essex held 1,521. This ground was inside those counties while that was true, in a state that would take until 1865 to finish letting go, and would vote against the Thirteenth Amendment before doing so.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Wayne Township. The nearest recorded one is the Planned Parenthood centre in Paterson.',
+    abortionLandscapeOutro:
+      'Wayne is in Legislative District 40. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Wayne in the New Jersey Legislature?',
+        a: 'Wayne is in Legislative District 40, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood centre on Broadway in Paterson, the county seat. Every facility we know of in the state is mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  'west-new-york': {
+    historyParagraphs: [
+      'West New York is the most densely populated municipality of New Jersey\'s fifty largest: about 53,000 people living on 0.99 square miles, roughly 53,000 to the square mile. It is a town in Hudson County, not a part of New York.',
+      'It was Bergen County until 1840 — the county that held more enslaved people than any other in New Jersey, 2,825 of them in the 1800 census, 18.6% of its whole population. The state freed nobody living in 1804, renamed the remaining enslaved as "apprentices" bound to their owners in 1846, still counted eighteen people held in 1860, and voted down the Thirteenth Amendment in March 1865 before ratifying it in January 1866, after it had already become law without them.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside West New York.',
+    abortionLandscapeOutro:
+      'West New York is in Legislative District 33 with Union City and North Bergen. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Is West New York in New York?',
+        a: 'No. West New York is a town in Hudson County, New Jersey, in Legislative District 33. It faces Manhattan across the Hudson, which is where the name comes from.',
+      },
+      {
+        q: 'Who represents West New York in the New Jersey Legislature?',
+        a: 'West New York is in Legislative District 33, shared with Union City and North Bergen. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count of its own. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  'east-brunswick': {
+    historyParagraphs: [
+      'East Brunswick is a township of about 51,000 in the centre of Middlesex County.',
+      'The 1800 census counted 1,564 enslaved people in this county out of 1,827 Black residents — more than five in six. New Jersey\'s Gradual Abolition Act came four years later and freed none of them; it reached only children born afterwards, and only after twenty-one or twenty-five years of service to the person who owned their mother. The 1846 act that was said to finish the work renamed those still held as "apprentices". Eighteen people were still held in this state in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside East Brunswick Township.',
+    abortionLandscapeOutro:
+      'East Brunswick is in Legislative District 18, which it shares with Edison. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents East Brunswick in the New Jersey Legislature?',
+        a: 'East Brunswick is in Legislative District 18, which it shares with Edison. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  monroe: {
+    historyParagraphs: [
+      'Monroe Township is in Middlesex County — one of two municipalities of that name in New Jersey, the other being in Gloucester County. This is the Middlesex one, about 50,000 people in the south of the county.',
+      'Middlesex held 1,564 people in slavery in 1800, out of 1,827 Black residents. New Jersey was the last northern state to free its slaves and did it in stages that were each defended as realistic: nobody living freed in 1804, the remaining enslaved renamed "apprentices" bound to their owners in 1846, eighteen still held in 1860, and a legislature that rejected the Thirteenth Amendment in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Monroe Township, Middlesex County.',
+    abortionLandscapeOutro:
+      'Monroe Township is in Legislative District 14, the same district as Hamilton Township in Mercer County. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Which Monroe Township is this?',
+        a: 'The one in Middlesex County, in Legislative District 14. There is another Monroe Township in Gloucester County. New Jersey reuses municipality names across counties, which is why this site locates everything by coordinates rather than by name.',
+      },
+      {
+        q: 'Who represents Monroe Township in the New Jersey Legislature?',
+        a: 'Monroe Township, Middlesex County is in Legislative District 14, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  washington: {
+    historyParagraphs: [
+      'Washington Township is in Gloucester County, in the south of the state. If you searched for the abortion facility in "Washington, NJ", it is not here — that one is in Washington Borough, Warren County, sixty miles north and in a different legislative district. New Jersey has several Washington Townships. This is the Gloucester County one, with about 50,000 residents.',
+      'Gloucester County dates to 1686 and once stretched across the south of New Jersey; Atlantic was cut from it in 1837 and Camden in 1844. This is South Jersey Quaker country, where the argument that no Christian could hold a human being as property was made generations before the state acted on it — and where free and self-freed Black families built settlements at Springtown, Marshalltown, Snow Hill and Timbuctoo, sheltering people escaping a state that had not yet finished abolishing slavery itself.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Washington Township, Gloucester County. The nearest are in Camden and Cherry Hill.',
+    abortionLandscapeOutro:
+      'Washington Township is in Legislative District 4, which it shares with Gloucester Township. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Is the "Washington, NJ" abortion facility in this township?',
+        a: 'No. That facility is in Washington Borough, Warren County, in Legislative District 23 — about sixty miles north of here. Washington Township in Gloucester County is a different municipality entirely.',
+        links: [{ phrase: 'That facility', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Who represents Washington Township in the New Jersey Legislature?',
+        a: 'Washington Township, Gloucester County is in Legislative District 4, which it shares with Gloucester Township. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  'west-orange': {
+    historyParagraphs: [
+      'West Orange is a township of about 49,000 in Essex County, climbing the First and Second Watchung ridges west of Newark.',
+      'Essex County counted 1,719 Black residents in the 1800 federal census, and 1,521 of them were enslaved — nearly nine in ten. New Jersey then spent sixty years declining to finish what it had begun: the 1804 act freed nobody living, the 1846 act renamed the remaining enslaved as "apprentices" bound to their present owners, eighteen were still held in 1860, and the Legislature voted against the Thirteenth Amendment in March 1865 before ratifying it in January 1866 — after it was already the law of the land.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside West Orange. The nearest are in Montclair and East Orange.',
+    abortionLandscapeOutro:
+      'West Orange is in Legislative District 27, which it shares with Clifton. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents West Orange in the New Jersey Legislature?',
+        a: 'West Orange is in Legislative District 27, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'Two are recorded in Montclair and one in East Orange, all within a few miles. They are mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  evesham: {
+    historyParagraphs: [
+      'Evesham is a township of about 49,000 in Burlington County, in the suburbs east of Camden. Its principal community is Marlton.',
+      'Burlington County holds Timbuctoo. In 1826 four Black men — believed to have escaped slavery in Maryland — bought land from a Quaker businessman in what is now Westampton Township. The settlement they founded grew past 125 residents and built a school, a church and a cemetery, and on the Rancocas within reach of the Delaware it became an established stop on the Underground Railroad. This county is also where the Quaker John Woolman spent his life arguing that no Christian could hold a human being as property — an argument New Jersey did not finish acting on until 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Evesham Township. The nearest recorded ones are in Cherry Hill and Delran.',
+    abortionLandscapeOutro:
+      'Evesham is in Legislative District 8 — the one district in New Jersey where no sitting member has a recorded vote on the Freedom of Reproductive Choice Act, because none of the three was serving in January 2022. Their contact details are below.',
+    faqs: [
+      {
+        q: 'Who represents Evesham in the New Jersey Legislature?',
+        a: 'Evesham is in Legislative District 8, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'What is Timbuctoo?',
+        a: 'A settlement founded in 1826 in what is now Westampton Township, Burlington County, by four Black men believed to have escaped slavery in Maryland. It grew past 125 residents, built a school and a church, and was an established stop on the Underground Railroad.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  'egg-harbor': {
+    historyParagraphs: [
+      'Egg Harbor Township is in Atlantic County, west of Atlantic City, with about 49,000 residents.',
+      'Atlantic County was created on 7 February 1837 out of the southern half of Gloucester County — the South Jersey Quaker country where free and self-freed Black families built settlements at Springtown, Marshalltown, Snow Hill and Timbuctoo, and where the Underground Railroad ran toward the Delaware. They were sheltering people from a state that was still, at that date, holding some of its own residents: New Jersey freed nobody living in 1804, renamed the enslaved "apprentices" in 1846, and still counted eighteen people held in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Egg Harbor Township. The nearest recorded one is the Planned Parenthood centre in Absecon.',
+    abortionLandscapeOutro:
+      'Egg Harbor Township is in Legislative District 2. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Egg Harbor Township in the New Jersey Legislature?',
+        a: 'Egg Harbor Township is in Legislative District 2, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood centre in Absecon, a few miles east. It is mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  'south-brunswick': {
+    historyParagraphs: [
+      'South Brunswick is a township of about 48,000 in the south of Middlesex County, on the Mercer border.',
+      'Middlesex counted 1,827 Black residents in the 1800 census and 1,564 of them were enslaved — more than five in six. New Jersey passed its Gradual Abolition Act four years later and freed none of them: it reached only children born afterwards, and only after twenty-one or twenty-five years. In 1846 a second act said to abolish slavery renamed those still held as "apprentices" bound to their present owners. That is the pattern this organisation exists to refuse — a law written so that it can pass, rather than so that it works.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside South Brunswick Township.',
+    abortionLandscapeOutro:
+      'South Brunswick is in Legislative District 16, which it shares with Hillsborough. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents South Brunswick in the New Jersey Legislature?',
+        a: 'South Brunswick is in Legislative District 16, which it shares with Hillsborough. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count of its own. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'criminalised as homicide', href: '/what-we-believe/criminalization' },
+        ],
+      },
+    ],
+  },
+
+  'mount-laurel': {
+    historyParagraphs: [
+      'Mount Laurel is a township of about 47,000 in Burlington County, and among the faster-growing of New Jersey\'s fifty largest — up nearly 6% between 2020 and 2024.',
+      'Burlington County is where the Quaker John Woolman spent his life arguing that no Christian could hold a human being as property, and where Timbuctoo was founded in 1826 by four Black men believed to have escaped slavery in Maryland. That settlement grew past 125 residents, built a school and a church, and became an established stop on the Underground Railroad. The state around it was in no hurry: New Jersey freed nobody living in 1804, renamed the enslaved "apprentices" in 1846, still held eighteen people in 1860, and voted the Thirteenth Amendment down in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Mount Laurel Township. The nearest recorded ones are in Delran and Cherry Hill.',
+    abortionLandscapeOutro:
+      'Mount Laurel is in Legislative District 7. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Mount Laurel in the New Jersey Legislature?',
+        a: 'Mount Laurel is in Legislative District 7, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Who was John Woolman?',
+        a: 'A Quaker of Mount Holly, in this county, who spent his life arguing that no Christian could hold a human being as property — decades before New Jersey passed its first abolition act, and more than a century before the state stopped holding people.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  sayreville: {
+    historyParagraphs: [
+      'Sayreville is a borough of about 47,000 in Middlesex County, at the mouth of the Raritan opposite Perth Amboy.',
+      'Middlesex held 1,564 people in slavery in 1800, out of 1,827 Black residents — more than five in six. New Jersey was the last northern state to free its slaves. The 1804 act freed no one then living. The 1846 act renamed those still held as "apprentices" bound to their present owners. Eighteen people remained enslaved here in 1860, and in March 1865 the Legislature voted against the amendment abolishing slavery, ratifying it only the following January, after it had already become law without them.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Sayreville. The nearest is the Planned Parenthood centre in Perth Amboy, across the river.',
+    abortionLandscapeOutro:
+      'Sayreville is in Legislative District 19 with Perth Amboy and Woodbridge. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Sayreville in the New Jersey Legislature?',
+        a: 'Sayreville is in Legislative District 19, which it shares with Perth Amboy and Woodbridge. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood centre on Market Street in Perth Amboy, across the Raritan.',
+        links: [{ phrase: 'Perth Amboy', href: '/cities/perth-amboy' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  bridgewater: {
+    historyParagraphs: [
+      'Bridgewater is a township of about 47,000 in Somerset County, along the Raritan in the centre of the state.',
+      'Somerset held more enslaved people than any New Jersey county except Bergen. The 1800 census counted 1,863 enslaved residents here — 14.5% of everyone living in the county — and from 1737 until 1800 the densest slaveholding in the state was consistently in Bergen, Monmouth and Somerset. New Jersey then took until 1865 to finish letting go, and only after its Legislature had voted the Thirteenth Amendment down once and been replaced at an election.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Bridgewater Township. The nearest is the Planned Parenthood Franklin Township Center, addressed to Somerset.',
+    abortionLandscapeOutro:
+      'Bridgewater is in Legislative District 23. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Bridgewater in the New Jersey Legislature?',
+        a: 'Bridgewater is in Legislative District 23, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Was there slavery in Somerset County?',
+        a: 'Somerset held 1,863 enslaved people in the 1800 census — 14.5% of its population, second only to Bergen County. From 1737 to 1800 the densest slaveholding in New Jersey was in Bergen, Monmouth and Somerset.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  hackensack: {
+    historyParagraphs: [
+      'Hackensack is the county seat of Bergen County, a city of about 47,000 on the river of the same name.',
+      'Bergen held more enslaved people than any other county in New Jersey. The 1800 federal census counted 2,825 enslaved residents here — 18.6% of everyone living in the county, nearly one person in five. Slavery in Bergen was not a southern institution observed from a distance; it was the ordinary arrangement of the Dutch farm households that built this county, and Hackensack was its seat throughout. New Jersey then freed nobody living in 1804, renamed the remaining enslaved as "apprentices" in 1846, and still held eighteen people in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'One abortion facility operates in Hackensack, a Planned Parenthood health centre on Main Street:',
+    abortionLandscapeOutro:
+      'Hackensack is in Legislative District 37, which it shares with Englewood. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Hackensack in the New Jersey Legislature?',
+        a: 'Hackensack is in Legislative District 37, which it shares with Englewood. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Was there slavery in Bergen County?',
+        a: 'More than anywhere else in New Jersey. The 1800 census counted 2,825 enslaved people in Bergen County — 18.6% of its entire population. Hudson County, created out of Bergen in 1840, and Passaic, created from Bergen and Essex in 1837, were both part of it at the time.',
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count of its own at any geography. Guttmacher estimates about 61,200 abortions provided by clinicians in the state in 2025.',
+      },
+    ],
+  },
+
+  manchester: {
+    historyParagraphs: [
+      'Manchester is a large township in the west of Ocean County, about 46,000 people spread across more than eighty square miles of the Pine Barrens.',
+      'Ocean County was set off from Monmouth in February 1850 — one of the three counties, with Bergen and Somerset, where slaveholding in New Jersey was densest from 1737 until 1800. This ground was inside Monmouth for all of that period. New Jersey was the last northern state to free its slaves and did it by degrees, each defended as the realistic step: nobody living freed in 1804, the remaining enslaved renamed "apprentices" in 1846, eighteen still held in 1860, and the Thirteenth Amendment voted down in Trenton in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Manchester Township.',
+    abortionLandscapeOutro:
+      'Manchester is in Legislative District 9. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Manchester in the New Jersey Legislature?',
+        a: 'Manchester is in Legislative District 9, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and is one of four jurisdictions that declines to report abortion data to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  hillsborough: {
+    historyParagraphs: [
+      'Hillsborough is a township of about 45,000 in the south of Somerset County, the fiftieth largest municipality in New Jersey and one of the faster-growing.',
+      'Somerset was second only to Bergen among New Jersey counties by enslaved population: 1,863 people held in the 1800 census, 14.5% of everyone living here. From 1737 until 1800 the densest slaveholding in the state was consistently in Bergen, Monmouth and Somerset. What followed was not emancipation but a schedule — the 1804 act freeing nobody then living, the 1846 act renaming the remaining enslaved as "apprentices" bound to their owners, eighteen people still held in 1860, and a legislature that rejected the Thirteenth Amendment before accepting it.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Hillsborough Township. The nearest is the Planned Parenthood Franklin Township Center, addressed to Somerset.',
+    abortionLandscapeOutro:
+      'Hillsborough is in Legislative District 16, which it shares with South Brunswick. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Hillsborough in the New Jersey Legislature?',
+        a: 'Hillsborough is in Legislative District 16, which it shares with South Brunswick. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood Franklin Township Center, in the north of this county, addressed to Somerset.',
+        links: [{ phrase: 'Franklin Township', href: '/cities/franklin' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
   elizabeth: {
     historyParagraphs: [
       'Elizabeth is the county seat of Union County and the fifth largest city in New Jersey — a port city, and a place of arrival for as long as there has been a state here.',

@@ -14,8 +14,19 @@ BASE = "http://localhost:3000"
 CITIES = json.load(open(r"C:\Users\Dustina\Websites\Garden State Abolitionists"
                         r"\data\nj-cities.json", encoding="utf-8"))["cities"]
 
-# Values that get interpolated into prose. If one is immediately followed by a
-# letter, a space was eaten.
+# The words a sentence actually resumes with after an interpolated value.
+# "…{city.formalName} that have taken…" collapsing to "Newark citythat" is the
+# real failure; anything else risks flagging ordinary English.
+FOLLOWING_WORD = (
+    r"(?=(?:that|the|is|are|was|were|in|on|and|with|for|to|has|have|had|which|"
+    r"where|when|by|from|of|a|an|its|it|this|these|those|sits|holds|counted|"
+    r"county|township|city|residents|elects|because|but|not|so|at|as|after|"
+    r"before|while|than|or|until|since|and|held|grew)\b)"
+)
+
+
+# Values that get interpolated into prose. If one is welded to a following
+# word, a space was eaten.
 def dynamic_values(c):
     return [c["name"], c["formalName"], c["county"], c["populationLabel"],
             str(c["population"]), *[str(d) for d in c["districts"]]]
@@ -34,10 +45,12 @@ def main(slugs):
             for v in dynamic_values(c):
                 if not v:
                     continue
-                # A dynamic value glued straight onto a following word.
-                # `(?!s\b)` spares legitimate plurals — "four Franklin Townships
-                # in New Jersey" is prose, not a collapsed space.
-                for m in re.finditer(re.escape(v) + r"(?!s\b)(?=[A-Za-z])", text):
+                # A collapsed space shows up as a dynamic value welded to the
+                # next WORD, so look for an actual following word rather than
+                # any letter. Matching any letter produced false positives on
+                # both sides: "Franklin Townships" (a plural) and "Morristown"
+                # (which merely starts with the county name "Morris").
+                for m in re.finditer(re.escape(v) + FOLLOWING_WORD, text):
                     frag = text[max(0, m.start() - 45): m.end() + 30].replace("\n", " ")
                     bad.append((slug, v, frag))
             # Generic: a word ending then a capital mid-sentence with no space.
