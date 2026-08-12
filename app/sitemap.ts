@@ -37,6 +37,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/partners`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/norman-statement`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.5 },
     { url: `${BASE_URL}/abortion-mills`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/legislators`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/abolition-bills`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   // NOTE: legislator, city, abortion-facility and abolition-bill URLs are

@@ -37,6 +37,14 @@ const navItems = [
   },
   { label: 'THE PETITION', href: '/the-petition' },
   {
+    label: 'ABOLITION BILLS',
+    href: '/abolition-bills',
+    dropdown: [
+      { label: 'Where New Jersey Stands', href: '/abolition-bills' },
+      { label: 'Your Legislators', href: '/legislators' },
+    ],
+  },
+  {
     label: 'NEWS/EDUCATION',
     href: '/news',
     dropdown: [

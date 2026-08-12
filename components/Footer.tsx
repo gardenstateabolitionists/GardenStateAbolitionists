@@ -127,6 +127,10 @@ export default function Footer() {
                 Abortion Facilities
               </Link>
               {' '}&bull;{' '}
+              <Link href="/legislators" className="text-green-500 hover:text-green-400 transition-colors">
+                Your Legislators
+              </Link>
+              {' '}&bull;{' '}
               <Link href="/financial-transparency" className="text-green-500 hover:text-green-400 transition-colors">
                 Financial Transparency
               </Link>
