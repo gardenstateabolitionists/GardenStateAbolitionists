@@ -21,6 +21,15 @@ export function generateStaticParams() {
   return getLegislators().map((l) => ({ slug: l.slug }));
 }
 
+/**
+ * Any slug not returned above is a hard 404.
+ *
+ * Without this, Next renders unknown slugs on demand and `notFound()` returns
+ * the 404 page with **HTTP 200** — a soft 404, which search engines index as a
+ * real page. The roster is fixed at build time, so nothing legitimate is lost.
+ */
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {

@@ -21,6 +21,18 @@ export function generateStaticParams() {
   return getAllCitySlugs().map((slug) => ({ slug }));
 }
 
+/**
+ * Any slug not returned above is a hard 404.
+ *
+ * Without this, Next renders unknown slugs on demand; `notFound()` produces the
+ * 404 *page* but the response still carries **HTTP 200**. That is a soft 404 —
+ * search engines treat it as a real page, and the whole 50-city dataset would
+ * otherwise expose a valid-looking URL for every municipality we have not
+ * written yet. The complete set of cities is known at build time, so there is
+ * nothing to render on demand.
+ */
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {
