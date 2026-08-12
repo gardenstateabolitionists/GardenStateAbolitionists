@@ -157,6 +157,59 @@ indistinguishable through the API, so publishing the number would assert
 partial, the non-zero counts may be undercounts too. The working query is
 recorded in `scripts/refresh_legislator_data.py` if their coverage improves.
 
+## City pages — three New Jersey facts that break Michigan assumptions
+
+`/cities` was forked from the Michigan site and three of its assumptions are
+false here. Each one fails silently and plausibly.
+
+1. **One district set, not two.** New Jersey elects one senator *and* two
+   assembly members from each of the same 40 districts, so `CityConfig` has a
+   single `districts` array where Michigan had `houseDistricts` and
+   `senateDistricts`. This was verified, not assumed: the state's upper and
+   lower district polygons differ in area by **0.000000%**. Only Newark and
+   Jersey City span more than one district — they are the only municipalities
+   above the ~232k ideal district size.
+
+2. **Never match a facility or church to a city by name.** New Jersey postal
+   addresses routinely name a place that is not a municipality, and
+   municipality names repeat across counties:
+
+   - "Somerset, NJ" is part of **Franklin Township**, Somerset County.
+   - "Hamilton Square, NJ" is part of **Hamilton Township**, Mercer County.
+   - "Washington, NJ 07882" is Washington **Borough, Warren County** — while
+     Washington **Township, Gloucester County** is a different municipality
+     sixty miles south in a different legislative district.
+
+   Michigan's `city === name` match put a Warren County clinic on the
+   Gloucester County page. Everything is therefore geocoded to a municipality
+   at build time (`scripts/resolve_facility_municipalities.py`,
+   `scripts/sync_abolitionist_churches.py`) and joined on that. Use
+   `getMillsByMunicipality`, not `getMillsByCity`.
+
+3. **The map projection is fitted, not derived.** The atlas is Albers-style, so
+   a lat/lng-to-bbox mapping puts pins off the top of the state. `PROJ` in
+   `lib/nj-map-projection.ts` is an affine transform fitted by iterative closest
+   point against New Jersey's real boundary. Both maps import it. If the atlas
+   paths are regenerated, refit — do not hand-tune. Note also that every radius
+   and stroke width from the Michigan original is ~5x too large: Michigan
+   occupies ~135 units of this atlas and New Jersey ~24.
+
+**A city ships only when it has authored content.** `CITIES` is the
+intersection of `data/nj-cities.json` (generated facts) and the `CONTENT` map in
+`lib/data/cities.ts` (hand-written prose). A city in the dataset with no entry
+in `CONTENT` does not route and is not in the sitemap, so a half-written page
+cannot leak. Add cities by writing their content.
+
+## What New Jersey does not publish
+
+There is **no county-level abortion figure for New Jersey, and no statewide one
+from the state either.** Abortion reporting to the CDC is voluntary and New
+Jersey is one of four jurisdictions that declines; its Department of Health
+publishes no count. Do not go looking for the number again — it does not exist.
+`data/nj-abortion-context.json` carries the CDC's own wording plus Guttmacher's
+independent estimate, and the page reports the absence as a fact rather than
+substituting an estimate that would read as official.
+
 ## Legislator photos come from the Legislature, not Open States
 
 `scripts/scrape_member_photos.py` scrapes portraits from the NJ Legislature's

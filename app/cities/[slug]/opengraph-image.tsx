@@ -9,6 +9,6 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params;
   const city = getCityBySlug(slug);
   const title = city ? `ABOLISH ABORTION IN ${city.name.toUpperCase()}` : 'CITY NOT FOUND';
-  const subtitle = city ? `${city.region} · ${city.populationLabel}` : '';
+  const subtitle = city ? `${city.county} County · ${city.populationLabel}` : '';
   return await generateOGImage(title, subtitle);
 }

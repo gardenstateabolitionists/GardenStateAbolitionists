@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllNewsArticles } from '@/lib/data/news-store';
 import { getLegislators } from '@/lib/data/legislators';
+import { CITIES } from '@/lib/data/cities';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
 
@@ -41,6 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/legislators`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/abolition-bills`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/abolition-bills/components`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${BASE_URL}/cities`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   // One URL per legislator — the long-tail surface people actually search
@@ -52,11 +54,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  // NOTE: city URLs are
-  // deliberately absent. Those routes live in `staged-for-nj/` until the
-  // New Jersey datasets behind them are researched — see that folder's
-  // README. Re-add the entries here in the same change that restores
-  // the routes, or the sitemap will advertise 404s.
+  // One URL per covered city. Generated from CITIES, which contains only the
+  // cities that actually have authored content — a city in the dataset but not
+  // yet written does not route, so listing it here would advertise a 404.
+  const cityPages: MetadataRoute.Sitemap = CITIES.map((c) => ({
+    url: `${BASE_URL}/cities/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
 
   // Add dynamic news article URLs
   let newsPages: MetadataRoute.Sitemap = [];
@@ -72,5 +78,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // If news fetch fails, just skip dynamic pages
   }
 
-  return [...staticPages, ...legislatorPages, ...newsPages];
+  return [...staticPages, ...legislatorPages, ...cityPages, ...newsPages];
 }

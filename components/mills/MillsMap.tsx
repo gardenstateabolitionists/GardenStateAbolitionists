@@ -2,43 +2,19 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { AbortionMill } from '@/lib/data/abortion-mills';
-import { US_STATE_PATHS } from '@/lib/data/us-map-paths';
+import {
+  project,
+  DEFAULT_VIEW,
+  MIN_W,
+  MAX_W,
+  NJ_PATH,
+  outlineStrokeWidth,
+} from '@/lib/nj-map-projection';
 
-// NJ-only zoom + pan map with a pin per abortion facility. Projection
-// constants are calibrated to the same NJ path bbox × NJ geographic
-// bbox that CitiesMap uses, so pins land in the same spots.
-
-// Projection from WGS84 to this atlas's SVG coordinate space.
-//
-// A naive linear lat/lng -> bbox mapping does NOT work here. The atlas is drawn
-// in an Albers-style projection, which rotates states away from the central
-// meridian; New Jersey is far enough east that the rotation is obvious — its
-// leftmost point in SVG space sits at a NORTHERN latitude, not in the
-// south-west where its westernmost longitude actually is. A bbox-to-bbox map
-// cannot represent that, and it left pins hanging off the top of the state.
-//
-// These coefficients are an affine transform fitted by iterative closest point
-// against New Jersey's real boundary (GeoJSON) matched to this SVG outline.
-// Worst boundary residual 1.17 SVG units, mean 0.24, on a state 23.6 units
-// wide. The cross terms are the rotation.
-//
-// If the underlying atlas paths are ever regenerated, refit — do not hand-tune.
-const PROJ = {
-  ax: 16.368367, ay: -5.139948, ac: 2554.7293,
-  bx: -4.235538, by: -21.445051, bc: 770.0035,
-};
-
-const DEFAULT_VIEW = { x: 1110.2, y: 194.0, w: 32, h: 64 };
-const MIN_W = 4;   // NJ is ~24 units wide, so 20 was barely any zoom at all
-const MAX_W = 80;  // enough to pull back and show NJ in regional context
-const NJ_PATH = US_STATE_PATHS.find((s) => s.id === 'NJ');
-
-function project(lat: number, lng: number): { x: number; y: number } {
-  return {
-    x: PROJ.ax * lng + PROJ.ay * lat + PROJ.ac,
-    y: PROJ.bx * lng + PROJ.by * lat + PROJ.bc,
-  };
-}
+// NJ-only zoom + pan map with a pin per abortion facility. The projection is
+// shared with CitiesMap so a given lat/lng lands on the same pixel in both —
+// see lib/nj-map-projection.ts for why it is an ICP-fitted affine transform
+// rather than a bbox mapping.
 
 export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -157,7 +133,7 @@ export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
             d={NJ_PATH.d}
             fill="#e5e7eb"
             stroke="#374151"
-            strokeWidth={Math.max(0.07, (view.w / DEFAULT_VIEW.w) * 0.14)}
+            strokeWidth={outlineStrokeWidth(view.w)}
           />
 
           {mills.map((m) => {

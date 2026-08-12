@@ -3,7 +3,7 @@
 import { CITIES, type CityConfig } from '@/lib/data/cities';
 
 /**
- * Resolve a user-supplied search string (city name OR MI ZIP code)
+ * Resolve a user-supplied search string (city name OR New Jersey ZIP code)
  * to a CityConfig if we have a page for it, or a nearest-city
  * suggestion if we don't.
  *
@@ -52,7 +52,7 @@ function nearest(lat: number, lng: number): (CityConfig & { distanceMiles: numbe
 
 export async function findCity(input: string): Promise<FindCityMatch | FindCityError> {
   const raw = (input || '').trim();
-  if (!raw) return { ok: false, error: 'Type a Michigan city name or ZIP code.' };
+  if (!raw) return { ok: false, error: 'Type a New Jersey city or town name, or a ZIP code.' };
 
   // ZIP path
   if (/^\d{5}$/.test(raw)) {
@@ -65,8 +65,8 @@ export async function findCity(input: string): Promise<FindCityMatch | FindCityE
         places?: Array<{ 'place name': string; state: string; latitude: string; longitude: string }>;
       };
       const p = zData.places?.[0];
-      if (!p || p.state !== 'Michigan') {
-        return { ok: false, error: 'That ZIP code isn’t in Michigan.' };
+      if (!p || p.state !== 'New Jersey') {
+        return { ok: false, error: 'That ZIP code isn’t in New Jersey.' };
       }
       const city = p['place name'];
       const lat = parseFloat(p.latitude);
@@ -103,6 +103,6 @@ export async function findCity(input: string): Promise<FindCityMatch | FindCityE
 
   return {
     ok: false,
-    error: `We don’t have a page for "${raw}" yet. Try a Michigan ZIP code and we’ll point you at the nearest covered city.`,
+    error: `We don’t have a page for "${raw}" yet. Try a New Jersey ZIP code and we’ll point you at the nearest covered city.`,
   };
 }

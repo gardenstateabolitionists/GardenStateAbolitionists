@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { findCity } from '@/lib/actions/find-city-actions';
 
 /**
- * Sitewide "Find your city" search — accepts a city name or a MI ZIP
+ * Sitewide "Find your city" search — accepts a city name or a New Jersey ZIP
  * code and either lands the user on the exact city page or suggests
  * the nearest covered city. Rendered on the /cities index; can be
  * reused anywhere sitewide.
@@ -35,9 +35,9 @@ export default function CityFinder() {
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-5">
-      <h3 className="text-lg font-bold text-gray-900 mb-1">Find your Michigan city</h3>
+      <h3 className="text-lg font-bold text-gray-900 mb-1">Find your New Jersey city or town</h3>
       <p className="text-sm text-gray-600 mb-4">
-        Enter a city name or a Michigan ZIP code. We&apos;ll take you to that
+        Enter a city or town name, or a New Jersey ZIP code. We&apos;ll take you to that
         city&apos;s page, or point you at the nearest one we cover.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
@@ -45,20 +45,20 @@ export default function CityFinder() {
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder="e.g. Grand Rapids, or 49503"
-          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="e.g. Paterson, or 07505"
+          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
         />
         <button
           type="submit"
           disabled={loading || value.trim().length === 0}
-          className="px-4 py-2 bg-red-600 text-white font-semibold rounded hover:bg-red-700 disabled:opacity-50"
+          className="px-4 py-2 bg-green-700 text-white font-semibold rounded hover:bg-green-800 disabled:opacity-50"
         >
           {loading ? 'Looking up…' : 'Find'}
         </button>
       </form>
 
       {error && (
-        <p role="alert" className="mt-4 text-sm text-red-700 bg-red-50 border border-red-200 rounded px-3 py-2">
+        <p role="alert" className="mt-4 text-sm text-green-800 bg-red-50 border border-green-200 rounded px-3 py-2">
           {error}
         </p>
       )}
@@ -70,7 +70,7 @@ export default function CityFinder() {
               Found a page for <strong>{suggestion.name}</strong>.{' '}
               <Link
                 href={`/cities/${suggestion.slug}`}
-                className="text-red-700 underline font-semibold"
+                className="text-green-800 underline font-semibold"
               >
                 Open the {suggestion.name}{' '}page &rarr;
               </Link>
@@ -85,7 +85,7 @@ export default function CityFinder() {
               )}.{' '}
               <Link
                 href={`/cities/${suggestion.slug}`}
-                className="text-red-700 underline font-semibold"
+                className="text-green-800 underline font-semibold"
               >
                 Open the {suggestion.name}{' '}page &rarr;
               </Link>

@@ -1,0 +1,20 @@
+{
+  "note": "Replaces Michigan's data/mi-county-abortion-stats.json. Michigan publishes induced-abortion counts by county of residence through its DHHS vital records; New Jersey publishes NO abortion counts at all, at any geography. There is therefore no honest county-level figure to render, and the page says so rather than substituting an estimate that looks official. Every figure below is sourced and dated.",
+  "statewide": {
+    "count": 61200,
+    "year": 2025,
+    "label": "abortions provided by clinicians in New Jersey",
+    "source": "Guttmacher Institute, Monthly Abortion Provision Study",
+    "sourceUrl": "https://states.guttmacher.org/policies/new-jersey/abortion-data",
+    "caveat": "An estimate of clinician-provided abortions, in person and via telehealth. It excludes abortions not provided by US clinicians, so it is a floor rather than a total."
+  },
+  "reportingGap": {
+    "headline": "New Jersey does not report its abortion numbers",
+    "detail": "Abortion reporting to the CDC is voluntary, and New Jersey is one of four jurisdictions that declines. Its own Department of Health publishes no count of induced terminations, by county or statewide. The state that wrote abortion access into its statutes does not record how often it happens.",
+    "quote": "This report summarizes data on legal induced abortions for 2022 that were provided voluntarily to CDC by the central health agencies of 48 reporting areas (46 states, the District of Columbia, and New York City, excluding California, Maryland, New Hampshire, and New Jersey).",
+    "source": "CDC, Abortion Surveillance — United States, 2022 (MMWR Surveillance Summaries)",
+    "sourceUrl": "https://www.cdc.gov/mmwr/volumes/73/ss/ss7307a1.htm",
+    "otherNonReporting": ["California", "Maryland", "New Hampshire"],
+    "verifiedOn": "2026-08-12"
+  }
+}

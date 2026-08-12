@@ -11,7 +11,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Absecon",
+      "county": "Atlantic",
+      "district": 2
     },
     {
       "id": "planned-parenthood-camden-center",
@@ -23,7 +26,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Camden",
+      "county": "Camden",
+      "district": 5
     },
     {
       "id": "planned-parenthood-delran-health-center",
@@ -35,7 +41,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Delran",
+      "county": "Burlington",
+      "district": 7
     },
     {
       "id": "planned-parenthood-east-orange-health-center",
@@ -47,7 +56,10 @@
       "phone": "(973) 674-4343",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "East Orange",
+      "county": "Essex",
+      "district": 34
     },
     {
       "id": "planned-parenthood-elizabeth-health-center",
@@ -59,7 +71,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Elizabeth",
+      "county": "Union",
+      "district": 20
     },
     {
       "id": "planned-parenthood-flemington-health-center",
@@ -71,7 +86,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": "Coordinates are the town centroid, not the building — the street address did not geocode. Refine before relying on the pin.",
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Flemington",
+      "county": "Hunterdon",
+      "district": 16
     },
     {
       "id": "planned-parenthood-franklin-township-center",
@@ -83,7 +101,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": "Coordinates are the town centroid, not the building — the street address did not geocode. Refine before relying on the pin.",
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Franklin",
+      "county": "Somerset",
+      "district": 17
     },
     {
       "id": "planned-parenthood-hackensack-health-center",
@@ -95,7 +116,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Hackensack",
+      "county": "Bergen",
+      "district": 37
     },
     {
       "id": "planned-parenthood-hamilton-health-center",
@@ -107,7 +131,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Hamilton",
+      "county": "Mercer",
+      "district": 14
     },
     {
       "id": "planned-parenthood-ironbound-health-center",
@@ -119,7 +146,10 @@
       "phone": "(973) 465-7707",
       "email": null,
       "notes": null,
-      "sourced": "pp"
+      "sourced": "pp",
+      "municipality": "Newark",
+      "county": "Essex",
+      "district": 29
     },
     {
       "id": "planned-parenthood-montclair-center",
@@ -131,7 +161,10 @@
       "phone": "(973) 746-7116",
       "email": null,
       "notes": null,
-      "sourced": "pp"
+      "sourced": "pp",
+      "municipality": "Montclair",
+      "county": "Essex",
+      "district": 27
     },
     {
       "id": "planned-parenthood-morristown-health-center",
@@ -143,7 +176,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Morristown",
+      "county": "Morris",
+      "district": 25
     },
     {
       "id": "planned-parenthood-mulberry-health-center",
@@ -155,7 +191,10 @@
       "phone": "(973) 622-3900",
       "email": null,
       "notes": null,
-      "sourced": "pp"
+      "sourced": "pp",
+      "municipality": "Newark",
+      "county": "Essex",
+      "district": 29
     },
     {
       "id": "planned-parenthood-newton-health-center",
@@ -167,7 +206,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Newton",
+      "county": "Sussex",
+      "district": 24
     },
     {
       "id": "planned-parenthood-paterson-center",
@@ -179,7 +221,10 @@
       "phone": "(973) 345-3883",
       "email": null,
       "notes": null,
-      "sourced": "pp"
+      "sourced": "pp",
+      "municipality": "Paterson",
+      "county": "Passaic",
+      "district": 35
     },
     {
       "id": "planned-parenthood-perth-amboy-center",
@@ -191,7 +236,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Perth Amboy",
+      "county": "Middlesex",
+      "district": 19
     },
     {
       "id": "planned-parenthood-shrewsbury-center",
@@ -203,7 +251,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Shrewsbury",
+      "county": "Monmouth",
+      "district": 11
     },
     {
       "id": "planned-parenthood-trenton-health-center",
@@ -215,7 +266,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Trenton",
+      "county": "Mercer",
+      "district": 15
     },
     {
       "id": "planned-parenthood-washington-health-center",
@@ -227,7 +281,10 @@
       "phone": "(833) 377-8474",
       "email": null,
       "notes": null,
-      "sourced": "af+pp"
+      "sourced": "af+pp",
+      "municipality": "Washington",
+      "county": "Warren",
+      "district": 23
     },
     {
       "id": "cherry-hill-womens-center",
@@ -239,7 +296,10 @@
       "phone": "(856) 667-5910",
       "email": null,
       "notes": null,
-      "sourced": "af+njaaf+own"
+      "sourced": "af+njaaf+own",
+      "municipality": "Cherry Hill",
+      "county": "Camden",
+      "district": 6
     },
     {
       "id": "garden-state-gynecology-morristown",
@@ -251,7 +311,10 @@
       "phone": "(973) 525-1400",
       "email": null,
       "notes": "Abortion pill to 11.6 weeks; in-clinic abortion to 17.6 weeks, with twilight or full sedation. Coordinates are the town centroid, not the building.",
-      "sourced": "own"
+      "sourced": "own",
+      "municipality": "Morristown",
+      "county": "Morris",
+      "district": 25
     },
     {
       "id": "garden-state-gynecology-princeton",
@@ -263,7 +326,10 @@
       "phone": "(609) 356-1043",
       "email": null,
       "notes": "Abortion pill to 11.6 weeks; in-clinic abortion to 17.6 weeks, with twilight or full sedation.",
-      "sourced": "own"
+      "sourced": "own",
+      "municipality": "Princeton",
+      "county": "Mercer",
+      "district": 16
     },
     {
       "id": "jersey-gyn-union",
@@ -275,7 +341,10 @@
       "phone": "(908) 686-2563",
       "email": null,
       "notes": "Offers medication, surgical and sedation ('sleep') abortion.",
-      "sourced": "own+client"
+      "sourced": "own+client",
+      "municipality": "Union",
+      "county": "Union",
+      "district": 20
     },
     {
       "id": "luminosas-wellness-collective",
@@ -287,7 +356,12 @@
       "phone": null,
       "email": null,
       "notes": "NOT YET OPEN — announced to open in 2026 as an all-trimester abortion facility. The only address published is a P.O. Box, so the pin marks the town, not a building.",
-      "sourced": "own"
+      "sourced": "own",
+      "municipality": "Cranford",
+      "county": "Union",
+      "district": 22,
+      "locationUnverified": true,
+      "locationNote": "Listed at a P.O. box in Union (07083); the stored coordinates fall in Cranford. No physical address has been verified, so this facility is excluded from city-page attribution."
     },
     {
       "id": "metropolitan-medical-associates",
@@ -299,7 +373,10 @@
       "phone": "(201) 567-0522",
       "email": null,
       "notes": null,
-      "sourced": "af+njaaf"
+      "sourced": "af+njaaf",
+      "municipality": "Englewood",
+      "county": "Bergen",
+      "district": 37
     },
     {
       "id": "pilgrim-medical-center",
@@ -311,7 +388,10 @@
       "phone": "(973) 746-1500",
       "email": null,
       "notes": null,
-      "sourced": "njaaf+own"
+      "sourced": "njaaf+own",
+      "municipality": "Montclair",
+      "county": "Essex",
+      "district": 27
     },
     {
       "id": "womens-choice-medical-center",
@@ -323,7 +403,10 @@
       "phone": "(201) 489-2266",
       "email": null,
       "notes": "Coordinates are the town centroid, not the building.",
-      "sourced": "af+njaaf+client"
+      "sourced": "af+njaaf+client",
+      "municipality": "Englewood",
+      "county": "Bergen",
+      "district": 37
     }
   ]
 }

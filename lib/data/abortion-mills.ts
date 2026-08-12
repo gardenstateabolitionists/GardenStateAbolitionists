@@ -42,6 +42,19 @@ export interface AbortionMill {
   /** Public-facing single sentence explaining the closure — rendered
    * on the card so a visitor sees why the address is here. */
   closureReason?: string;
+  /** Municipality the facility actually sits in, from the Census geocoder.
+   * NOT the mailing city: "Somerset" is part of Franklin Township and
+   * "Hamilton Square" of Hamilton Township. Set by
+   * scripts/resolve_facility_municipalities.py. */
+  municipality?: string | null;
+  county?: string | null;
+  /** Legislative district containing the facility. */
+  district?: number | null;
+  /** True when the listing's own address and coordinates disagree, so no
+   * physical location has been established. Such a facility is never
+   * attributed to a city page — see getMillsByMunicipality. */
+  locationUnverified?: boolean;
+  locationNote?: string;
 }
 
 interface RawData {
@@ -65,4 +78,29 @@ export function getActiveMills(): AbortionMill[] {
 export function getMillsByCity(cityName: string): AbortionMill[] {
   const needle = cityName.trim().toLowerCase();
   return DATA.mills.filter((m) => m.city.trim().toLowerCase() === needle);
+}
+
+/**
+ * Facilities inside a municipality — the correct lookup for a city page.
+ *
+ * Prefer this over `getMillsByCity`, which matches the mailing city and is
+ * wrong in New Jersey often enough to matter. Matching "Washington" by name
+ * put a Warren County clinic on the Washington Township, Gloucester page:
+ * a different municipality sixty miles away in a different district.
+ *
+ * A facility whose address and coordinates disagree is never returned. Placing
+ * a clinic in a town on the strength of contradictory data would assert
+ * something the data does not support.
+ */
+export function getMillsByMunicipality(municipality: string, county?: string): AbortionMill[] {
+  const needle = municipality.trim().toLowerCase();
+  const countyNeedle = county?.trim().toLowerCase();
+  return DATA.mills.filter((m) => {
+    if (m.locationUnverified) return false;
+    if ((m.municipality || '').trim().toLowerCase() !== needle) return false;
+    // Guard the repeated names: Washington, Franklin, Monroe and Hamilton all
+    // exist in more than one New Jersey county.
+    if (countyNeedle && (m.county || '').trim().toLowerCase() !== countyNeedle) return false;
+    return true;
+  });
 }

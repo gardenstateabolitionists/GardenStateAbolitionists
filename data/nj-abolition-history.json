@@ -1,0 +1,100 @@
+{
+  "note": "Replaces data/mi-underground-railroad-history.json. Michigan's angle was Detroit as the Underground Railroad's northern terminus — the last stop to freedom. New Jersey's history runs the other way, and is a far better fit for this site's argument: it is the North's case study in what gradual abolition actually costs. Every figure here is sourced. Counties with no entry are omitted rather than filled with generic text.",
+
+  "statewide": {
+    "headline": "New Jersey was the last northern state to free its slaves",
+    "thesis": "New Jersey did not refuse to abolish slavery. It abolished it gradually — and the gradualism is the whole story. Every compromise was defended in its day as the achievable step, the realistic advance, the most that could pass. The result was that men and women were still held in this state on the day the Civil War ended.",
+    "timeline": [
+      {
+        "year": 1804,
+        "event": "The Gradual Abolition Act",
+        "detail": "New Jersey freed no one. It provided that children born to enslaved mothers after 4 July 1804 would become free — females at 21, males at 25. A child born on 5 July 1804 owed the man who owned their mother a quarter century of unpaid labour first. Everyone already enslaved on that date stayed enslaved for life.",
+        "source": "Rider University, A Historical Timeline of Slavery in New Jersey",
+        "sourceUrl": "https://www.rider.edu/history-of-slavery/historical-timeline"
+      },
+      {
+        "year": 1846,
+        "event": "Abolition by renaming",
+        "detail": "New Jersey passed another act said to abolish slavery. What it did was convert the status of a slave to that of an apprentice bound to serve his or her present owner. The people held did not change, the households holding them did not change, and the obligation did not end. Only the word did.",
+        "source": "Rider University, A Historical Timeline of Slavery in New Jersey",
+        "sourceUrl": "https://www.rider.edu/history-of-slavery/historical-timeline"
+      },
+      {
+        "year": 1860,
+        "event": "Eighteen people still held",
+        "detail": "Fifty-six years after New Jersey began abolishing slavery, the federal census still recorded 18 enslaved people in the state.",
+        "source": "Rider University, A Historical Timeline of Slavery in New Jersey",
+        "sourceUrl": "https://www.rider.edu/history-of-slavery/historical-timeline"
+      },
+      {
+        "year": 1865,
+        "event": "New Jersey votes the Thirteenth Amendment down",
+        "detail": "On 16 March 1865 the New Jersey legislature rejected the amendment abolishing slavery. It became law without the state on 6 December 1865. New Jersey ratified it on 23 January 1866 — seven weeks after it was already binding, and only after an election had replaced the legislature that voted no.",
+        "source": "House Divided, Dickinson College; New Jersey State Archives",
+        "sourceUrl": "https://hd.housedivided.dickinson.edu/node/45120"
+      }
+    ],
+    "application": "This is why an abolition bill is written the way it is. Gradual abolition is not abolition arriving slowly; it is a law that names a class of human beings whose protection is deferred, and then defends the deferral as progress. New Jersey has run that experiment already."
+  },
+
+  "byCounty": {
+    "Bergen": {
+      "headline": "The largest slaveholding county in New Jersey",
+      "paragraph": "Bergen held more enslaved people than any other county in the state. In the 1800 census, 2,825 of its residents were enslaved — 18.6% of everyone living here. Slavery in Bergen was not a southern institution observed from a distance; it was the ordinary arrangement of Dutch farm households across the county.",
+      "source": "1800 federal census, as compiled by the New Jersey Slavery Records project",
+      "sourceUrl": "https://records.njslavery.org/"
+    },
+    "Somerset": {
+      "headline": "Second only to Bergen",
+      "paragraph": "Somerset County held 1,863 enslaved people in 1800 — 14.5% of its population, the second-highest concentration in New Jersey. From 1737 until 1800 the densest slaveholding in the state was consistently in Bergen, Monmouth and Somerset.",
+      "source": "1800 federal census, as compiled by the New Jersey Slavery Records project",
+      "sourceUrl": "https://records.njslavery.org/s/doc/item/42"
+    },
+    "Middlesex": {
+      "headline": "1,564 people held in 1800",
+      "paragraph": "Middlesex County recorded 1,827 Black residents in the 1800 census, of whom 1,564 — more than five in six — were enslaved. Freedom and Blackness were not the same thing in this county, and the 1804 act did not make them so.",
+      "source": "1800 federal census, as compiled by the New Jersey Slavery Records project",
+      "sourceUrl": "https://records.njslavery.org/s/doc/page/middlesex-county"
+    },
+    "Essex": {
+      "headline": "1,521 people held in 1800",
+      "paragraph": "Essex County counted 1,719 Black residents in 1800, of whom 1,521 were enslaved. The county that would become the state's industrial and commercial centre built that position while holding people as property.",
+      "source": "1800 federal census, as compiled by the New Jersey Slavery Records project",
+      "sourceUrl": "https://records.njslavery.org/"
+    },
+    "Monmouth": {
+      "headline": "Among the densest slaveholding in the state",
+      "paragraph": "From 1737 to 1800 the heaviest concentrations of enslaved people in New Jersey were found in Bergen, Monmouth and Somerset counties. Monmouth's farms and estates were worked by people the law counted as property for more than a century before the state began, slowly, to reconsider.",
+      "source": "New Jersey Slavery Records project",
+      "sourceUrl": "https://records.njslavery.org/"
+    },
+    "Camden": {
+      "headline": "Lawnside — the only Black community incorporated in New Jersey",
+      "paragraph": "Snow Hill, later Free Haven and now Lawnside, was a settlement of free and self-freed Black families and a station on the Underground Railroad. The Rev. Peter Mott built his house here in 1845 and used it to shelter people escaping slavery; it still stands as the oldest house in Lawnside and is now an Underground Railroad museum. Lawnside remains the only African-American community ever incorporated as a municipality in this state.",
+      "source": "Peter Mott House Underground Railroad Museum; Lawnside Historical Society",
+      "sourceUrl": "https://www.petermotthouse.org/"
+    },
+    "Burlington": {
+      "headline": "Timbuctoo, settled 1826 by men who had freed themselves",
+      "paragraph": "In 1826 four Black men — believed to have escaped slavery in Maryland — bought land from a Quaker businessman in what is now Westampton Township. The settlement they founded took the name Timbuctoo, grew past 125 residents, and built a school, a church and a cemetery. Sitting on the Rancocas Creek within reach of the Delaware, it became an established stop on the Underground Railroad. Burlington County is also where the Quaker John Woolman spent his life arguing that no Christian could hold a human being as property.",
+      "source": "New Jersey State Library, Timbuctoo fact sheet; Westampton Township",
+      "sourceUrl": "https://www.njstatelib.org/wp-content/uploads/2019/06/Timbuctoo-Fact-Sheet.pdf"
+    },
+    "Cumberland": {
+      "headline": "Springtown, a refuge in the south of the state",
+      "paragraph": "Springtown, near Greenwich, was one of a handful of South Jersey settlements — with Marshalltown in Salem County, Snow Hill in Camden County and Timbuctoo in Burlington — where people who had freed themselves from slavery settled and were sheltered by their neighbours.",
+      "source": "Salem County Cultural & Heritage Commission, The Underground Railroad",
+      "sourceUrl": "https://culture.salemcountynj.gov/project/the-underground-railroad/"
+    },
+    "Mercer": {
+      "headline": "Still one person held in 1860",
+      "paragraph": "The 1860 federal census, taken on the eve of the Civil War, still recorded an enslaved person living in Lawrence Township. Fifty-six years had passed since New Jersey began abolishing slavery.",
+      "source": "Rider University, A Historical Timeline of Slavery in New Jersey",
+      "sourceUrl": "https://www.rider.edu/history-of-slavery/historical-timeline"
+    }
+  },
+
+  "countiesStillToResearch": [
+    "Hudson", "Passaic", "Ocean", "Union", "Morris", "Atlantic", "Gloucester"
+  ]
+}

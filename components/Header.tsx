@@ -43,6 +43,7 @@ const navItems = [
       { label: 'Where New Jersey Stands', href: '/abolition-bills' },
       { label: 'Components of an Abolition Bill', href: '/abolition-bills/components' },
       { label: 'Your Legislators', href: '/legislators' },
+      { label: 'Your City', href: '/cities' },
     ],
   },
   {
