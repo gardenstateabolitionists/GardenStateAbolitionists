@@ -19,8 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-/** The five components, in brief. Full treatment with New Jersey notes lives
- *  at /abolition-bills/components — keep the two lists in step. */
+/** The five components, in brief. The full treatment at
+ *  /abolition-bills/components is Free the States' text, so these are
+ *  short-form restatements of the same five — keep them in step. */
 const COMPONENTS = [
   'Outlaws abortion from the moment of fertilization',
   'Contains no exceptions',
@@ -127,7 +128,7 @@ export default function AbolitionBillsPage() {
               href="/abolition-bills/components"
               className="text-green-800 underline hover:no-underline"
             >
-              What each of these means, and what it would mean here &rarr;
+              What each of these means, in full &rarr;
             </Link>
           </p>
 

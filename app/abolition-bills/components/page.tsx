@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABanner from '@/components/CTABanner';
-import { FRCA } from '@/lib/data/legislators';
+import LiteYouTube from '@/components/LiteYouTube';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
 
 export const metadata: Metadata = {
   title: 'Components of an Abolition Bill',
   description:
-    'The five things a bill must do to actually abolish abortion, why each one is the first to be negotiated away, and what each would mean in New Jersey.',
+    'Key differences between abolitionist and pro-life legislation. Learn the five essential components of a bill that truly abolishes abortion.',
   alternates: { canonical: '/abolition-bills/components' },
   openGraph: {
     title: 'Components of an Abolition Bill',
@@ -19,81 +19,10 @@ export const metadata: Metadata = {
   },
 };
 
-/**
- * The five components. Each carries a New Jersey note, because the difference
- * between an abolition bill and a regulation is not abstract here — the state
- * has a statute that has to be dealt with directly.
- */
-const COMPONENTS = [
-  {
-    n: 1,
-    title: 'Outlaws abortion from the moment of fertilization',
-    body:
-      'Protection begins at fertilization, not at viability, not at a heartbeat, and not at a gestational week chosen for its poll numbers. A human being either is or is not entitled to the protection of the law; a bill that starts the clock later has already conceded that some human beings may be killed lawfully, and is arguing about how many.',
-    nj:
-      'New Jersey law places no gestational limit on abortion. A bill that set one would be a restriction, and would still leave every abortion before that line legal.',
-  },
-  {
-    n: 2,
-    title: 'Contains no exceptions',
-    body:
-      'No exception for rape, for incest, for fetal diagnosis, or for the circumstances of the pregnancy. The child conceived in rape is not less human than any other, and cannot be made an exception to the prohibition on killing without conceding that the prohibition was never about their humanity in the first place. Treatment of an ectopic pregnancy or of a mother whose life is genuinely in danger is not an exception, because the intent is not to kill the child.',
-    nj:
-      'This is the component most often traded away first, because it is the one that polls worst — which is exactly why a bill that keeps it is worth distinguishing from one that does not.',
-  },
-  {
-    n: 3,
-    title: 'Criminalizes abortion itself and establishes equal justice',
-    body:
-      'It applies existing homicide law to the preborn rather than writing a separate, weaker offense, and it does not exempt anyone by category from the operation of that law. A bill that prohibits abortion while immunizing everyone involved has not established justice; it has written a prohibition with no consequence, which is a statement of preference rather than a law.',
-    nj: (
-      <>
-        This is what equal protection means, and it is the part most often
-        misread as cruelty.{' '}
-        <Link href="/what-we-believe/criminalization" className="text-green-800 underline hover:no-underline">
-          Why we hold to it
-        </Link>
-        .
-      </>
-    ),
-  },
-  {
-    n: 4,
-    title: 'Does not submit to unconstitutional court rulings',
-    body:
-      'It takes effect on passage rather than waiting for permission from a court. Trigger conditions, severability clauses written to survive review, and phase-ins are devices that let a legislature take credit for a law while ensuring nothing changes on the ground. A state has its own duty to protect the people within it, and that duty is not suspended while it waits to be told whether it may.',
-    nj:
-      'New Jersey has gone further than most states in writing abortion access into its own statute, so the obstacle here is not a court ruling. It is the Legislature itself.',
-  },
-  {
-    n: 5,
-    title: 'Repeals or supersedes every statute that permits abortion',
-    body:
-      'A new prohibition sitting alongside an old permission does not abolish anything — it creates a contradiction that courts resolve in favor of the existing right. The bill has to name the statutes it displaces and remove them.',
-    nj: (
-      <>
-        In New Jersey this is the whole ball game. The{' '}
-        <strong>{FRCA.title}</strong> ({FRCA.bill}) codifies a statutory right to
-        abortion, so any bill of abolition here would have to repeal it by name.
-        A bill that did not would be void the day it passed.
-      </>
-    ),
-  },
-];
-
-export default function ComponentsPage() {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'Components of an Abolition Bill',
-    url: `${BASE_URL}/abolition-bills/components`,
-    about: { '@type': 'Thing', name: 'Abolition of abortion' },
-  };
-
+export default function ComponentsOfAbolitionBillPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-
+      {/* Hero Section */}
       <section className="bg-[#1a1a1a] text-white py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl mb-6">
@@ -101,71 +30,71 @@ export default function ComponentsPage() {
             <span className="font-black">ABOLITION BILL</span>
           </h1>
           <div className="w-12 h-[3px] bg-green-700 mx-auto mb-6" />
-          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">
-            What a bill must contain to deserve the name
-          </p>
+          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-gray-300">Key differences between abolitionist and pro-life legislation</p>
         </div>
       </section>
 
-      <Breadcrumbs
-        items={[
-          { label: 'Abolition Bills', href: '/abolition-bills' },
-          { label: 'Components' },
-        ]}
-      />
+      <Breadcrumbs items={[{ label: 'Abolition Bills', href: '/abolition-bills' }, { label: 'Components of an Abolition Bill' }]} />
 
+      {/* Content */}
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-lg text-gray-700 mb-4">
-            Not every bill described as pro-life is a bill of abolition. Most regulate
-            abortion &mdash; they restrict when it may happen, or who must be told, or what
-            the building must look like. A bill of abolition ends it, by extending to the
-            preborn the same protection the law already gives everyone else.
-          </p>
-          <p className="text-gray-700 mb-10">
-            Five things separate the two. They are listed here so that when a bill is
-            introduced anywhere, it can be read against them rather than against its press
-            release &mdash; and so that the components most often negotiated away are the
-            ones you look for first.
-          </p>
+          <div className="prose prose-lg max-w-none space-y-6">
 
-          <ol className="space-y-6 mb-12">
-            {COMPONENTS.map((c) => (
-              <li key={c.n} className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
-                <h2 className="text-xl font-bold text-gray-900 mb-2">
-                  {c.n}. {c.title}
-                </h2>
-                <p className="text-gray-700 mb-3">{c.body}</p>
-                <p className="text-sm text-gray-600 border-t border-gray-200 pt-3">
-                  <span className="font-semibold uppercase tracking-wide text-gray-500">
-                    In New Jersey:
-                  </span>{' '}
-                  {c.nj}
-                </p>
-              </li>
-            ))}
-          </ol>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/5-components-slider.jpg"
+              alt="5 Components of an Abolition Bill"
+              className="w-full my-8 rounded-lg"
+            />
 
-          <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
-            <h2 className="text-xl font-bold mb-2">There is no such bill here yet</h2>
-            <p className="text-gray-700 mb-3">
-              No bill of abolition and no equal-protection bill has been introduced in the
-              New Jersey Legislature. This page is the standard to hold one to when it is,
-              and the standard to hold a legislator to when they tell you they are pro-life.
+            <h2 className="text-xl font-bold mt-8 mb-4">1) Abolition Bills Outlaw Abortion from Fertilization</h2>
+
+            <p>
+              First and foremost, an abolition bill establishes that there is no right to murder a preborn human being at any point. An abolition bill does not regulate which preborn human beings are old enough to be protected by law &ndash; it outlaws abortion itself. Any law regarding the legality of abortion which fails to outlaw the murder of preborn human beings from fertilization legitimizes the murder of some children and is therefore iniquitous and entirely unacceptable.
             </p>
-            <p className="text-gray-700">
-              <Link href="/abolition-bills" className="text-green-800 underline hover:no-underline">
-                Where New Jersey actually stands
-              </Link>{' '}
-              &middot;{' '}
-              <Link href="/legislators" className="text-green-800 underline hover:no-underline">
-                Find and contact your legislators
-              </Link>{' '}
-              &middot;{' '}
-              <Link href="/the-petition" className="text-green-800 underline hover:no-underline">
-                Sign the petition
-              </Link>
+
+            <h2 className="text-xl font-bold mt-8 mb-4">2) Abolition Bills Do Not Include Any Exceptions for Abortion</h2>
+
+            <p>
+              An abolition bill does not leave any preborn humans unprotected by law, unlike many pro-life bills which include exceptions allowing for abortion; for instance, in the case of rape. Isaiah 10 says &ldquo;Woe to those who make iniquitous decrees&rdquo; which &ldquo;make the fatherless prey.&rdquo; There&apos;s no one more fatherless than the child conceived in rape. It&apos;s unacceptable to allow for the murder of a baby because of the crime of the father. On top of being iniquitous, allowances for abortion in certain scenarios undermines the whole case against abortion. If abortion is murder, it doesn&apos;t stop being murder because of the circumstances of the baby&apos;s fertilization. More info about the importance of allowing for no exceptions can be found on our <Link href="/what-we-believe/no-exceptions" className="text-green-800 underline hover:no-underline">No Exceptions</Link> page.
             </p>
+
+            <h2 className="text-xl font-bold mt-8 mb-4">3) Abolition Bills Criminalize Abortion Itself and Establish Equal Justice for the Preborn</h2>
+
+            <p>
+              An abolition bill makes preborn human beings completely equal under the law. That means murdering or being an accomplice to the murder of a preborn human being comes with the same legal penalty as murdering or being an accomplice to the murder of a born human being. Pro-life bills which give automatic legal immunity to the mother deprive preborn human beings of equal justice and protection. This hypocrisy actually led to the decriminalization of abortion in the first place. The Texas abortion statutes in question in Roe gave automatic immunity to the mother in all cases. Justice Blackmun wrote in Roe footnote 54 that if Texas really believed preborn human beings were persons, the state would legally penalize those who murder them to the same degree as those who murder born persons. More info about the importance of fully criminalizing abortion can be found at <a href="https://freethestates.org/criminalization/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">Free the States: Criminalization</a>.
+            </p>
+
+            <h2 className="text-xl font-bold mt-8 mb-4">4) Abolition Bills Do Not Submit to the Unconstitutional Ruling in Roe</h2>
+
+            <p>
+              Roe is an evil, unconstitutional Supreme Court opinion ordering the states to allow mass murder within their jurisdictions. An abolition bill recognizes that the courts have no rightful authority to legalize murder. Court opinions legalizing murder are null and void by their nature and will be treated as such upon the passage of an abolition bill. In addition to a magistrate&apos;s duty to uphold the Constitution in the face of judicial tyranny, all men have a transcendent, immutable moral obligation to disregard an order from a superior to allow mass murder, and that&apos;s exactly what Roe is. Lower magistrates must interpose themselves between the victims of abortion and any higher magistrate who would deprive preborn human beings of the right to life. Specific to this case, state executives, legislators, and judges are the lower magistrates who must defy the tyrannical federal judiciary. An abolition bill includes language specifying that it will be enforced regardless of any contrary federal law, executive order, or court opinion. Submitting to the Supreme Court&apos;s order to allow mass murder is cowardly and iniquitous and absent language nullifying Roe, a bill outlawing abortion will not be enforced. More info about ignoring Roe can be found at <a href="https://freethestates.org/nullification-and-interposition/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:no-underline">Free the States: Nullification and Interposition</a>.
+            </p>
+
+            <h2 className="text-xl font-bold mt-8 mb-4">5) Abolition Bills Repeal or Supersede All Statutes Which Allow for Abortion</h2>
+
+            <p>
+              Many laws have been passed by pro-life politicians regulating the murder of preborn human beings &mdash; Where they can be murdered, how they can be murdered, by whom they can be murdered, the licensing needed to murder them, etc. An abolition bill repeals these regulations because they codify into law the acceptability of murder in certain circumstances, and therefore must be repealed for abortion to be abolished. For instance, the dismemberment ban must be repealed because it codifies into law the legality of murdering a baby as long as a certain dismemberment technique isn&apos;t used. The parental notification law must be repealed because it specifically codifies into law the practice of murdering a preborn child so long as the grandparents are notified. The partial-birth abortion ban specifically codifies into law the acceptability of murdering a preborn human being as long as the child is not partially delivered before being murdered. All of these laws passed by pro-life politicians and lobbyists regulate where babies can be murdered, how they can be murdered, by whom they can be murdered, and the licensing needed to murder them. Such laws explicitly contradict an abolition bill which abolishes abortion as murder. Abortion cannot be abolished while there are still laws on the books saying abortion is legal as long as you jump through pro-life hoops. They have to be repealed. An abolition bill repeals them.
+            </p>
+
+            <div className="my-8">
+              <LiteYouTube videoId="qGvSk8A7NKM" title="Components of an Abolition Bill" />
+            </div>
+
+            <p className="text-sm text-gray-500 italic mt-12">
+              This content was originally published by <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, and is used by permission. Garden State Abolitionists is not formally affiliated with <a href="https://freethestates.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Free the States</a>, but shares its abolitionist mission and principles.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+            <Link href="/what-we-believe/criminalization" className="text-green-700 font-semibold hover:underline">
+              &larr; Criminalization
+            </Link>
+            <Link href="/abolition-bills" className="text-green-700 font-semibold hover:underline">
+              Back to Abolition Bills &rarr;
+            </Link>
           </div>
         </div>
       </section>
