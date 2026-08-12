@@ -1,24 +1,18 @@
 name: Refresh legislator data
 
-# Committee seats change when the Legislature reorganises; sponsorship counts
-# change constantly while in session. Monthly keeps both fresh without burning
-# the Open States free-tier quota.
+# Committee seats change when the Legislature reorganizes. Monthly is plenty,
+# and the whole run is three API calls.
 on:
   schedule:
     - cron: '0 6 1 * *'
   workflow_dispatch:
-    inputs:
-      committees_only:
-        description: 'Skip the slow sponsorship pass'
-        type: boolean
-        default: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # The per-minute rate limit means a full run takes ~30 min of mostly
-    # sleeping. 60 leaves room for retries without hanging a whole hour.
-    timeout-minutes: 60
+    # Three requests, but the per-minute rate limit means retries can sleep
+    # 65s at a time.
+    timeout-minutes: 15
     permissions:
       contents: write
 
@@ -32,9 +26,7 @@ jobs:
       - name: Refresh from Open States
         env:
           OPEN_STATES_API_KEY: ${{ secrets.OPEN_STATES_API_KEY }}
-        run: |
-          python scripts/refresh_legislator_data.py \
-            ${{ inputs.committees_only && '--committees-only' || '' }}
+        run: python scripts/refresh_legislator_data.py
 
       - name: Commit if anything changed
         run: |
@@ -45,7 +37,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/legislators.json
-          git commit -m "Refresh legislator committees and sponsorship counts
+          git commit -m "Refresh legislator committee assignments
 
           Automated monthly pull from the Open States v3 API."
           git push

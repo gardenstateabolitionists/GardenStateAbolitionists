@@ -202,32 +202,6 @@ export default async function LegislatorPage({
             </>
           )}
 
-          {/* Hidden entirely when the counts are unknown — a 0 here would read as
-              "sponsored nothing", which is a claim we would not be making. */}
-          {l.sponsorships !== null && (
-            <>
-              <h2 className="text-2xl font-bold mb-4">Legislative activity</h2>
-              <div className="mb-4 grid sm:grid-cols-2 gap-4">
-                <div className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
-                  <div className="text-4xl font-bold text-green-800 mb-1">{l.sponsorships}</div>
-                  <div className="text-gray-600 text-sm">Bills sponsored</div>
-                </div>
-                {l.cosponsorships !== null && (
-                  <div className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
-                    <div className="text-4xl font-bold text-green-800 mb-1">{l.cosponsorships}</div>
-                    <div className="text-gray-600 text-sm">Bills cosponsored</div>
-                  </div>
-                )}
-              </div>
-              <p className="text-sm text-gray-500 mb-10">
-                Current session only (2026&ndash;2027), all subjects &mdash; not a career
-                total, and not a measure of whether any of it was good. It is a rough gauge
-                of how active a member is, which is worth knowing before you write. Source:
-                Open States.
-              </p>
-            </>
-          )}
-
           <h2 className="text-2xl font-bold mb-4">Write to {l.name}</h2>
           <ContactLetter legislator={l} />
 

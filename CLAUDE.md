@@ -147,10 +147,30 @@ hand-maintained alias list and still had two look-alike pairs (Kevin Egan vs
 Joseph V. Egan, Marisa Sweeney vs Stephen M. Sweeney) that had to be excluded by
 hand to avoid attributing votes to the wrong person.
 
-`sponsorships`/`cosponsorships` are **current session only** (222, 2026-2027),
-and `null` means unknown, which renders as nothing. Never substitute 0 — that
-reads as "sponsored nothing", which is a claim the data does not support. Bump
-`SESSION` when the Legislature turns over.
+**Sponsorship counts are deliberately not published**, and this was a decision,
+not an omission. Open States' person-to-bill linkage is incomplete for New
+Jersey: 21% of members returned 0 for the current session, and Al Abdelaziz
+returned 0 across *every* session despite serving since 2018 and appearing in
+the Legislature's own sponsor index. A real 0 and a missing link are
+indistinguishable through the API, so publishing the number would assert
+"sponsored nothing" about people for whom it is false — and if linkage is
+partial, the non-zero counts may be undercounts too. The working query is
+recorded in `scripts/refresh_legislator_data.py` if their coverage improves.
+
+## Legislator photos come from the Legislature, not Open States
+
+`scripts/scrape_member_photos.py` scrapes portraits from the NJ Legislature's
+roster. Do not switch this back to the Open States `image` field: those URLs
+point at `www.njleg.state.nj.us/members/memberphotos/`, a path the Legislature
+retired, and **66 of the 71 return 404**. The live files are on
+`pub.njleg.state.nj.us/publications/members/` and are only discoverable by
+rendering the roster, which is a Next.js app — plain HTML fetching finds
+nothing.
+
+119 of 120 members have a photo. Every URL is verified to return an actual image
+before being written to `data/legislators.json`, and `LegislatorPhoto` removes
+itself on error, because a dead URL otherwise renders as an empty grey bubble
+next to the member's name.
 
 ## Search-engine ownership
 

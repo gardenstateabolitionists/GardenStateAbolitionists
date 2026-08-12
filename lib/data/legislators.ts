@@ -44,7 +44,11 @@ export interface Legislator {
   email: string | null;
   districtPhone: string | null;
   districtAddress: string | null;
-  /** Official portrait. Only about 60% of members have one published. */
+  /**
+   * Official portrait, from the Legislature's own roster (119 of 120 have one).
+   * NOT from Open States, whose photo URLs point at a retired path — 66 of the
+   * 71 it had were dead. See scripts/scrape_member_photos.py.
+   */
   photo: string | null;
   officialUrl: string | null;
   frcaVote: FrcaVote;
@@ -56,13 +60,6 @@ export interface Legislator {
   frcaChamber: Chamber | null;
   /** Committee seats this session. Every member holds at least one. */
   committees: CommitteeAssignment[];
-  /**
-   * Bills sponsored in the CURRENT session (222, 2026-2027) only — not a
-   * career total. `null` means the count could not be fetched, which must
-   * render as nothing at all; a 0 would assert they sponsored nothing.
-   */
-  sponsorships: number | null;
-  cosponsorships: number | null;
 }
 
 interface FrcaMeta {

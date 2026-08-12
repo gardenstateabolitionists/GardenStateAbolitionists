@@ -1,5 +1,5 @@
 {
-  "note": "Current New Jersey Legislature — 40 Senate + 80 Assembly across 40 districts, each district electing one senator and two assembly members (verified).\n\nRoster, emails, district offices, photos and official links come from the Open States bulk export (data.openstates.org/people/current/nj.csv). Open States is used rather than the Legislature's printable roster PDF because PDF text extraction inserted stray spaces inside surnames and silently corrupted five names (McKeon, Wimberly, Flynn, Tully, Pintor Marin).\n\nfrcaVote is the member's vote on FINAL PASSAGE of S49, the Freedom of Reproductive Choice Act, 10 January 2022, from the Legislature's own API (Senate VoteKey 2118, Assembly VoteKey 1571), both reconciled against the published tallies before use.\n\nnull means the member was NOT SERVING for that vote. It is not an abstention and must never render as one.\n\nCommittee seats and current-session (222, 2026-2027) sponsorship counts come from the Open States v3 API, joined on Open States person ID rather than name. Sponsorship counts are for THIS session only, not career totals.",
+  "note": "Current New Jersey Legislature — 40 Senate + 80 Assembly across 40 districts, each district electing one senator and two assembly members (verified).\n\nRoster, emails, district offices, photos and official links come from the Open States bulk export (data.openstates.org/people/current/nj.csv). Open States is used rather than the Legislature's printable roster PDF because PDF text extraction inserted stray spaces inside surnames and silently corrupted five names (McKeon, Wimberly, Flynn, Tully, Pintor Marin).\n\nfrcaVote is the member's vote on FINAL PASSAGE of S49, the Freedom of Reproductive Choice Act, 10 January 2022, from the Legislature's own API (Senate VoteKey 2118, Assembly VoteKey 1571), both reconciled against the published tallies before use.\n\nnull means the member was NOT SERVING for that vote. It is not an abstention and must never render as one.\n\nCommittee seats come from the Open States v3 API, joined on Open States person ID rather than name.\n\nSponsorship counts are deliberately NOT published: Open States' person-to-bill linkage is incomplete for New Jersey (21% of members returned 0, and one member serving since 2018 returned 0 across every session), so a false 0 would assert 'sponsored nothing' about real people.",
   "frcaVote": {
     "bill": "S49 / A6260",
     "title": "Freedom of Reproductive Choice Act",
@@ -44,8 +44,7 @@
           "role": "alternate"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4cb8db73-8982-4b4f-9c90-f86b20b217bc"
     },
     {
       "slug": "vince-polistina",
@@ -70,8 +69,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/5a6bf64a-7731-4e80-8208-e1a18f09762b"
     },
     {
       "slug": "john-burzichelli",
@@ -104,8 +102,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/1b726d76-851a-487b-a6e6-42ee4fa5c050"
     },
     {
       "slug": "paul-moriarty",
@@ -134,8 +131,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/f15f8b7e-96ee-41e8-b59c-b277927985c0"
     },
     {
       "slug": "nilsa-cruz-perez",
@@ -168,8 +164,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/b656905a-de58-4d36-b433-276788233b1f"
     },
     {
       "slug": "jim-beach",
@@ -190,8 +185,7 @@
           "role": "chair"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/87714b2b-1868-4d3f-aa3f-a3d25db0fbc6"
     },
     {
       "slug": "troy-singleton",
@@ -216,8 +210,7 @@
           "role": "vice chair"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a1c9ec59-4127-4973-b100-f35c30bb817c"
     },
     {
       "slug": "latham-tiver",
@@ -246,8 +239,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/0e989cd5-91f8-4595-8346-bbac4f3d2c9e"
     },
     {
       "slug": "carmen-amato",
@@ -276,8 +268,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/0f0e1edc-6ab5-4fca-8999-2db3229c5d19"
     },
     {
       "slug": "jim-holzapfel",
@@ -302,8 +293,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/32e625c0-5e22-40b4-a6a3-4040d10e6ff0"
     },
     {
       "slug": "vin-gopal",
@@ -332,8 +322,7 @@
           "role": "alternate"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/76afbcca-bed8-4e2e-bc3a-0fd6d53158a5"
     },
     {
       "slug": "owen-henry",
@@ -362,8 +351,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/fee23b32-9f92-4951-889e-6d09749a78b9"
     },
     {
       "slug": "declan-o-scanlon",
@@ -392,8 +380,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/ac044b70-7745-435a-9c38-c4af013d0b0e"
     },
     {
       "slug": "linda-greenstein",
@@ -430,8 +417,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/27646653-40e2-4c79-b608-0f2edcaa0322"
     },
     {
       "slug": "shirley-turner",
@@ -468,8 +454,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/26eb8b3c-59a5-49ca-841c-13a569444994"
     },
     {
       "slug": "andrew-zwicker",
@@ -506,8 +491,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/7782ffcd-73df-41b5-9857-fd7b10953bf3"
     },
     {
       "slug": "bob-smith",
@@ -540,8 +524,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/177d44ba-0c93-4e26-b245-84aa2239f7b4"
     },
     {
       "slug": "patrick-diegnan",
@@ -566,8 +549,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/16048732-130c-4102-b6e7-2d8faa0c3f52"
     },
     {
       "slug": "joe-vitale",
@@ -588,8 +570,7 @@
           "role": "chair"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/97fba3ff-adc8-4323-bf77-37acfe18b735"
     },
     {
       "slug": "joe-cryan",
@@ -618,8 +599,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/5dcef6ac-7dbe-4c65-a53b-670c89a615e7"
     },
     {
       "slug": "jon-bramnick",
@@ -648,8 +628,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/08a758f9-92fb-4e59-ac8f-edc75aaf3390"
     },
     {
       "slug": "nick-scutari",
@@ -674,8 +653,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4d47b297-b5f4-4d83-94e6-bb95eb91ecd7"
     },
     {
       "slug": "doug-steinhardt",
@@ -708,8 +686,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/2798197f-1516-44ef-9933-99e5b23f19c8"
     },
     {
       "slug": "parker-space",
@@ -734,8 +711,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/1dde507a-70ed-4f89-95f8-cd11748a753c"
     },
     {
       "slug": "tony-bucco",
@@ -768,8 +744,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/f321f20f-b8af-4d0b-85ba-e7b8dcf9ae03"
     },
     {
       "slug": "joe-pennacchio",
@@ -802,8 +777,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4bf4c8e4-5a97-4100-b34d-cb01da6ab266"
     },
     {
       "slug": "john-mckeon",
@@ -828,8 +802,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/1fec06e0-00df-4d84-8c9a-18e80a6f29e2"
     },
     {
       "slug": "renee-burgess",
@@ -862,8 +835,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/b8495630-20f7-4f9e-bf84-2a13a6da3794"
     },
     {
       "slug": "teresa-ruiz",
@@ -900,8 +872,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/907aae0b-1026-405a-9429-cadd01efd79d"
     },
     {
       "slug": "bob-singer",
@@ -938,8 +909,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/45219a29-080f-4452-9b05-92488e96f2f1"
     },
     {
       "slug": "angela-mcknight",
@@ -972,8 +942,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d8c826c4-95c7-465b-8448-1f05495bfc45"
     },
     {
       "slug": "raj-mukherji",
@@ -1002,8 +971,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/fe8bf5e4-85ed-423b-b2d8-301f29d3faea"
     },
     {
       "slug": "brian-stack",
@@ -1032,8 +1000,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/6f616307-dafe-44ca-a6b3-5f9516d21f89"
     },
     {
       "slug": "britnee-timberlake",
@@ -1058,8 +1025,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/707e3027-d06f-4346-8c11-3ff1becbe725"
     },
     {
       "slug": "benjie-wimberly",
@@ -1084,8 +1050,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/18fa38fc-954e-43d9-a294-a2068828216e"
     },
     {
       "slug": "paul-sarlo",
@@ -1118,8 +1083,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/1d8eb6cf-cff2-4948-ba03-7f31fcadd4ec"
     },
     {
       "slug": "gordon-johnson",
@@ -1148,8 +1112,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/53fe6716-2bdb-4926-993f-4a2cf002ad51"
     },
     {
       "slug": "joe-lagana",
@@ -1174,8 +1137,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/90a0a109-2ce3-4a55-8761-1e07ff875703"
     },
     {
       "slug": "holly-schepisi",
@@ -1200,8 +1162,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/57fe7d05-af12-4f44-b143-e19814f2cfa2"
     },
     {
       "slug": "kristin-corrado",
@@ -1234,8 +1195,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/0880a4b0-8e91-484b-aa12-6e0444838c44"
     },
     {
       "slug": "antwan-mcclellan",
@@ -1272,8 +1232,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4ebe8d6e-9814-4f68-aa9f-148c0942eaab"
     },
     {
       "slug": "erik-simonsen",
@@ -1306,8 +1265,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/7f9ebe1c-d4fa-4dd0-8948-7cf6248ffb6d"
     },
     {
       "slug": "don-guardian",
@@ -1340,8 +1298,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/df880b40-1e96-49d0-92bc-70732a1cce32"
     },
     {
       "slug": "maureen-rowan",
@@ -1370,8 +1327,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/af1dfa82-2c03-4b0c-bf63-1eef9e8b6616"
     },
     {
       "slug": "dave-bailey",
@@ -1400,8 +1356,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/64a8c09d-24a2-4d4c-a071-d09f0a30c79f"
     },
     {
       "slug": "heather-simmons",
@@ -1430,8 +1385,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/5d619c98-5127-433c-99c6-adb888ab407b"
     },
     {
       "slug": "cody-miller",
@@ -1460,8 +1414,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/fab6547d-4f37-4c02-a738-dc4fb0b707e7"
     },
     {
       "slug": "dan-hutchison",
@@ -1486,8 +1439,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/fa6aa5c6-0479-4d12-88c0-75480bfbe3a5"
     },
     {
       "slug": "bill-moen",
@@ -1516,8 +1468,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/1e9cd368-349e-4ddc-a34d-8301d0ac4841"
     },
     {
       "slug": "bill-spearman",
@@ -1546,8 +1497,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/3d5d3c07-70ed-481a-91ba-a19fce581561"
     },
     {
       "slug": "lou-greenwald",
@@ -1568,8 +1518,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a27823aa-f5a9-4d6c-8089-1d8ceee6f8e0"
     },
     {
       "slug": "melinda-kane",
@@ -1598,8 +1547,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a33ec105-c8ff-446b-ae8b-1a79f402f983"
     },
     {
       "slug": "balvir-singh",
@@ -1628,8 +1576,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a189187b-df3f-4f10-8e5c-744ad7071787"
     },
     {
       "slug": "carol-murphy",
@@ -1662,8 +1609,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/c33b5f2b-0494-414f-aa84-d2286ae46095"
     },
     {
       "slug": "andrea-katz",
@@ -1692,8 +1638,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/acf3b54e-9725-4867-aaa5-9275ada21b37"
     },
     {
       "slug": "anthony-angelozzi",
@@ -1722,8 +1667,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/21b098a3-5f30-40c7-9169-1d4b92402a99"
     },
     {
       "slug": "brian-rumpf",
@@ -1756,8 +1700,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d6731a7f-a22e-48dd-8bba-fd2c155c16c3"
     },
     {
       "slug": "greg-myhre",
@@ -1786,8 +1729,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/85863833-b5e6-40f2-aafc-5a0fc5f790d0"
     },
     {
       "slug": "greg-mcguckin",
@@ -1812,8 +1754,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/2ac520a3-ae36-4936-a9c3-6842401b6c83"
     },
     {
       "slug": "paul-kanitra",
@@ -1842,8 +1783,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/e4c2301b-6812-423e-b27a-c40919f4bd5d"
     },
     {
       "slug": "luanne-peterpaul",
@@ -1872,8 +1812,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/589a73bd-a164-472a-8b50-4b4d0846cd24"
     },
     {
       "slug": "margie-donlon",
@@ -1898,8 +1837,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/78ee83b9-ead4-4a03-89e7-f976d0454408"
     },
     {
       "slug": "alex-sauickie",
@@ -1932,8 +1870,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/fc986c0e-c1cd-422f-80c1-4d3691f34f28"
     },
     {
       "slug": "rob-clifton",
@@ -1962,8 +1899,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/b94db48b-9083-48c9-8b27-3603db14fa3e"
     },
     {
       "slug": "gerry-scharfenberger",
@@ -1996,8 +1932,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4323bf03-63e6-4f8b-9b2e-3554df7723bf"
     },
     {
       "slug": "vicky-flynn",
@@ -2030,8 +1965,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/379945ef-55af-4b76-96ce-fcddbcb0c1c6"
     },
     {
       "slug": "tennille-mccoy",
@@ -2060,8 +1994,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/c05a0080-95df-4576-a81c-d509fb4a5063"
     },
     {
       "slug": "wayne-deangelo",
@@ -2086,8 +2019,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/08016f74-f5d6-4554-91b4-385fdbd558a7"
     },
     {
       "slug": "anthony-verrelli",
@@ -2116,8 +2048,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/c6d61a12-eeb5-4400-943d-68a81b0728f0"
     },
     {
       "slug": "verlina-reynolds-jackson",
@@ -2154,8 +2085,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/b432ec8c-f914-47dc-addd-740dfc95daaf"
     },
     {
       "slug": "mitchelle-drulis",
@@ -2184,8 +2114,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/97251dd4-e275-4347-a757-a05366fa5013"
     },
     {
       "slug": "roy-freiman",
@@ -2210,8 +2139,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/77b80e3f-bfdd-4c81-b92e-866c17abd398"
     },
     {
       "slug": "joe-danielsen",
@@ -2240,8 +2168,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/03acbfd3-a81b-4461-aff4-db7ecf5e8e48"
     },
     {
       "slug": "kevin-egan",
@@ -2266,8 +2193,7 @@
           "role": "vice chair"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/59c25089-5752-4eb9-a96b-a005c1c46743"
     },
     {
       "slug": "robert-karabinchak",
@@ -2300,8 +2226,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d6732f77-1c72-4ee6-8d52-5c9b79987976"
     },
     {
       "slug": "sterley-stanley",
@@ -2330,8 +2255,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/901f85af-77c2-4cff-8626-ac510fdc425f"
     },
     {
       "slug": "craig-coughlin",
@@ -2356,8 +2280,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/9d1ae08a-66b3-4d68-bafe-956d4eaeb57f"
     },
     {
       "slug": "yvonne-lopez",
@@ -2382,8 +2305,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a0d9e9ac-6ede-4e36-8c9e-f7bd83cc704a"
     },
     {
       "slug": "annette-quijano",
@@ -2412,8 +2334,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/ec370db8-c51e-4022-9868-5cad9c38e97d"
     },
     {
       "slug": "ed-rodriguez",
@@ -2442,8 +2363,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/c17427d2-58a7-45f5-aa6c-a70ca914f8de"
     },
     {
       "slug": "andrew-macurdy",
@@ -2468,8 +2388,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/bd2c37cd-6c84-406e-9e38-95bd83f20f0f"
     },
     {
       "slug": "vinnie-kearney",
@@ -2498,8 +2417,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/3d57728e-0da2-4df4-891e-9cc8e0e9b219"
     },
     {
       "slug": "jim-kennedy",
@@ -2528,8 +2446,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d80f0df2-57cd-436b-a250-7413ec11fe27"
     },
     {
       "slug": "linda-carter",
@@ -2562,8 +2479,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/199dd5c8-3ef1-4a2c-9585-9de5def27e98"
     },
     {
       "slug": "erik-peterson",
@@ -2588,8 +2504,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/df6d2d1f-3fb0-4e93-93cf-26665cae9a23"
     },
     {
       "slug": "john-dimaio",
@@ -2614,8 +2529,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/dce6ec3a-7d62-4b33-8693-259364c85285"
     },
     {
       "slug": "dawn-fantasia",
@@ -2652,8 +2566,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/790ac0bd-71fa-4446-b1fa-b013e4b4f33e"
     },
     {
       "slug": "mike-inganamort",
@@ -2682,8 +2595,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/9228b053-be5e-4490-aadc-ece59b7421fd"
     },
     {
       "slug": "aura-dunn",
@@ -2708,8 +2620,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/03aa8bec-9d7e-41e7-ad20-b5ba1991cab6"
     },
     {
       "slug": "marisa-sweeney",
@@ -2738,8 +2649,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/028a440f-10cb-49cc-9417-1dfd0cff83e2"
     },
     {
       "slug": "brian-bergen",
@@ -2764,8 +2674,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/006c1bd9-54e9-49be-9d02-12dda1119149"
     },
     {
       "slug": "jay-webber",
@@ -2790,8 +2699,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/dbe67894-e4cd-46ea-bb59-877a8b4f26d0"
     },
     {
       "slug": "alixon-collazos-gill",
@@ -2820,8 +2728,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/b5f9d8c9-0f98-4d89-8a5f-82152f41687d"
     },
     {
       "slug": "rosy-bagolie",
@@ -2850,8 +2757,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/f152f2d6-e4ff-4958-996d-532c310ddef1"
     },
     {
       "slug": "chigozie-onyema",
@@ -2880,8 +2786,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/383fdfc0-c14a-433f-8f1d-a29e6350c5ca"
     },
     {
       "slug": "cleopatra-tucker",
@@ -2906,8 +2811,7 @@
           "role": "chair"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/c5469bd6-29bd-4054-9ac0-3577d17422d4"
     },
     {
       "slug": "eliana-pintor-marin",
@@ -2940,8 +2844,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/6056438b-65d3-4db4-b0ad-c367074bd47e"
     },
     {
       "slug": "shanique-speight",
@@ -2974,8 +2877,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/304c7552-b833-4b9c-b125-39030b8376ff"
     },
     {
       "slug": "avi-schnall",
@@ -3004,8 +2906,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/4dab8e3a-93be-4ad7-8cb1-5009e4c7d232"
     },
     {
       "slug": "sean-kean",
@@ -3030,8 +2931,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/ac95c4e3-057b-43bc-8bee-752137bb2d12"
     },
     {
       "slug": "jerry-walker",
@@ -3064,8 +2964,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/cbdafb85-539d-4ef4-a3ee-30f4985969fa"
     },
     {
       "slug": "will-sampson",
@@ -3094,8 +2993,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d624fdfb-366e-41f1-83a7-2a8421350d3c"
     },
     {
       "slug": "katie-brennan",
@@ -3124,8 +3022,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/a04dc132-6a91-4e1b-a336-ede062d06884"
     },
     {
       "slug": "ravi-bhalla",
@@ -3150,8 +3047,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/27b085de-d164-466e-845b-fc1de27a2da9"
     },
     {
       "slug": "gabe-rodriguez",
@@ -3180,8 +3076,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/2078f4b2-3e69-4e01-aada-3ccf21ba6173"
     },
     {
       "slug": "larry-wainstein",
@@ -3206,8 +3101,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/036d00b8-5e0b-4bc0-ae46-f0bf5e1b9a73"
     },
     {
       "slug": "carmen-morales",
@@ -3240,8 +3134,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/38f2061a-a83f-45bc-92a2-817f44d6b377"
     },
     {
       "slug": "mike-venezia",
@@ -3270,8 +3163,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/96eb992c-0f0c-4db5-b146-76349604f4d3"
     },
     {
       "slug": "al-abdelaziz",
@@ -3300,8 +3192,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/d358cf84-b9ae-4bce-bb28-aa083fe082b4"
     },
     {
       "slug": "kenyatta-stewart",
@@ -3330,8 +3221,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/0bf3c2a3-9004-40cb-8d3a-eeeca4b0b967"
     },
     {
       "slug": "clinton-calabrese",
@@ -3356,8 +3246,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/5475b510-25ec-4354-abb5-f1f03c3ea2c3"
     },
     {
       "slug": "gary-schaer",
@@ -3382,8 +3271,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/93a1a3ce-eb52-4e71-b01c-346f41b6bde4"
     },
     {
       "slug": "ellen-park",
@@ -3412,8 +3300,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/e5da04d8-e25f-4ab3-a453-84e692fe89c4"
     },
     {
       "slug": "shama-haider",
@@ -3442,8 +3329,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/49be7512-9343-4189-8769-4497ed129a92"
     },
     {
       "slug": "chris-tully",
@@ -3472,8 +3358,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/934c3022-709b-4768-b2df-635d25579128"
     },
     {
       "slug": "lisa-swain",
@@ -3506,8 +3391,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/28b4c7d2-d1c3-4735-b321-0f348ec27299"
     },
     {
       "slug": "bob-auth",
@@ -3536,8 +3420,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/acff039b-0a83-4184-8b6b-7b051cfcdc77"
     },
     {
       "slug": "john-azzariti",
@@ -3566,8 +3449,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/86641d6d-4538-453d-974f-aec40c42a33d"
     },
     {
       "slug": "al-barlas",
@@ -3600,8 +3482,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/525b3307-b007-4cfa-8166-efb0810fcda7"
     },
     {
       "slug": "chris-dephillips",
@@ -3630,8 +3511,7 @@
           "role": "member"
         }
       ],
-      "sponsorships": null,
-      "cosponsorships": null
+      "openStatesId": "ocd-person/33050562-f29d-4c4f-9e21-022822792a5c"
     }
   ]
 }

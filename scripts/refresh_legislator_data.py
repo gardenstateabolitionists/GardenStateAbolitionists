@@ -1,10 +1,19 @@
-"""Refresh committee seats and sponsorship counts in data/legislators.json.
+"""Refresh committee seats in data/legislators.json.
 
 Run by .github/workflows/refresh-legislator-data.yml on the 1st of each month,
 and manually via workflow_dispatch. Requires OPEN_STATES_API_KEY.
 
     python scripts/refresh_legislator_data.py            # from repo root
-    python scripts/refresh_legislator_data.py --committees-only
+
+SPONSORSHIP COUNTS ARE DELIBERATELY NOT FETCHED. Open States' person-to-bill
+linkage is incomplete for New Jersey: 21% of members returned 0 for the current
+session, and Al Abdelaziz returned 0 across every session despite serving since
+2018 and appearing in the Legislature's own sponsor index. Since a real 0 and a
+missing link are indistinguishable through the API, publishing the number would
+assert "sponsored nothing" about people for whom it is false. If Open States
+fixes its NJ coverage, the query is
+/bills?jurisdiction=<ocd>&session=<n>&sponsor=<pid>&per_page=1, reading
+pagination.total_items, with &sponsor_classification=primary for the split.
 
 Two hard-won details about the Open States v3 API are encoded here. Both cost
 real debugging time, so please do not "simplify" them away:
@@ -25,15 +34,13 @@ Safety properties:
   - Joins on `openStatesId`, never on name. An earlier pass that matched
     members by name needed a hand-maintained alias list and still had two
     look-alike pairs to exclude by hand.
-  - A failed fetch leaves the existing value alone. It never writes null over
-    real data, and it never writes 0 — a 0 renders as "sponsored nothing",
-    which is a claim, whereas a missing value renders as nothing at all.
+  - A failed fetch leaves the existing value alone, so a bad run degrades to
+    stale data rather than to wrong data.
   - Writes the file only if something actually changed, so a no-op run
     produces no commit.
 """
 from __future__ import annotations
 
-import argparse
 import json
 import os
 import sys
@@ -46,7 +53,6 @@ REPO_ROOT = Path(__file__).parent.parent
 DATA_FILE = REPO_ROOT / "data" / "legislators.json"
 
 JURISDICTION = "ocd-jurisdiction/country:us/state:nj/government"
-SESSION = "222"          # 2026-2027 Regular Session — bump each new session
 GAP = 6.5                # see note 2 above
 API = "https://v3.openstates.org"
 
@@ -79,8 +85,22 @@ def get(url: str, key: str, attempts: int = 4) -> dict | None:
     return None
 
 
-def fetch_committees(key: str) -> dict[str, list[dict]]:
-    """person id -> [{name, role}], for every committee in the jurisdiction."""
+# Sanity floor. NJ has ~50 committees and ~360 seats across all 120 members.
+# Anything far below that means we did not really get the whole picture.
+MIN_SEATS = 250
+MIN_PEOPLE = 110
+
+
+def fetch_committees(key: str) -> dict[str, list[dict]] | None:
+    """person id -> [{name, role}], or None if the pull was not complete.
+
+    Returning None on ANY failed page is the important part. A member's seats
+    are spread across pages, so a run that dies partway through does not just
+    miss people — it produces short, entirely plausible-looking lists for the
+    people it did see. That is worse than fetching nothing, and it is not
+    hypothetical: a 429 mid-pagination once cut 366 seats down to 155 and the
+    truncated version was written straight over the good data.
+    """
     seats: dict[str, list[dict]] = {}
     page = 1
     while True:
@@ -88,7 +108,8 @@ def fetch_committees(key: str) -> dict[str, list[dict]]:
                f"&include=memberships&per_page=20&page={page}")
         d = get(url, key)
         if not d or "results" not in d:
-            break
+            log(f"  ABORT: committee page {page} failed — refusing to write a partial pull")
+            return None
         for c in d["results"]:
             for m in c.get("memberships") or []:
                 pid = (m.get("person") or {}).get("id")
@@ -100,26 +121,16 @@ def fetch_committees(key: str) -> dict[str, list[dict]]:
             break
         page += 1
         time.sleep(GAP)
-    log(f"committees: {sum(len(v) for v in seats.values())} seats across {len(seats)} people")
+
+    total = sum(len(v) for v in seats.values())
+    log(f"committees: {total} seats across {len(seats)} people")
+    if total < MIN_SEATS or len(seats) < MIN_PEOPLE:
+        log(f"  ABORT: expected >={MIN_SEATS} seats across >={MIN_PEOPLE} people")
+        return None
     return seats
 
 
-def fetch_sponsorship(pid: str, key: str, primary_only: bool) -> int | None:
-    url = (f"{API}/bills?jurisdiction={urllib.parse.quote(JURISDICTION, safe='')}"
-           f"&session={SESSION}&sponsor={urllib.parse.quote(pid, safe='')}&per_page=1"
-           + ("&sponsor_classification=primary" if primary_only else ""))
-    d = get(url, key)
-    if not d:
-        return None
-    return d.get("pagination", {}).get("total_items")
-
-
 def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--committees-only", action="store_true",
-                    help="skip the slow per-member sponsorship pass")
-    args = ap.parse_args()
-
     key = api_key()
     doc = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     legs = doc["legislators"]
@@ -133,33 +144,18 @@ def main() -> None:
     changed = 0
 
     seats = fetch_committees(key)
-    if seats:
+    if seats is None:
+        log("committees: skipped, existing data left untouched")
+    else:
         for l in legs:
             new = seats.get(l["openStatesId"])
             if new is None:
-                continue          # fetch gap — keep what we have
+                continue          # genuinely holds no seat this session
             new.sort(key=lambda c: (0 if "chair" in c["role"] else 1, c["name"]))
             if new != l.get("committees"):
                 l["committees"] = new
                 changed += 1
         log(f"committee updates: {changed}")
-
-    if not args.committees_only:
-        n = len(legs)
-        log(f"sponsorships: {n} members, ~{n * 2 * GAP / 60:.0f} min at the rate limit")
-        for i, l in enumerate(legs, 1):
-            total = fetch_sponsorship(l["openStatesId"], key, False)
-            time.sleep(GAP)
-            primary = fetch_sponsorship(l["openStatesId"], key, True)
-            time.sleep(GAP)
-            if total is None or primary is None:
-                continue          # never overwrite real numbers with a failure
-            if l.get("sponsorships") != primary or l.get("cosponsorships") != total - primary:
-                l["sponsorships"] = primary
-                l["cosponsorships"] = total - primary
-                changed += 1
-            if i % 20 == 0:
-                log(f"  {i}/{n}")
 
     if changed:
         DATA_FILE.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
