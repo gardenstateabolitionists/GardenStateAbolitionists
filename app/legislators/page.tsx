@@ -67,29 +67,10 @@ export default function LegislatorsPage() {
 
       <section className="bg-white py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid sm:grid-cols-3 gap-4 mb-12">
-            {[
-              { value: senate.length, label: 'State senators' },
-              { value: assembly.length, label: 'Assembly members' },
-              { value: districts.length, label: 'Legislative districts' },
-            ].map((s) => (
-              <div key={s.label} className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <div className="text-4xl font-bold text-green-800 mb-1">{s.value}</div>
-                <div className="text-gray-600 text-sm">{s.label}</div>
-              </div>
-            ))}
-          </div>
-
-          <h2 className="text-2xl font-bold mb-4">Find your district</h2>
-          <p className="text-gray-700 mb-6">
-            New Jersey has {districts.length} legislative districts. Each one elects{' '}
-            <strong>one senator and two assembly members</strong> — so you have three
-            representatives, not one. Search by district number or by name.
-          </p>
-          <DistrictFinder legislators={all} />
-
-          {/* The honest framing of what this vote is and is not. */}
-          <div className="mt-16 border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
+          {/* The honest framing of what this vote is and is not. Deliberately
+              placed ahead of the directory so the caveat is read before the
+              vote labels are scanned, rather than after. */}
+          <div className="mb-12 border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
             <h2 className="text-2xl font-bold mb-3">About the vote shown</h2>
             <p className="text-gray-700 mb-4">
               New Jersey has no bill of abolition, and no equal-protection bill, so there is
@@ -113,7 +94,7 @@ export default function LegislatorsPage() {
               This is a contact directory first. A voting record four years old tells you
               something about the members who were there; it tells you nothing about the
               rest. For them, the useful thing is to ask where they stand — and the phone
-              number to do it is above.
+              number to do it is in the directory below.
             </p>
             <p className="text-sm text-gray-500 mt-4">
               Roll call from the New Jersey Legislature&apos;s own records.{' '}
@@ -127,6 +108,27 @@ export default function LegislatorsPage() {
               </a>
             </p>
           </div>
+
+          <div className="grid sm:grid-cols-3 gap-4 mb-12">
+            {[
+              { value: senate.length, label: 'State senators' },
+              { value: assembly.length, label: 'Assembly members' },
+              { value: districts.length, label: 'Legislative districts' },
+            ].map((s) => (
+              <div key={s.label} className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
+                <div className="text-4xl font-bold text-green-800 mb-1">{s.value}</div>
+                <div className="text-gray-600 text-sm">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold mb-4">Find your district</h2>
+          <p className="text-gray-700 mb-6">
+            New Jersey has {districts.length} legislative districts. Each one elects{' '}
+            <strong>one senator and two assembly members</strong> — so you have three
+            representatives, not one. Search by district number or by name.
+          </p>
+          <DistrictFinder legislators={all} />
         </div>
       </section>
 
