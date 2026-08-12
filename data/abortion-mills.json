@@ -74,6 +74,18 @@
       "sourced": "af+pp"
     },
     {
+      "id": "planned-parenthood-franklin-township-center",
+      "name": "Planned Parenthood — Franklin Township Center",
+      "address": "1323 Route 27, Somerset, NJ 08873",
+      "city": "Somerset",
+      "latitude": 40.567508,
+      "longitude": -74.618956,
+      "phone": "(833) 377-8474",
+      "email": null,
+      "notes": "Coordinates are the town centroid, not the building — the street address did not geocode. Refine before relying on the pin.",
+      "sourced": "af+pp"
+    },
+    {
       "id": "planned-parenthood-hackensack-health-center",
       "name": "Planned Parenthood — Hackensack Health Center",
       "address": "575 Main Street, Hackensack, NJ 07601",
@@ -96,6 +108,18 @@
       "email": null,
       "notes": null,
       "sourced": "af+pp"
+    },
+    {
+      "id": "planned-parenthood-ironbound-health-center",
+      "name": "Planned Parenthood — Ironbound Health Center",
+      "address": "70 Adams St, Suite 13, Newark, NJ 07105",
+      "city": "Newark",
+      "latitude": 40.729951,
+      "longitude": -74.157769,
+      "phone": "(973) 465-7707",
+      "email": null,
+      "notes": null,
+      "sourced": "pp"
     },
     {
       "id": "planned-parenthood-montclair-center",
@@ -129,18 +153,6 @@
       "latitude": 40.730757,
       "longitude": -74.171321,
       "phone": "(973) 622-3900",
-      "email": null,
-      "notes": null,
-      "sourced": "pp"
-    },
-    {
-      "id": "planned-parenthood-ironbound-health-center",
-      "name": "Planned Parenthood — Ironbound Health Center",
-      "address": "70 Adams St, Suite 13, Newark, NJ 07105",
-      "city": "Newark",
-      "latitude": 40.729951,
-      "longitude": -74.157769,
-      "phone": "(973) 465-7707",
       "email": null,
       "notes": null,
       "sourced": "pp"
@@ -194,18 +206,6 @@
       "sourced": "af+pp"
     },
     {
-      "id": "planned-parenthood-franklin-township-center",
-      "name": "Planned Parenthood — Franklin Township Center",
-      "address": "1323 Route 27, Somerset, NJ 08873",
-      "city": "Somerset",
-      "latitude": 40.567508,
-      "longitude": -74.618956,
-      "phone": "(833) 377-8474",
-      "email": null,
-      "notes": "Coordinates are the town centroid, not the building — the street address did not geocode. Refine before relying on the pin.",
-      "sourced": "af+pp"
-    },
-    {
       "id": "planned-parenthood-trenton-health-center",
       "name": "Planned Parenthood — Trenton Health Center",
       "address": "437 East State Street, Trenton, NJ 08608",
@@ -230,18 +230,6 @@
       "sourced": "af+pp"
     },
     {
-      "id": "metropolitan-medical-associates",
-      "name": "Metropolitan Medical Associates",
-      "address": "40 Engle Street, Englewood, NJ 07631",
-      "city": "Englewood",
-      "latitude": 40.894116,
-      "longitude": -73.972496,
-      "phone": "(201) 567-0522",
-      "email": null,
-      "notes": null,
-      "sourced": "af+njaaf"
-    },
-    {
       "id": "cherry-hill-womens-center",
       "name": "Cherry Hill Women's Center",
       "address": "502 Kings Highway North, Cherry Hill, NJ 08034",
@@ -254,6 +242,66 @@
       "sourced": "af+njaaf+own"
     },
     {
+      "id": "garden-state-gynecology-morristown",
+      "name": "Garden State Gynecology — Morristown",
+      "address": "25 Lindsley Dr, Suite 101, Morristown, NJ 07960",
+      "city": "Morristown",
+      "latitude": 40.797038,
+      "longitude": -74.480987,
+      "phone": "(973) 525-1400",
+      "email": null,
+      "notes": "Abortion pill to 11.6 weeks; in-clinic abortion to 17.6 weeks, with twilight or full sedation. Coordinates are the town centroid, not the building.",
+      "sourced": "own"
+    },
+    {
+      "id": "garden-state-gynecology-princeton",
+      "name": "Garden State Gynecology — Princeton",
+      "address": "601 Ewing Street, Suite A-3, Princeton, NJ 08540",
+      "city": "Princeton",
+      "latitude": 40.371069,
+      "longitude": -74.657436,
+      "phone": "(609) 356-1043",
+      "email": null,
+      "notes": "Abortion pill to 11.6 weeks; in-clinic abortion to 17.6 weeks, with twilight or full sedation.",
+      "sourced": "own"
+    },
+    {
+      "id": "jersey-gyn-union",
+      "name": "Jersey GYN — Union",
+      "address": "1323 Stuyvesant Ave, Ste 1, Union, NJ 07083",
+      "city": "Union",
+      "latitude": 40.701894,
+      "longitude": -74.263856,
+      "phone": "(908) 686-2563",
+      "email": null,
+      "notes": "Offers medication, surgical and sedation ('sleep') abortion.",
+      "sourced": "own+client"
+    },
+    {
+      "id": "luminosas-wellness-collective",
+      "name": "Luminosas Wellness Collective",
+      "address": "P.O. Box 2071, Union, NJ 07083",
+      "city": "Union",
+      "latitude": 40.665225,
+      "longitude": -74.304528,
+      "phone": null,
+      "email": null,
+      "notes": "NOT YET OPEN — announced to open in 2026 as an all-trimester abortion facility. The only address published is a P.O. Box, so the pin marks the town, not a building.",
+      "sourced": "own"
+    },
+    {
+      "id": "metropolitan-medical-associates",
+      "name": "Metropolitan Medical Associates",
+      "address": "40 Engle Street, Englewood, NJ 07631",
+      "city": "Englewood",
+      "latitude": 40.894116,
+      "longitude": -73.972496,
+      "phone": "(201) 567-0522",
+      "email": null,
+      "notes": null,
+      "sourced": "af+njaaf"
+    },
+    {
       "id": "pilgrim-medical-center",
       "name": "Pilgrim Medical Center",
       "address": "393 Bloomfield Ave., Montclair, NJ 07042",
@@ -264,6 +312,18 @@
       "email": null,
       "notes": null,
       "sourced": "njaaf+own"
+    },
+    {
+      "id": "womens-choice-medical-center",
+      "name": "Women's Choice Medical Center",
+      "address": "200 Grand Ave, Ste 101, Englewood, NJ 07631",
+      "city": "Englewood",
+      "latitude": 40.886988,
+      "longitude": -73.977365,
+      "phone": "(201) 489-2266",
+      "email": null,
+      "notes": "Coordinates are the town centroid, not the building.",
+      "sourced": "af+njaaf+client"
     }
   ]
 }

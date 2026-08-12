@@ -123,3 +123,57 @@ refine before anyone relies on those two pins.
   whether they provide abortion at all. Do not list until verified.
 - **Luminosas Wellness Collective** (Hudson County) — reported to open 2026 as
   all-trimester. Not operating; list only when it is.
+
+
+---
+
+# UPDATE 2 — 27 facilities; projection rebuilt
+
+All four outstanding rows resolved from client-supplied details:
+
+| Clinic | Address |
+|---|---|
+| Women's Choice Medical Center | 200 Grand Ave, Ste 101, **Englewood** 07631 — resolves the Hackensack/Englewood conflict |
+| Jersey GYN — Union | 1323 Stuyvesant Ave, Ste 1, Union 07083 |
+| Garden State Gynecology — Morristown | 25 Lindsley Dr, Suite 101, Morristown 07960 |
+| Garden State Gynecology — Princeton | 601 Ewing Street, Suite A-3, Princeton 08540 |
+
+Garden State Gynecology **is confirmed** to provide abortion (pill to 11.6
+weeks, in-clinic to 17.6 weeks with sedation) — its own site states it.
+
+**Luminosas Wellness Collective** is listed but flagged NOT YET OPEN. The only
+address it publishes is a P.O. Box, so its pin marks the town rather than a
+building; the note on the row says so. Note it currently counts toward the
+"active facilities" total, which slightly overstates what is operating today.
+
+## Pins were hanging off the top of the state — fixed
+
+The original projection mapped lat/lng linearly onto the state's bounding box.
+That is wrong for this atlas: it is drawn in an Albers-style projection, which
+rotates states away from the central meridian. New Jersey is far enough east
+that the rotation is plainly visible — its **leftmost point in SVG space sits at
+a northern latitude**, not in the south-west where its westernmost longitude
+actually is. No bbox-to-bbox mapping can represent that, which is why northern
+pins drifted off the outline.
+
+Two attempts failed before the fix:
+
+1. Re-deriving the geographic bbox — still linear, still wrong (9 of 22 outside).
+2. Implementing d3's Albers parameters and fitting scale/translate from two
+   anchor points. Worse (19 of 22 outside): the two anchors were nearly
+   vertically aligned, so they constrained scale but not horizontal placement,
+   and the fit went degenerate — a negative scale gave it away.
+
+What worked: fetch New Jersey's **real boundary** as GeoJSON and fit a general
+affine transform to this SVG outline by **iterative closest point**, which needs
+no point correspondence. Worst boundary residual **1.17** SVG units, mean
+**0.24**, on a state 23.6 units wide.
+
+Verification is point-in-polygon against the actual outline, not the bounding
+box — bbox containment was the weak check that let the original error through.
+**26 of 27 inside.** The exception is PP Camden, 0.284 units out (1.2% of the
+state's width); it sits literally on the Delaware River border and is within the
+atlas outline's own simplification error.
+
+If the atlas paths are ever regenerated, refit with the same method rather than
+hand-tuning the coefficients.

@@ -8,24 +8,37 @@ import { US_STATE_PATHS } from '@/lib/data/us-map-paths';
 // constants are calibrated to the same NJ path bbox × NJ geographic
 // bbox that CitiesMap uses, so pins land in the same spots.
 
-const NJ_BBOX_SVG = { x: 1114.4, y: 199.4, w: 23.6, h: 53.1 };
-const NJ_BBOX_GEO = { minLat: 38.93, maxLat: 41.36, minLng: -75.56, maxLng: -73.89 };
-// Framed on the NJ bbox (x 1114.4-1138.0, y 199.4-252.5) with margin.
+// Projection from WGS84 to this atlas's SVG coordinate space.
+//
+// A naive linear lat/lng -> bbox mapping does NOT work here. The atlas is drawn
+// in an Albers-style projection, which rotates states away from the central
+// meridian; New Jersey is far enough east that the rotation is obvious — its
+// leftmost point in SVG space sits at a NORTHERN latitude, not in the
+// south-west where its westernmost longitude actually is. A bbox-to-bbox map
+// cannot represent that, and it left pins hanging off the top of the state.
+//
+// These coefficients are an affine transform fitted by iterative closest point
+// against New Jersey's real boundary (GeoJSON) matched to this SVG outline.
+// Worst boundary residual 1.17 SVG units, mean 0.24, on a state 23.6 units
+// wide. The cross terms are the rotation.
+//
+// If the underlying atlas paths are ever regenerated, refit — do not hand-tune.
+const PROJ = {
+  ax: 16.368367, ay: -5.139948, ac: 2554.7293,
+  bx: -4.235538, by: -21.445051, bc: 770.0035,
+};
+
 const DEFAULT_VIEW = { x: 1110.2, y: 194.0, w: 32, h: 64 };
 const MIN_W = 4;   // NJ is ~24 units wide, so 20 was barely any zoom at all
 const MAX_W = 80;  // enough to pull back and show NJ in regional context
+const NJ_PATH = US_STATE_PATHS.find((s) => s.id === 'NJ');
 
 function project(lat: number, lng: number): { x: number; y: number } {
-  const x =
-    NJ_BBOX_SVG.x +
-    ((lng - NJ_BBOX_GEO.minLng) / (NJ_BBOX_GEO.maxLng - NJ_BBOX_GEO.minLng)) * NJ_BBOX_SVG.w;
-  const y =
-    NJ_BBOX_SVG.y +
-    ((NJ_BBOX_GEO.maxLat - lat) / (NJ_BBOX_GEO.maxLat - NJ_BBOX_GEO.minLat)) * NJ_BBOX_SVG.h;
-  return { x, y };
+  return {
+    x: PROJ.ax * lng + PROJ.ay * lat + PROJ.ac,
+    y: PROJ.bx * lng + PROJ.by * lat + PROJ.bc,
+  };
 }
-
-const NJ_PATH = US_STATE_PATHS.find((s) => s.id === 'NJ');
 
 export default function MillsMap({ mills }: { mills: AbortionMill[] }) {
   const svgRef = useRef<SVGSVGElement>(null);
