@@ -88,13 +88,53 @@
     },
     "Mercer": {
       "headline": "Still one person held in 1860",
-      "paragraph": "The 1860 federal census, taken on the eve of the Civil War, still recorded an enslaved person living in Lawrence Township. Fifty-six years had passed since New Jersey began abolishing slavery.",
-      "source": "Rider University, A Historical Timeline of Slavery in New Jersey",
+      "paragraph": "The 1860 federal census, taken on the eve of the Civil War, still recorded an enslaved person living in Lawrence Township. Fifty-six years had passed since New Jersey began abolishing slavery. Mercer County itself was created in 1838, taking Trenton from Hunterdon County and making the state capital its seat.",
+      "source": "Rider University, A Historical Timeline of Slavery in New Jersey; New Jersey State Archives",
       "sourceUrl": "https://www.rider.edu/history-of-slavery/historical-timeline"
+    },
+    "Hudson": {
+      "headline": "This was Bergen County when it held the most slaves in New Jersey",
+      "paragraph": "Hudson County did not exist until 22 February 1840. Everything in it — Jersey City, Bayonne, Hoboken, Union City, North Bergen, West New York — was part of Bergen County before that, and Bergen held more enslaved people than any other county in the state: 2,825 of them in the 1800 census, 18.6% of everyone living there. The county line moved. The history did not.",
+      "source": "New Jersey State Archives, county formation table; 1800 federal census via the New Jersey Slavery Records project",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Passaic": {
+      "headline": "Carved in 1837 out of the two counties that held the most people",
+      "paragraph": "Passaic County was created on 7 February 1837 from parts of Bergen and Essex. Those were the first and sixth counties in New Jersey by enslaved population in 1800 — Bergen with 2,825 people held, Essex with 1,521. Paterson, Clifton, Passaic and Wayne were inside them.",
+      "source": "New Jersey State Archives, county formation table; 1800 federal census via the New Jersey Slavery Records project",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Ocean": {
+      "headline": "Carved in 1850 out of Monmouth",
+      "paragraph": "Ocean County was set off from Monmouth County on 15 February 1850 — ten years before the last federal census to count enslaved people in New Jersey. From 1737 until 1800 the densest slaveholding in the state was in Bergen, Monmouth and Somerset. Lakewood, Toms River, Brick, Jackson and Manchester all sat in Monmouth through that period.",
+      "source": "New Jersey State Archives, county formation table; New Jersey Slavery Records project",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Union": {
+      "headline": "Set off from Essex in 1857",
+      "paragraph": "Union County is one of New Jersey's youngest, created out of Essex County on 19 March 1857 — four years before the Civil War, and while people were still held as apprentices for life under the 1846 act. Essex had counted 1,521 enslaved residents in 1800. Elizabeth, Union Township and Plainfield were part of that county for the whole of the slaveholding era.",
+      "source": "New Jersey State Archives, county formation table; 1800 federal census via the New Jersey Slavery Records project",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Atlantic": {
+      "headline": "Half of Gloucester, made a county in 1837",
+      "paragraph": "Atlantic County was created on 7 February 1837 out of the southern half of Gloucester County — the South Jersey Quaker country where free and self-freed Black families built settlements at Springtown, Marshalltown, Snow Hill and Timbuctoo, and where the Underground Railroad ran toward the Delaware.",
+      "source": "New Jersey State Archives, county formation table; Salem County Cultural & Heritage Commission",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Gloucester": {
+      "headline": "Quaker country, and one of the original counties",
+      "paragraph": "Gloucester County dates to 1686 and once stretched across the south of the state; Atlantic was cut from it in 1837 and Camden in 1844. This is the country of the South Jersey Quakers, whose argument that no Christian could hold a human being as property was made here generations before the state acted on it — and of the free Black settlements that sheltered people escaping slavery.",
+      "source": "New Jersey State Archives, county formation table; Salem County Cultural & Heritage Commission",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
+    },
+    "Morris": {
+      "headline": "A county older than the argument that ended slavery here",
+      "paragraph": "Morris County was formed in 1739, more than sixty years before New Jersey passed its first abolition act and more than a century before the state stopped holding people. Slavery in New Jersey was not a brief early episode that the counties outgrew; it was the arrangement in place for most of the time these counties have existed.",
+      "source": "New Jersey State Archives, county formation table",
+      "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
     }
   },
 
-  "countiesStillToResearch": [
-    "Hudson", "Passaic", "Ocean", "Union", "Morris", "Atlantic", "Gloucester"
-  ]
+  "countiesStillToResearch": []
 }

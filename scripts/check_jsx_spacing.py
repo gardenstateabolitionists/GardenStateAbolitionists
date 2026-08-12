@@ -35,7 +35,9 @@ def main(slugs):
                 if not v:
                     continue
                 # A dynamic value glued straight onto a following word.
-                for m in re.finditer(re.escape(v) + r"(?=[A-Za-z])", text):
+                # `(?!s\b)` spares legitimate plurals — "four Franklin Townships
+                # in New Jersey" is prose, not a collapsed space.
+                for m in re.finditer(re.escape(v) + r"(?!s\b)(?=[A-Za-z])", text):
                     frag = text[max(0, m.start() - 45): m.end() + 30].replace("\n", " ")
                     bad.append((slug, v, frag))
             # Generic: a word ending then a capital mid-sentence with no space.
