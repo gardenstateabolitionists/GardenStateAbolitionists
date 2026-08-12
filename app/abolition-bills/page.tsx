@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABanner from '@/components/CTABanner';
-import { FRCA, getFrcaVoters, getLegislators } from '@/lib/data/legislators';
+import { FRCA, formatVoteDate, getFrcaVoters, getLegislators } from '@/lib/data/legislators';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
 
@@ -104,11 +104,7 @@ export default function AbolitionBillsPage() {
           <p className="text-gray-700 mb-4">
             The {FRCA.title} establishes a statutory right to abortion in New Jersey. It passed{' '}
             {FRCA.senate} in the Senate and {FRCA.assembly} in the Assembly on{' '}
-            {new Date(FRCA.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            })}
+            {formatVoteDate(FRCA.date)}
             , and was signed the same month.
           </p>
           <p className="text-gray-700 mb-4">

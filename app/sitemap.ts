@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllNewsArticles } from '@/lib/data/news-store';
+import { getLegislators } from '@/lib/data/legislators';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
 
@@ -41,7 +42,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/abolition-bills`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ];
 
-  // NOTE: legislator, city, abortion-facility and abolition-bill URLs are
+  // One URL per legislator — the long-tail surface people actually search
+  // ("my assemblyman <name>"). Generated from the roster so it cannot drift.
+  const legislatorPages: MetadataRoute.Sitemap = getLegislators().map((l) => ({
+    url: `${BASE_URL}/legislators/${l.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
+  // NOTE: city URLs are
   // deliberately absent. Those routes live in `staged-for-nj/` until the
   // New Jersey datasets behind them are researched — see that folder's
   // README. Re-add the entries here in the same change that restores
@@ -61,5 +71,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // If news fetch fails, just skip dynamic pages
   }
 
-  return [...staticPages, ...newsPages];
+  return [...staticPages, ...legislatorPages, ...newsPages];
 }

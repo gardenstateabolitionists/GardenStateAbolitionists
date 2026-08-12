@@ -1,6 +1,11 @@
 /**
  * Typed access to the New Jersey Legislature roster.
  *
+ * Source is the Open States bulk export, NOT the Legislature's printable PDF.
+ * PDF text extraction inserted stray spaces inside surnames and silently
+ * corrupted five names (McKeon, Wimberly, Flynn, Tully, Pintor Marin) — which
+ * also broke their roll-call matching, hiding three real votes.
+ *
  * This deliberately does NOT reproduce the Michigan scorecard model this site
  * was derived from. That page graded members on roll-call votes on named
  * abolition bills; New Jersey has no abolition bill for anyone to have voted
@@ -28,8 +33,20 @@ export interface Legislator {
   chamber: Chamber;
   district: number;
   party: 'R' | 'D' | string;
+  /** Legislative email. Present for all 120 members. */
+  email: string | null;
   districtPhone: string | null;
+  districtAddress: string | null;
+  /** Official portrait. Only about 60% of members have one published. */
+  photo: string | null;
+  officialUrl: string | null;
   frcaVote: FrcaVote;
+  /**
+   * Chamber the member cast that vote in. Differs from `chamber` for the
+   * eleven members who have since moved from the Assembly to the Senate —
+   * matching on the current chamber alone reported them as not serving.
+   */
+  frcaChamber: Chamber | null;
 }
 
 interface FrcaMeta {
@@ -91,4 +108,20 @@ export function voteStyle(v: FrcaVote): { label: string; className: string } {
     default:
       return { label: 'Not serving in 2022', className: 'bg-gray-100 text-gray-600 border-gray-200' };
   }
+}
+
+/**
+ * Format the FRCA vote date.
+ *
+ * `new Date('2022-01-10')` is parsed as UTC midnight; rendering that in any
+ * US timezone rolls it back to the 9th. Formatting in UTC keeps the date the
+ * one the Legislature actually recorded.
+ */
+export function formatVoteDate(iso: string): string {
+  return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
 }

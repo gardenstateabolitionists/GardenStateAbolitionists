@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Link from 'next/link';
 import type { Legislator } from '@/lib/data/legislators';
 import { partyLabel, voteStyle } from '@/lib/data/legislators';
 
@@ -73,10 +74,23 @@ export default function DistrictFinder({ legislators }: { legislators: Legislato
                 const v = voteStyle(m.frcaVote);
                 return (
                   <li key={m.slug} className="px-4 py-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-                    <span className="font-semibold text-gray-900">{m.name}</span>
+                    <Link
+                      href={`/legislators/${m.slug}`}
+                      className="font-semibold text-green-800 underline hover:no-underline"
+                    >
+                      {m.name}
+                    </Link>
                     <span className="text-sm text-gray-600">
                       {m.chamber} &middot; {partyLabel(m.party)}
                     </span>
+                    {m.email && (
+                      <a
+                        href={`mailto:${m.email}`}
+                        className="text-sm text-green-800 underline hover:no-underline break-all"
+                      >
+                        {m.email}
+                      </a>
+                    )}
                     {m.districtPhone && (
                       <a
                         href={`tel:${m.districtPhone.replace(/[^\d]/g, '')}`}

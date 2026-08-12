@@ -7,6 +7,7 @@ import {
   getDistricts,
   getFrcaVoters,
   FRCA,
+  formatVoteDate,
 } from '@/lib/data/legislators';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
@@ -95,11 +96,7 @@ export default function LegislatorsPage() {
               no abolition record to publish. The one substantive abortion vote in recent
               memory is the{' '}
               <strong>{FRCA.title}</strong> ({FRCA.bill}), which passed on{' '}
-              {new Date(FRCA.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}{' '}
+              {formatVoteDate(FRCA.date)}{' '}
               and wrote abortion access into New Jersey statute. Final passage was{' '}
               {FRCA.senate} in the Senate and {FRCA.assembly} in the Assembly.
             </p>
