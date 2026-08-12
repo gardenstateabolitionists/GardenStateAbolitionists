@@ -128,6 +128,36 @@
       "source": "New Jersey State Archives, county formation table; Salem County Cultural & Heritage Commission",
       "sourceUrl": "https://nj.gov/www.nj.gov/state/archives/catctytable.html"
     },
+    "Cape May": {
+      "headline": "Harriet Tubman paid for her rescues with wages earned here",
+      "paragraph": "Between 1849 and 1852 Harriet Tubman spent her summers working as a cook and domestic in the grand hotels of Cape May, and used the wages to fund her returns to Maryland's Eastern Shore. Her friend Franklin Sanborn recorded it plainly: 'She returned to the states, and as usual earned money by working in hotels and families as a cook. From Cape May, in the fall of 1852, she went back once more to Maryland, and brought away nine more fugitives.' Cape May was also a landing point — the first foothold in a free state for people crossing the Delaware Bay by night in small boats.",
+      "source": "Harriet Tubman Museum, Cape May; Franklin Sanborn's account",
+      "sourceUrl": "https://www.harriettubmanmuseum.org/about"
+    },
+    "Salem": {
+      "headline": "Abigail Goodwin was put out of her own meeting for demanding total abolition",
+      "paragraph": "Abigail Goodwin (1793–1867) was a birthright Quaker of Salem whose father and uncle freed the people they held during the Revolution. By 1838 the house she shared with her sister at 47 Market Street was an Underground Railroad station, and she counted William Still and Harriet Tubman among her friends. She was also ejected from the Orthodox Quaker Meeting in Salem — for joining the radical Friends who insisted on the total abolition of slavery rather than its gradual reduction. That is the same argument this organisation makes, and she was thrown out of her church for making it. The Goodwin Sisters House became, in 2008, the first site in New Jersey accepted into the National Park Service's Network to Freedom.",
+      "source": "Salem County Cultural & Heritage Commission, Abigail Goodwin, Quaker Abolitionist",
+      "sourceUrl": "https://culture.salemcountynj.gov/abigail-goodwin-quaker-abolitionist/"
+    },
+    "Hunterdon": {
+      "headline": "One end of a Quaker corridor running north",
+      "paragraph": "Quaker settlements formed a chain of Underground Railroad stations running from Quakertown in this county north to the Drowned Lands of Sussex. New Jersey's position mattered: it lay between Philadelphia and New York, the two most active centres of the railroad, and directly across the water from the slave states of Delaware and Maryland. Hunterdon is also one of the state's older counties, dating to 1714, and it held Trenton until Mercer County was created out of it in 1838.",
+      "source": "New Jersey State Library, A Guide to the Underground Railroad in New Jersey; New Jersey State Archives",
+      "sourceUrl": "https://dspace.njstatelib.org/bitstreams/2d0a25c0-0b00-4c37-a53f-b8888b3e2193/download"
+    },
+    "Sussex": {
+      "headline": "The northern end of the line",
+      "paragraph": "The chain of Quaker Underground Railroad stations that began at Quakertown in Hunterdon ran north to the Drowned Lands of Sussex County — about as far from the Delaware crossings as a person could get and still be in New Jersey. Sussex was formed out of Morris County in 1753 and gave up its western half to create Warren County in 1824. All of it was inside a state that would not finish abolishing slavery until 1865, and whose legislature voted against the Thirteenth Amendment before accepting it.",
+      "source": "New Jersey State Library, A Guide to the Underground Railroad in New Jersey; New Jersey State Archives",
+      "sourceUrl": "https://dspace.njstatelib.org/bitstreams/2d0a25c0-0b00-4c37-a53f-b8888b3e2193/download"
+    },
+    "Warren": {
+      "headline": "A crossing point on the Delaware",
+      "paragraph": "People escaping slavery usually entered New Jersey by crossing the Delaware at night in small boats, guided by a signal of two lanterns — yellow above blue — answered from the shore. Warren County sits on that river opposite Easton, and the Springtown Inn, built around 1825 on the road from Easton through Phillipsburg toward Somerville and Trenton, is held by strong local tradition to have been a safe house; the constant traffic of an inn would have made good cover. It is tradition rather than documented record, and is offered here as such. Warren County itself was cut from Sussex in 1824.",
+      "source": "New Jersey State Library, A Guide to the Underground Railroad in New Jersey",
+      "sourceUrl": "https://dspace.njstatelib.org/bitstreams/2d0a25c0-0b00-4c37-a53f-b8888b3e2193/download"
+    },
     "Morris": {
       "headline": "A county older than the argument that ended slavery here",
       "paragraph": "Morris County was formed in 1739, more than sixty years before New Jersey passed its first abolition act and more than a century before the state stopped holding people. Slavery in New Jersey was not a brief early episode that the counties outgrew; it was the arrangement in place for most of the time these counties have existed.",

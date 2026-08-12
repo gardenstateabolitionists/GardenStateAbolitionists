@@ -1500,6 +1500,335 @@ const CONTENT: Record<string, CityContent> = {
     ],
   },
 
+  glassboro: {
+    historyParagraphs: [
+      'Glassboro is a borough of about 24,000 in Gloucester County, and as far as we can establish it is the only municipality in New Jersey with a publicly abolitionist church in it. That is not a compliment to Glassboro so much as an indictment of the other 563.',
+      'Gloucester County dates to 1686 and once stretched across the south of the state; Atlantic was cut from it in 1837 and Camden in 1844. This is South Jersey Quaker country, where the argument that no Christian could hold a human being as property was pressed generations before New Jersey acted on it. When the state finally moved, it moved by halves: the 1804 act freed no living person, the 1846 act renamed the remaining enslaved as "apprentices" bound to their owners, eighteen people were still held in 1860, and the Legislature voted the Thirteenth Amendment down in March 1865.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Glassboro.',
+    abortionLandscapeOutro:
+      'Glassboro is in Legislative District 3, in the south-west of the state. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Is there an abolitionist church in Glassboro?',
+        a: 'Yes — and it is the only one we know of in New Jersey. It is listed further down this page. We read all 106 New Jersey congregations in the church directory we work from; this is the one that has taken a public abolitionist position.',
+      },
+      {
+        q: 'Who represents Glassboro in the New Jersey Legislature?',
+        a: 'Glassboro is in Legislative District 3, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 abortions provided by clinicians in the state in 2025.',
+      },
+    ],
+  },
+
+  'fair-lawn': {
+    historyParagraphs: [
+      'Fair Lawn is a borough of about 36,000 in Bergen County, on the Passaic River.',
+      'Bergen held more enslaved people than any other county in New Jersey. The 1800 federal census counted 2,825 enslaved residents here — 18.6% of everyone living in the county, nearly one person in five. This was not a southern institution observed from a distance; it was the ordinary arrangement of the Dutch farm households that settled this county. Hudson County was carved out of Bergen in 1840 and Passaic in 1837, both taking that history with them.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Fair Lawn. The nearest are in Paterson and Hackensack.',
+    abortionLandscapeOutro:
+      'Fair Lawn is in Legislative District 38. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Fair Lawn in the New Jersey Legislature?',
+        a: 'Fair Lawn is in Legislative District 38, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Was there slavery in Bergen County?',
+        a: 'More than anywhere else in New Jersey. The 1800 census counted 2,825 enslaved people in Bergen County, 18.6% of its population.',
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  freehold: {
+    historyParagraphs: [
+      'Freehold Township is in the centre of Monmouth County, around the borough of the same name that serves as the county seat.',
+      'Monmouth was one of the three counties — with Bergen and Somerset — where slaveholding in New Jersey was densest from 1737 until 1800. Ocean County was later cut from it. New Jersey was the last northern state to free its slaves, and the manner of it is the argument: the 1804 act freed no living person and bound children born afterwards until 21 or 25; the 1846 act renamed those still held as "apprentices" to their present owners; eighteen people were still held in 1860; and the Legislature voted down the Thirteenth Amendment in March 1865 before ratifying it in January 1866, after it was already law.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Freehold Township. The nearest recorded one is in Shrewsbury.',
+    abortionLandscapeOutro:
+      'Freehold Township is in Legislative District 11, which also contains the Shrewsbury facility. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Freehold Township in the New Jersey Legislature?',
+        a: 'Freehold Township is in Legislative District 11, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is Freehold Township the same as Freehold Borough?',
+        a: 'No. Freehold Borough is a separate, smaller municipality surrounded by Freehold Township. Both are in Monmouth County. This page covers the township.',
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey does not report the figure and publishes no count of its own. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  westfield: {
+    historyParagraphs: [
+      'Westfield is a town of about 32,000 in Union County, west of Elizabeth.',
+      'Union County is one of New Jersey\'s youngest, set off from Essex on 19 March 1857 — four years before the Civil War, and while people in this state were still held as "apprentices for life" under the 1846 act. Essex had counted 1,521 enslaved residents in the 1800 census out of 1,719 Black residents, nearly nine in ten. Westfield was inside that county for the whole of the slaveholding era.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Westfield. The nearest are in Union Township and Elizabeth.',
+    abortionLandscapeOutro:
+      'Westfield is in Legislative District 21. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Westfield in the New Jersey Legislature?',
+        a: 'Westfield is in Legislative District 21, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The nearest in our directory are in Union Township and Elizabeth, both a few miles east.',
+        links: [{ phrase: 'Union Township', href: '/cities/union' }],
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  'mount-olive': {
+    historyParagraphs: [
+      'Mount Olive is a township of about 29,000 in the west of Morris County.',
+      'Morris County was formed in 1739 — more than sixty years before New Jersey passed its first abolition act, and more than a century before the state stopped holding people. That arithmetic is the point: slavery here was not a brief early episode the county outgrew, but the arrangement in place for most of the time the county has existed. The 1804 act freed nobody living, the 1846 act renamed the enslaved as "apprentices" bound to their owners, and eighteen people were still held in New Jersey in 1860.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Mount Olive Township. The nearest recorded ones are the two in Morristown.',
+    abortionLandscapeOutro:
+      'Mount Olive is in Legislative District 24, which it shares with Vernon Township in Sussex County. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Mount Olive in the New Jersey Legislature?',
+        a: 'Mount Olive is in Legislative District 24, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'Two are recorded in Morristown, the Morris County seat. Both are mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. No bill of abolition and no equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  rockaway: {
+    historyParagraphs: [
+      'Rockaway Township covers a large, hilly stretch of northern Morris County, with about 27,000 residents.',
+      'Morris County dates to 1739, which means it existed as a county for sixty-five years before New Jersey passed any abolition act at all, and for well over a century before the last person held in this state was freed. The 1804 Gradual Abolition Act reached only children born afterwards, and only after twenty-one or twenty-five years of service. The 1846 act that was supposed to finish it renamed those still held as "apprentices" bound to their present owners.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Rockaway Township. The nearest recorded ones are in Morristown.',
+    abortionLandscapeOutro:
+      'Rockaway Township is in Legislative District 25. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Rockaway Township in the New Jersey Legislature?',
+        a: 'Rockaway Township is in Legislative District 25, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is Rockaway Township the same as Rockaway Borough?',
+        a: 'No. Rockaway Borough is a separate, much smaller municipality within the township\'s bounds. Both are in Morris County. This page covers the township.',
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  mahwah: {
+    historyParagraphs: [
+      'Mahwah is the northernmost township in Bergen County, on the New York line, with about 26,000 residents.',
+      'Bergen held more enslaved people than any other county in New Jersey — 2,825 in the 1800 census, 18.6% of everyone living here. Slavery in Bergen was the ordinary arrangement of Dutch farm households, and it persisted: New Jersey freed nobody living in 1804, renamed the remaining enslaved as "apprentices" bound to their owners in 1846, still counted eighteen people held in 1860, and voted the Thirteenth Amendment down in March 1865 before ratifying it the following January, after it was already the law.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Mahwah. The nearest recorded ones are in Hackensack and Englewood.',
+    abortionLandscapeOutro:
+      'Mahwah is in Legislative District 39. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who represents Mahwah in the New Jersey Legislature?',
+        a: 'Mahwah is in Legislative District 39, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Was there slavery in Bergen County?',
+        a: 'More than in any other New Jersey county. The 1800 census counted 2,825 enslaved people in Bergen, 18.6% of its population.',
+      },
+      {
+        q: 'What is the abolitionist position on abortion?',
+        a: 'The immediate and total end of abortion, criminalised as homicide, with no exceptions, from fertilisation.',
+        links: [
+          { phrase: 'What we believe', href: '/what-we-believe' },
+          { phrase: 'no exceptions', href: '/what-we-believe/no-exceptions' },
+        ],
+      },
+    ],
+  },
+
+  raritan: {
+    historyParagraphs: [
+      'Raritan Township is the largest municipality in Hunterdon County, wrapped around the borough of Flemington in the centre of the county. Note the name: this is not Raritan Borough, which is in Somerset County, nor Raritan Bay.',
+      'Quaker settlements in this county formed one end of a chain of Underground Railroad stations running from Quakertown, here in Hunterdon, north to the Drowned Lands of Sussex. New Jersey\'s geography made it matter — it lay between Philadelphia and New York, the two busiest centres of the railroad, and directly across the water from Delaware and Maryland. Hunterdon is one of the older counties, dating to 1714, and it held Trenton until Mercer was created out of it in 1838.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory sits inside Raritan Township itself, but one operates in Flemington, the borough it surrounds:',
+    abortionLandscapeOutro:
+      'Raritan Township is in Legislative District 16, which it shares with Hillsborough and South Brunswick. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Which Raritan is this?',
+        a: 'Raritan Township in Hunterdon County, which surrounds Flemington. It is not Raritan Borough, a separate municipality in Somerset County, and not Raritan Bay.',
+      },
+      {
+        q: 'Who represents Raritan Township in the New Jersey Legislature?',
+        a: 'Raritan Township, Hunterdon County is in Legislative District 16, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood centre in Flemington, the borough this township surrounds.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+    ],
+  },
+
+  vernon: {
+    historyParagraphs: [
+      'Vernon is a large township in the north-east corner of Sussex County, on the New York border, with about 23,000 residents.',
+      'The chain of Quaker Underground Railroad stations that began at Quakertown in Hunterdon ran north to the Drowned Lands of Sussex County — about as far from the Delaware crossings as a person could travel and still be in New Jersey. Sussex was formed out of Morris in 1753 and gave up its western half to create Warren County in 1824. All of it lay inside a state that would not finish abolishing slavery until 1865, and whose Legislature voted against the Thirteenth Amendment before accepting it.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Vernon Township. The nearest recorded one is the Planned Parenthood centre in Newton, the Sussex County seat.',
+    abortionLandscapeOutro:
+      'Vernon is in Legislative District 24, which it shares with Mount Olive in Morris County. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Who represents Vernon in the New Jersey Legislature?',
+        a: 'Vernon is in Legislative District 24, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Where is the nearest abortion facility?',
+        a: 'The Planned Parenthood centre in Newton, the Sussex County seat. It is mapped on our abortion facilities page.',
+        links: [{ phrase: 'abortion facilities page', href: '/abortion-mills' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
+  lower: {
+    historyParagraphs: [
+      'Lower Township is the largest municipality in Cape May County, at the very southern tip of New Jersey where the Delaware Bay meets the Atlantic.',
+      'Between 1849 and 1852 Harriet Tubman spent her summers in Cape May working as a cook and domestic in the hotels, and used the wages to pay for her returns to Maryland. Her friend Franklin Sanborn recorded it: "She returned to the states, and as usual earned money by working in hotels and families as a cook. From Cape May, in the fall of 1852, she went back once more to Maryland, and brought away nine more fugitives." This county was also a landing point — the first foothold in a free state for people who crossed the Delaware Bay at night in small boats, guided by a signal of two lanterns answered from the shore.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Lower Township. The nearest recorded one is in Absecon, in Atlantic County.',
+    abortionLandscapeOutro:
+      'Lower Township is in Legislative District 1, which it shares with Vineland. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'What is Harriet Tubman\'s connection to Cape May?',
+        a: 'She worked summers in Cape May hotels between 1849 and 1852 as a cook and domestic, and used the money to fund her rescue missions back to Maryland. From Cape May in the autumn of 1852 she returned to Maryland and brought away nine more people.',
+      },
+      {
+        q: 'Who represents Lower Township in the New Jersey Legislature?',
+        a: 'Lower Township is in Legislative District 1, which it shares with Vineland. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'How many abortions happen in New Jersey?',
+        a: 'New Jersey publishes no count at any geography and does not report to the CDC. Guttmacher estimates about 61,200 in 2025.',
+      },
+    ],
+  },
+
+  phillipsburg: {
+    historyParagraphs: [
+      'Phillipsburg is a town of about 15,000 on the Delaware in Warren County, facing Easton, Pennsylvania across the river.',
+      'People escaping slavery usually entered New Jersey by crossing the Delaware at night in a small boat, guided by a signal of two lanterns — yellow above blue — answered from the shore when it was safe to land. This town sits on that crossing. The Springtown Inn, built around 1825 on the road running from Easton through Phillipsburg toward Somerville and Trenton, is held by strong local tradition to have served as a safe house; the constant traffic of an inn would have made good cover. That is tradition rather than documented record, and we offer it as such.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Phillipsburg. One does operate elsewhere in Warren County — the Planned Parenthood centre in Washington Borough, which is often mistaken for Washington Township in Gloucester County, sixty miles south.',
+    abortionLandscapeOutro:
+      'Phillipsburg is in Legislative District 23, the same district as the Washington Borough facility. Its three legislators are below.',
+    faqs: [
+      {
+        q: 'Where is the "Washington, NJ" abortion facility?',
+        a: 'In Washington Borough, Warren County — this county, in Legislative District 23. It is frequently confused with Washington Township in Gloucester County, which is a different municipality about sixty miles to the south.',
+        links: [{ phrase: 'Washington Township', href: '/cities/washington' }],
+      },
+      {
+        q: 'Who represents Phillipsburg in the New Jersey Legislature?',
+        a: 'Phillipsburg is in Legislative District 23, which elects one senator and two assembly members. All three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Was Phillipsburg on the Underground Railroad?',
+        a: 'It sits on a Delaware crossing that people escaping slavery used, and the nearby Springtown Inn is held by strong local tradition to have been a safe house. That tradition is not the same as documented record, and we do not present it as one.',
+      },
+    ],
+  },
+
+  pennsville: {
+    historyParagraphs: [
+      'Pennsville is the largest municipality in Salem County, on the Delaware in the far south-west of the state.',
+      'Salem is where Abigail Goodwin lived. A birthright Quaker whose father and uncle freed the people they held during the Revolution, she made the house she shared with her sister at 47 Market Street an Underground Railroad station by 1838, and counted William Still and Harriet Tubman among her friends. She was also put out of the Orthodox Quaker Meeting in Salem — for joining the radical Friends who demanded the total abolition of slavery rather than its gradual reduction. She was expelled from her own church for refusing to be an incrementalist. In 2008 the Goodwin Sisters House became the first site in New Jersey accepted into the National Park Service\'s Network to Freedom.',
+    ],
+    abortionLandscapeIntro:
+      'No abortion facility in our directory operates inside Pennsville Township, or anywhere in Salem County.',
+    abortionLandscapeOutro:
+      'Pennsville is in Legislative District 3, which it shares with Glassboro. Its three legislators and their recorded FRCA votes are below.',
+    faqs: [
+      {
+        q: 'Who was Abigail Goodwin?',
+        a: 'A Quaker abolitionist of Salem (1793–1867) whose home at 47 Market Street was an Underground Railroad station from 1838, and who was ejected from her Orthodox Quaker Meeting for joining the radical Friends demanding the total abolition of slavery rather than its gradual reduction. The Goodwin Sisters House was the first New Jersey site accepted into the National Park Service Network to Freedom, in 2008.',
+      },
+      {
+        q: 'Who represents Pennsville in the New Jersey Legislature?',
+        a: 'Pennsville is in Legislative District 3, which it shares with Glassboro. The district elects one senator and two assembly members; all three are listed on this page.',
+        links: [{ phrase: 'listed on this page', href: '/legislators' }],
+      },
+      {
+        q: 'Is there a bill to abolish abortion in New Jersey?',
+        a: 'No. Neither a bill of abolition nor an equal-protection bill has been introduced in the New Jersey Legislature.',
+        links: [{ phrase: 'bill of abolition', href: '/abolition-bills' }],
+      },
+    ],
+  },
+
   elizabeth: {
     historyParagraphs: [
       'Elizabeth is the county seat of Union County and the fifth largest city in New Jersey — a port city, and a place of arrival for as long as there has been a state here.',

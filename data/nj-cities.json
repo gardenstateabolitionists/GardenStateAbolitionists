@@ -778,6 +778,186 @@
         16
       ],
       "facilityIds": []
+    },
+    {
+      "slug": "fair-lawn",
+      "name": "Fair Lawn",
+      "kind": "borough",
+      "formalName": "Fair Lawn Borough",
+      "county": "Bergen",
+      "population": 36489,
+      "populationLabel": "~36,489 residents",
+      "latitude": 40.9359,
+      "longitude": -74.1177,
+      "districts": [
+        38
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "freehold",
+      "name": "Freehold",
+      "kind": "township",
+      "formalName": "Freehold Township",
+      "county": "Monmouth",
+      "population": 35800,
+      "populationLabel": "~35,800 residents",
+      "latitude": 40.2595,
+      "longitude": -74.2756,
+      "districts": [
+        11
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "westfield",
+      "name": "Westfield",
+      "kind": "town",
+      "formalName": "Westfield",
+      "county": "Union",
+      "population": 32050,
+      "populationLabel": "~32,050 residents",
+      "latitude": 40.6515,
+      "longitude": -74.3432,
+      "districts": [
+        21
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "mount-olive",
+      "name": "Mount Olive",
+      "kind": "township",
+      "formalName": "Mount Olive Township",
+      "county": "Morris",
+      "population": 29499,
+      "populationLabel": "~29,499 residents",
+      "latitude": 40.8662,
+      "longitude": -74.7426,
+      "districts": [
+        24
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "rockaway",
+      "name": "Rockaway",
+      "kind": "township",
+      "formalName": "Rockaway Township",
+      "county": "Morris",
+      "population": 26893,
+      "populationLabel": "~26,893 residents",
+      "latitude": 40.8969,
+      "longitude": -74.5155,
+      "districts": [
+        25
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "mahwah",
+      "name": "Mahwah",
+      "kind": "township",
+      "formalName": "Mahwah Township",
+      "county": "Bergen",
+      "population": 25806,
+      "populationLabel": "~25,806 residents",
+      "latitude": 41.0816,
+      "longitude": -74.1856,
+      "districts": [
+        39
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "raritan",
+      "name": "Raritan",
+      "kind": "township",
+      "formalName": "Raritan Township",
+      "county": "Hunterdon",
+      "population": 25288,
+      "populationLabel": "~25,288 residents",
+      "latitude": 40.5104,
+      "longitude": -74.8994,
+      "districts": [
+        16
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "glassboro",
+      "name": "Glassboro",
+      "kind": "borough",
+      "formalName": "Glassboro Borough",
+      "county": "Gloucester",
+      "population": 24322,
+      "populationLabel": "~24,322 residents",
+      "latitude": 39.7014,
+      "longitude": -75.1113,
+      "districts": [
+        3
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "vernon",
+      "name": "Vernon",
+      "kind": "township",
+      "formalName": "Vernon Township",
+      "county": "Sussex",
+      "population": 22879,
+      "populationLabel": "~22,879 residents",
+      "latitude": 41.1975,
+      "longitude": -74.4858,
+      "districts": [
+        24
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "lower",
+      "name": "Lower",
+      "kind": "township",
+      "formalName": "Lower Township",
+      "county": "Cape May",
+      "population": 21705,
+      "populationLabel": "~21,705 residents",
+      "latitude": 38.9819,
+      "longitude": -74.9086,
+      "districts": [
+        1
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "phillipsburg",
+      "name": "Phillipsburg",
+      "kind": "town",
+      "formalName": "Phillipsburg",
+      "county": "Warren",
+      "population": 15393,
+      "populationLabel": "~15,393 residents",
+      "latitude": 40.6893,
+      "longitude": -75.1821,
+      "districts": [
+        23
+      ],
+      "facilityIds": []
+    },
+    {
+      "slug": "pennsville",
+      "name": "Pennsville",
+      "kind": "township",
+      "formalName": "Pennsville Township",
+      "county": "Salem",
+      "population": 12855,
+      "populationLabel": "~12,855 residents",
+      "latitude": 39.6264,
+      "longitude": -75.5087,
+      "districts": [
+        3
+      ],
+      "facilityIds": []
     }
   ]
 }
