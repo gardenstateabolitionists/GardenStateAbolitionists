@@ -20,12 +20,19 @@ export type Chamber = 'Senate' | 'Assembly';
 /**
  * A member's vote on the final passage of S49.
  *
- * `null` means the member WAS NOT SERVING for that vote — 61 of the 120 current
+ * `null` means the member WAS NOT SERVING for that vote — 48 of the 120 current
  * members were elected afterwards. It is not an abstention, and rendering it as
  * one would misrepresent them. `'Abstain'` and `'Not Voting'` are real, recorded
  * positions and are distinct from `null`.
  */
 export type FrcaVote = 'Yes' | 'No' | 'Not Voting' | 'Abstain' | null;
+
+/** A seat on a standing or select committee, from Open States. */
+export interface CommitteeAssignment {
+  name: string;
+  /** 'member', 'chair', 'vice-chair' — lowercased at build time. */
+  role: string;
+}
 
 export interface Legislator {
   slug: string;
@@ -47,6 +54,15 @@ export interface Legislator {
    * matching on the current chamber alone reported them as not serving.
    */
   frcaChamber: Chamber | null;
+  /** Committee seats this session. Every member holds at least one. */
+  committees: CommitteeAssignment[];
+  /**
+   * Bills sponsored in the CURRENT session (222, 2026-2027) only — not a
+   * career total. `null` means the count could not be fetched, which must
+   * render as nothing at all; a 0 would assert they sponsored nothing.
+   */
+  sponsorships: number | null;
+  cosponsorships: number | null;
 }
 
 interface FrcaMeta {

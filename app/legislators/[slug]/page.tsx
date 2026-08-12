@@ -189,6 +189,55 @@ export default async function LegislatorPage({
             </Link>
           </p>
 
+          {l.committees.length > 0 && (
+            <>
+              <h2 className="text-2xl font-bold mb-4">Committee assignments</h2>
+              <ul className="mb-4 divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                {l.committees.map((c) => (
+                  <li key={c.name} className="px-4 py-3 flex flex-wrap items-center gap-x-3">
+                    <span className="font-semibold text-gray-900">{c.name}</span>
+                    {c.role !== 'member' && (
+                      <span className="text-sm px-2 py-0.5 rounded border bg-gray-100 text-gray-700 border-gray-200 capitalize">
+                        {c.role}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-gray-500 mb-10">
+                Committees are where most bills live or die, so a chair has more say over
+                whether something is ever heard than a floor vote suggests. Source: Open
+                States.
+              </p>
+            </>
+          )}
+
+          {/* Hidden entirely when the counts are unknown — a 0 here would read as
+              "sponsored nothing", which is a claim we would not be making. */}
+          {l.sponsorships !== null && (
+            <>
+              <h2 className="text-2xl font-bold mb-4">Legislative activity</h2>
+              <div className="mb-4 grid sm:grid-cols-2 gap-4">
+                <div className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
+                  <div className="text-4xl font-bold text-green-800 mb-1">{l.sponsorships}</div>
+                  <div className="text-gray-600 text-sm">Bills sponsored</div>
+                </div>
+                {l.cosponsorships !== null && (
+                  <div className="text-center bg-gray-50 border border-gray-200 rounded-lg p-6">
+                    <div className="text-4xl font-bold text-green-800 mb-1">{l.cosponsorships}</div>
+                    <div className="text-gray-600 text-sm">Bills cosponsored</div>
+                  </div>
+                )}
+              </div>
+              <p className="text-sm text-gray-500 mb-10">
+                Current session only (2026&ndash;2027), all subjects &mdash; not a career
+                total, and not a measure of whether any of it was good. It is a rough gauge
+                of how active a member is, which is worth knowing before you write. Source:
+                Open States.
+              </p>
+            </>
+          )}
+
           <h2 className="text-2xl font-bold mb-4">Write to {l.name}</h2>
           <ContactLetter legislator={l} />
 

@@ -1,5 +1,5 @@
 {
-  "note": "Current New Jersey Legislature — 40 Senate + 80 Assembly across 40 districts, each district electing one senator and two assembly members (verified).\n\nRoster, emails, district offices, photos and official links come from the Open States bulk export (data.openstates.org/people/current/nj.csv). Open States is used rather than the Legislature's printable roster PDF because PDF text extraction inserted stray spaces inside surnames and silently corrupted five names (McKeon, Wimberly, Flynn, Tully, Pintor Marin).\n\nfrcaVote is the member's vote on FINAL PASSAGE of S49, the Freedom of Reproductive Choice Act, 10 January 2022, from the Legislature's own API (Senate VoteKey 2118, Assembly VoteKey 1571), both reconciled against the published tallies before use.\n\nnull means the member was NOT SERVING for that vote. It is not an abstention and must never render as one.",
+  "note": "Current New Jersey Legislature — 40 Senate + 80 Assembly across 40 districts, each district electing one senator and two assembly members (verified).\n\nRoster, emails, district offices, photos and official links come from the Open States bulk export (data.openstates.org/people/current/nj.csv). Open States is used rather than the Legislature's printable roster PDF because PDF text extraction inserted stray spaces inside surnames and silently corrupted five names (McKeon, Wimberly, Flynn, Tully, Pintor Marin).\n\nfrcaVote is the member's vote on FINAL PASSAGE of S49, the Freedom of Reproductive Choice Act, 10 January 2022, from the Legislature's own API (Senate VoteKey 2118, Assembly VoteKey 1571), both reconciled against the published tallies before use.\n\nnull means the member was NOT SERVING for that vote. It is not an abstention and must never render as one.\n\nCommittee seats and current-session (222, 2026-2027) sponsorship counts come from the Open States v3 API, joined on Open States person ID rather than name. Sponsorship counts are for THIS session only, not career totals.",
   "frcaVote": {
     "bill": "S49 / A6260",
     "title": "Freedom of Reproductive Choice Act",
@@ -21,7 +21,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/testa_michael_2019.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/424/senator-testa",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "alternate"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "vince-polistina",
@@ -35,7 +59,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/polistina_vincent_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/432/senator-polistina",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Labor",
+          "role": "member"
+        },
+        {
+          "name": "State Government, Wagering, Tourism and Historic Preservation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "john-burzichelli",
@@ -49,7 +85,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/burzichelli_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/458/senator-burzichelli",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        },
+        {
+          "name": "Transportation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "paul-moriarty",
@@ -63,7 +119,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/moriarty_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/250/assemblyman-moriarty",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Law and Public Safety",
+          "role": "vice chair"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "nilsa-cruz-perez",
@@ -77,7 +149,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/cruzperez_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/371/senator-cruz-perez",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Economic Growth",
+          "role": "chair"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "vice chair"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jim-beach",
@@ -91,7 +183,15 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/beach_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/310/senator-beach",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "State Government, Wagering, Tourism and Historic Preservation",
+          "role": "chair"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "troy-singleton",
@@ -105,7 +205,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/singleton_troy_2019.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/395/senator-singleton",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Community and Urban Affairs",
+          "role": "chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "vice chair"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "latham-tiver",
@@ -119,7 +231,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/464/senator-tiver",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Environment and Energy",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Transportation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "carmen-amato",
@@ -133,7 +261,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/465/senator-amato",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Community and Urban Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jim-holzapfel",
@@ -147,7 +291,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/holzapfel_james_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/334/senator-holzapfel",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "State Government, Wagering, Tourism and Historic Preservation",
+          "role": "member"
+        },
+        {
+          "name": "Transportation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "vin-gopal",
@@ -161,7 +317,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/gopal_vin_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/405/senator-gopal",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "alternate"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "owen-henry",
@@ -175,7 +347,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/470/senator-henry",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        },
+        {
+          "name": "Law and Public Safety",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "declan-o-scanlon",
@@ -189,7 +377,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/oscanlon_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/394/senator-o'scanlon",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Law and Public Safety",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "linda-greenstein",
@@ -203,7 +407,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/greenstein_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/329/senator-greenstein",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "vice chair"
+        },
+        {
+          "name": "Environment and Energy",
+          "role": "vice chair"
+        },
+        {
+          "name": "Law and Public Safety",
+          "role": "chair"
+        },
+        {
+          "name": "Select",
+          "role": "vice chair"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "shirley-turner",
@@ -217,7 +445,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/turner_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/47/senator-turner",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Economic Growth",
+          "role": "vice chair"
+        },
+        {
+          "name": "Education",
+          "role": "vice chair"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "State Government, Wagering, Tourism and Historic Preservation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "andrew-zwicker",
@@ -231,7 +483,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/zwicker_andrew_2019.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/436/senator-zwicker",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Higher Education",
+          "role": "vice chair"
+        },
+        {
+          "name": "Labor",
+          "role": "vice chair"
+        },
+        {
+          "name": "Legislative Oversight",
+          "role": "chair"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "bob-smith",
@@ -245,7 +521,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/smith_bob_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/53/senator-smith",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Environment and Energy",
+          "role": "chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "patrick-diegnan",
@@ -259,7 +555,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/diegnan_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/387/senator-diegnan",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Transportation",
+          "role": "chair"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "joe-vitale",
@@ -273,7 +581,15 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/vitale_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/175/senator-vitale",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "chair"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "joe-cryan",
@@ -287,7 +603,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/cryan_joseph_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/406/senator-cryan",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Commerce",
+          "role": "vice chair"
+        },
+        {
+          "name": "Higher Education",
+          "role": "chair"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jon-bramnick",
@@ -301,7 +633,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/433/senator-bramnick",
       "frcaVote": "Abstain",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Apportionment Commission",
+          "role": "member"
+        },
+        {
+          "name": "Commerce",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "nick-scutari",
@@ -315,7 +663,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/scutari_nicholas_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/237/senator-scutari",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "State Leasing and Space Utilization",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "doug-steinhardt",
@@ -329,7 +689,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/456/senator-steinhardt",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Redistricting Commission",
+          "role": "delegation chair"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "parker-space",
@@ -343,7 +723,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/space_parker_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/358/assemblyman-space",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Environment and Energy",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "tony-bucco",
@@ -357,7 +749,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/bucco_a_m_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/419/senator-bucco",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "joe-pennacchio",
@@ -371,7 +783,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/pennacchio_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/305/senator-pennacchio",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Economic Growth",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "john-mckeon",
@@ -385,7 +817,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/mckeon_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/207/assemblyman-mckeon",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "State Government, Wagering, Tourism and Historic Preservation",
+          "role": "vice chair"
+        },
+        {
+          "name": "Environment and Energy",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "renee-burgess",
@@ -399,7 +843,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/455/senator-burgess",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "teresa-ruiz",
@@ -413,7 +877,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/ruiz_teresa_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/287/senator-ruiz",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Legislative Oversight",
+          "role": "vice chair"
+        },
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Select",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "bob-singer",
@@ -427,7 +915,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/singer_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/93/senator-singer",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Commerce",
+          "role": "member"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "angela-mcknight",
@@ -441,7 +953,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/mcknight_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/383/assemblywoman-mcknight",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        },
+        {
+          "name": "Law and Public Safety",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "raj-mukherji",
@@ -455,7 +987,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/mukherji_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/364/assemblyman-mukherji",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "chair"
+        },
+        {
+          "name": "Transportation",
+          "role": "vice chair"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "brian-stack",
@@ -469,7 +1017,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/stack_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/306/senator-stack",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Community and Urban Affairs",
+          "role": "vice chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "chair"
+        },
+        {
+          "name": "Law Revision Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "britnee-timberlake",
@@ -483,7 +1047,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/timberlake_britnee_2018.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/407/assemblywoman-timberlake",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Economic Growth",
+          "role": "member"
+        },
+        {
+          "name": "Transportation",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "benjie-wimberly",
@@ -497,7 +1073,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/wimberly_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/347/assemblyman-wimberly",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Community and Urban Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "paul-sarlo",
@@ -511,7 +1099,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/sarlo_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/223/senator-sarlo",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Budget and Appropriations",
+          "role": "chair"
+        },
+        {
+          "name": "Select",
+          "role": "chair"
+        },
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "gordon-johnson",
@@ -525,7 +1133,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/johnson_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/434/senator-johnson",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Labor",
+          "role": "chair"
+        },
+        {
+          "name": "Budget and Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Commerce",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "joe-lagana",
@@ -539,7 +1163,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/lagana_joseph_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/411/senator-lagana",
       "frcaVote": "Yes",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Commerce",
+          "role": "chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "holly-schepisi",
@@ -553,7 +1189,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/schepisi_holly_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/430/senator-schepisi",
       "frcaVote": "Not Voting",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Community and Urban Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Health, Human Services and Senior Citizens",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "kristin-corrado",
@@ -567,7 +1215,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/corrado_kristin_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/392/senator-corrado",
       "frcaVote": "No",
-      "frcaChamber": "Senate"
+      "frcaChamber": "Senate",
+      "committees": [
+        {
+          "name": "Economic Growth",
+          "role": "member"
+        },
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "antwan-mcclellan",
@@ -581,7 +1249,31 @@
       "photo": "http://www.njleg.state.nj.us/members/memberphotos/mcclellan_antwan_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/425/assemblyman-mcclellan",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "member"
+        },
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "erik-simonsen",
@@ -595,7 +1287,27 @@
       "photo": "http://www.njleg.state.nj.us/members/memberphotos/simonsen_erik_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/426/assemblyman-simonsen",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "State and Local Government",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "don-guardian",
@@ -609,7 +1321,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/437/assemblyman-guardian",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        },
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "member"
+        },
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "maureen-rowan",
@@ -623,7 +1355,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/501/assemblywoman-rowan",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "member"
+        },
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "dave-bailey",
@@ -637,7 +1385,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/459/assemblyman-bailey",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "vice chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "heather-simmons",
@@ -651,7 +1415,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/460/assemblywoman-simmons",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "vice chair"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        },
+        {
+          "name": "Health Infrastructure",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "cody-miller",
@@ -665,7 +1445,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/463/assemblyman-miller",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "vice chair"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "State and Local Government",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "dan-hutchison",
@@ -679,7 +1475,19 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/462/assemblyman-hutchison",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Regulated Professions",
+          "role": "chair"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "bill-moen",
@@ -693,7 +1501,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/420/assemblyman-moen",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "chair"
+        },
+        {
+          "name": "Housing",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "bill-spearman",
@@ -707,7 +1531,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/spearman_william_2018a.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/415/assemblyman-spearman",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Commerce and Economic Development",
+          "role": "chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "lou-greenwald",
@@ -721,7 +1561,15 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/greenwald_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/155/assemblyman-greenwald",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "melinda-kane",
@@ -735,7 +1583,23 @@
       "photo": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/168239.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/497/assemblywoman-kane",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "vice chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Consumer Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "balvir-singh",
@@ -749,7 +1613,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/500/assemblyman-singh",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "vice chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "carol-murphy",
@@ -763,7 +1643,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/murphy_carol_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/397/assemblywoman-murphy",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Children, Families and Food Security",
+          "role": "vice chair"
+        },
+        {
+          "name": "Health",
+          "role": "chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "andrea-katz",
@@ -777,7 +1677,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/496/assemblywoman-katz",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "chair"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "anthony-angelozzi",
@@ -791,7 +1707,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/502/assemblyman-angelozzi",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "brian-rumpf",
@@ -805,7 +1737,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/rumpf_brian_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/228/assemblyman-rumpf",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "greg-myhre",
@@ -819,7 +1771,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/466/assemblyman-myhre",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Children, Families and Food Security",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "greg-mcguckin",
@@ -833,7 +1801,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/mcguckin_gregory_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/341/assemblyman-mcguckin",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "paul-kanitra",
@@ -847,7 +1827,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/467/assemblyman-kanitra",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Children, Families and Food Security",
+          "role": "member"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "luanne-peterpaul",
@@ -861,7 +1857,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/469/assemblywoman-peterpaul",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": "vice chair"
+        },
+        {
+          "name": "Aging and Human Services",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "margie-donlon",
@@ -875,7 +1887,19 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/468/assemblywoman-donlon",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Health",
+          "role": "vice chair"
+        },
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "alex-sauickie",
@@ -889,7 +1913,27 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/454/assemblyman-sauickie",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "member"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        },
+        {
+          "name": "State and Local Government",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "rob-clifton",
@@ -903,7 +1947,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/clifton_robert_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/342/assemblyman-clifton",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        },
+        {
+          "name": "Housing",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "gerry-scharfenberger",
@@ -917,7 +1977,27 @@
       "photo": "http://www.njleg.state.nj.us/members/memberphotos/scharfenberger_gerard_2020a.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/422/assemblyman-scharfenberger",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Environment and Solid Waste",
+          "role": "member"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "Regulated Professions",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "vicky-flynn",
@@ -931,7 +2011,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/446/assemblywoman-flynn",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        },
+        {
+          "name": "Housing",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "tennille-mccoy",
@@ -945,7 +2045,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/471/assemblywoman-mccoy",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Health Infrastructure",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "wayne-deangelo",
@@ -959,7 +2075,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/deangelo_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/279/assemblyman-deangelo",
       "frcaVote": "Abstain",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "chair"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "anthony-verrelli",
@@ -973,7 +2101,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/verrelli_anthony_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/416/assemblyman-verrelli",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Labor",
+          "role": "chair"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "vice chair"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "verlina-reynolds-jackson",
@@ -987,7 +2131,31 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/reynolds-jackson_verlina_2018.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/409/assemblywoman-reynolds-jackson",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "vice chair"
+        },
+        {
+          "name": "Education",
+          "role": "chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "mitchelle-drulis",
@@ -1001,7 +2169,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/472/assemblywoman-drulis",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "State and Local Government",
+          "role": "vice chair"
+        },
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "roy-freiman",
@@ -1015,7 +2199,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/freiman_roy_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/400/assemblyman-freiman",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "joe-danielsen",
@@ -1029,7 +2225,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/danielsen_joe_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/370/assemblyman-danielsen",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "vice chair"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "chair"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "kevin-egan",
@@ -1043,7 +2255,19 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/495/assemblyman-egan",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Labor",
+          "role": "vice chair"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "vice chair"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "robert-karabinchak",
@@ -1057,7 +2281,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/karabinchak_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/388/assemblyman-karabinchak",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "State and Local Government",
+          "role": "chair"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "vice chair"
+        },
+        {
+          "name": "State House Commission",
+          "role": "alternate"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "sterley-stanley",
@@ -1071,7 +2315,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/stanley_sterley_2021.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/429/assemblyman-stanley",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Health Infrastructure",
+          "role": "chair"
+        },
+        {
+          "name": "Housing",
+          "role": "vice chair"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "craig-coughlin",
@@ -1085,7 +2345,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/coughlin_craig_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/319/assemblyman-coughlin",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "State Leasing and Space Utilization",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "yvonne-lopez",
@@ -1099,7 +2371,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/lopez_yvonne_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/401/assemblywoman-lopez",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Housing",
+          "role": "chair"
+        },
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "annette-quijano",
@@ -1113,7 +2397,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/quijano_annette_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/309/assemblywoman-quijano",
       "frcaVote": "Not Voting",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Consumer Affairs",
+          "role": "vice chair"
+        },
+        {
+          "name": "Housing",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "ed-rodriguez",
@@ -1127,7 +2427,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/503/assemblyman-rodriguez",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        },
+        {
+          "name": "Public Safety and Preparedness",
+          "role": "member"
+        },
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "andrew-macurdy",
@@ -1141,7 +2457,19 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/505/assemblyman-macurdy",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "vinnie-kearney",
@@ -1155,7 +2483,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/504/assemblyman-kearney",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Commerce and Economic Development",
+          "role": "member"
+        },
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "State and Local Government",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jim-kennedy",
@@ -1169,7 +2513,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/kennedy_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/381/assemblyman-kennedy",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Environment and Solid Waste",
+          "role": "chair"
+        },
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "linda-carter",
@@ -1183,7 +2543,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/carter_linda_2018a.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/414/assemblywoman-carter",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Higher Education",
+          "role": "vice chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "erik-peterson",
@@ -1197,7 +2577,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/peterson_erik_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/320/assemblyman-peterson",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Commerce and Economic Development",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "john-dimaio",
@@ -1211,7 +2603,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/dimaio_john_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/313/assemblyman-dimaio",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "dawn-fantasia",
@@ -1225,7 +2629,31 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/474/assemblywoman-fantasia",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Aging and Human Services",
+          "role": "member"
+        },
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "member"
+        },
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "mike-inganamort",
@@ -1239,7 +2667,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/475/assemblyman-inganamort",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Environment and Solid Waste",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "aura-dunn",
@@ -1253,7 +2697,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/dunn_aura_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/428/assemblywoman-dunn",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Higher Education",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "marisa-sweeney",
@@ -1267,7 +2723,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/506/assemblywoman-sweeney",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Agriculture and Natural Resources",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "brian-bergen",
@@ -1281,7 +2753,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/bergen_brian_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/423/assemblyman-bergen",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Commerce and Economic Development",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jay-webber",
@@ -1295,7 +2779,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/webber_jay_2019.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/283/assemblyman-webber",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Consumer Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "alixon-collazos-gill",
@@ -1309,7 +2805,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/480/assemblywoman-collazos-gill",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Environment and Solid Waste",
+          "role": "vice chair"
+        },
+        {
+          "name": "Children, Families and Food Security",
+          "role": "member"
+        },
+        {
+          "name": "Regulated Professions",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "rosy-bagolie",
@@ -1323,7 +2835,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/479/assemblywoman-bagolie",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Education",
+          "role": "vice chair"
+        },
+        {
+          "name": "Commerce and Economic Development",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "chigozie-onyema",
@@ -1337,7 +2865,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/507/assemblyman-onyema",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Commerce and Economic Development",
+          "role": "member"
+        },
+        {
+          "name": "Consumer Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "cleopatra-tucker",
@@ -1351,7 +2895,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/tucker_cleopatra_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/285/assemblywoman-tucker",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Aging and Human Services",
+          "role": "vice chair"
+        },
+        {
+          "name": "Military and Veterans' Affairs",
+          "role": "chair"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "eliana-pintor-marin",
@@ -1365,7 +2921,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/pintormarin_eliana_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/362/assemblywoman-pintor-marin",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "State House Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "shanique-speight",
@@ -1379,7 +2955,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/speight_shanique_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/403/assemblywoman-speight",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Aging and Human Services",
+          "role": "chair"
+        },
+        {
+          "name": "Health Infrastructure",
+          "role": "vice chair"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Regulated Professions",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "avi-schnall",
@@ -1393,7 +2989,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/482/assemblyman-schnall",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "sean-kean",
@@ -1407,7 +3019,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/kean_sean_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/333/assemblyman-kean",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Consumer Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Regulated Professions",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "jerry-walker",
@@ -1421,7 +3045,27 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/508/assemblyman-walker",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "Regulated Professions",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "will-sampson",
@@ -1435,7 +3079,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/451/assemblyman-sampson",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Consumer Affairs",
+          "role": "chair"
+        },
+        {
+          "name": "Environment and Solid Waste",
+          "role": "member"
+        },
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "katie-brennan",
@@ -1449,7 +3109,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/510/assemblywoman-brennan",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Consumer Affairs",
+          "role": "member"
+        },
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "Housing",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "ravi-bhalla",
@@ -1463,7 +3139,19 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/509/assemblyman-bhalla",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Children, Families and Food Security",
+          "role": "member"
+        },
+        {
+          "name": "Environment and Solid Waste",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "gabe-rodriguez",
@@ -1477,7 +3165,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/489/assemblyman-rodriguez",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Oversight, Reform and Federal Relations",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "larry-wainstein",
@@ -1491,7 +3195,19 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/511/assemblyman-wainstein",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Aging and Human Services",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "carmen-morales",
@@ -1505,7 +3221,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/491/assemblywoman-morales",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Higher Education",
+          "role": "chair"
+        },
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Public Schools",
+          "role": "member"
+        },
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "mike-venezia",
@@ -1519,7 +3255,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/492/assemblyman-venezia",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "vice chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Education",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "al-abdelaziz",
@@ -1533,7 +3285,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/498/assemblyman-abdelaziz",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Regulated Professions",
+          "role": "vice chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "kenyatta-stewart",
@@ -1547,7 +3315,23 @@
       "photo": null,
       "officialUrl": "https://njleg.state.nj.us/legislative-roster/512/assemblyman-stewart",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "clinton-calabrese",
@@ -1561,7 +3345,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/calabrese_clinton_2018.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/408/assemblyman-calabrese",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Transportation and Independent Authorities",
+          "role": "chair"
+        },
+        {
+          "name": "Tourism, Gaming and the Arts",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "gary-schaer",
@@ -1575,7 +3371,19 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/schaer_color.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/258/assemblyman-schaer",
       "frcaVote": "Abstain",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "ellen-park",
@@ -1589,7 +3397,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/453/assemblywoman-park",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "vice chair"
+        },
+        {
+          "name": "Judiciary",
+          "role": "chair"
+        },
+        {
+          "name": "Law Revision Commission",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "shama-haider",
@@ -1603,7 +3427,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/452/assemblywoman-haider",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Children, Families and Food Security",
+          "role": "chair"
+        },
+        {
+          "name": "Commerce and Economic Development",
+          "role": "vice chair"
+        },
+        {
+          "name": "Community Development and Women's Affairs",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "chris-tully",
@@ -1617,7 +3457,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/tully_christopher_2018b.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/412/assemblyman-tully",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "chair"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "lisa-swain",
@@ -1631,7 +3487,27 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/swain_lisa_2018a.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/413/assemblywoman-swain",
       "frcaVote": "Yes",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "chair"
+        },
+        {
+          "name": "Budget Oversight",
+          "role": "member"
+        },
+        {
+          "name": "Education",
+          "role": "member"
+        },
+        {
+          "name": "State and Local Government",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "bob-auth",
@@ -1645,7 +3521,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/auth_robert_2017.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/366/assemblyman-auth",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "member"
+        },
+        {
+          "name": "Financial Institutions and Insurance",
+          "role": "member"
+        },
+        {
+          "name": "Judiciary",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "john-azzariti",
@@ -1659,7 +3551,23 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/493/assemblyman-azzariti",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Aging and Human Services",
+          "role": "member"
+        },
+        {
+          "name": "Health",
+          "role": "member"
+        },
+        {
+          "name": "Health Infrastructure",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "al-barlas",
@@ -1673,7 +3581,27 @@
       "photo": null,
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/494/assemblyman-barlas",
       "frcaVote": null,
-      "frcaChamber": null
+      "frcaChamber": null,
+      "committees": [
+        {
+          "name": "Apportionment Commission",
+          "role": "co-chair"
+        },
+        {
+          "name": "Budget",
+          "role": "member"
+        },
+        {
+          "name": "Labor",
+          "role": "member"
+        },
+        {
+          "name": "Telecommunications and Utilities",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     },
     {
       "slug": "chris-dephillips",
@@ -1687,7 +3615,23 @@
       "photo": "https://www.njleg.state.nj.us/members/memberphotos/dephillips_christopher_2020.jpg",
       "officialUrl": "https://www.njleg.state.nj.us/legislative-roster/404/assemblyman-dephillips",
       "frcaVote": "No",
-      "frcaChamber": "Assembly"
+      "frcaChamber": "Assembly",
+      "committees": [
+        {
+          "name": "Health Infrastructure",
+          "role": "member"
+        },
+        {
+          "name": "Legislative Services Commission",
+          "role": "member"
+        },
+        {
+          "name": "Science, Innovation and Technology",
+          "role": "member"
+        }
+      ],
+      "sponsorships": null,
+      "cosponsorships": null
     }
   ]
 }
