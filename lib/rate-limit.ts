@@ -108,7 +108,7 @@ export async function checkRateLimit(
  * where leaving the path unmetered would open brute force.
  *
  * When Redis is unavailable this DEGRADES to an in-process limiter rather than
- * denying outright. The previous fail-closed behaviour meant an Upstash outage
+ * denying outright. The previous fail-closed behavior meant an Upstash outage
  * (or a missing KV_REST_API_* variable) made admin login impossible, while the
  * UI blamed the credentials. Attempts are still bounded — see memoryLimit for
  * the trade-off — and the result is flagged `degraded` so callers can say what

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABanner from '@/components/CTABanner';
 import ContactLetter from '@/components/legislators/ContactLetter';
+import LegislatorPhoto from '@/components/legislators/LegislatorPhoto';
 import {
   getLegislators,
   getLegislatorBySlug,
@@ -75,18 +76,7 @@ export default async function LegislatorPage({
       <section className="bg-[#1a1a1a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-            {l.photo && (
-              // Portraits come from the Open States CDN and are not in our
-              // next.config remotePatterns, so a plain <img> is correct here.
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={l.photo}
-                alt={l.name}
-                width={112}
-                height={112}
-                className="w-28 h-28 rounded-full object-cover border-2 border-green-700 bg-gray-800"
-              />
-            )}
+            {l.photo && <LegislatorPhoto src={l.photo} alt={l.name} />}
             <div>
               <h1 className="text-3xl md:text-5xl font-black mb-2">{l.name}</h1>
               <p className="text-gray-300">

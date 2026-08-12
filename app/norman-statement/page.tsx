@@ -72,7 +72,7 @@ export default function NormanStatementPage() {
           <p className="text-gray-700 mb-6">
             The Norman Statement on the Abolition of Abortion is, in its own words, a summary of the
             theological and strategic distinctives of the abolitionist movement. It was drafted by 28
-            people representing churches and abolitionist organisations from across the United States,
+            people representing churches and abolitionist organizations from across the United States,
             and adopted in Norman, Oklahoma, from which it takes its name.
           </p>
           <p className="text-gray-700 mb-6">

@@ -123,6 +123,35 @@ Text like `{count} counties` broken across lines collapses to `83counties`, and
 `</strong> word` at a line break drops the space. Use explicit `{' '}` and
 confirm against the built HTML.
 
+## Open States API — two traps
+
+`scripts/refresh_legislator_data.py` pulls committee seats and sponsorship
+counts monthly via `.github/workflows/refresh-legislator-data.yml`
+(`OPEN_STATES_API_KEY` is set as a repo secret). Both of these bit us once:
+
+1. **`/committees` ignores `jurisdiction=New Jersey`.** Given a plain state
+   name it returns every committee in the country — 2955 of them, with a
+   Tennessee senator in the first sample. Only the OCD id
+   (`ocd-jurisdiction/country:us/state:nj/government`) scopes it, and that
+   returns the real 50. This failure is silent and the output looks plausible,
+   so it would have attributed other states' committees to New Jersey members.
+
+2. **The free tier throttles per MINUTE**, not only the documented 500/day.
+   Requests spaced under ~6.5s start returning 429. The `GAP` constant exists
+   for this; lowering it makes the run fail, not finish sooner. A full refresh
+   is ~240 requests and takes about half an hour of mostly sleeping.
+
+Members are joined on `openStatesId`, stored in `data/legislators.json`. Do not
+reintroduce name matching — the roll-call pass that used it needed a
+hand-maintained alias list and still had two look-alike pairs (Kevin Egan vs
+Joseph V. Egan, Marisa Sweeney vs Stephen M. Sweeney) that had to be excluded by
+hand to avoid attributing votes to the wrong person.
+
+`sponsorships`/`cosponsorships` are **current session only** (222, 2026-2027),
+and `null` means unknown, which renders as nothing. Never substitute 0 — that
+reads as "sponsored nothing", which is a claim the data does not support. Bump
+`SESSION` when the Legislature turns over.
+
 ## Search-engine ownership
 
 The IndexNow key in `lib/indexnow.ts` is paired with a matching

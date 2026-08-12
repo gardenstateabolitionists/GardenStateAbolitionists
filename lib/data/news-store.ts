@@ -12,10 +12,10 @@ export type NewsArticleData = NewsArticle;
  * without a database). Deliberately EMPTY.
  *
  * It previously carried a seeded launch announcement inherited from the site
- * this was derived from: dated November 2024, written in this organisation's
- * voice, and crediting a third organisation. If the database env var were ever
+ * this was derived from: dated November 2024, written in this organization's
+ * voice, and crediting a third organization. If the database env var were ever
  * missing in production, the site would have published a news article this
- * organisation never wrote, predating its existence. An empty news list is the
+ * organization never wrote, predating its existence. An empty news list is the
  * honest failure mode.
  */
 const memoryStore: NewsArticleData[] = [];

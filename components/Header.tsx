@@ -41,6 +41,7 @@ const navItems = [
     href: '/abolition-bills',
     dropdown: [
       { label: 'Where New Jersey Stands', href: '/abolition-bills' },
+      { label: 'Components of an Abolition Bill', href: '/abolition-bills/components' },
       { label: 'Your Legislators', href: '/legislators' },
     ],
   },
@@ -155,7 +156,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
             <Image
               src="/images/gsa-logo.webp"
               alt="Garden State Abolitionists logo"
@@ -176,8 +177,11 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center" aria-label="Main navigation">
+          {/* Desktop Navigation.
+              Turns on at xl, not lg: the full row needs ~1210px, so between
+              1024 and 1279 it overflowed its container by 240px and pushed the
+              DONATE button off the right edge of the screen. */}
+          <nav className="hidden xl:flex items-center" aria-label="Main navigation">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -187,7 +191,7 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="px-3 py-4 text-[11px] font-semibold hover:text-green-500 transition-colors flex items-center tracking-wide whitespace-nowrap"
+                  className="px-2 py-4 text-[11px] font-semibold hover:text-green-500 transition-colors flex items-center tracking-wide whitespace-nowrap"
                   aria-haspopup={item.dropdown ? 'true' : undefined}
                   aria-expanded={item.dropdown ? activeDropdown === item.label : undefined}
                   aria-current={isCurrentPage(pathname, item.href) ? 'page' : undefined}
@@ -235,7 +239,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 ml-auto"
+            className="xl:hidden p-2 ml-auto"
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open menu"
             aria-expanded={mobileMenuOpen}

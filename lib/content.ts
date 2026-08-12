@@ -63,7 +63,7 @@ export const socialLinks = {
   // the same reason, and the canonical www host is used since the bare
   // youtube.com form 301s.
   youtube: 'https://www.youtube.com/@newjerseyabolition',
-  // Verified as a distinct group from the source organisation's — that invite
+  // Verified as a distinct group from the source organization's — that invite
   // shipped in the copied code and would have dropped visitors into a private
   // chat belonging to someone else.
   signalGroup: 'https://signal.group/#CjQKIPkATnxKY3ezcE6vaORnxnMTZxIgOwLlUlffnLmfwu68EhBMQyB9ATptNaFHG1Tw1czz',

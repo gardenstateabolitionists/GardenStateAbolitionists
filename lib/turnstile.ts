@@ -1,6 +1,6 @@
 // Cloudflare Turnstile — server-side verification of the challenge token.
 // Fails OPEN when TURNSTILE_SECRET_KEY isn't set, so the site keeps working
-// before the keys are added (mirrors the rate-limiter's fail-open behaviour);
+// before the keys are added (mirrors the rate-limiter's fail-open behavior);
 // once the secret is set, a valid token is required.
 export async function verifyTurnstile(
   token: string | undefined,

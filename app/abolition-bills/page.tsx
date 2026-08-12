@@ -19,28 +19,14 @@ export const metadata: Metadata = {
   },
 };
 
-/** The four things that distinguish a bill of abolition from a regulation. */
+/** The five components, in brief. Full treatment with New Jersey notes lives
+ *  at /abolition-bills/components — keep the two lists in step. */
 const COMPONENTS = [
-  {
-    title: 'Equal protection, not a special category',
-    body:
-      'It applies existing homicide law to the preborn rather than writing a separate, weaker offence. No new category of victim, and no new category of crime — the law already prohibits killing a human being, and abolition simply stops carving out an exception.',
-  },
-  {
-    title: 'From fertilisation, without exception',
-    body:
-      'Protection begins at fertilisation and does not vary by how the child was conceived, how long the pregnancy has lasted, or what condition the child has been diagnosed with. A bill that protects some preborn children and not others has conceded the principle it claims to defend.',
-  },
-  {
-    title: 'No penalty carve-out',
-    body:
-      'It does not exempt anyone by category from the operation of homicide law. This is the provision most often stripped out first, because it is the one that makes the law actually enforceable rather than symbolic.',
-  },
-  {
-    title: 'Immediate effect',
-    body:
-      'It takes effect on passage. It is not contingent on a future court ruling, a trigger condition, or a phase-in — devices that let a legislature take credit for a law while ensuring nothing changes.',
-  },
+  'Outlaws abortion from the moment of fertilization',
+  'Contains no exceptions',
+  'Criminalizes abortion itself and establishes equal justice',
+  'Does not submit to unconstitutional court rulings',
+  'Repeals or supersedes every statute that permits abortion',
 ];
 
 export default function AbolitionBillsPage() {
@@ -125,30 +111,37 @@ export default function AbolitionBillsPage() {
           <p className="text-gray-700 mb-6">
             Not every bill described as pro-life is a bill of abolition. Most regulate abortion;
             a bill of abolition ends it, by extending to the preborn the protection the law
-            already gives everyone else. Four things distinguish the two.
+            already gives everyone else. Five things distinguish the two.
           </p>
-          <ol className="space-y-4 mb-10">
-            {COMPONENTS.map((c, i) => (
-              <li key={c.title} className="border-l-4 border-green-700 bg-gray-50 p-5 rounded-r">
-                <p className="font-bold text-gray-900 mb-1">
-                  {i + 1}. {c.title}
+          <ol className="space-y-2 mb-6">
+            {COMPONENTS.map((title, i) => (
+              <li key={title} className="border-l-4 border-green-700 bg-gray-50 p-4 rounded-r">
+                <p className="font-bold text-gray-900">
+                  {i + 1}. {title}
                 </p>
-                <p className="text-gray-700 text-sm">{c.body}</p>
               </li>
             ))}
           </ol>
+          <p className="text-gray-700 mb-10">
+            <Link
+              href="/abolition-bills/components"
+              className="text-green-800 underline hover:no-underline"
+            >
+              What each of these means, and what it would mean here &rarr;
+            </Link>
+          </p>
 
           <div className="border-l-4 border-green-700 bg-gray-50 p-6 rounded-r">
             <h3 className="text-xl font-bold mb-2">Why we are not waiting for a bill</h3>
             <p className="text-gray-700 mb-3">
               A bill arrives when there are enough people who want one to make it worth a
               legislator&apos;s while. That work is upstream of the legislature: churches
-              persuaded, neighbours convinced, representatives asked plainly where they stand
+              persuaded, neighbors convinced, representatives asked plainly where they stand
               and held to the answer.
             </p>
             <p className="text-gray-700">
               <Link href="/what-we-believe/criminalization" className="text-green-800 underline hover:no-underline">
-                Read why equal protection means criminalisation
+                Read why equal protection means criminalization
               </Link>{' '}
               &middot;{' '}
               <Link href="/norman-statement" className="text-green-800 underline hover:no-underline">

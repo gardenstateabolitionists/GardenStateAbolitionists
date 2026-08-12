@@ -27,7 +27,7 @@ export default function ContactLetter({ legislator }: { legislator: Legislator }
 
 ${opening}
 
-I believe every human being is a person from the moment of fertilisation, and that the law should say so. New Jersey currently gives the preborn no protection at all under its homicide statutes. I am asking you to support equal protection for preborn children — the same protection the law already gives every one of us.
+I believe every human being is a person from the moment of fertilization, and that the law should say so. New Jersey currently gives the preborn no protection at all under its homicide statutes. I am asking you to support equal protection for preborn children — the same protection the law already gives every one of us.
 
 I would like to know your position, and I would welcome a reply.
 
