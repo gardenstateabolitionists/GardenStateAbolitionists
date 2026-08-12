@@ -173,7 +173,7 @@ const CONTENT: Record<string, CityContent> = {
       },
       {
         q: 'Are there abolitionist churches in Jersey City?',
-        a: 'None that we know of. We read every New Jersey congregation in the church directory we work from — 106 of them — and found one publicly abolitionist church in the whole state, and it is not in this city. If your church has taken a public position, tell us and we will list it.',
+        a: 'None that we know of, and none anywhere else in the state either. We read all 106 New Jersey congregations in the church directory we work from and could not evidence a single publicly abolitionist one. If your church has taken a public position, tell us and we will verify it and list it.',
         links: [{ phrase: 'tell us', href: '/contact' }],
       },
       {
@@ -898,7 +898,7 @@ const CONTENT: Record<string, CityContent> = {
       },
       {
         q: 'Are there abolitionist churches in Hoboken?',
-        a: 'None that we know of. We read every New Jersey congregation in the church directory we work from and found one publicly abolitionist church in the entire state. If yours has taken a public position, tell us.',
+        a: 'None that we know of. We read all 106 New Jersey congregations in the church directory we work from and could not evidence a publicly abolitionist one anywhere in the state. If yours has taken a public position, tell us.',
         links: [{ phrase: 'tell us', href: '/contact' }],
       },
       {
@@ -1502,7 +1502,7 @@ const CONTENT: Record<string, CityContent> = {
 
   glassboro: {
     historyParagraphs: [
-      'Glassboro is a borough of about 24,000 in Gloucester County, and as far as we can establish it is the only municipality in New Jersey with a publicly abolitionist church in it. That is not a compliment to Glassboro so much as an indictment of the other 563.',
+      'Glassboro is a borough of about 24,000 in Gloucester County, and it is home to Rowan University. For a time it was also the one place in New Jersey where a church appeared on this site as publicly abolitionist — a listing we have since had to withdraw, because when we applied our own research standard to it the evidence was not there. We would rather say that plainly than leave a name on a page it has not earned.',
       'Gloucester County dates to 1686 and once stretched across the south of the state; Atlantic was cut from it in 1837 and Camden in 1844. This is South Jersey Quaker country, where the argument that no Christian could hold a human being as property was pressed generations before New Jersey acted on it. When the state finally moved, it moved by halves: the 1804 act freed no living person, the 1846 act renamed the remaining enslaved as "apprentices" bound to their owners, eighteen people were still held in 1860, and the Legislature voted the Thirteenth Amendment down in March 1865.',
     ],
     abortionLandscapeIntro:
@@ -1512,7 +1512,7 @@ const CONTENT: Record<string, CityContent> = {
     faqs: [
       {
         q: 'Is there an abolitionist church in Glassboro?',
-        a: 'Yes — and it is the only one we know of in New Jersey. It is listed further down this page. We read all 106 New Jersey congregations in the church directory we work from; this is the one that has taken a public abolitionist position.',
+        a: 'Not one we can stand behind. A Glassboro congregation was carried in our source directory as abolitionist on the strength of a third-party listing, and when we applied our full research standard to it — the church\'s own site, its socials, its podcast, and both of its named elders searched against every marker — nothing supported the label. So we removed it. A listing somebody else made is a lead, not a verdict.',
       },
       {
         q: 'Who represents Glassboro in the New Jersey Legislature?',

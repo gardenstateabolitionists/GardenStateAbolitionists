@@ -411,8 +411,12 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                 <strong>
                   We are not aware of a publicly abolitionist church in {city.formalName}.
                 </strong>{' '}
-                We read every New Jersey congregation in the directory we work from and found one
-                in the entire state. That is not a gap in the research; it is the situation.
+                We read every New Jersey congregation in the directory we work from &mdash; 106 of
+                them &mdash; and could not evidence a single one. One church was carried as
+                abolitionist on a third-party listing; when we applied our own standard to it, the
+                evidence was not there, so we removed it rather than leave it standing. That is not
+                a gap in the research. It is the situation, and we would rather report it than
+                dress it up.
               </p>
               <p className="text-gray-700">
                 If your church has taken a public position on abolition &mdash; from the pulpit, in
