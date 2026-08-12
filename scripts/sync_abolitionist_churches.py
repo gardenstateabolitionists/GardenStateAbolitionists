@@ -103,6 +103,17 @@ def main() -> None:
             "pastor": c.get("leadership"),
             "notes": c.get("theologicalNotes"),
             "ministries": None,
+            # Provenance, carried through so the page can say HOW we know.
+            # 'evidenced' means we read it in the church's own words;
+            # 'mixed' means it rests on someone else's listing and we could not
+            # confirm it first-hand. Rendering those identically would be
+            # exactly the collapse this project's research standard forbids.
+            "stanceBasis": c.get("stanceBasis"),
+            "verifyStance": "verify_stance" in (c.get("recordFlag") or ""),
+            "listedBy": ("Abolitionists Rising"
+                         if "added_via_ar_list" in (c.get("recordFlag") or "") else None),
+            "listedByUrl": ("https://abolitionistsrising.com/state-facts/new-jersey/"
+                            if "added_via_ar_list" in (c.get("recordFlag") or "") else None),
         })
         time.sleep(1.5)
 

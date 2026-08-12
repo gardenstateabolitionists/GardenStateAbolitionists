@@ -412,11 +412,10 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                   We are not aware of a publicly abolitionist church in {city.formalName}.
                 </strong>{' '}
                 We read every New Jersey congregation in the directory we work from &mdash; 106 of
-                them &mdash; and could not evidence a single one. One church was carried as
-                abolitionist on a third-party listing; when we applied our own standard to it, the
-                evidence was not there, so we removed it rather than leave it standing. That is not
-                a gap in the research. It is the situation, and we would rather report it than
-                dress it up.
+                them &mdash; and found one in the whole state, in Glassboro. Abolitionists Rising,
+                the movement&apos;s own national organisation, lists the same single church on its
+                New Jersey page and no others. That is not a gap in the research. It is the
+                situation.
               </p>
               <p className="text-gray-700">
                 If your church has taken a public position on abolition &mdash; from the pulpit, in
@@ -444,6 +443,29 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                     >
                       Church website &rarr;
                     </a>
+                  )}
+                  {/* Where the stance comes from. A church listed by someone else
+                      is not the same as a church we have read taking the position
+                      in its own words, and the page should not blur the two. */}
+                  {c.listedBy && c.stanceBasis !== 'evidenced' && (
+                    <p className="text-xs text-gray-500 mt-3 border-t border-gray-200 pt-3">
+                      Listed as an abolitionist church by{' '}
+                      {c.listedByUrl ? (
+                        <a
+                          href={c.listedByUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-gray-700"
+                        >
+                          {c.listedBy}
+                        </a>
+                      ) : (
+                        c.listedBy
+                      )}
+                      . We have not been able to confirm that position from the church&apos;s own
+                      published words, so we pass on the listing and its source rather than
+                      vouching for it ourselves.
+                    </p>
                   )}
                 </li>
               ))}

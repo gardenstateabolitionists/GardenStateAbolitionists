@@ -42,8 +42,20 @@ export interface AbolitionistChurch {
   phone: string | null;
   email: string | null;
   pastor: string | null;
+  /** Internal directory prose. NOT for display — it contains research
+   *  bookkeeping written for editors, not for readers. */
   notes: string | null;
   ministries: ChurchMinistry[] | null;
+  /** How the stance was established: 'evidenced' = read in the church's own
+   *  words; 'mixed' = rests on someone else's listing. */
+  stanceBasis?: string | null;
+  /** True while the stance is attested but not independently confirmed. */
+  verifyStance?: boolean;
+  /** The body that lists this church as abolitionist, when the stance comes
+   *  from a listing rather than from the church's own output. Shown to the
+   *  reader so they can weigh the source themselves. */
+  listedBy?: string | null;
+  listedByUrl?: string | null;
 }
 
 interface RawData {
