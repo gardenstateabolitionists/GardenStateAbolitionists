@@ -74,4 +74,7 @@ def main(slugs):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:] or [c["slug"] for c in CITIES][:6]))
+    # Default to EVERY city, not a slice. This once defaulted to the first six
+    # and still printed "OK — no collapsed spacing", so a pass over 6 of 62 pages
+    # read exactly like a pass over all of them. Pass slugs explicitly to narrow.
+    sys.exit(main(sys.argv[1:] or [c["slug"] for c in CITIES]))
