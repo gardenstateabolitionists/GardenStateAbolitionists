@@ -98,6 +98,7 @@ export const sendInquiryConfirmationEmail = async (inquiry: InquiryData) => {
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: inquiry.email,
       bcc: NOTIFICATION_EMAIL,
       subject: `Thank You for Contacting Garden State Abolitionists`,
@@ -119,6 +120,7 @@ export const sendInquiryReplyEmail = async (data: { to: string; name: string; su
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: data.to,
       bcc: NOTIFICATION_EMAIL,
       subject: sanitizeSubject(`Re: ${data.subject || 'Your Inquiry'}`),
@@ -536,6 +538,7 @@ export const sendPetitionConfirmationEmail = async (petition: PetitionData) => {
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: petition.email,
       subject: 'Thank You for Signing the Petition!',
       html: petitionConfirmationEmailHtml(petition),
@@ -695,6 +698,7 @@ export const sendSubscriberWelcomeEmail = async (email: string) => {
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: email,
       subject: 'Welcome to Garden State Abolitionists Updates',
       html: `
@@ -808,6 +812,7 @@ export const sendNewsletterEmail = async (article: ArticleData, subscriber: Subs
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: subscriber.email,
       subject: sanitizeSubject(`New Article: ${article.title}`),
       html: newsletterEmailHtml(article, subscriber),
@@ -827,6 +832,7 @@ export const sendNewsletterToAll = async (article: ArticleData, subscribers: Sub
   for (const subscriber of subscribers) {
       const r = await send({
           from: FROM_EMAIL,
+          replyTo: NOTIFICATION_EMAIL,
           to: subscriber.email,
           subject: sanitizeSubject(`New Article: ${article.title}`),
           html: newsletterEmailHtml(article, subscriber),
@@ -1059,6 +1065,7 @@ export const sendBroadcastEmail = async (subject: string, body: string, subscrib
   try {
     const _info = await send({
       from: FROM_EMAIL,
+      replyTo: NOTIFICATION_EMAIL,
       to: subscriber.email,
       subject: sanitizeSubject(subject),
       html: broadcastEmailHtml(subject, body, subscriber),
@@ -1078,6 +1085,7 @@ export const sendBroadcastToAll = async (subject: string, body: string, subscrib
   for (const subscriber of subscribers) {
       const r = await send({
           from: FROM_EMAIL,
+          replyTo: NOTIFICATION_EMAIL,
           to: subscriber.email,
           subject: sanitizeSubject(subject),
           html: broadcastEmailHtml(subject, body, subscriber),

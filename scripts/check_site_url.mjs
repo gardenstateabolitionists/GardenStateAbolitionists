@@ -26,6 +26,9 @@ const HOST = 'www.gardenstateabolitionists.com'
 const AAM_ALLOWED = new Set([
   'components/Footer.tsx',
   'data/abolition-partners.json',
+  // These two name the AAM domain to explain the bug they exist to prevent.
+  'scripts/check_site_url.mjs',
+  'scripts/fix-production-site-url.sh',
 ])
 
 const files = execFileSync('git', ['ls-files'], { encoding: 'utf8' })
