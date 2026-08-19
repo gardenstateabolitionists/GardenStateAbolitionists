@@ -166,7 +166,7 @@ export default async function Image() {
               letterSpacing: '0.15em',
             }}
           >
-            gardenstateabolitionists.org
+            gardenstateabolitionists.com
           </div>
         </div>
       </div>

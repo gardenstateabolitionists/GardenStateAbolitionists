@@ -10,7 +10,7 @@ import {
   formatVoteDate,
 } from '@/lib/data/legislators';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export const metadata: Metadata = {
   title: 'Your New Jersey Legislators — Find and Contact Them',

@@ -243,7 +243,7 @@ export function BroadcastComposer({
             </div>
             <div style={{ backgroundColor: '#1a1a2e', padding: 20, textAlign: 'center', fontSize: 12, color: '#cccccc' }}>
               <p style={{ margin: '0 0 8px 0' }}>Garden State Abolitionists · Est. 2024</p>
-              <p style={{ margin: 0, color: '#d4af37' }}>gardenstateabolitionists.org</p>
+              <p style={{ margin: 0, color: '#d4af37' }}>gardenstateabolitionists.com</p>
             </div>
           </div>
           <div className="flex justify-end gap-2 pt-2">

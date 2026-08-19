@@ -25,13 +25,13 @@ for (const a of process.argv.slice(2)) {
   if (m) args.set(m[1], m[2] ?? 'true');
 }
 const DRY_RUN = args.get('dry-run') === 'true';
-const SITEMAP_URL = args.get('sitemap') || 'https://www.gardenstateabolitionists.org/sitemap.xml';
+const SITEMAP_URL = args.get('sitemap') || 'https://www.gardenstateabolitionists.com/sitemap.xml';
 
 // Values duplicated from lib/indexnow.ts — kept in sync manually. If the
 // key ever rotates, update both here and in lib/indexnow.ts + rename the
 // public/{key}.txt file.
 const INDEXNOW_KEY = 'ea19840a842f58e020f38540804ed83e';
-const HOST = 'www.gardenstateabolitionists.org';
+const HOST = 'www.gardenstateabolitionists.com';
 const ENDPOINT = 'https://api.indexnow.org/indexnow';
 
 console.log('IndexNow bulk ping');

@@ -12,7 +12,7 @@ import { validateCsrf } from '@/lib/csrf';
 import { pingIndexNow } from '@/lib/indexnow';
 import { postArticleToSocial } from '@/lib/social/post-to-social';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 async function isAdmin(): Promise<boolean> {
   const token = await getAuthToken();

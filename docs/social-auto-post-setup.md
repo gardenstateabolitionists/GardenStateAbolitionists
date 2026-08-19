@@ -130,7 +130,7 @@ gets rejected. If denied, we can revisit later.
 
 - Pinterest **Business** account for AAM (not personal). Convert at
   [business.pinterest.com](https://business.pinterest.com/).
-- Verify the gardenstateabolitionists.org domain via
+- Verify the gardenstateabolitionists.com domain via
   [Ads → Claim](https://www.pinterest.com/settings/claim).
 
 ### Step 2: create a Pinterest app
@@ -142,8 +142,8 @@ gets rejected. If denied, we can revisit later.
    - **Description:** *"Auto-posts published news articles from our own
      WordPress-alternative website to our Pinterest business
      account. All content is our own original text and images."*
-   - **Website URL:** `https://www.gardenstateabolitionists.org/`
-   - **Privacy policy URL:** `https://www.gardenstateabolitionists.org/privacy-policy`
+   - **Website URL:** `https://www.gardenstateabolitionists.com/`
+   - **Privacy policy URL:** `https://www.gardenstateabolitionists.com/privacy-policy`
 4. Request scopes: `boards:read`, `pins:read`, `pins:write`.
 5. Submit for review. Turnaround: 3-10 business days.
 

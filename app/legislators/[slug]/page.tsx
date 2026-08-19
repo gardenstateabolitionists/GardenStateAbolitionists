@@ -15,7 +15,7 @@ import {
   formatVoteDate,
 } from '@/lib/data/legislators';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export function generateStaticParams() {
   return getLegislators().map((l) => ({ slug: l.slug }));

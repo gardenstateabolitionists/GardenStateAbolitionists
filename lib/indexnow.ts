@@ -15,7 +15,7 @@
 
 export const INDEXNOW_KEY = 'ea19840a842f58e020f38540804ed83e';
 
-const HOST = 'www.gardenstateabolitionists.org';
+const HOST = 'www.gardenstateabolitionists.com';
 const ENDPOINT = 'https://api.indexnow.org/indexnow';
 
 /**

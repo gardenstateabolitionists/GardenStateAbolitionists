@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABanner from '@/components/CTABanner';
 import { FRCA, formatVoteDate, getFrcaVoters, getLegislators } from '@/lib/data/legislators';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export const metadata: Metadata = {
   title: 'Abolition Bills — Where New Jersey Actually Stands',

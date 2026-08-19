@@ -63,7 +63,7 @@ export const CAMPAIGNS = [
     ],
     // One RSA reused across all three ad groups in this campaign
     responsiveSearchAd: {
-      finalUrl: 'https://www.gardenstateabolitionists.org/the-petition',
+      finalUrl: 'https://www.gardenstateabolitionists.com/the-petition',
       // ≤ 15 headlines, each ≤ 30 chars
       headlines: [
         'Abolish Abortion in New Jersey',
@@ -100,7 +100,7 @@ export const CAMPAIGNS = [
       {
         name: 'Abolitionist vs pro-life',
         cpcBidUsd: 2.0,
-        finalUrl: 'https://www.gardenstateabolitionists.org/what-we-believe/abolitionist-not-pro-life',
+        finalUrl: 'https://www.gardenstateabolitionists.com/what-we-believe/abolitionist-not-pro-life',
         keywords: [
           { text: 'abolitionist vs pro life',      match: 'PHRASE' },
           { text: 'difference abolitionist pro life', match: 'PHRASE' },
@@ -116,7 +116,7 @@ export const CAMPAIGNS = [
         cpcBidUsd: 2.0,
         // Was /abolition-bills, which is parked in staged-for-nj and would 404 on
         // a paid click. Repoint when that route returns.
-        finalUrl: 'https://www.gardenstateabolitionists.org/what-we-believe',
+        finalUrl: 'https://www.gardenstateabolitionists.com/what-we-believe',
         keywords: [
           { text: 'new jersey abortion law 2026',       match: 'PHRASE' },
           { text: 'new jersey abortion law after dobbs', match: 'PHRASE' },
@@ -130,7 +130,7 @@ export const CAMPAIGNS = [
       {
         name: 'Christian abolition',
         cpcBidUsd: 2.0,
-        finalUrl: 'https://www.gardenstateabolitionists.org/the-gospel',
+        finalUrl: 'https://www.gardenstateabolitionists.com/the-gospel',
         keywords: [
           { text: 'christian view on abortion',     match: 'PHRASE' },
           { text: 'biblical case against abortion', match: 'PHRASE' },
@@ -146,7 +146,7 @@ export const CAMPAIGNS = [
         cpcBidUsd: 2.0,
         // Was /abolition-bills/components, which is parked in staged-for-nj and
         // would 404 on a paid click. Repoint when that route returns.
-        finalUrl: 'https://www.gardenstateabolitionists.org/what-we-believe/criminalization',
+        finalUrl: 'https://www.gardenstateabolitionists.com/what-we-believe/criminalization',
         keywords: [
           { text: 'what is a bill of abolition',    match: 'PHRASE' },
           { text: 'components of abolition bill',   match: 'PHRASE' },
@@ -212,7 +212,7 @@ export const CAMPAIGNS = [
       },
     ],
     responsiveSearchAd: {
-      finalUrl: 'https://www.gardenstateabolitionists.org/donate',
+      finalUrl: 'https://www.gardenstateabolitionists.com/donate',
       headlines: [
         'Support New Jersey Abolition',
         '100% Goes to the Mission',

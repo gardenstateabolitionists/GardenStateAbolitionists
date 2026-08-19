@@ -41,13 +41,13 @@ node scripts/search-console/top-queries.mjs --days=7 --limit=100 --min-impressio
 
 ## The target property
 
-By default the scripts hit `sc-domain:gardenstateabolitionists.org` (the
+By default the scripts hit `sc-domain:gardenstateabolitionists.com` (the
 Domain property in Search Console — covers all subdomains and both
 http/https). If the Search Console setup is instead a URL-prefix
-property (`https://www.gardenstateabolitionists.org/`), set:
+property (`https://www.gardenstateabolitionists.com/`), set:
 
 ```
-SEARCH_CONSOLE_SITE=https://www.gardenstateabolitionists.org/
+SEARCH_CONSOLE_SITE=https://www.gardenstateabolitionists.com/
 ```
 
 in `.env.local`. The smoke test prints the correct value to paste.

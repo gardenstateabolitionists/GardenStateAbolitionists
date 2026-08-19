@@ -352,10 +352,10 @@ and paste this:
 > nonprofit (EIN 99-4483710). We do not provide, refer for, or promote
 > abortion services. Our ads direct users to educational content, our
 > legislator scorecard, and civic-engagement resources on
-> gardenstateabolitionists.org. Content is protected political speech
+> gardenstateabolitionists.com. Content is protected political speech
 > matching Google's Content Policies for advocacy organizations under
 > Section 501(c)(3). Our IRS determination letter is public at
-> gardenstateabolitionists.org/financial-transparency.
+> gardenstateabolitionists.com/financial-transparency.
 
 Reviews usually take 3-5 business days per keyword.
 

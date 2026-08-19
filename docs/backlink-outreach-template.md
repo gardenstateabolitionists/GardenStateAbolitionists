@@ -7,7 +7,7 @@ same-topic sites are the highest-value SEO signal Google uses.
 ## Who to reach
 
 Every organization listed at
-[https://www.gardenstateabolitionists.org/partners](https://www.gardenstateabolitionists.org/partners).
+[https://www.gardenstateabolitionists.com/partners](https://www.gardenstateabolitionists.com/partners).
 Start with the top 5 by rating:
 
 1. Abolish Abortion North Carolina — `abolishabortionnc.com`
@@ -26,7 +26,7 @@ has the full contact list including who has already been contacted.
 > Hi [Name / Team],
 >
 > I'm reaching out from **Garden State Abolitionists**
-> ([gardenstateabolitionists.org](https://www.gardenstateabolitionists.org/)).
+> ([gardenstateabolitionists.com](https://www.gardenstateabolitionists.com/)).
 > We're a Christian abolitionist coalition working for the immediate and
 > total end of abortion in New Jersey — no exceptions, no compromise, no
 > delay. Everything on our site is built around that position.
@@ -34,16 +34,16 @@ has the full contact list including who has already been contacted.
 > We've just published a page listing allied abolitionist coalitions
 > across the country, and yours is on it:
 >
-> **[https://www.gardenstateabolitionists.org/partners](https://www.gardenstateabolitionists.org/partners)**
+> **[https://www.gardenstateabolitionists.com/partners](https://www.gardenstateabolitionists.com/partners)**
 >
 > There's a short paragraph about your work with a live link to your
 > site. If we've gotten anything wrong, tell me and I'll fix it same day.
 >
 > **The ask:** would you be willing to link back to us in return? A
 > partner / allied-groups section of your own site is the natural spot.
-> The direct link is `https://www.gardenstateabolitionists.org/`. If you
+> The direct link is `https://www.gardenstateabolitionists.com/`. If you
 > want to also point at our
-> [New Jersey Legislator Scorecard](https://www.gardenstateabolitionists.org/legislators)
+> [New Jersey Legislator Scorecard](https://www.gardenstateabolitionists.com/legislators)
 > — every state senator and representative's abortion voting record with
 > contact info — that's the most-shared page on our site right now.
 >

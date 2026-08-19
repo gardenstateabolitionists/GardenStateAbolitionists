@@ -343,12 +343,12 @@ export default function EmailBroadcastPage() {
                 {/* Email footer */}
                 <div style={{ backgroundColor: '#1a1a2e', padding: '20px', textAlign: 'center', fontSize: '12px', color: '#cccccc' }}>
                   <p style={{ margin: '0 0 8px 0' }}>&copy; {new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-                  <p style={{ margin: 0, color: '#d4af37' }}>gardenstateabolitionists.org</p>
+                  <p style={{ margin: 0, color: '#d4af37' }}>gardenstateabolitionists.com</p>
                 </div>
 
                 {/* Unsubscribe footer */}
                 <div style={{ textAlign: 'center', padding: '12px 16px', fontSize: '11px', color: '#999' }}>
-                  <p style={{ margin: 0 }}>You received this email because you subscribed at gardenstateabolitionists.org.</p>
+                  <p style={{ margin: 0 }}>You received this email because you subscribed at gardenstateabolitionists.com.</p>
                   <p style={{ margin: '4px 0 0 0' }}>
                     <span style={{ textDecoration: 'underline' }}>Unsubscribe</span>
                   </p>

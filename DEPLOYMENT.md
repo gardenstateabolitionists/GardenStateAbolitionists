@@ -31,7 +31,7 @@ variable must exist).
 |---|---|
 | `DATABASE_URL` | Neon Postgres connection string, `?sslmode=require` |
 | `JWT_SECRET` | ≥32 chars. `node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"` |
-| `NEXT_PUBLIC_SITE_URL` | The real site URL, e.g. `https://www.gardenstateabolitionists.org` |
+| `NEXT_PUBLIC_SITE_URL` | The real site URL, e.g. `https://www.gardenstateabolitionists.com` |
 
 Then, to make features actually work:
 
@@ -60,7 +60,7 @@ fresh build — Vercel will otherwise serve the cached bundle.
 
 ## 3. Domain
 
-Three places assume `gardenstateabolitionists.org`. Update all three together
+Three places assume `gardenstateabolitionists.com`. Update all three together
 when the real domain is known:
 
 1. `NEXT_PUBLIC_SITE_URL` in Vercel

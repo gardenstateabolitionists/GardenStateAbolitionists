@@ -63,7 +63,7 @@ export default function ThePetitionPage() {
 
           {/* Share Buttons */}
           <div className="mb-8">
-            <ShareButtons url="https://www.gardenstateabolitionists.org/the-petition" />
+            <ShareButtons url="https://www.gardenstateabolitionists.com/the-petition" />
           </div>
 
           {/* Petition Form */}

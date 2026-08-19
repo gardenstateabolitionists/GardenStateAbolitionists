@@ -52,8 +52,8 @@ const nextConfig: NextConfig = {
       // identically for canonicalization.
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'gardenstateabolitionists.org' }],
-        destination: 'https://www.gardenstateabolitionists.org/:path*',
+        has: [{ type: 'host', value: 'gardenstateabolitionists.com' }],
+        destination: 'https://www.gardenstateabolitionists.com/:path*',
         permanent: true,
       },
       { source: '/petition', destination: '/the-petition', permanent: true },
@@ -92,11 +92,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'gardenstateabolitionists.org',
+        hostname: 'gardenstateabolitionists.com',
       },
       {
         protocol: 'https',
-        hostname: '*.gardenstateabolitionists.org',
+        hostname: '*.gardenstateabolitionists.com',
       },
       {
         protocol: 'https',

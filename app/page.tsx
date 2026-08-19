@@ -52,8 +52,8 @@ export default async function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'NGO',
     name: 'Garden State Abolitionists',
-    url: 'https://www.gardenstateabolitionists.org',
-    logo: 'https://www.gardenstateabolitionists.org/images/gsa-logo.webp',
+    url: 'https://www.gardenstateabolitionists.com',
+    logo: 'https://www.gardenstateabolitionists.com/images/gsa-logo.webp',
     description:
       'Abolitionists in New Jersey devoted to establishing justice and equal protection for our preborn neighbors. We call for the immediate and total abolition of abortion in the state of New Jersey.',
     slogan: 'Equal protection for the preborn.',
@@ -81,7 +81,7 @@ export default async function HomePage() {
       '@type': 'ContactPoint',
       contactType: 'General Inquiry',
       ...(orgInfo.contactEmail ? { email: orgInfo.contactEmail } : {}),
-      url: 'https://www.gardenstateabolitionists.org/contact',
+      url: 'https://www.gardenstateabolitionists.com/contact',
       availableLanguage: 'English',
       areaServed: 'US-NJ',
     },
@@ -118,13 +118,13 @@ export default async function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Garden State Abolitionists',
-    url: 'https://www.gardenstateabolitionists.org',
+    url: 'https://www.gardenstateabolitionists.com',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
         urlTemplate:
-          'https://www.gardenstateabolitionists.org/news?q={search_term_string}',
+          'https://www.gardenstateabolitionists.com/news?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

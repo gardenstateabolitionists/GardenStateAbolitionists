@@ -1,4 +1,4 @@
-# Automated PageSpeed / Lighthouse reports for gardenstateabolitionists.org.
+# Automated PageSpeed / Lighthouse reports for gardenstateabolitionists.com.
 # Runs the same audit as pagespeed.web.dev — on a schedule and on demand — so
 # no more exporting PDFs by hand.
 #
@@ -31,33 +31,33 @@ jobs:
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
-            https://www.gardenstateabolitionists.org/
-            https://www.gardenstateabolitionists.org/who-we-are
-            https://www.gardenstateabolitionists.org/what-we-believe
-            https://www.gardenstateabolitionists.org/what-we-believe/abolitionist-not-pro-life
-            https://www.gardenstateabolitionists.org/what-we-believe/biblical-not-secular
-            https://www.gardenstateabolitionists.org/what-we-believe/immediate-not-gradual
-            https://www.gardenstateabolitionists.org/what-we-believe/no-exceptions
-            https://www.gardenstateabolitionists.org/what-we-believe/ignore-roe
-            https://www.gardenstateabolitionists.org/what-we-believe/criminalization
-            https://www.gardenstateabolitionists.org/the-gospel
-            https://www.gardenstateabolitionists.org/the-gospel/gospel
-            https://www.gardenstateabolitionists.org/the-gospel/kingdom-of-god
-            https://www.gardenstateabolitionists.org/the-gospel/great-commission
-            https://www.gardenstateabolitionists.org/the-gospel/message-of-reconciliation
-            https://www.gardenstateabolitionists.org/the-gospel/answer-to-abortion
-            https://www.gardenstateabolitionists.org/the-gospel/incarnation
-            https://www.gardenstateabolitionists.org/the-petition
-            https://www.gardenstateabolitionists.org/news
-            https://www.gardenstateabolitionists.org/faq
-            https://www.gardenstateabolitionists.org/media
-            https://www.gardenstateabolitionists.org/contact
-            https://www.gardenstateabolitionists.org/donate
-            https://www.gardenstateabolitionists.org/non-violence-statement
-            https://www.gardenstateabolitionists.org/privacy-policy
-            https://www.gardenstateabolitionists.org/delete-my-data
-            https://www.gardenstateabolitionists.org/cities
-            https://www.gardenstateabolitionists.org/cities/newark
+            https://www.gardenstateabolitionists.com/
+            https://www.gardenstateabolitionists.com/who-we-are
+            https://www.gardenstateabolitionists.com/what-we-believe
+            https://www.gardenstateabolitionists.com/what-we-believe/abolitionist-not-pro-life
+            https://www.gardenstateabolitionists.com/what-we-believe/biblical-not-secular
+            https://www.gardenstateabolitionists.com/what-we-believe/immediate-not-gradual
+            https://www.gardenstateabolitionists.com/what-we-believe/no-exceptions
+            https://www.gardenstateabolitionists.com/what-we-believe/ignore-roe
+            https://www.gardenstateabolitionists.com/what-we-believe/criminalization
+            https://www.gardenstateabolitionists.com/the-gospel
+            https://www.gardenstateabolitionists.com/the-gospel/gospel
+            https://www.gardenstateabolitionists.com/the-gospel/kingdom-of-god
+            https://www.gardenstateabolitionists.com/the-gospel/great-commission
+            https://www.gardenstateabolitionists.com/the-gospel/message-of-reconciliation
+            https://www.gardenstateabolitionists.com/the-gospel/answer-to-abortion
+            https://www.gardenstateabolitionists.com/the-gospel/incarnation
+            https://www.gardenstateabolitionists.com/the-petition
+            https://www.gardenstateabolitionists.com/news
+            https://www.gardenstateabolitionists.com/faq
+            https://www.gardenstateabolitionists.com/media
+            https://www.gardenstateabolitionists.com/contact
+            https://www.gardenstateabolitionists.com/donate
+            https://www.gardenstateabolitionists.com/non-violence-statement
+            https://www.gardenstateabolitionists.com/privacy-policy
+            https://www.gardenstateabolitionists.com/delete-my-data
+            https://www.gardenstateabolitionists.com/cities
+            https://www.gardenstateabolitionists.com/cities/newark
           configPath: ./lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true

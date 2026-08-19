@@ -3,7 +3,7 @@ import { getAllNewsArticles } from '@/lib/data/news-store';
 import { getLegislators } from '@/lib/data/legislators';
 import { CITIES } from '@/lib/data/cities';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [

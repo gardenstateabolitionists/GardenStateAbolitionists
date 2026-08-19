@@ -26,7 +26,7 @@ const LIMIT = Number(args.get('limit') || 30);
 const MIN_IMP = Number(args.get('min-impressions') || 0);
 
 const SITE = process.env.SEARCH_CONSOLE_SITE
-  || 'sc-domain:gardenstateabolitionists.org';
+  || 'sc-domain:gardenstateabolitionists.com';
 
 const end = new Date().toISOString().slice(0, 10);
 const startDate = new Date();

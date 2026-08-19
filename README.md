@@ -39,7 +39,7 @@ Also required:
   cannot be guessed. Donate CTAs stay inert until it is set.
 - **Domain** — `NEXT_PUBLIC_SITE_URL`, the apex→www redirect in
   `next.config.ts`, and `vercel.json` all currently assume
-  `gardenstateabolitionists.org`. Update all three if the real domain differs.
+  `gardenstateabolitionists.com`. Update all three if the real domain differs.
 
 ## Known inherited issues
 

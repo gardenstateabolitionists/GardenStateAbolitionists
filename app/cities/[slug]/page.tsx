@@ -15,7 +15,7 @@ import { getChurchesByCity } from '@/lib/data/abolitionist-churches';
 import { getCountyHistory, getAbortionContext, getFrcaRollCall } from '@/lib/data/nj-context';
 import { FRCA, formatVoteDate, partyLabel, voteStyle } from '@/lib/data/legislators';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export function generateStaticParams() {
   return getAllCitySlugs().map((slug) => ({ slug }));

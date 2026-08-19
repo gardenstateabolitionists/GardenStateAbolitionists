@@ -10,11 +10,11 @@ const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Garden State Abolitionists',
-  url: 'https://www.gardenstateabolitionists.org',
+  url: 'https://www.gardenstateabolitionists.com',
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'General Inquiry',
-    url: 'https://www.gardenstateabolitionists.org/contact',
+    url: 'https://www.gardenstateabolitionists.com/contact',
     availableLanguage: 'English',
   },
   sameAs: [

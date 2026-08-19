@@ -13,7 +13,7 @@
  */
 
 const GRAPH_API_VERSION = 'v20.0';
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export interface FacebookPostInput {
   title: string;

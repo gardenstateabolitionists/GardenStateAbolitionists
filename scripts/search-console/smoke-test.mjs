@@ -31,10 +31,10 @@ for (const s of sites) {
 }
 
 // Pick the Search Console property. Prefer the sc-domain: (Domain property) form
-// if present; otherwise the first https://www.gardenstateabolitionists.org/
+// if present; otherwise the first https://www.gardenstateabolitionists.com/
 // URL-prefix form.
-const preferred = sites.find((s) => s.siteUrl === 'sc-domain:gardenstateabolitionists.org')
-  || sites.find((s) => s.siteUrl.startsWith('https://www.gardenstateabolitionists.org'))
+const preferred = sites.find((s) => s.siteUrl === 'sc-domain:gardenstateabolitionists.com')
+  || sites.find((s) => s.siteUrl.startsWith('https://www.gardenstateabolitionists.com'))
   || sites.find((s) => /abolishabortion/i.test(s.siteUrl));
 
 if (!preferred) {

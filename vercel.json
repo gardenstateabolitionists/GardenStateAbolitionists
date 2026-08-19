@@ -8,8 +8,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "gardenstateabolitionists.org" }],
-      "destination": "https://www.gardenstateabolitionists.org/:path*",
+      "has": [{ "type": "host", "value": "gardenstateabolitionists.com" }],
+      "destination": "https://www.gardenstateabolitionists.com/:path*",
       "permanent": true
     }
   ]

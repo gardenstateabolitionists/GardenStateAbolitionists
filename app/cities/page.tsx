@@ -6,7 +6,7 @@ import CityFinder from '@/components/cities/CityFinder';
 import CitiesMap from '@/components/cities/CitiesMap';
 import { CITIES, ALL_CITY_FACTS, districtLabel } from '@/lib/data/cities';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 export const metadata: Metadata = {
   title: 'New Jersey Cities — Abolition Where You Live',

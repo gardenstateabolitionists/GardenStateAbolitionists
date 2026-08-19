@@ -15,7 +15,7 @@ import { getAllNewsArticles } from '@/lib/data/news-store';
 //
 // Reference: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 const PUBLICATION_NAME = 'Garden State Abolitionists';
 const PUBLICATION_LANGUAGE = 'en';
 const MAX_ARTICLES = 20; // Google News sitemap spec: max 1,000; we cap lower for freshness

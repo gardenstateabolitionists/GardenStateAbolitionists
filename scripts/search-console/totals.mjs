@@ -5,7 +5,7 @@ const list = await scGet('/sites');
 console.log('All reachable properties:');
 for (const s of list.siteEntry || []) console.log('  ' + s.permissionLevel + '  ' + s.siteUrl);
 
-const site = process.env.SEARCH_CONSOLE_SITE || 'https://www.gardenstateabolitionists.org/';
+const site = process.env.SEARCH_CONSOLE_SITE || 'https://www.gardenstateabolitionists.com/';
 console.log('\nTargeting: ' + site);
 
 // Try progressively wider windows to find any data at all

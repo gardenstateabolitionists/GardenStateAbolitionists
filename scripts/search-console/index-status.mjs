@@ -39,9 +39,9 @@ for (const a of process.argv.slice(2)) {
   if (m) args.set(m[1], m[2] ?? 'true');
 }
 const LIMIT = Number(args.get('limit') || 0); // 0 = no limit
-const SITEMAP_URL = args.get('sitemap') || 'https://www.gardenstateabolitionists.org/sitemap.xml';
+const SITEMAP_URL = args.get('sitemap') || 'https://www.gardenstateabolitionists.com/sitemap.xml';
 const JSON_OUT = args.get('json') || null;
-const SITE = process.env.SEARCH_CONSOLE_SITE || 'https://www.gardenstateabolitionists.org/';
+const SITE = process.env.SEARCH_CONSOLE_SITE || 'https://www.gardenstateabolitionists.com/';
 const CLIENT_ID = process.env.GOOGLE_ADS_CLIENT_ID;
 const CLIENT_SECRET = process.env.GOOGLE_ADS_CLIENT_SECRET;
 const REFRESH_TOKEN = process.env.GOOGLE_ADS_REFRESH_TOKEN;
@@ -170,7 +170,7 @@ if (problems.length > 0) {
   for (const [state, rows] of [...grouped.entries()].sort((a, b) => b[1].length - a[1].length)) {
     console.log('\n[' + rows.length + '] ' + state);
     for (const r of rows) {
-      const path = r.url.replace('https://www.gardenstateabolitionists.org', '') || '/';
+      const path = r.url.replace('https://www.gardenstateabolitionists.com', '') || '/';
       console.log('  ' + path);
       if (r.googleCanonical && r.googleCanonical !== r.url) {
         console.log('      -> Google canonical: ' + r.googleCanonical);

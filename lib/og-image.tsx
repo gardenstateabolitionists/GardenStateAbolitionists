@@ -117,7 +117,7 @@ export async function generateOGImage(title: string, subtitle?: string) {
               letterSpacing: '0.15em',
             }}
           >
-            gardenstateabolitionists.org
+            gardenstateabolitionists.com
           </div>
         </div>
       </div>

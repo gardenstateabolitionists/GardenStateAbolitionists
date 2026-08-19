@@ -1,6 +1,6 @@
 import { getAllNewsArticles } from '@/lib/data/news-store';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 function escapeXml(str: string): string {
   return str

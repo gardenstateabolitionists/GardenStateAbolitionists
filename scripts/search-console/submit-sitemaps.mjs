@@ -22,7 +22,7 @@
 import { scGet } from './_client.mjs';
 
 const SITE = process.env.SEARCH_CONSOLE_SITE
-  || 'https://www.gardenstateabolitionists.org/';
+  || 'https://www.gardenstateabolitionists.com/';
 
 console.log('Sitemap status per Search Console');
 console.log('  Property: ' + SITE);

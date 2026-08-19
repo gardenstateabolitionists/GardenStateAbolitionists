@@ -82,13 +82,13 @@ interface SubscriberData {
 
 // Get email configuration from environment variables.
 // RESEND_FROM must be a verified-domain address in the Resend dashboard
-// (e.g. "Garden State Abolitionists <noreply@gardenstateabolitionists.org>").
+// (e.g. "Garden State Abolitionists <noreply@gardenstateabolitionists.com>").
 // Falls back to a sensible default constructed from ADMIN_EMAIL.
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || ADMIN_EMAIL;
 const FROM_EMAIL =
   process.env.RESEND_FROM ||
-  (ADMIN_EMAIL ? `Garden State Abolitionists <${ADMIN_EMAIL}>` : 'noreply@gardenstateabolitionists.org');
+  (ADMIN_EMAIL ? `Garden State Abolitionists <${ADMIN_EMAIL}>` : 'noreply@gardenstateabolitionists.com');
 const FROM_NOTIFICATIONS =
   process.env.RESEND_FROM_NOTIFICATIONS ||
   (ADMIN_EMAIL ? `Garden State Abolitionists <${ADMIN_EMAIL}>` : FROM_EMAIL);
@@ -152,7 +152,7 @@ export const sendInquiryReplyEmail = async (data: { to: string; name: string; su
           <tr>
             <td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
         </table>
@@ -316,7 +316,7 @@ const inquiryConfirmationEmailHtml = (inquiry: InquiryData) => {
           <tr>
             <td class="footer" bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
         </table>
@@ -462,7 +462,7 @@ const inquiryNotificationEmailHtml = (inquiry: InquiryData) => {
               </div>
 
               <div style="text-align: center; margin-top: 25px;">
-                <a href="https://www.gardenstateabolitionists.org/admin/dashboard/inquiries" class="action-button" style="display: inline-block; background-color: #1a1a2e; color: #ffffff !important; text-decoration: none; padding: 12px 25px; border-radius: 4px; font-weight: bold;">View in Dashboard</a>
+                <a href="https://www.gardenstateabolitionists.com/admin/dashboard/inquiries" class="action-button" style="display: inline-block; background-color: #1a1a2e; color: #ffffff !important; text-decoration: none; padding: 12px 25px; border-radius: 4px; font-weight: bold;">View in Dashboard</a>
               </div>
             </td>
           </tr>
@@ -483,7 +483,7 @@ const inquiryNotificationEmailHtml = (inquiry: InquiryData) => {
 
 // ===== UNSUBSCRIBE HELPERS =====
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.org';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gardenstateabolitionists.com';
 
 function getTokenMonth(date: Date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
@@ -524,7 +524,7 @@ function unsubscribeFooterHtml(email: string): string {
   return `
           <tr>
             <td style="text-align: center; padding: 15px 20px; font-size: 12px; color: #999999;">
-              <p style="margin: 0;">You received this email because you subscribed at gardenstateabolitionists.org.</p>
+              <p style="margin: 0;">You received this email because you subscribed at gardenstateabolitionists.com.</p>
               <p style="margin: 5px 0 0 0;"><a href="${url}" style="color: #999999; text-decoration: underline;">Unsubscribe</a></p>
             </td>
           </tr>`;
@@ -609,7 +609,7 @@ const petitionConfirmationEmailHtml = (petition: PetitionData) => {
           <tr>
             <td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
           ${petition.subscribed ? unsubscribeFooterHtml(petition.email) : ''}
@@ -671,7 +671,7 @@ const petitionNotificationEmailHtml = (petition: PetitionData) => {
               </div>
 
               <div style="text-align: center; margin-top: 25px;">
-                <a href="https://www.gardenstateabolitionists.org/admin/dashboard/petitions" style="display: inline-block; background-color: #1a1a2e; color: #ffffff !important; text-decoration: none; padding: 12px 25px; border-radius: 4px; font-weight: bold;">View in Dashboard</a>
+                <a href="https://www.gardenstateabolitionists.com/admin/dashboard/petitions" style="display: inline-block; background-color: #1a1a2e; color: #ffffff !important; text-decoration: none; padding: 12px 25px; border-radius: 4px; font-weight: bold;">View in Dashboard</a>
               </div>
             </td>
           </tr>
@@ -730,7 +730,7 @@ export const sendSubscriberWelcomeEmail = async (email: string) => {
           <tr>
             <td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="${BASE_URL}" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="${BASE_URL}" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
           ${unsubscribeFooterHtml(email)}
@@ -889,7 +889,7 @@ const newsletterEmailHtml = (article: ArticleData, subscriber: SubscriberData) =
           <tr>
             <td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
           ${unsubscribeFooterHtml(subscriber.email)}
@@ -1043,7 +1043,7 @@ function officialContactEmailHtml(subject: string, body: string, audience: 'lawm
         </td></tr>
         <tr><td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
           <p style="margin: 0 0 10px 0;">Garden State Abolitionists · Est. 2024</p>
-          <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+          <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
         </td></tr>
       </table>
     </td></tr>
@@ -1242,7 +1242,7 @@ const broadcastEmailHtml = (subject: string, body: string, subscriber: Subscribe
           <tr>
             <td bgcolor="#1a1a2e" style="padding: 25px; text-align: center; font-size: 13px; color: #cccccc;">
               <p style="margin: 0 0 10px 0;">&copy; ${new Date().getFullYear()} Garden State Abolitionists. All rights reserved.</p>
-              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.org" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.org</a></p>
+              <p style="margin: 0;"><a href="https://www.gardenstateabolitionists.com" style="color: #d4af37; text-decoration: none;">gardenstateabolitionists.com</a></p>
             </td>
           </tr>
           ${unsubscribeFooterHtml(subscriber.email)}
