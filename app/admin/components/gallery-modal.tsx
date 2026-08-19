@@ -212,8 +212,11 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
             <div>
               <Label>{formFeatured ? 'Homepage tile preview' : 'Preview'}</Label>
               <div
+                // Capped rather than w-full: at the dialog's 500px this preview was
+                // 375px tall on its own, which is what pushed the modal past the
+                // viewport when the homepage controls appeared.
                 className={`relative bg-gray-100 rounded-lg overflow-hidden mt-1 ${
-                  formFeatured ? 'w-full aspect-[4/3]' : 'w-32 h-32'
+                  formFeatured ? 'w-full max-w-[260px] aspect-[4/3]' : 'w-32 h-32'
                 }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}

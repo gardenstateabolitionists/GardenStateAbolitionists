@@ -127,13 +127,23 @@ const DialogContent = React.forwardRef<
         aria-labelledby={context.titleId}
         aria-describedby={context.descriptionId}
         className={cn(
+          // max-height + scroll are REQUIRED, not cosmetic. The box is centred with
+          // translate-y-[-50%], so a dialog taller than the viewport grows past the
+          // top AND bottom edges at once, putting its heading and its buttons both
+          // out of reach with nothing to scroll. Any dialog whose height depends on
+          // its content can hit this — the gallery modal does the moment you tick
+          // "Show on the homepage" and it grows a slider and a 4:3 preview.
           'fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-6 shadow-lg sm:rounded-lg',
+          'max-h-[calc(100dvh-2rem)] overflow-y-auto',
           className
         )}
         {...props}
       >
         {children}
         <button
+          // Stays absolute. It is the last child of a grid, so `sticky` drops it to
+          // the bottom of the flow instead of pinning it top-right. On a scrolled
+          // dialog it scrolls with the content; Escape and the overlay still close.
           className="absolute right-4 top-4 rounded-sm p-2 opacity-70 transition-opacity hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500"
           onClick={() => context.onOpenChange(false)}
         >
