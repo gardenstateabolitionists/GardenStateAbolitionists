@@ -34,6 +34,46 @@ function buildStatCounters() {
   ].filter((s) => s.value);
 }
 
+/**
+ * Photographs used in the homepage outreach grid.
+ *
+ * The alt text describes what is in the frame and nothing more. Several of these
+ * were taken outside New Jersey (Faneuil Hall, the Boston Public Garden and the
+ * Paramount are all Boston), so none of them claims a place. This site has a
+ * standing habit of inheriting Michigan premises and reading them as New Jersey
+ * facts; an unsupported location in alt text is the same mistake in miniature.
+ */
+const outreachPhotos: { src: string; alt: string; position?: string }[] = [
+  {
+    src: '/images/outreach-1.webp',
+    alt: 'Three abolitionists standing together holding signs reading "What about her body and her rights?" and "Abortion is murder — forgiveness for murder can be found in Jesus Christ alone."',
+    // Portrait. Faces mid-frame, signs low — a centre crop severed the lettering.
+    position: 'object-[center_62%]',
+  },
+  {
+    src: '/images/outreach-2.webp',
+    alt: 'An abolitionist holding an "Abortion is murder" sign beside a statue of Samuel Adams while others speak with passers-by.',
+  },
+  {
+    src: '/images/outreach-3.webp',
+    alt: 'Two abolitionists talking with a man on a city street at night, holding signs reading "Your neighbour is being murdered in your midst" and "Every age has its evils, every age has its abolitionists."',
+  },
+  {
+    src: '/images/outreach-4.webp',
+    alt: 'A young man raising an "Abortion is murder" sign on a park path as a group walks alongside him.',
+  },
+  {
+    src: '/images/outreach-5.webp',
+    alt: 'Four abolitionists in ABOLITIONIST shirts standing behind a row of signs comparing abortion to historic chattel slavery.',
+  },
+  {
+    src: '/images/outreach-6.webp',
+    alt: 'An abolitionist holding a sign and talking with a group of young men on a seaside boardwalk.',
+    // Portrait. Wide empty sky up top; the conversation sits in the lower half.
+    position: 'object-[center_58%]',
+  },
+];
+
 export default async function HomePage() {
   const statCounters = buildStatCounters();
 
@@ -171,6 +211,40 @@ export default async function HomePage() {
             >
               WHO WE ARE
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Outreach photo grid — sits between the hero's SIGN THE PETITION call and
+          the statistics. Deliberately fixed-height tiles with object-cover so six
+          photos of mixed orientation (two portrait, four landscape) read as one
+          even grid instead of a ragged one, and so the row height cannot shift as
+          images load.
+
+          The alt text describes only what is visible. Several of these were taken
+          outside New Jersey — Faneuil Hall, the Public Garden and the Paramount are
+          Boston — so nothing here states or implies a location. */}
+      <section className="bg-[#1a1a1a] pb-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white text-center mb-2">Abolitionists at Work</h2>
+          <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
+            Preaching the gospel and pleading for the preborn in public.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+            {outreachPhotos.map((photo) => (
+              <div
+                key={photo.src}
+                className="relative aspect-[4/3] overflow-hidden bg-black"
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className={`object-cover ${photo.position ?? ''}`}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
