@@ -276,6 +276,13 @@ export default function GalleryManagementPage() {
                 </div>
               </div>
               <div className="p-2">
+                {/* Which photos are on the homepage has to be visible from the list.
+                    Otherwise the only way to find out is to open all nine one by one. */}
+                {photo.featuredOnHome && (
+                  <span className="inline-block mb-1 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide bg-green-700 text-white rounded">
+                    On homepage
+                  </span>
+                )}
                 <p className="text-xs text-gray-600 truncate">
                   {photo.caption || 'No caption'}
                 </p>

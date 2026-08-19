@@ -4,14 +4,39 @@ import { GalleryPhoto } from '@/types';
 // In-memory fallback
 const memoryPhotos: GalleryPhoto[] = [];
 
-function mapPhoto(photo: { id: string; url: string; caption: string | null; sortOrder: number; created_at: Date }): GalleryPhoto {
+function mapPhoto(photo: { id: string; url: string; caption: string | null; sortOrder: number; created_at: Date; featuredOnHome?: boolean; focalY?: number }): GalleryPhoto {
   return {
     id: photo.id,
     url: photo.url,
     caption: photo.caption || undefined,
     sortOrder: photo.sortOrder,
     created_at: photo.created_at.toISOString(),
+    featuredOnHome: photo.featuredOnHome ?? false,
+    focalY: photo.focalY ?? 50,
   };
+}
+
+/**
+ * Photos for the homepage "Abolitionists at Work" grid.
+ *
+ * The grid is a fixed six-tile layout, so this caps at six rather than letting
+ * a seventh tick silently produce a lopsided row. Returning an empty array is
+ * meaningful: the homepage falls back to its built-in photos, so the grid can
+ * never render blank just because nobody has ticked anything yet.
+ */
+export async function getFeaturedHomePhotos(limit = 6): Promise<GalleryPhoto[]> {
+  if (!isDatabaseConnected) return [];
+  try {
+    const photos = await prisma.galleryPhoto.findMany({
+      where: { featuredOnHome: true },
+      orderBy: [{ sortOrder: 'asc' }, { created_at: 'desc' }],
+      take: limit,
+    });
+    return photos.map(mapPhoto);
+  } catch (error) {
+    console.error('Error fetching featured photos:', error instanceof Error ? error.message : 'Unknown error');
+    return [];
+  }
 }
 
 export async function getAllGalleryPhotos(): Promise<GalleryPhoto[]> {
@@ -42,7 +67,7 @@ export async function getGalleryPhotoById(id: string): Promise<GalleryPhoto | nu
   return memoryPhotos.find((p) => p.id === id) || null;
 }
 
-export async function createGalleryPhoto(data: { url: string; caption?: string; sortOrder?: number }): Promise<GalleryPhoto> {
+export async function createGalleryPhoto(data: { url: string; caption?: string; sortOrder?: number; featuredOnHome?: boolean; focalY?: number }): Promise<GalleryPhoto> {
   if (isDatabaseConnected) {
     try {
       const photo = await prisma.galleryPhoto.create({
@@ -50,6 +75,8 @@ export async function createGalleryPhoto(data: { url: string; caption?: string; 
           url: data.url,
           caption: data.caption || null,
           sortOrder: data.sortOrder || 0,
+          featuredOnHome: data.featuredOnHome ?? false,
+          focalY: data.focalY ?? 50,
         },
       });
       return mapPhoto(photo);
@@ -65,6 +92,8 @@ export async function createGalleryPhoto(data: { url: string; caption?: string; 
     caption: data.caption,
     sortOrder: data.sortOrder || 0,
     created_at: new Date().toISOString(),
+    featuredOnHome: data.featuredOnHome ?? false,
+    focalY: data.focalY ?? 50,
   };
   memoryPhotos.push(newPhoto);
   return newPhoto;
@@ -79,6 +108,8 @@ export async function updateGalleryPhoto(id: string, data: Partial<GalleryPhoto>
           ...(data.url !== undefined && { url: data.url }),
           ...(data.caption !== undefined && { caption: data.caption || null }),
           ...(data.sortOrder !== undefined && { sortOrder: data.sortOrder }),
+          ...(data.featuredOnHome !== undefined && { featuredOnHome: data.featuredOnHome }),
+          ...(data.focalY !== undefined && { focalY: data.focalY }),
         },
       });
       return mapPhoto(photo);

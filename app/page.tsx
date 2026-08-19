@@ -4,6 +4,7 @@ import Image from 'next/image';
 import CTABanner from '@/components/CTABanner';
 import NewsCard from '@/components/NewsCard';
 import { statistics, statisticsSource, socialLinks, orgInfo } from '@/lib/content';
+import { getFeaturedHomePhotos } from '@/lib/data/gallery-store';
 import { getAllNewsArticles } from '@/lib/data/news-store';
 
 export const metadata: Metadata = {
@@ -43,12 +44,12 @@ function buildStatCounters() {
  * standing habit of inheriting Michigan premises and reading them as New Jersey
  * facts; an unsupported location in alt text is the same mistake in miniature.
  */
-const outreachPhotos: { src: string; alt: string; position?: string }[] = [
+const FALLBACK_OUTREACH_PHOTOS: { src: string; alt: string; focalY?: number }[] = [
   {
     src: '/images/outreach-1.webp',
     alt: 'Three abolitionists standing together holding signs reading "What about her body and her rights?" and "Abortion is murder — forgiveness for murder can be found in Jesus Christ alone."',
     // Portrait. Faces mid-frame, signs low — a centre crop severed the lettering.
-    position: 'object-[center_62%]',
+    focalY: 62,
   },
   {
     src: '/images/outreach-2.webp',
@@ -70,12 +71,25 @@ const outreachPhotos: { src: string; alt: string; position?: string }[] = [
     src: '/images/outreach-6.webp',
     alt: 'An abolitionist holding a sign and talking with a group of young men on a seaside boardwalk.',
     // Portrait. Wide empty sky up top; the conversation sits in the lower half.
-    position: 'object-[center_58%]',
+    focalY: 58,
   },
 ];
 
 export default async function HomePage() {
   const statCounters = buildStatCounters();
+
+  // Admin-managed photos win; the built-in six are the fallback so the grid can
+  // never render empty just because nobody has ticked "Show on the homepage" yet.
+  // A caption doubles as alt text — an uncaptioned photo still needs one, so it
+  // gets a generic description rather than an empty alt.
+  const featured = await getFeaturedHomePhotos(6);
+  const outreachPhotos = featured.length
+    ? featured.map((p) => ({
+        src: p.url,
+        alt: p.caption || 'Garden State Abolitionists outreach',
+        focalY: p.focalY ?? 50,
+      }))
+    : FALLBACK_OUTREACH_PHOTOS;
 
   let latestNews: Awaited<ReturnType<typeof getAllNewsArticles>> = [];
   try {
@@ -224,7 +238,7 @@ export default async function HomePage() {
           The alt text describes only what is visible. Several of these were taken
           outside New Jersey — Faneuil Hall, the Public Garden and the Paramount are
           Boston — so nothing here states or implies a location. */}
-      <section className="bg-[#1a1a1a] pb-16">
+      <section className="bg-[#1a1a1a] pt-16 md:pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-white text-center mb-2">Abolitionists at Work</h2>
           <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
@@ -241,7 +255,8 @@ export default async function HomePage() {
                   alt={photo.alt}
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
-                  className={`object-cover ${photo.position ?? ''}`}
+                  className="object-cover"
+                  style={{ objectPosition: `center ${photo.focalY ?? 50}%` }}
                 />
               </div>
             ))}

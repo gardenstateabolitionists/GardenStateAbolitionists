@@ -68,6 +68,17 @@ model GalleryPhoto {
   caption    String?
   sortOrder  Int      @default(0)
   created_at DateTime @default(now())
+
+  // Show this photo in the homepage "Abolitionists at Work" grid. The grid is a
+  // fixed six-tile layout, so it takes the first six by sortOrder.
+  featuredOnHome Boolean @default(false)
+
+  // Vertical focal point, 0-100, for the homepage grid's fixed-ratio tiles.
+  // Those tiles crop with object-cover, and a portrait photo loses roughly 44%
+  // of its height to a 4:3 tile. In outreach photos the SIGN usually sits low in
+  // the frame, so a centre crop (50) slices the lettering off. Raising this
+  // pushes the visible window down. Only meaningful when featuredOnHome is set.
+  focalY Int @default(50)
 }
 
 model Subscriber {

@@ -30,6 +30,8 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
   const [formUrl, setFormUrl] = useState('');
   const [formCaption, setFormCaption] = useState('');
   const [formOrder, setFormOrder] = useState('0');
+  const [formFeatured, setFormFeatured] = useState(false);
+  const [formFocalY, setFormFocalY] = useState(50);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPinDialog, setShowPinDialog] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -45,10 +47,14 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
       setFormUrl(photo.url);
       setFormCaption(photo.caption || '');
       setFormOrder(String(photo.sortOrder || 0));
+      setFormFeatured(photo.featuredOnHome ?? false);
+      setFormFocalY(photo.focalY ?? 50);
     } else {
       setFormUrl('');
       setFormCaption('');
       setFormOrder('0');
+      setFormFeatured(false);
+      setFormFocalY(50);
     }
     setErrorMessage('');
   }
@@ -72,12 +78,16 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
           url: formUrl.trim(),
           caption: formCaption.trim() || undefined,
           sortOrder: parseInt(formOrder) || 0,
+          featuredOnHome: formFeatured,
+          focalY: formFocalY,
         });
       } else if (photo) {
         res = await updateGalleryPhoto(photo.id, {
           url: formUrl.trim(),
           caption: formCaption.trim() || undefined,
           sortOrder: parseInt(formOrder) || 0,
+          featuredOnHome: formFeatured,
+          focalY: formFocalY,
         });
       }
 
@@ -154,16 +164,64 @@ export default function GalleryModal({ open, onClose, photo, isCreating, onSave 
             <p className="text-xs text-gray-500 mt-1">Lower numbers appear first</p>
           </div>
 
-          {/* Preview */}
+          {/* Homepage grid controls */}
+          <div className="border-t pt-4">
+            <label className="flex items-start gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={formFeatured}
+                onChange={(e) => setFormFeatured(e.target.checked)}
+                className="mt-1 h-4 w-4 accent-green-700"
+              />
+              <span>
+                <span className="text-sm font-medium">Show on the homepage</span>
+                <span className="block text-xs text-gray-500">
+                  Adds this photo to the &ldquo;Abolitionists at Work&rdquo; grid. The grid holds six
+                  photos &mdash; the six lowest sort orders are used, so lower the sort order to
+                  swap a photo in.
+                </span>
+              </span>
+            </label>
+
+            {formFeatured && (
+              <div className="mt-3">
+                <Label htmlFor="gallery-focal">Vertical crop position</Label>
+                <input
+                  id="gallery-focal"
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={1}
+                  value={formFocalY}
+                  onChange={(e) => setFormFocalY(Number(e.target.value))}
+                  className="mt-2 w-full accent-green-700"
+                />
+                <p className="text-xs text-gray-500 mt-1">
+                  The homepage tiles are a fixed shape, so tall photos get cropped top and bottom.
+                  Drag right if the important part &mdash; usually the sign &mdash; sits low in the
+                  frame. Currently {formFocalY}%.
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Preview. When the photo is headed for the homepage this mirrors the real
+              tile -- same 4:3 ratio, same object-cover, same focal point -- so what gets
+              cut off is visible here instead of after publishing. */}
           {formUrl && (
             <div>
-              <Label>Preview</Label>
-              <div className="relative w-32 h-32 bg-gray-100 rounded-lg overflow-hidden mt-1">
+              <Label>{formFeatured ? 'Homepage tile preview' : 'Preview'}</Label>
+              <div
+                className={`relative bg-gray-100 rounded-lg overflow-hidden mt-1 ${
+                  formFeatured ? 'w-full aspect-[4/3]' : 'w-32 h-32'
+                }`}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={formUrl}
                   alt="Preview"
                   className="w-full h-full object-cover"
+                  style={formFeatured ? { objectPosition: `center ${formFocalY}%` } : undefined}
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }}

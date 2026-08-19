@@ -54,6 +54,10 @@ export interface GalleryPhoto {
   caption?: string;
   sortOrder?: number;
   created_at?: string;
+  /** Show in the homepage "Abolitionists at Work" grid. */
+  featuredOnHome?: boolean;
+  /** Vertical focal point 0-100 for the homepage grid's cropped tiles. */
+  focalY?: number;
 }
 
 export interface DashboardStats {
